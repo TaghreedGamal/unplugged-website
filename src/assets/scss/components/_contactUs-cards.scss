@@ -1,0 +1,210 @@
+//----------top_cards--------
+.step{
+    background-color:$card-color;
+    color: $q-card;
+    z-index: 4000;
+    position: relative;
+.close{
+    position: absolute;
+    right: 50px;
+    color: $q-card;
+    font-size: 28px;
+    }
+}
+#gform_submit_button_3{
+    display: none
+}
+#gform_submit_button_4{
+    display: none
+}
+
+.conform{
+    .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
+        background-color:transparent !important;
+    }
+    .gform_wrapper div.validation_error {
+        display: none;
+    }
+    .gfield_description.validation_message {
+        display: none;
+    }
+    .gform_wrapper.gf_browser_chrome .gfield_error input {
+        background-color:rgba(237, 193, 192, 0.81);
+        padding-left: 10px;
+        color: #b80c09;
+        font-weight: bold;
+    }
+    #gform_wrapper_5{
+        margin: 1em 20%;
+    }
+    #gf_progressbar_wrapper_5{
+        display: none;
+    }
+    input,textarea{
+            @extend %border;
+            width: 70%;  
+          }
+    
+    select{
+            @extend %border;
+       }
+    .gform_page_footer {
+         display: flex;
+         justify-content: center;
+          border:0 !important;
+    .gform_next_button, .gform_previous_button,.gform_button  {
+        &.button{
+            border-radius: 30px;
+            z-index: 3000;
+            position: relative;
+            font-family: $button-font;
+            font-size: 18px;
+            box-shadow: 5px 10px 18px #00394633;
+            text-align: center;
+            width: 150px;
+            background-color:#cdedfa;
+            box-shadow: 2px 4px 18px #cdedfa59;
+            color: black;
+            &:active,&:hover {
+            box-shadow: 0 5px #cdedfa59;
+            transform: translateY(5px);
+            }
+        }
+        }
+    }
+    .top-titles{
+        .gfield_label{
+          font-size: 30px;    
+        }
+    }
+    
+    label{
+        &.gfield_label{
+        font-size: 22px;
+        }
+    }
+    
+    #gform_wrapper_5 ul.top_label li.gfield label.gfield_label {
+        display: block;
+        margin: auto;
+        font-family: $main-font;
+        color: $q-card;
+        padding-bottom: 20px;
+        padding-top: 20px;
+     }
+    li#field_5_2 {
+        text-align: center;
+    }
+    #gform_wrapper_5 { 
+      max-width: 50%;
+      margin: 0 auto;
+     }
+   
+      #gform_wrapper_5 ul li.gfield  .ginput_container_select,
+      #gform_wrapper_5 ul li.gfield  .ginput_container_text,
+      #gform_wrapper_5 ul li.gfield .gfield_description,
+      #gform_wrapper_5 div.ginput_complex label,  
+      #gform_wrapper_5 select, 
+      #gform_wrapper_5 textarea { 
+      text-align:center;
+      }
+   
+    #gform_wrapper_5 ginput_container ginput_container_radio{
+            text-align: left;
+        }
+    .ginput_complex label,.gform_wrapper .gfield_radio li label {
+        color: white;
+        margin-top: 2px;
+    }
+    .gform_wrapper div.validation_error {
+        color: white;
+    }
+    #gforms_confirmation_message_5 {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 35px;
+    }
+          
+}
+.logo{
+    padding-left: 50px;
+    padding-top: 20px;
+    z-index: 7000;
+    max-width: 300px;
+    position: relative;
+    @media (max-width: 64em){
+        padding-left: 30px;
+    }
+}
+#demo{
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    h5{
+    font-family: $card-SecHeader-font;
+    }
+    p{
+        color: white;
+        font-family: $main-font;
+        font-size: 20px;
+        span{
+            font-family: $title-font;
+        }
+    }
+}
+.contactCards{
+    display: flex;
+    &-sectionOne{
+        // width:95%;
+        h1{
+            color: $next;
+            font-family: $card-FrsHeader-font;
+        }
+    }
+    &-sectionTwo,&-sectionThree,&-sectionFour{
+        padding: 20px;
+        margin-top: 30px;
+
+    }
+     &-sectionTwo{
+        margin-left: 30px;
+     }
+    &-sectionThree{
+        .button{
+            font-size: 15px;
+        }
+    }
+    &-sectionFour{
+        .ficons{
+            display: flex;
+            justify-content: space-around;
+            .icon-circle{
+                border: 2px solid black;
+                border-radius: 50%;
+                background-color: $next;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    border: 1px dashed black;
+                    padding: 8px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    text-align: center;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+.active{
+    visibility: visible; }
+    
+.hide{
+display:none;
+}

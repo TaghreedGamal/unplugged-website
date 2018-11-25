@@ -1,0 +1,15 @@
+h1{
+	color:$title-color; 
+    font-family: $title-font; 
+}
+p{
+	font-family: $main-font; 
+}
+.container{
+	padding-left: 80px;
+	padding-right: 80px;
+	@media (max-width: 64em){
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+	}
+}

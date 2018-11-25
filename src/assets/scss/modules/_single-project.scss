@@ -1,0 +1,91 @@
+.main-content{
+	&__project{
+		height: 112vh;
+		display: flex;
+		&-image{
+        	width: 100%;
+        	transform: translate(150px, -125px);
+        	display: flex;
+   		 }
+    	&-content{
+        	width: 100%;
+        	padding-top: 150px;
+        	.entry-title{
+		      color: $title-color;
+		      font-family: "DINCondensed-Bold";
+		      font-size: 70px;
+		      line-height: 1.2;
+		    }
+		    .entry-content{
+		      font-family: "DINCondensed-Bold";
+		      text-align: justify;
+		      font-size: 18px;
+		      color: grey;
+		    }
+		    .project-data{
+		    	display: flex;
+		    	&-category,&-date,&-services{
+		    		width: 33.3%;
+		    	}
+		    }
+   		}
+   		.row-buttons{
+   			margin-top: 20px;
+   		}
+	}
+}
+.container{
+	padding-right: 60px;
+    padding-left: 60px;
+}
+.project{
+	&__Idea{
+	 	display: flex;
+	 	align-items: center;
+	 	.top{
+	 		border-radius: 50% !important;
+	 		width: fit-content;
+	 		position: fixed;
+	 		bottom: 0;
+	 		right: 0;
+	 		display: none;
+	 		&:hover{
+	 			transform :translateY(0);
+	 		}
+	 	}
+	 	&-image,&-content{
+	 		width: 50%;
+	 	}
+	 	&-content{
+	 		h1{
+	 			font-size: 70px;
+	 		}
+	 	}
+	}
+	&__cycles{
+		margin-top: 150px;
+		.tabs-content{
+			border:0;
+		}
+		.tabs-panel{
+			&.cycle-tabs {
+	   			display: flex;
+			}
+			h1{
+	   			width: 30%;
+	   			padding-top: 30%;
+	   		}
+	   		.main{
+	   		 	position: relative;
+  				margin: 0 auto;
+  				width: 70%;
+	   		}
+	   		.cycle-slider{
+	   			height: 500px;
+	   		}
+	   		.slick-slide{
+	   			padding-left: 40px;
+	   		}
+		}
+	}
+}

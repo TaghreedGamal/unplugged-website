@@ -1,0 +1,177 @@
+    <?php
+    /**
+     * The template for displaying the header
+     *
+     * Displays all of the head element and everything up until the "container" div.
+     *
+     * @package FoundationPress
+     * @since FoundationPress 1.0.0
+     */
+
+    ?>
+    <!doctype html>
+    <html class="no-js" <?php language_attributes(); ?> >
+    <head>
+      <meta charset="<?php bloginfo( 'charset' ); ?>" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+
+      <?php wp_head(); ?>
+  </head>
+  <body <?php body_class(); ?>>
+
+   <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
+      <?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
+  <?php endif; ?>
+
+  <!--    first card-->    
+  <div class="step" style="display:none;" id="demo">
+    <button close2-click class="close">x</button>
+    <div class="contactCards"> 
+            <div class="contactCards-sectionOne">
+               <h1 >We'd Love to Hear from you !</h1>
+               <p>We are always happy to recive your ... </p>
+               <button next-click class="button cont happy">Inquire About Something</button>
+           </div>  
+        <div class="contactCards-sectionTwo">
+           <h5>Contact</h5>
+           <p>info<span>@</span>unpluggedweb.com <br />
+               (+2) 12254575 <br />
+               (+2) 01273239777<br /> 
+           </p>
+       </div> 
+       <div class="contactCards-sectionThree">
+           <h5>Address</h5>
+           <p>3 Abd El-Aziz Selim,Ad Daqi,Giza,Egypy</p>
+           <a href="https://goo.gl/maps/Vu4WnBh9Ah52" target="_blank"><button  class="button cont Address"><i class="fa fa-map-marker"></i>  View on map</button></a>
+       </div>
+       <div class="contactCards-sectionFour">
+        <h5>Follow Us</h5>
+        <div class="ficons">
+           <div class="icon-circle"><a href="#"><i class="fa fa-linkedin"></i></a></div>
+           <div class="icon-circle"><a href="#"><i class="fa fa-instagram"></i></a></div>
+           <div class="icon-circle"><a href="#"><i class="fa fa-facebook-f"></i></a></div>
+           <div class="icon-circle"><a href="#"><i class="fa fa-behance"></i></a></div>
+       </div>
+</div>
+</div>
+</div>
+
+<!--    second card-->
+
+<div class="step" style="display:none;" id="demo1" >
+    <button close-click class="close">x</button>
+    <!--     <h4 class="Question">Q1: What are you looking for?</h4>-->
+    <div class="conform">
+       <div class="grid-x">
+           <div class="small-12 cell">
+            <?php echo do_shortcode('[gravityform id="5" title ="false" ajax="true"]');?>
+        </div>
+    </div>
+</div>
+<!--   <button  next-click class="button cont" >Next  <i class="fa fa-long-arrow-right">         </i></button>-->
+</div>
+
+<header class="site-header" role="banner">
+  <div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
+     <div class="title-bar-left">
+        <button aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>"></button>
+        <span class="site-mobile-title title-bar-title">
+           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+       </span>
+   </div>
+</div>
+<!-- full menu -->
+<div class="full-menu" id="menu">
+    <div class="full-menu__item">
+        <div class="img-content">
+           <a href="#">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.png" alt="Unplugged Logo">
+
+            <div class="text-content">
+                <p>About</p>
+                <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
+            </div>
+        </a>
+    </div>
+</div>
+<div class="full-menu__item">
+  <div class="img-content">
+   <a href="http://localhost/unplugged-website/projects/">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.png" alt="Unplugged Logo">
+    <div class="text-content">
+        <p>Portfolio</p>
+        <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
+    </div>
+</a>
+</div>
+</div>
+<div class="full-menu__item">
+  <div class="img-content">
+   <a href="#">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.png" alt="Unplugged Logo">
+    <div class="text-content">
+        <p>Products</p>
+        <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
+    </div>
+</a>
+</div>
+</div>
+<div class="full-menu__item">
+    <button close-menu class="close">X</button>
+    <div class="img-content">
+       <a href="#">
+        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
+        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.png" alt="Unplugged Logo">
+        <div class="text-content">
+            <p>Blog</p>
+            <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
+        </div>
+       </a>
+</div>
+</div>
+
+</div>
+
+
+<nav class="site-navigation top-bar" role="navigation">
+ <div class="top-bar-left">
+    <div class="site-desktop-title top-bar-title">
+       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/New logo.png" alt="Unplugged Logo"></a>
+    </div>
+     <!-- <button close-project class="close" >X</button> -->
+</div>
+
+<div class="top-bar-right">
+
+    <button data-click  class="button">Contact us</button>
+    <div class="page-name">
+        <?php $thisP = get_queried_object();
+        if (!$thisP->label == ''){
+           echo $thisP->label;
+        }
+        else{
+        $pagename= basename(get_permalink()); echo $pagename;} ?>
+   </div>
+    <button menu-click  class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <?php foundationpress_top_bar_r(); ?>
+
+    <?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
+    <?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+<?php endif; ?>
+</div>
+</nav>
+
+</header>
+
+    
