@@ -358,7 +358,11 @@ button{
                 width: 100%;
                 background-color:#d5dde0;
                 h1{
-                    padding-top: 50%;
+                    padding-top: 220px;
+                    font-size: 40px;
+                    width: 273px;
+                    height: 94px;
+                    line-height: 47px;
                 }
                 &__top-image {
                    float: right;
@@ -372,7 +376,28 @@ button{
                 }
             }
         }
-    }    
+    } 
+    
+    .slick-dots{
+        position: absolute;
+        list-style-type: none;
+        top:50%;
+        font-size: 0;   
+        right: 0;
+        li{
+            width: 25px;
+            height: 1px;
+            background: #9b9b9b;
+            margin-bottom: 5px;
+            display: block;
+            &.slick-active{
+                width: 35px;
+                height: 1px;
+                background: #003a47;
+            }
+        }
+
+    }  
     
 }
 //---------Partners----
@@ -394,10 +419,8 @@ button{
 }
 .partners{
     position: relative;
-   // padding-left: 80px;
-   // padding-right: 80px;
     &__logos{
-    height: 300px;
+        height: 300px;
         h3{
             color:$title-color;
             padding-top: 100px;
@@ -406,22 +429,24 @@ button{
             font-weight: 600;
             font-family: $title-font;
         }    
-      .clients{
+        .clients{
           &__slide{ 
-              position: relative;
-              .shadow{
+            position: relative;
+            .shadow{
                 display: flex !important;
                 justify-content: center;
                 height: 100px;
                 align-items: center;
-              }
+                @media (max-width: 64em){
+                    height: 80px;
+                }
+            }
           }      
         }   
         .slick-center {
-         margin: auto;
-//  background-color: red;
-}
-}
+             margin: auto;
+        }
+    }
 }
 //---------- services------
 .services-tabs{
@@ -437,6 +462,7 @@ button{
         margin: 0;
         @media(max-width: 64em){
             display: inline-flex;
+            padding-top: 20px;
         }
     }
     h3{
@@ -445,11 +471,12 @@ button{
         font-weight: 600;
         font-family: $title-font;
         @media(max-width: 64em){
-          padding-left: 50px;
+          padding-left: 25px;
         }
     }
     &__list{
         width: 20%;
+        z-index: 20;
         @media(max-width: 64em){
            width: 100%;
         }
@@ -472,7 +499,7 @@ button{
            img{
                display: none;
                 width: auto;
-              height: 0px;
+               height: 0px;
             }
     &.is-active{
     a{
@@ -496,6 +523,7 @@ button{
             align-items:center;
             @media (max-width: 64em){
                 flex-flow:column;
+                transform: translateY(-65px);
                 // transform: translateY(-90px);
             }
         }
@@ -510,13 +538,13 @@ button{
             &.different-position{
                 transform: scale(1.2) translateX(100px);
                  @media (max-width: 64em){
-                   transform:scale(1.2) translate(0px,90px);
+                   transform:scale(1.3) translate(0px,70px);
                  }
             }
             @media (max-width: 64em){
-                width: 100%;
+                width: 278px;
                 height: 100%;
-                transform: translate(0px,90px);
+                transform: translate(0px,75px);
 
             }
          }
@@ -548,7 +576,9 @@ button{
                 }
             }
             @media (max-width: 64em){
-                width: fit-content;
+                width: 325px;
+                text-align: center;
+                padding: 25px;
                 &__title{
                     font-size: 26px;
                     span{
@@ -557,6 +587,7 @@ button{
                 }
                 &__text{
                     font-size: 12px;
+                    text-align: center;
                 }
                 .button{
                     font-size: 14px;
@@ -572,12 +603,16 @@ button{
 .Cards{
     padding-top: 80px;
     padding-bottom: 80px;
-    height: auto;
-    position: relative;
-    .Cards__container {
     display: flex;
-    position: relative;
-    justify-content: space-around;
+    // height: auto;
+    // position: relative;
+
+    .Cards__container {
+        position: relative;
+        width: 25%;
+        left: -25px;
+        // display: flex;
+        // justify-content: space-around;
        .card-no{
             position: absolute;
             font-family: "DINCondensed-Bold";
@@ -585,10 +620,32 @@ button{
             color: #FF7900;
             font-weight: 800;
             top: 28%;
+            left: 50%;
             transform: scale(0.8, 0.7);
             letter-spacing: 0.6px;
-            margin-left: 50px;
+            //margin-left: 50px;
         }
+        @media (max-width: 64em){
+            width: 45%;
+            left: 25px;
+            svg{
+                width: 121px;
+                height: 141px;
+                path.obj{
+                    opacity: 1;
+                }
+            }
+            .card-no{
+                font-size: 35px;
+                left: 30%;
+            }
+        }
+   }
+   @media (max-width: 64em){
+        flex-wrap:wrap;
+        justify-content:center;
+        padding-top: 20px;
+        padding-bottom: 20px;
    }
 }
 .cardhover{
@@ -603,6 +660,15 @@ button{
 .dcardhover{
     transform: translateY(50px)!important;
 }
+
+@media (max-width: 64em){
+    .cardhover,.cardno-hover,.objhover,.dcardhover{
+        transform: translate(0px,0px) !important;
+    }
+    .cardno-hover{
+        transform: scale(0.8, 0.7) !important;
+    }
+ } 
 //.clinehover{
 ////    transform: matrix(30, 0.7265, -0.7265, 0.6871, 869.644, 500);
 ////    top: 10px;

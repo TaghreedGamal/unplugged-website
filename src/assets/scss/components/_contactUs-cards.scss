@@ -134,7 +134,9 @@
     max-width: 300px;
     position: relative;
     @media (max-width: 64em){
-        padding-left: 30px;
+        max-width: 104px;
+        padding-left: 0px;
+        padding-top: 0;
     }
 }
 #demo{

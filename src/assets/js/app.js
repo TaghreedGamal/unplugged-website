@@ -61,11 +61,14 @@ $('[menu-click]').on('click',function(){
 $(document).ready(function(){
   $('.home-slider__responsive__slides').slick({
     infinite: true,
-     speed: 100,
+     speed: 500,
      slidesToShow: 1,
      slidesToScroll: 1,
+     autoplay:true,
+     dots:true
   });
 });
+
 $(document).ready(function(){
 $('.clients').slick({
   centerMode: true,
@@ -74,72 +77,18 @@ $('.clients').slick({
   autoplay:true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1000,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+        centerPadding: '20px',
+        slidesToShow: 2
       }
     },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
   ]
 });
     
 });
-
-// $(document).ready(function(){
-// $('.project').slick({
-//    infinite: true,
-//   speed: 300,
-//   slidesToShow: 5,
-//     autoplay:true,
-//   slidesToScroll: 1,
-//   responsive: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 3,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 2
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//     // You can unslick at a given breakpoint now by adding:
-//     // settings: "unslick"
-//     // instead of a settings object
-//   ]
-// });
-// });
-//$(document).ready(function(){
-//  if ( $('.slick-slide').hasClass('slick-active') ) {
-//      console.log("hi hi");
-//    $('h1').css("background-color",'red');
-//      
-//  }
-//});
 
 
 // slide animation
@@ -426,13 +375,13 @@ $(".card1, .card2, .card3, .card4").hover(
     $(this).find("p.card-no").removeClass('cardno-hover');
 
 });
-var Topcard=$(".Cards__container").offset().top;
-var Bottomcard=$(".products").offset().top;
-Topcard-=400;
-Bottomcard-=500;
 $(window).scroll(function() {
-     if($(window).scrollTop() >Topcard && $(window).scrollTop() < Bottomcard )
-        {
+    var inter= $(".Cards__container");
+    var top_of_element = inter.offset().top;
+    var bottom_of_element = inter.offset().top + inter.outerHeight();
+    var top_of_screen = $(window).scrollTop();
+    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
           card.play();
         }
  });
