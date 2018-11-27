@@ -174,7 +174,7 @@ get_header(); ?>
 
 
 <!--services section -->
-<section >
+<section>
     <div class="services-tabs">
         <div class="services-tabs__list">
             <h3>Our services</h3>
@@ -694,7 +694,6 @@ get_header(); ?>
     <!--projects section -->
 <section class="projects-section">
     <div class="container">
-        <div class="partners__logos">
         <h1>Our Projects</h1>    
         <div class="project-section">
             <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -744,14 +743,15 @@ get_header(); ?>
                         }
                     if($tabNo==1){ ?>
                         <div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c"  data-accordion-item>
-                        <div class="device" >
-                           <img class="device-lab" src="<?php echo $image2[0];?>">
-                           <img class="device-mobile"src="<?php  echo get_field('project-mobile-image');?>">
+                        <div class="project-images" >
+                           <img class="project-images__device-laptop" src="<?php echo $image2[0];?>">
+                           <img class="project-images__device-mobile"src="<?php  echo get_field('project-mobile-image');?>">
                         </div>
                           <div class="contain-box">
                             <div class="box">
-                                <h2 class="box__title"><?php the_title();?><br><span><?php the_field('project_subtitle');?></span></h2>  
+                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
                                 <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
+                                 </br>
                                 <div class="small-icon">
                                     <?php
                                     if( have_rows('project_services') ):
@@ -773,14 +773,15 @@ get_header(); ?>
                         </div> <?php }
                     else {    ?>
                     <div class="tabs-panel " id="panel<?php echo $tabNo; ?>c"  data-accordion-item>
-                        <div>
-                          <img class="device" src="<?php echo $image2[0];?>">
-                          <img src="<?php  echo get_field('project-mobile-image');?>">
+                        <div class="project-images">
+                          <img class="project-images__device-laptop" src="<?php echo $image2[0];?>">
+                          <img class="project-images__device-mobile" src="<?php  echo get_field('project-mobile-image');?>">
                         </div>
                           <div class="contain-box">
                             <div class="box">
-                                <h2 class="box__title"><?php the_title();?><br><span><?php the_field('project_subtitle');?></span></h2>  
+                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
                                <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
+                            </br>
                                 <div class="small-icon">
                                     <?php
                                     if( have_rows('project_services') ):
@@ -803,55 +804,53 @@ get_header(); ?>
                  $tabNo++;
                 endwhile; wp_reset_query(); ?>
             </div>
-        </div>
     </div>
 </section>
 
 <!--intern section -->
-<section class="intern">
-<div class="grid-x grid-margin-x">
-<div class="grid-x cell medium-6 large-6" id="inter1">
-    <?php $image1 = get_field('left_image'); ?>
-<div class="box__img" id="box1-img" style="background-image:url(<?php echo $image1['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
-<div class="boximgl1"></div>
-<svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<div class="boximgl2"></div>
-</div> 
-<div class="boxline"></div>      
-<div class="box" id="box1"> 
-        <div class="circle"></div>
-        <h2 class="box__title">Insights on our Internship Program</h2>  
-        <p class="box__text"><?php the_field('left_text'); ?> </p>  
-       <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
-</div>  
-</div>
-<div class="grid-x cell medium-6 large-6" id="inter2">
- <?php $image2 = get_field('right_image'); ?>
-<div class="box__img" id="box2-img" style="background-image:url(<?php echo $image2['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
-<div class="boximg2l1"></div>    
-<svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<div class="boximg2l2"></div>    
-</div>
-<div class="boxline2"></div> 
- <div class="box" id="box2"> 
-     <div class="circle2"></div>
-        <h2 class="box__title">Insights on our Internship Program</h2>  
-        <p class="box__text"><?php the_field('right_text'); ?>  </p>  
-       <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
-    </div> 
-</div>   
-</div>
-   
+<section>
+    <div class="intern container">
+        <div class="intern-left" id="inter1">
+                <?php $image1 = get_field('left_image'); ?>
+            <div class="box__img" id="box1-img" style="background-image:url(<?php echo $image1['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="left-boximgline-1"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                </svg>
+                <div class="left-boximgline-2"></div>
+            </div> 
+            <div class="left-boxline"></div>      
+            <div class="box" id="box1"> 
+                <div class="circle"></div>
+                <h2 class="box__title">Why do we have a successful internship program?</h2>  
+                <p class="box__text"><?php the_field('left_text'); ?> </p>  
+                <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
+            </div>  
+        </div>
+        <div class="intern-right" id="inter2">
+            <?php $image2 = get_field('right_image'); ?>
+            <div class="box__img" id="box2-img" style="background-image:url(<?php echo $image2['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="right-boximg2line-1"></div>    
+                <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                </svg>
+                <div class="right-boximg2line-2"></div>    
+            </div>
+            <div class="right-boxline2"></div> 
+             <div class="box" id="box2"> 
+                <div class="circle2"></div>
+                <h2 class="box__title">Why do we have a successful internship program?</h2>  
+                <p class="box__text"><?php the_field('right_text'); ?>  </p>  
+                <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
+            </div> 
+        </div>   
+    </div>
 </section>
 
 <!--products section -->

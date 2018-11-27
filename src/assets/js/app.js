@@ -275,28 +275,31 @@ if ( activeTab.length ) {
 
 
 ////// project animation
-var projectTimelines ={};
-
-$('#collapsing-tabs').on('change.zf.tabs', function() {
-    var activeTab2 = $('.projtabs').find('.is-active');
-    console.log(activeTab2);
-if ( activeTab2.length ) {
-    var project = activeTab2.id ,
-        container=activeTab2.find(".contain-box"),
-        box1 = activeTab2.find(".box"),
-        img1 = activeTab2.find(".device");
-    if(projectTimelines[container]){
-        projectTimelines[container].restart();
-    }else{
-      projectTimelines[project] = new TimelineMax();
-      projectTimelines[project].addLabel("go")
-          .from(container,0.3,{scaleX:0,transformOrigin:"right"},"go")
-          .from(box1,0.5,{x:10,opacity:0,scaleX:0,transformOrigin:"right"},"go+=0.2")
-          .from(img1,0.6,{x:800,opacity:0});   
-      
+var screenSize=$(window).width();
+if (screenSize > '480'){
+    var projectTimelines ={};
+    $('#collapsing-tabs').on('change.zf.tabs', function() {
+        var activeTab2 = $('.projtabs').find('.is-active');
+    if ( activeTab2.length ) {
+        var project = activeTab2.id ,
+            container=activeTab2.find(".contain-box"),
+            box1 = activeTab2.find(".box"),
+            img1 = activeTab2.find(".project-images__device-laptop"),
+            img2 = activeTab2.find(".project-images__device-mobile");
+        if(projectTimelines[container]){
+            projectTimelines[container].restart();
+        }else{
+          projectTimelines[project] = new TimelineMax();
+          projectTimelines[project].addLabel("go")
+              .from(container,0.3,{scaleX:0,transformOrigin:"right"},"go")
+              .from(box1,0.5,{x:10,opacity:0,scaleX:0,transformOrigin:"right"},"go+=0.2")
+              .from(img1,0.6,{x:800,opacity:0})
+              .from(img2,0.4,{scale:0.2,opacity:0}); 
+          
+        }
     }
+    });
 }
-});
 
 //// intern animation
 
@@ -319,21 +322,17 @@ var inl = new TimelineMax();
             .from(".circle", 1, {scale:0.2,opacity:0},"cir")
             .from(".circle2", 1, {scale:0.2,opacity:0},"cir")
             .addLabel("line")
-            .from(".boxline",0.5,{y:200,opacity:0},"line")
-            .from(".boxline2",0.5,{y:200,opacity:0},"line")
+            .from(".left-boxline",0.5,{y:200,opacity:0},"line")
+            .from(".right-boxline2",0.5,{y:200,opacity:0},"line")
             .addLabel("sline")
-            .from(".boximgl1",0.5,{y:200,opacity:0},"sline")
-            .from(".boximg2l1",0.5,{y:200,opacity:0},"sline")
-            .from(".boximgl2",0.5,{y:200,opacity:0},"sline")
-            .from(".boximg2l2",0.5,{y:200,opacity:0},"sline")
+            .from(".left-boximgline-1",0.5,{y:200,opacity:0},"sline")
+            .from(".right-boximg2line-1",0.5,{y:200,opacity:0},"sline")
+            .from(".left-boximgline-2",0.5,{y:200,opacity:0},"sline")
+            .from(".right-boximg2line-2",0.5,{y:200,opacity:0},"sline")
             .addLabel("draw")
             .to(path1, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
             .to(path2, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4"); 
 inl.pause();
-// var Topintern=$(".intern").offset().top;
-// var Bottomintern=$(".project").offset().top;
-// Topintern-=1000;
-// Bottomintern-=1000;
 
 $(window).scroll(function() {
     var inter= $(".intern");

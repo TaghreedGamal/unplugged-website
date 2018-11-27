@@ -996,3 +996,81 @@ get_header(); ?>
         
 
 <?php get_footer();
+
+//old css for 1400px screen
+ // .intern {
+ //        .boxline {
+ //        left: 480px;
+ //      }
+ //     .boxline2 {
+ //        right: 197px;
+ //    }
+ //    }
+ //    .menu-button{
+ //        margin-right: -10px;
+ //    }
+// .projects{
+//     .tabs-panel{
+//         .contain-box{
+//         .box{
+//             padding-left: 170px;
+//             padding-top: 50px;
+//             padding-bottom: 30px;
+//             max-width: 900px;
+//         .small-icon{
+//         img{
+//             width: 80px;}
+//         }
+//         }
+//         }
+//          &.is-active{
+//              .device{
+//                  transform: translate(60px, 60px);
+//                  height: 500px;
+//              }
+//         }
+//    }
+//         #buttons {
+//             display: flex !important;
+//             .button{
+//                 width: 150px;}
+//         }
+//     }
+
+  
+//     .products{
+//         .box{
+//          padding-left: 100px;
+//         max-width: 500px;
+//         height: 550px;
+//         padding: 80px;   
+//         }
+//         .mobile{
+//         .mobile-video{
+//             left:35%;
+//             width: 35%;  
+//         }
+//         .mobile-img{
+//            width: 40%;     
+//          }
+//         .v-circle{
+//           top: 77%;       
+//         }
+//         .video-L,.video-R{
+//             height: 450px;
+//         }
+        .v-lcircle{
+            top: -10%;
+            left: 65%;
+        }
+        .v-line2 {
+        top: 11px;
+        left: 350px;
+        height: 600px;}
+       .v-line{
+        top: -43px;
+        left: 392px;
+         }        
+      }  
+          
+    }
