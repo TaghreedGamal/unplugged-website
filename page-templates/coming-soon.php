@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="coming-soon container">
 		<div class="coming-soon__content">
 			<h1 class="coming-soon__content__title">WE ARE IN MAKEOVER!</h1>
-			<a class="button">Back to homepage</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
 		</div>
 		<div class="coming-soon__image">
 			<svg xmlns="http://www.w3.org/2000/svg" class="big-circle" width="565" height="645" viewBox="0 0 565 645">
@@ -33,8 +33,6 @@ get_header(); ?>
 			<svg xmlns="http://www.w3.org/2000/svg" class="botton-drawLine2" width="80" height="16" viewBox="0 0 80 16">
 			    <path opacity="0" fill="#EE7719" fill-rule="evenodd" d="M79.287 12.668c-3.622-2.825-6.23-6.208-8.445-9.984-.594-1.014-1.958-1.113-3.005-.698-5.46 2.162-9.234 6.259-13.848 9.46-2.194-2.128-4.256-4.37-6.46-6.49-1.498-1.442-4.628-5.068-7.29-4.792-6.019.622-10.403 6.614-14.664 10.67C23.112 6.399 19.958-.085 14.314.002 7.496.105 4.572 7.825.604 11.63c-1.92 1.84 1.181 4.599 3.106 2.752 3.265-3.13 5.233-7.584 9.104-10.187 3.808-2.56 8.957 8.847 10.295 10.83.769 1.141 2.375 1.204 3.45.394 2.295-1.728 4.253-3.826 6.321-5.758 1.035-.966 5.5-5.865 7.086-5.63 2.134.317 5.111 4.297 6.456 5.63 1.922 1.909 3.731 3.919 5.738 5.758.64.588 1.874.797 2.662.305 4.637-2.893 8.328-6.93 13.219-9.456 2.18 3.417 4.774 6.526 8.14 9.151 2.116 1.652 5.236-1.09 3.106-2.752"/>
 			</svg>
-
-
 			<svg xmlns="http://www.w3.org/2000/svg" class="short-botton-line" width="143" height="143" viewBox="0 0 143 143" >
 		   		 <path fill="none" fill-rule="nonzero" stroke="#EE7719" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M4.836 4.836l133.387 133.387"/>
 			</svg>

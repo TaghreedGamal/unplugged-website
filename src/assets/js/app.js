@@ -9,9 +9,8 @@ window.$ = $;
 
 import Foundation from 'foundation-sites';
 
-// var home=($'.home')
-if(10>2){
-    console.log(home)
+if($(".home").length != 0){
+    console.log("home");
 $(document).foundation();
 
 let contactSteps = $(".step");
@@ -471,37 +470,36 @@ $(window).scroll(function() {
 
  });
 }
-else {
-    import comingSoon from "./comingSoon"; 
+else if($(".page-template-coming-soon").length != 0) {
+var path11 = $(".top-drawLine1 path"),
+    length11 = path11[0].getTotalLength();
+var path22 = $(".top-drawLine2 path"),
+    length22 = path22[0].getTotalLength();
+var path33 = $(".botton-drawLine1 path"),
+    length33 = path33[0].getTotalLength();
+var path44 = $(".botton-drawLine2 path"),
+    length44 = path44[0].getTotalLength();
+
+var t = new TimelineMax();
+t.set(path11, {attr:{"stroke-dasharray": length11, "stroke-dashoffset": length11}})
+.set(path22, {attr:{"stroke-dasharray": length22, "stroke-dashoffset": length22}})
+.set(path33, {attr:{"stroke-dasharray": length33, "stroke-dashoffset": length33}})
+.set(path44, {attr:{"stroke-dasharray": length44, "stroke-dashoffset": length44}});
+
+var coming = new TimelineMax();
+coming.addLabel("img")
+.from(".coming-soon__image__mainImage", 0.7, {yPercent:50, opacity:0},"img")
+.from(".big-circle", 0.7, {scale:0.2,opacity:0},"img")
+.from(".small-circle", 1.5, {scale:0.2,opacity:0})
+.addLabel("show")
+.from(".tall-top-line",0.5,{y:100,opacity:0},"show")
+.from(".tall-botton-line",0.5,{y:100,opacity:0},"show")
+.from(".short-top-line",0.5,{y:100,opacity:0},"show+1")
+.from(".short-botton-line",0.5,{y:100,opacity:0},"show+1")
+.addLabel("both")
+.to(path11, 0.2, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path22, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path33, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path44, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");
+
 }
-// var path1 = $(".top-drawLine1 path"),
-//     length1 = path1[0].getTotalLength();
-// var path2 = $(".top-drawLine2 path"),
-//     length2 = path2[0].getTotalLength();
-// var path3 = $(".botton-drawLine1 path"),
-//     length3 = path3[0].getTotalLength();
-// var path4 = $(".botton-drawLine2 path"),
-//     length4 = path4[0].getTotalLength();
-
-
-// var t = new TimelineMax();
-// t.set(path1, {attr:{"stroke-dasharray": length1, "stroke-dashoffset": length1}})
-// .set(path2, {attr:{"stroke-dasharray": length2, "stroke-dashoffset": length2}})
-// .set(path3, {attr:{"stroke-dasharray": length3, "stroke-dashoffset": length3}})
-// .set(path4, {attr:{"stroke-dasharray": length4, "stroke-dashoffset": length4}});
-
-// var coming = new TimelineMax();
-// coming.addLabel("img")
-// .from(".coming-soon__image__mainImage", 0.7, {yPercent:50, opacity:0},"img")
-// .from(".big-circle", 0.7, {scale:0.2,opacity:0},"img")
-// .from(".small-circle", 1.5, {scale:0.2,opacity:0})
-// .addLabel("show")
-// .from(".tall-top-line",0.5,{y:100,opacity:0},"show")
-// .from(".tall-botton-line",0.5,{y:100,opacity:0},"show")
-// .from(".short-top-line",0.5,{y:100,opacity:0},"show+1")
-// .from(".short-botton-line",0.5,{y:100,opacity:0},"show+1")
-// .addLabel("both")
-// .to(path1, 0.2, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-// .to(path2, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-// .to(path3, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-// .to(path4, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");

@@ -85,7 +85,7 @@
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
         <div class="img-content">
-           <a href="#">
+           <a href="http://localhost/unplugged-website/about/">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.png" alt="Unplugged Logo">
 
@@ -110,7 +110,7 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="#">
+   <a href="http://localhost/unplugged-website/products/">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.png" alt="Unplugged Logo">
     <div class="text-content">
@@ -123,7 +123,7 @@
 <div class="full-menu__item">
     <button close-menu class="close">X</button>
     <div class="img-content">
-       <a href="#">
+       <a href="http://localhost/unplugged-website/blog/">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.png" alt="Unplugged Logo">
         <div class="text-content">

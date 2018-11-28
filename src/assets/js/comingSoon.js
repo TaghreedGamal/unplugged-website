@@ -1,4 +1,4 @@
-// // import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
+import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 
 var path11 = $(".top-drawLine1 path"),
     length11 = path1[0].getTotalLength();
@@ -8,7 +8,6 @@ var path33 = $(".botton-drawLine1 path"),
     length33 = path3[0].getTotalLength();
 var path44 = $(".botton-drawLine2 path"),
     length44 = path4[0].getTotalLength();
-console.log("jjj")
 
 var t = new TimelineMax();
 t.set(path11, {attr:{"stroke-dasharray": length11, "stroke-dashoffset": length11}})
