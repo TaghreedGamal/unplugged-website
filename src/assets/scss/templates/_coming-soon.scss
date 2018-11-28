@@ -1,0 +1,90 @@
+.page-template-coming-soon{
+	height: 100vh;
+	overflow-y: hidden; 
+	.top-bar-right,.footer{
+		display: none;
+	}
+	header{
+        &.site-header{
+            background-color: transparent;
+            position: absolute;
+            width: 100vw;
+        }
+    }
+}
+.coming-soon__background{
+	background-color:$background-color;
+	height: 85vh;
+    position: absolute;
+    width: 100vw;
+}
+.coming-soon{
+	display: flex;
+	align-items: center;
+	&__content{
+		&__title{
+			font-size: 150px;
+			line-height: 0.88;
+			position: relative;
+			padding-bottom: 5px;
+		}
+		.button{
+			width: 260px;
+			font-size: 22px;
+			border-radius: 50px;
+		}
+	}
+	&__image{
+		&__mainImage{
+			position: relative;
+		}
+		svg{
+			position: absolute;
+		}
+		.big-circle{
+			z-index:0;
+			transform: scale(0.7);
+			right: -85px;
+			bottom: 50px;
+		}
+		.short-top-line{
+			left: 57%;
+			z-index: 6;
+		}
+		.tall-top-line{
+    		left: 61%;
+		}
+		.short-botton-line{
+			z-index: 5;
+			bottom: 120px;
+			right: 15%;
+		}
+		.tall-botton-line{
+			bottom: 55px;
+   			left: 70%;
+		}
+		.small-circle{
+			bottom: 130px;
+			right: 14%;
+		}
+		.top-drawLine1{
+			top: 43%;
+		    z-index: 6;
+		    right: 35%;
+		}
+		.top-drawLine2{
+			top: 48%;
+    		right: 35%;
+		}
+		.botton-drawLine1{
+			bottom: 3%;
+    		right: 25%;
+		}
+		.botton-drawLine2{
+			bottom: 5%;
+    		right: 27%;
+    		z-index: 6;
+			
+		}
+	}
+}

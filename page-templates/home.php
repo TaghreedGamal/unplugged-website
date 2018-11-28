@@ -854,145 +854,31 @@ get_header(); ?>
 </section>
 
 <!--products section -->
-<section class="products">
-<div class="grid-x grid-margin-x">
-<div class="cell medium-7 large-7">
-<div class="mobile">
-<div class="v-line" style="opacity:0"></div>    
-<img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L.png"> 
-<div class="v-line2" style="opacity:0"></div>    
-<div class="v-circle" style="opacity:0"></div>        
-<img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mobile-device.png">
- <video class="mobile-video" id="myvideo" width="320" height="240" controls >
-  <source src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/videos/Image from iOS.mp4" type="video/mp4">
-</video>
-<img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R.png">  
-<div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
-</div>  
-</div>
-<div class="cell medium-5 large-5">
- <div class="box">
-        <h3 class="box__title1">OUR PRODUCTS</h3>  
-        <h1 class="box__title2"><?php the_field('gamification_title'); ?></h1>  
-        <p class="box__text"><?php the_field('gamification_text'); ?> </p>   
-     <div id="buttons">
-        <a class="button"><i class="fa fa-th">  </i>  View All</a> 
-        <a class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
-    </div> 
-</div>   
-</div>
-</div>
-</section>   
-    
-<!--
-<ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-<li class="tabs-title is-active"><a href="#panel1c" aria-selected="true"> 
-<svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo1.png"></a>
-
-    </li>
-  <li class="tabs-title"><a href="#panel2c"> 
-      <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo2.png"></a>
-  </li>
-  <li class="tabs-title"><a href="#panel3c"><svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg> <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo3.png"></a>
-
- </li>
-  <li class="tabs-title"><a href="#panel4c"> <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo4.png"></a>
-
-  </li>
-  <li class="tabs-title"><a href="#panel5c"><svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg> <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo5.png"></a>
-    
-</li>
-  <li class="tabs-title"><a href="#panel6c"> <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-<path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-</svg><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo6.png"></a></li>
-</ul>
--->
-<!--
-    <div class="tabs-content projtabs" data-tabs-content="collapsing-tabs">
-  <div class="tabs-panel is-active" id="panel1c" data-proj="voda">
-       <img class="device"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/voda-device.png">
-      <div class="contain-box">
-       <div class="box">
-           <h2 class="box__title">Vodafone <br><span>sherkaty</span></h2>  
-        <p class="box__text">"I like to work with people who are not only talented, but also responsible and fair, I've found unplugged to be just that." </p>  
-    <div class="small-icon">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">   
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/rubiks-responsive.png">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-mix.png">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
-    </div>       
-       <div id="buttons">
-        <a class="button"><i class="fa fa-th">  </i>  View All</a> 
-        <a class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
-    </div> 
-    </div> 
-      </div>
-  </div>
-  <div class="tabs-panel" id="panel2c"  data-proj="astra">
-      <img class="device"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/voda-device.png">
-      <div class="contain-box">
-       <div class="box">
-           <h2 class="box__title">Vodafone <br><span>sherkaty</span></h2>  
-        <p class="box__text">"I like to work with people who are not only talented, but also responsible and fair, I've found unplugged to be just that." </p>  
-    <div class="small-icon">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">   
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/rubiks-responsive.png">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-mix.png">
-          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
-    </div>       
-       <div id="buttons">
-        <a class="button"><i class="fa fa-th">  </i>  View All</a> 
-        <a class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
-    </div> 
-    </div> 
-      </div>
-  </div>
-  <div class="tabs-panel" id="panel3c"  data-proj="be2olk">
-  </div>
-  <div class="tabs-panel" id="panel4c"  data-proj="mit">
-     
-  </div>
-    <div class="tabs-panel" id="panel5c"  data-proj="lexus">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div> 
-    <div class="tabs-panel" id="panel6c"  data-proj="zan">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-
-
+<section >
+    <div class="products container">
+        <div class="mobile">
+            <div class="v-line" style="opacity:0"></div>    
+            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L.png"> 
+            <div class="v-line2" style="opacity:0"></div>    
+            <div class="v-circle" style="opacity:0"></div>        
+            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device.png">
+            <video class="mobile-video" id="myvideo" width="320" height="240" controls >
+              <source src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/videos/Image from iOS.mp4" type="video/mp4">
+            </video>
+            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R.png">  
+            <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
+        </div>  
+         <div class="box">
+            <h3 class="box__title1">OUR PRODUCTS</h3>  
+            <h1 class="box__title2"><?php the_field('gamification_title'); ?></h1>  
+            <p class="box__text"><?php the_field('gamification_text'); ?> </p>   
+             <div id="buttons">
+                <a class="button"><i class="fa fa-th">  </i>  View All</a> 
+                <a class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
+            </div> 
+        </div>   
     </div>
-</div>
--->
-
+</section>   
         
 
 <?php get_footer();

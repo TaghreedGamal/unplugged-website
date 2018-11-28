@@ -9,6 +9,9 @@ window.$ = $;
 
 import Foundation from 'foundation-sites';
 
+// var home=($'.home')
+if(10>2){
+    console.log(home)
 $(document).foundation();
 
 let contactSteps = $(".step");
@@ -397,8 +400,8 @@ $(window).scroll(function() {
         {
             aud.play();
             var video=new TimelineMax();
-            video.to(".video-R",0.3,{x:-20,opacity:1},0.1)
-            .to(".video-L",0.3,{x:20,opacity:1},0.1)
+            video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
+            .to(".video-L",0.3,{x:30,opacity:1},0.1)
             .to(".v-line",0.3,{x:0,opacity:1})
             .to(".v-line2",0.3,{x:0,opacity:1})
             .to(".v-circle",0.6,{scale:1,opacity:1})
@@ -467,3 +470,38 @@ $(window).scroll(function() {
 // console.log('hi',$(window).scrollTop());
 
  });
+}
+else {
+    import comingSoon from "./comingSoon"; 
+}
+// var path1 = $(".top-drawLine1 path"),
+//     length1 = path1[0].getTotalLength();
+// var path2 = $(".top-drawLine2 path"),
+//     length2 = path2[0].getTotalLength();
+// var path3 = $(".botton-drawLine1 path"),
+//     length3 = path3[0].getTotalLength();
+// var path4 = $(".botton-drawLine2 path"),
+//     length4 = path4[0].getTotalLength();
+
+
+// var t = new TimelineMax();
+// t.set(path1, {attr:{"stroke-dasharray": length1, "stroke-dashoffset": length1}})
+// .set(path2, {attr:{"stroke-dasharray": length2, "stroke-dashoffset": length2}})
+// .set(path3, {attr:{"stroke-dasharray": length3, "stroke-dashoffset": length3}})
+// .set(path4, {attr:{"stroke-dasharray": length4, "stroke-dashoffset": length4}});
+
+// var coming = new TimelineMax();
+// coming.addLabel("img")
+// .from(".coming-soon__image__mainImage", 0.7, {yPercent:50, opacity:0},"img")
+// .from(".big-circle", 0.7, {scale:0.2,opacity:0},"img")
+// .from(".small-circle", 1.5, {scale:0.2,opacity:0})
+// .addLabel("show")
+// .from(".tall-top-line",0.5,{y:100,opacity:0},"show")
+// .from(".tall-botton-line",0.5,{y:100,opacity:0},"show")
+// .from(".short-top-line",0.5,{y:100,opacity:0},"show+1")
+// .from(".short-botton-line",0.5,{y:100,opacity:0},"show+1")
+// .addLabel("both")
+// .to(path1, 0.2, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+// .to(path2, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+// .to(path3, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+// .to(path4, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");

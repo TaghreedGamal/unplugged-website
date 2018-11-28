@@ -1,8 +1,7 @@
 
-
 body{
     overflow-x: hidden;
-    max-width: 1420px;
+    max-width: 1400px;
 }
 %border{
     border-radius: 10px 10px 10px 10px;
@@ -91,7 +90,7 @@ button{
                 display: block;
             }
         &__singleSlider{
-            background-color:#d5dde0;
+            background-color:$background-color;
             position: absolute;
             height: 100vh;
             width: 100vw;
@@ -356,7 +355,7 @@ button{
             &__slide-content{
                 height: 100vh;
                 width: 100%;
-                background-color:#d5dde0;
+                background-color:$background-color;
                 h1{
                     padding-top: 220px;
                     font-size: 40px;
@@ -675,51 +674,49 @@ button{
 .products{
     height: auto;
     position: relative;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
+    display: flex;
     .box{
-    padding: 60px;
-    padding-left: 150px;
-    right: 0;
-    max-width: 560px;
-    &__title1{
-        color:$title-color; 
-        font-family: $title-font;
-        line-height: 0.8;
-        padding-top: 30px;
+        padding: 60px;
+        padding-left: 160px;
+        padding-top: 8%;
+        right: 0;
+        max-width: 560px;
+        &__title1{
+            color:$title-color; 
+            font-family: $main-font;
+            line-height: 0.8;
+            padding-top: 30px;
         }  
         &__title2{
-        color:$title-color; 
-        font-family: $title-font;
-         font-size: 80px;
-        line-height: 0.8;
-        padding-top: 10px;
+            color:$title-color; 
+            font-family: $title-font;
+            font-size: 80px;
+            line-height: 0.8;
+            padding-top: 10px;
         }
         &__text{
             padding-top:20px; 
-            font-family: $title-font;
+            font-family: $main-font;
             text-align: justify;
-            }         
+        }         
         .row-buttons{
             display: flex;
         }
         a{
-             display: flex;
+            display: flex;
             justify-content: space-around;
         }
     }
     .mobile{
-            position: relative;
-//            width: 30%;
-            width: 100%;
-//            left: 30%;
-            left: 10%;
-            display: flex;
-            align-items: center;
-            height: 100%;
-            transform: translateY(-50px);
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
         .video-R{
-            transform: translateX(-100px)
+            transform: translateX(-100px);
+            z-index:1;
         }
         .video-L{
             transform: translateX(100px)
@@ -727,30 +724,30 @@ button{
         .v-line{
             position: absolute;
             bottom: 0px;
-            top: -25px;
-            left: 400px;
+            top: 25px;
+            left: 376px;
             z-index: -1;
             width: 5px;
-            height: 700px;
+            height: 580px;
             background-color: #3bbaee;
             transform: skew(40deg) translateX(-200px);
         }
         .v-line2{
             position: absolute;
             bottom: 0px;
-            top: 40px;
+            top: -22px;
             left: 400px;
             z-index: -1;
             width: 5px;
-            height: 620px;
+            height: 650px;
             background-color: #3bbaee;
             transform: skew(40deg) translateX(-200px);
         }
         .v-circle{
             height: 100px;
             width: 100px;
-            top: 80%;
-            left: -25px;
+            top: 82%;
+            left: -10px;
             z-index: -1;
             background-color: #ff7900;
             position: absolute;
@@ -771,9 +768,8 @@ button{
         .v-lcircle{
             height: 300px;
             width: 300px;
-            top: -10%;
-            left: 52%;
-            z-index: -1;
+            top: -18%;
+            left: 73%;
             border: 5px solid #000;
             position: absolute;
             border-radius: 50%;
@@ -782,29 +778,20 @@ button{
         .mobile-img {
             position: relative;
             display: block;
-//            width: 100%;
-            width: 30%;
-            z-index: 1;
+            width: 100%;
+            z-index: 2;
         }
         .mobile-video{
             position: absolute;
-            top: 10.5%;
-            left: 27%;
+            top: 9.5%;
+            left: 44%;
             bottom: 0;
             right: 0;
             z-index: 2;
-            height: 77%;
-            width: 27%;
-//            position: absolute;
-//            top: 10.5%;
-////            left: 4.5%;
-//            left: 90%;
-//            bottom: 0;
-//            right: 0;
-//            height: 77%;
-//            width: 91%;
-         }
-     }
+            height: 79%;
+            width: 40%;
+        }
+    }   
      @media (max-width: 64em){
         display: none;
      }
@@ -1071,6 +1058,9 @@ button{
             position: absolute;
             top: -30px;
              opacity: 0;
+             @media (max-width: 64em){
+                position: relative;
+             }
             }
             #decl2{
             position: absolute;
