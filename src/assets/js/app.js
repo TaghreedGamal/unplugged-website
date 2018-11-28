@@ -4,13 +4,9 @@ import slick from "slick-carousel";
 import projects from "./projects"; 
 import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 
-
 window.$ = $;
 
 import Foundation from 'foundation-sites';
-
-if($(".home").length != 0){
-    console.log("home");
 $(document).foundation();
 
 let contactSteps = $(".step");
@@ -59,6 +55,8 @@ $('[menu-click]').on('click',function(){
  $(".full-menu").addClass("active");
 })
 
+if($(".home").length != 0){
+    console.log("home");
 
 $(document).ready(function(){
   $('.home-slider__responsive__slides').slick({
@@ -345,10 +343,6 @@ $(window).scroll(function() {
     if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
           inl.play();
         }
-        // console.log("top element",top_of_element);
-        // console.log("bottom_element",bottom_of_element);
-        // console.log("top_screen",top_of_screen);
-        // console.log("bottom_screen",bottom_of_screen);
 
  });
 
@@ -415,18 +409,6 @@ $(window).scroll(function() {
     }
  });
 
-// console.log(aud)
-// aud.onended = function() {
-// var video=new TimelineMax();
-// video.to(".video-R",0.3,{x:-20,opacity:1},0.1)
-// .to(".video-L",0.3,{x:20,opacity:1},0.1)
-// .to(".v-line",0.3,{x:0,opacity:1})
-// .to(".v-line2",0.3,{x:0,opacity:1})
-// .to(".v-circle",0.6,{scale:1,opacity:1})
-// .to(".v-scircle",0.3,{scale:1,opacity:1})
-// .to(".v-lcircle",0.3,{scale:1,opacity:1});   
-// };
-
 ////////// footer
 var path1 = $("#righl1 path"),
     length1 = path1[0].getTotalLength();
@@ -464,9 +446,6 @@ $(window).scroll(function() {
         {
          f.play();
         }
-   
-// console.log('footertop',Topfooter);
-// console.log('hi',$(window).scrollTop());
 
  });
 }
