@@ -134,9 +134,12 @@
     max-width: 300px;
     position: relative;
     @media (max-width: 64em){
-        max-width: 104px;
+        max-width: 200px;
         padding-left: 0px;
         padding-top: 0;
+    }
+    @media (max-width: 40em){
+        max-width: 104px;
     }
 }
 #demo{
@@ -154,6 +157,9 @@
             font-family: $title-font;
         }
     }
+    @media (max-width: 64em){
+        padding-left: 25px;
+    }
 }
 .contactCards{
     display: flex;
@@ -162,15 +168,28 @@
         h1{
             color: $next;
             font-family: $card-FrsHeader-font;
+            @media (max-width: 64em){
+                font-size: 38px;
+            }
+        }
+        @media (max-width: 40em){
+            padding-left: 20px;
         }
     }
     &-sectionTwo,&-sectionThree,&-sectionFour{
         padding: 20px;
         margin-top: 30px;
-
+         @media (max-width: 40em){
+            padding-left: 0;
+            margin-top: 0;
+         }
     }
      &-sectionTwo{
         margin-left: 30px;
+         @media (max-width: 40em){
+            margin-left: 0;
+            padding-left: 0;
+         }
      }
     &-sectionThree{
         .button{
@@ -202,6 +221,13 @@
                 }
             }
         }
+        @media (max-width: 40em){
+            padding-right: 55px;
+        }
+    }
+    @media (max-width: 40em){
+        flex-flow: column;
+        align-items:center;
     }
 }
 .active{

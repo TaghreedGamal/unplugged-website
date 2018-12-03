@@ -351,17 +351,25 @@ button{
         display: block;
         &__slides{
             width: 100%;
-            height: 100vh;
+            height: 60vh;
             &__slide-content{
-                height: 100vh;
+                height: 60vh;
                 width: 100%;
                 background-color:$background-color;
                 h1{
                     padding-top: 220px;
-                    font-size: 40px;
-                    width: 273px;
-                    height: 94px;
-                    line-height: 47px;
+                    font-size: 70px;
+                    line-height: 60px;
+                    width: 555px;
+                    @media (max-width: 40em){
+                       font-size: 42px;
+                       height: 140px;
+                       line-height: 38px;
+                       width: 100%;
+                    }
+                    @media (width: 1024px){
+                        padding-top: 350px;
+                    }
                 }
                 &__top-image {
                    float: right;
@@ -370,9 +378,19 @@ button{
                 }
                 &__botton-image {
                    float: right;
-                   padding-top: 60%;
-                   margin-right: -20px;
+                   padding-top: 15%;
+                   margin-right: 4%;
+                   @media (max-width: 40em){
+                    padding-top: 65%;
+                    margin-right: 0;
+                   }
                 }
+                @media (max-width: 40em){
+                  height: 100vh;
+                }
+            }
+            @media (max-width: 40em){
+                 height: 100vh;
             }
         }
     } 
@@ -384,20 +402,26 @@ button{
         font-size: 0;   
         right: 0;
         li{
-            width: 25px;
-            height: 1px;
+            width: 40px;
+            height: 2px;
             background: #9b9b9b;
             margin-bottom: 5px;
             display: block;
             &.slick-active{
-                width: 35px;
-                height: 1px;
+                width: 50px;
+                height: 2px;
                 background: #003a47;
             }
+            @media (max-width: 40em){
+                width: 25px;
+                height: 1px;
+                &.slick-active{
+                    width: 35px;
+                    height: 1px
+            }
+            }
         }
-
     }  
-    
 }
 //---------Partners----
 .clients{
@@ -414,6 +438,15 @@ button{
     }
     .logos{
         width: 80%;
+        @media (max-width: 64em){
+            width: 40%;
+        }
+        @media (width: 1024px){
+            width: 65% !important;
+        }
+    }
+    @media(max-width: 64px){
+        padding-bottom: 0;
     }
 }
 .partners{
@@ -444,6 +477,12 @@ button{
         }   
         .slick-center {
              margin: auto;
+        }
+        @media (max-width: 64em){
+            height: 370px;
+        }
+        @media (max-width: 40em){
+            height: 300px;
         }
     }
 }
@@ -491,10 +530,13 @@ button{
              padding:0.4em;
              font-family: $main-font;
              @media(max-width: 64em){
-                font-size: 13px;
+                font-size: 25px;
                 display: inline-block;
                 overflow: hidden;
                 white-space: nowrap;
+            }
+            @media (max-width: 40em){
+                font-size: 13px;
             }
         }
            img{
@@ -522,7 +564,7 @@ button{
         &.is-active{
             display: flex;
             align-items:center;
-            @media (max-width: 64em){
+            @media (max-width: 40em){
                 flex-flow:column;
                 transform: translateY(-65px);
                 // transform: translateY(-90px);
@@ -538,12 +580,19 @@ button{
             z-index: 2;
             &.different-position{
                 transform: scale(1.2) translateX(100px);
-                 @media (max-width: 64em){
+                @media (max-width: 64em){
+                   transform:scale(1.3) translate(0px,-30px);
+                 }
+                 @media (max-width: 40em){
                    transform:scale(1.3) translate(0px,70px);
                  }
             }
             @media (max-width: 64em){
-                width: 278px;
+                 transform: translate(0px,-50px); 
+                 width: 100%;     
+            }
+            @media (max-width: 40em){
+                width: 100%;
                 height: 100%;
                 transform: translate(0px,75px);
 
@@ -577,9 +626,16 @@ button{
                 }
             }
             @media (max-width: 64em){
-                width: 325px;
+                width: 100% !important;
                 text-align: center;
                 padding: 25px;
+                transform: translate(-50px,-50px);
+                &__title{
+                    font-size: 60px;
+                }
+            }
+        @media (max-width: 40em){
+            transform: translate(0px,0px);
                 &__title{
                     font-size: 26px;
                     span{
@@ -594,6 +650,9 @@ button{
                     font-size: 14px;
                 }
             }
+        }
+        @media (max-width: 64em){
+            width: 100%;
         }
     }
     @media (max-width: 64em){
@@ -621,11 +680,20 @@ button{
             left: 50%;
             transform: scale(0.8, 0.7);
             letter-spacing: 0.6px;
-            //margin-left: 50px;
+        }
+        @media (width: 768px){
+            .card-no{
+                left: 47% !important;
+            }
         }
         @media (max-width: 64em){
             width: 45%;
             left: 25px;
+            .card-no{
+                left: 37%;
+            }
+        }
+        @media (max-width: 40em){
             svg{
                 // width: 121px;
                 // height: 141px;
@@ -637,13 +705,16 @@ button{
             }
             .card-no{
                 font-size: 35px;
-                left: 37%;
             }
         }
    }
+   @media (width:1024px){
+        justify-content: center !important;
+   }
+
    @media (max-width: 64em){
         flex-wrap:wrap;
-        // justify-content:center;
+        justify-content: flex-start;
         padding-top: 20px;
         padding-bottom: 20px;
    }
@@ -668,7 +739,7 @@ button{
     .cardno-hover{
         transform: scale(0.8, 0.7) !important;
     }
- } 
+} 
 
 //------ Products-----
 .products{
@@ -703,10 +774,14 @@ button{
         }         
         .row-buttons{
             display: flex;
+            justify-content: center;
         }
         a{
             display: flex;
             justify-content: space-around;
+        }
+        @media (max-width: 64em){
+            max-width: 100%;
         }
     }
     .mobile{
@@ -762,7 +837,7 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
-            @media(max-width: 64em){
+            @media(max-width: 40em){
                 height: 60px;
                 width: 60px;
                 top: 78%;
@@ -779,7 +854,7 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
-            @media(max-width: 64em){
+            @media(max-width: 40em){
                 border :2px solid #3bb9ed;
                 height: 80px;
                 width: 80px;
@@ -796,7 +871,14 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
-            @media(max-width: 64em){
+            @media (width: 1024px){
+                left: 500px !important;
+            }
+            @media (max-width: 64em){
+                top: -29%;
+                left: 400px;
+            }
+            @media(max-width: 40em){
                 border:2px solid #000;
                 height: 115px;
                 width: 115px;
@@ -833,6 +915,24 @@ button{
             padding-left: 0;
             padding:25px;
             text-align: center;
+            &__text{
+                text-align: center;
+            }
+        }
+        .mobile{
+            width: 35%;
+            transform: translateY(30px);
+            @media (width: 1024px){
+                width: 30%;
+                transform: translate(70px,30px);
+            }
+        }
+    }
+    @media (max-width: 40em){
+        .box{
+            padding-left: 0;
+            padding:25px;
+            text-align: center;
             &__title1{
                 font-size: 16px;
             }
@@ -843,10 +943,6 @@ button{
                 text-align: center;
             }
         }
-        .mobile{
-            width: 35%;
-            transform: translateY(30px);
-        }
     }
 }
 //-------intern----
@@ -854,7 +950,7 @@ button{
     height: auto;
     position: relative;
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 80pxx;
     display: flex;
     justify-content:space-between;
     .intern-left,.intern-right{
@@ -1024,13 +1120,13 @@ button{
         background-color: #3bbaee;
         transform: skew(40deg);
         animation-delay: 0.5;
-        @media (max-width: 64em){
+        @media (max-width: 40em){
             height: 175px;
             left: 140px;
             top: 51%;
         }
     }
-@media (max-width: 64em){
+@media (max-width: 40em){
     flex-flow:column;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1106,9 +1202,8 @@ button{
             border-radius: 50%;
             z-index: -1;
             @media (max-width: 64em){
-               height: 30px;
-               width: 30px;
-               top: 100px;
+              // display: none;
+
             }   
             }
             &::before{
@@ -1121,8 +1216,7 @@ button{
             background-color: #3bbaee;
             transform: skew(40deg);
             @media (max-width: 64em){
-                top:60px;
-                margin-left: auto;
+                // display: none;
             }
             }
             #decl1,#decl2{
@@ -1135,6 +1229,7 @@ button{
              opacity: 0;
             @media (max-width: 64em){
                 position: relative;
+                top: -20px;
             }
             }
             #decl2{
@@ -1146,7 +1241,7 @@ button{
         > a{
             position: relative;
             @media (max-width: 64em){
-                height: fit-content;
+                // padding-top: 0;
             }
         }
 
@@ -1163,8 +1258,13 @@ button{
                 transform: translateY(-200px);
                 margin-left: 65%;
             }
+             @media (width: 1024px){
+                transform:scale(1.2) !important;
+                margin-top: 130px;
+            }
             @media (max-width: 64em){
                 width:100%;
+                transform:scale(1.4);
                 &__device-laptop{
                     transform: translateY(50px);
                     position: relative;
@@ -1175,6 +1275,9 @@ button{
                     margin-left: 55%;
                     transform: translateY(-40px);
                 }
+            }
+            @media (max-width: 40em) {
+                transform:scale(1);
             }
         }
         .contain-box{
@@ -1207,7 +1310,7 @@ button{
                     img{
                          width: 55px;
                     }
-                    @media (max-width: 64em){
+                    @media (max-width: 40em){
                         display: flex;
                         justify-content: space-evenly;
                         align-items: center;
@@ -1215,10 +1318,14 @@ button{
                 }
             }
             @media (max-width: 64em){
-                width: 325px;
+                width: 100%;
                 transform: translateX(0);
                 .box{
                     width: 100%;
+                }
+            }
+            @media (max-width: 40em){
+                .box{
                     padding:25px;
                     padding-top: 100px;
                     text-align: center;
@@ -1237,7 +1344,7 @@ button{
          &.is-active{
             display: flex;
             align-items: end;
-            @media (max-width: 64em){
+            @media (max-width: 40em){
                 flex-flow:column;
                 align-items: center;
             }

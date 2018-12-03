@@ -123,23 +123,23 @@ get_header(); ?>
   <div class="home-slider__responsive__slides ">
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/party-hat-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
         </div>
       </div>
   </div> 
@@ -710,22 +710,25 @@ get_header(); ?>
                             <?php
                             $title=get_the_title();
                         if($url==1){ ?>
-                            <li class="tabs-title is-active"><a href="#panel<?php echo $url;?>c" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                            <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                            <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                            </svg>
-                              <img src="<?php the_field('project-logo'); ?>"></a> 
-                             </li><?php }
-                         else { ?>        
-                            <li class="tabs-title"><a href="#panel<?php echo $url;?>c" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                            <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                            <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                            </svg>
-                              <img src="<?php the_field('project-logo'); ?>"></a>
+                            <li class="tabs-title is-active"><a href="#panel<?php echo $url;?>c" aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                                </svg>
+                                <img src="<?php the_field('project-logo'); ?>"></a> 
+                             </li>
+                         <?php }
+                        else { ?>        
+                            <li class="tabs-title"><a href="#panel<?php echo $url;?>c" aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                                </svg>
+                                <img src="<?php the_field('project-logo'); ?>"></a>
                             </li>
                             <?php }
                             $url++;
@@ -872,7 +875,7 @@ get_header(); ?>
             <h3 class="box__title1">OUR PRODUCTS</h3>  
             <h1 class="box__title2"><?php the_field('gamification_title'); ?></h1>  
             <p class="box__text"><?php the_field('gamification_text'); ?> </p>   
-             <div id="buttons">
+             <div id="buttons" class="row-buttons">
                 <a class="button"><i class="fa fa-th">  </i>  View All</a> 
                 <a class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
             </div> 

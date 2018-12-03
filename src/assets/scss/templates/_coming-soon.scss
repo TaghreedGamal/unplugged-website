@@ -33,16 +33,19 @@
 			line-height: 0.88;
 			position: relative;
 			padding-bottom: 5px;
+			@media (max-width: 64em){
+				font-size: 120px;
+			}
 			@media(max-width: 40em){
-				font-size: 70px;
+				font-size: 65px;
 			}
 		}
 		.button{
 			width: 260px;
 			font-size: 22px;
 			border-radius: 50px;
-			@media (max-width: 40em){
-				width: 140px;
+			@media (max-width: 40em) {
+				width: 130px;
 			    font-size: 12px;
 			    position: absolute;
 			    border-radius: 50px;
@@ -50,13 +53,41 @@
     			right: 0;
 			}
 		}
+		@media (max-width: 64em){
+			&__buttons{
+				display: flex;
+			    position: absolute;
+			    top: 5%;
+			    right: 0;
+			    .button{
+			    	width: 180px;
+			    	font-size: 16px;
+			    }
+			}
+		}
+		@media (max-width: 40em){
+			&__buttons{
+				display: block;
+			    .button{
+			    	width: 160px;
+			    	font-size: 14px;
+			    	&-download{
+						@media (max-width: 40em){
+							top:12%;
+							position: fixed;
+						}
+					}	
+			    }
+			}
+		}
+
 	}
 	&__image{
 		&__mainImage{
 			position: relative;
-			@media (max-width: 40em){
-				margin-top: 20px;
-			}
+			// @media (max-width: 40em){
+			// 	margin-top: 5px;
+			// }
 		}
 		svg{
 			position: absolute;
@@ -66,6 +97,11 @@
 			transform: scale(0.7);
 			right: -85px;
 			bottom: 50px;
+			@media (max-width: 64em){
+				transform: scale(0.4);
+				right: -168px;
+    			top: 10%;
+			}
 			@media (max-width: 40em){
 				transform: scale(0.4);
 				right: -168px;
@@ -155,12 +191,12 @@
 			}
 		}
 	}
-	@media (max-width: 40em){
-		padding-top: 70px;
+	@media (max-width: 64em)  {
+		padding-top: 200px;
+	}
+	@media (max-width: 64em){
+		padding-top: 90px;
 		flex-flow:column;
 		width: 100%;
-		// &__content{
-		// 	flex-flow:row;
-		// }
 	}
 }

@@ -8,7 +8,10 @@ get_header(); ?>
 	<div class="coming-soon container">
 		<div class="coming-soon__content">
 			<h1 class="coming-soon__content__title">WE ARE IN MAKEOVER!</h1>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
+			<div class="coming-soon__content__buttons">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
+				<a href="http://localhost/unplugged-website/wp-content/uploads/2018/12/Unplugged-Company-profile-2018.pdf" rel="home" class="button button-download">Download Profile</a>
+			</div>	
 		</div>
 		<div class="coming-soon__image">
 			<svg xmlns="http://www.w3.org/2000/svg" class="big-circle" width="565" height="645" viewBox="0 0 565 645">
