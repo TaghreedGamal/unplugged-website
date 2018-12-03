@@ -34,6 +34,9 @@
        color: #afabab;
        font-size: 18px;
        font-family: $main-font;
+       @media (max-width: 64em){
+          font-size: 12px;
+       }
     }
 //---------footer-----
 
@@ -51,6 +54,12 @@ footer{
                 a{
                     background: white;
                     color: #003a48;
+                }
+              }
+              @media (max-width: 64em){
+                text-align: center;
+                li{
+                  font-size: 15px;
                 }
               }
             }
@@ -81,17 +90,28 @@ footer{
         transform: translate(0px);
         padding: 2px;
         font-size: 18px;
+        font-family: $main-font;
+        @media (max-width: 64em){
+          right: 0;
+          top: 35%;
+          width: 125px;
+          height: 40px;
+          font-size: 16px;
+        }
    }
     .footer-grid{
         justify-content: center;
-          font-family: $main-font;
+          font-family: $button-font;
          font-size: 22px;
         .textwidget {
             p {
-            color: #afabab;
-            padding-top: 20px;
-            font-size: 18px; 
-            margin-bottom: -20px;
+              color: #afabab;
+              padding-top: 20px;
+              font-size: 18px; 
+              margin-bottom: -20px;
+              @media (max-width: 64em){
+                font-size: 11px;
+              }
            } 
         }
         .gf_simple_horizontal_wrapper {
@@ -106,6 +126,13 @@ footer{
         left: 30%;
         top: 46%;
         position: absolute;
+        @media (max-width: 64em){
+          width: 80% !important;
+          left: 10%;
+          top: 37%;
+          font-size: 12px !important;
+          padding-left: 20px !important;
+        }
       }
     }
 }
@@ -120,6 +147,12 @@ footer{
                color:$dark-nav-color !important;
                 content: "|";
                 margin-right: 20px;
+              }
+              @media(max-width: 64em){
+                margin-right: 0px;
+                li:last-child{
+                  font-size: 20px;
+                } 
               }
             }
           }
@@ -267,4 +300,10 @@ footer{
             }
         }
     }
+}
+
+@media (max-width: 64em){
+  img.image.wp-image-67.attachment-full.size-full{
+    width: 158px;
+  }
 }

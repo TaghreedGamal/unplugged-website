@@ -637,7 +637,7 @@ button{
             }
             .card-no{
                 font-size: 35px;
-                left: 30%;
+                left: 37%;
             }
         }
    }
@@ -731,6 +731,11 @@ button{
             height: 580px;
             background-color: #3bbaee;
             transform: skew(40deg) translateX(-200px);
+            @media(max-width: 64em){
+                height: 320px;
+                top: -50px;
+                left: 160px;
+            }
         }
         .v-line2{
             position: absolute;
@@ -742,6 +747,10 @@ button{
             height: 650px;
             background-color: #3bbaee;
             transform: skew(40deg) translateX(-200px);
+            @media(max-width: 64em){
+                height: 280px;
+                left: 150px;
+            }
         }
         .v-circle{
             height: 100px;
@@ -753,6 +762,12 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
+            @media(max-width: 64em){
+                height: 60px;
+                width: 60px;
+                top: 78%;
+                left: 0px;
+            }
         }
         .v-scircle{
             height: 250px;
@@ -764,6 +779,13 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
+            @media(max-width: 64em){
+                border :2px solid #3bb9ed;
+                height: 80px;
+                width: 80px;
+                left:15%;
+                top: 13%;
+            }
         } 
         .v-lcircle{
             height: 300px;
@@ -774,6 +796,13 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
+            @media(max-width: 64em){
+                border:2px solid #000;
+                height: 115px;
+                width: 115px;
+                left: 200%;
+                top: -25%;;
+            }
         }
         .mobile-img {
             position: relative;
@@ -790,11 +819,35 @@ button{
             z-index: 2;
             height: 79%;
             width: 40%;
+            @media(max-width: 64em){
+               width: 90%;
+               left: 104%;
+            }
         }
     }   
-     @media (max-width: 64em){
-        display: none;
-     }
+    @media (max-width: 64em){
+        flex-flow:column;
+        width: 100%;
+        padding-top: 100px;
+        .box{
+            padding-left: 0;
+            padding:25px;
+            text-align: center;
+            &__title1{
+                font-size: 16px;
+            }
+            &__title2{
+                font-size: 26px;
+            }
+            &__text{
+                text-align: center;
+            }
+        }
+        .mobile{
+            width: 35%;
+            transform: translateY(30px);
+        }
+    }
 }
 //-------intern----
 .intern{
@@ -869,6 +922,9 @@ button{
                 width: 60px;
                 top: 20px;
                 left: -45px;
+                @media (max-width: 64em){
+                    top:2%;
+                }
             }
         }
     }
@@ -908,8 +964,8 @@ button{
         transform: skew(40deg);
          @media (max-width: 64em){
             height: 52px;
-            left: -5px;
-            top: -55px;
+            left: 51%;
+            top: -24%
         }
     }
 // small lines on right image box  
@@ -935,8 +991,8 @@ button{
         transform: skew(40deg);
         @media (max-width: 64em){
             height: 52px;
-            left: -5px;
-            top: -55px;
+            left: 51%;
+            top: -24%
         }    
     }
 //lines on big box
@@ -952,7 +1008,7 @@ button{
         transform: skew(40deg);
         animation-delay: 0.5;
         @media (max-width: 64em){
-            top: 15px;
+            top: 3%;
             height: 200px;
             left: 145px;
         }
@@ -969,9 +1025,9 @@ button{
         transform: skew(40deg);
         animation-delay: 0.5;
         @media (max-width: 64em){
-            height: 200px;
+            height: 175px;
             left: 140px;
-            top: 462px;
+            top: 51%;
         }
     }
 @media (max-width: 64em){
@@ -983,15 +1039,22 @@ button{
     }
     .intern-left{
         margin-bottom: 50px;
+        margin-top: 50px;
     }
     .box__img{
-        transform: translate(60px, 60px);
+        margin-top: 10%;
+        margin-left: -5%;
+        transform: translate(20px, 10px);
         width: 159px;
         height: 244px;
     }
     #imgl1,#img2l1,#imgl2,#img2l2{
         position: relative;  
-    }    
+    }   
+    .box{
+        width: 80%;
+        padding-left: 30px;
+    } 
 }
 
 }
@@ -1021,7 +1084,11 @@ button{
         justify-content: space-around;
         @media (max-width: 64em){
             overflow: scroll;
-            width: 100vw;
+            width: 100%;
+            justify-content: end;
+            // li{
+            //     position: relative;
+            // }
         }
     }
     .tabs-title{
@@ -1038,7 +1105,11 @@ button{
             position: absolute;
             border-radius: 50%;
             z-index: -1;
-                
+            @media (max-width: 64em){
+               height: 30px;
+               width: 30px;
+               top: 100px;
+            }   
             }
             &::before{
             content: "";
@@ -1049,6 +1120,10 @@ button{
             height: 160px;
             background-color: #3bbaee;
             transform: skew(40deg);
+            @media (max-width: 64em){
+                top:60px;
+                margin-left: auto;
+            }
             }
             #decl1,#decl2{
                 opacity: 1;
@@ -1058,9 +1133,9 @@ button{
             position: absolute;
             top: -30px;
              opacity: 0;
-             @media (max-width: 64em){
+            @media (max-width: 64em){
                 position: relative;
-             }
+            }
             }
             #decl2{
             position: absolute;
@@ -1070,6 +1145,9 @@ button{
             }
         > a{
             position: relative;
+            @media (max-width: 64em){
+                height: fit-content;
+            }
         }
 
     }
@@ -1140,7 +1218,7 @@ button{
                 width: 325px;
                 transform: translateX(0);
                 .box{
-                    width: 325px;
+                    width: 100%;
                     padding:25px;
                     padding-top: 100px;
                     text-align: center;

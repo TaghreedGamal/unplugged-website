@@ -84,6 +84,7 @@
 <!-- full menu -->
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
+        <button close-menu class="close close-responsive">X</button>
         <div class="img-content">
            <a href="http://localhost/unplugged-website/about/">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
