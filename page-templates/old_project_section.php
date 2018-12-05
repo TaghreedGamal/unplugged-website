@@ -1059,18 +1059,18 @@ get_header(); ?>
 //         .video-L,.video-R{
 //             height: 450px;
 //         }
-        .v-lcircle{
-            top: -10%;
-            left: 65%;
-        }
-        .v-line2 {
-        top: 11px;
-        left: 350px;
-        height: 600px;}
-       .v-line{
-        top: -43px;
-        left: 392px;
-         }        
-      }  
+    //     .v-lcircle{
+    //         top: -10%;
+    //         left: 65%;
+    //     }
+    //     .v-line2 {
+    //     top: 11px;
+    //     left: 350px;
+    //     height: 600px;}
+    //    .v-line{
+    //     top: -43px;
+    //     left: 392px;
+    //      }        
+    //   }  
           
-    }
+    // }

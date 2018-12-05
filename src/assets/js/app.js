@@ -303,15 +303,15 @@ if (screenSize > '480'){
 
 //// intern animation
 
-var path1 = $("#imgl1 path"),
-    length1 = path1[0].getTotalLength();
-var path2 = $("#imgl2 path"),
-    length2 = path2[0].getTotalLength();
+var path01 = $("#imgl1 path"),
+    length01 = path01[0].getTotalLength();
+var path02 = $("#imgl2 path"),
+    length02 = path02[0].getTotalLength();
 
 
 var tl = new TimelineMax();
-tl.set(path1, {attr:{"stroke-dasharray": length1, "stroke-dashoffset": length1}})
-.set(path2, {attr:{"stroke-dasharray": length2, "stroke-dashoffset": length2}});
+tl.set(path01, {attr:{"stroke-dasharray": length01, "stroke-dashoffset": length01}})
+.set(path02, {attr:{"stroke-dasharray": length02, "stroke-dashoffset": length02}});
 
 var inl = new TimelineMax();
             inl.from("#box1",0.5, {y:-150,opacity:0},1)
@@ -330,8 +330,8 @@ var inl = new TimelineMax();
             .from(".left-boximgline-2",0.5,{y:200,opacity:0},"sline")
             .from(".right-boximg2line-2",0.5,{y:200,opacity:0},"sline")
             .addLabel("draw")
-            .to(path1, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
-            .to(path2, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4"); 
+            .to(path01, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
+            .to(path02, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4"); 
 inl.pause();
 
 $(window).scroll(function() {

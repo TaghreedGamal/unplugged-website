@@ -70,8 +70,8 @@
             transform: translateY(5px);
             }
         }
-        }
     }
+}
     .top-titles{
         .gfield_label{
           font-size: 30px;    
@@ -98,7 +98,10 @@
     #gform_wrapper_5 { 
       max-width: 50%;
       margin: 0 auto;
-     }
+      @media (max-width: 64em){
+        max-width: 90%;
+      }
+    }
    
       #gform_wrapper_5 ul li.gfield  .ginput_container_select,
       #gform_wrapper_5 ul li.gfield  .ginput_container_text,
@@ -106,7 +109,10 @@
       #gform_wrapper_5 div.ginput_complex label,  
       #gform_wrapper_5 select, 
       #gform_wrapper_5 textarea { 
-      text-align:center;
+        text-align:center;
+        @media (max-width: 64em){
+            width:100% !important;
+        }
       }
    
     #gform_wrapper_5 ginput_container ginput_container_radio{
@@ -120,10 +126,10 @@
         color: white;
     }
     #gforms_confirmation_message_5 {
-    width: 100%;
-    text-align: center;
-    margin: 50px 0;
-    font-size: 35px;
+        width: 100%;
+        text-align: center;
+        margin: 50px 0;
+        font-size: 35px;
     }
           
 }
@@ -136,7 +142,6 @@
     @media (max-width: 64em){
         max-width: 200px;
         padding-left: 0px;
-        padding-top: 0;
     }
     @media (max-width: 40em){
         max-width: 104px;
@@ -164,12 +169,12 @@
 .contactCards{
     display: flex;
     &-sectionOne{
-        // width:95%;
         h1{
-            color: $next;
+            color: $card-title-color;
             font-family: $card-FrsHeader-font;
+            font-size: 60px;
             @media (max-width: 64em){
-                font-size: 38px;
+               font-size: 30px;
             }
         }
         @media (max-width: 40em){
@@ -179,17 +184,9 @@
     &-sectionTwo,&-sectionThree,&-sectionFour{
         padding: 20px;
         margin-top: 30px;
-         @media (max-width: 40em){
-            padding-left: 0;
-            margin-top: 0;
-         }
     }
      &-sectionTwo{
         margin-left: 30px;
-         @media (max-width: 40em){
-            margin-left: 0;
-            padding-left: 0;
-         }
      }
     &-sectionThree{
         .button{
@@ -203,7 +200,7 @@
             .icon-circle{
                 border: 2px solid black;
                 border-radius: 50%;
-                background-color: $next;
+                background-color: $card-title-color;
                 width: 50px;
                 height: 50px;
                 display: flex;
@@ -221,18 +218,67 @@
                 }
             }
         }
-        @media (max-width: 40em){
+        @media (max-width: 64em){
             padding-right: 55px;
+            justify-content: flex-start;
+        }
+    }
+    @media (max-width: 64em){
+        flex-wrap:wrap;
+        &-sectionOne,&-sectionTwo,&-sectionThree,&-sectionFour{
+            width: 50%;
+        }
+        &-sectionTwo{
+            margin: 0;
+            padding: 0;
+        }
+        &-sectionTwo,&-sectionFour{
+             padding-left: 60px;
         }
     }
     @media (max-width: 40em){
         flex-flow: column;
         align-items:center;
+        &-sectionOne,&-sectionTwo,&-sectionThree,&-sectionFour{
+            width: 100%;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        &-sectionOne{
+            margin-bottom: 20px;
+        }
     }
 }
 .active{
     visibility: visible; }
     
 .hide{
-display:none;
+    display:none;
+}
+@media (max-width: 64em){
+    .gform_wrapper .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span.name_first,.gform_wrapper .ginput_complex.ginput_container.has_first_name.no_middle_name.has_last_name span{
+        width: 100% !important;
+    }    
+    .conform .clear-multi {
+        display: flex;
+        flex-flow: column;
+    }
+    .gfield_radio {
+        display: flex;
+        flex-flow: column;
+    }
+}
+@media (max-width: 40em){
+    .conform{
+        ul{
+            &.gform_fields {
+                display: flex;
+                flex-flow:column;
+                li{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
 }

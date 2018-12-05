@@ -99,7 +99,7 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="http://localhost/unplugged-website/projects/">
+   <a href="http://localhost/unplugged-website/portfolio/">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.png" alt="Unplugged Logo">
     <div class="text-content">

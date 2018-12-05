@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: home
+Template Name: Home
 */
 get_header(); ?>
 <section class="home-slider">
@@ -130,16 +130,16 @@ get_header(); ?>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6.png" alt=""></div>
         </div>
       </div>
   </div> 
@@ -768,8 +768,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div id="buttons">
-                                <a class="button"><i class="fa fa-th">  </i>  View All</a> 
-                                <a href="<?php echo(get_post_permalink())?>"class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
+                                <a href="http://localhost/unplugged-website/portfolio/" class="button"><i class="fa fa-th">  </i>  View All</a> 
+                                <a href="<?php echo(get_post_permalink())?>" class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
                                </div> 
                             </div> 
                            </div>
@@ -828,9 +828,9 @@ get_header(); ?>
             <div class="left-boxline"></div>      
             <div class="box" id="box1"> 
                 <div class="circle"></div>
-                <h2 class="box__title">Why do we have a successful internship program?</h2>  
+                <h2 class="box__title"><?php the_field('left_title'); ?></h2>  
                 <p class="box__text"><?php the_field('left_text'); ?> </p>  
-                <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
+                <a href="<?php the_field('left_link'); ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
             </div>  
         </div>
         <div class="intern-right" id="inter2">
@@ -848,9 +848,9 @@ get_header(); ?>
             <div class="right-boxline2"></div> 
              <div class="box" id="box2"> 
                 <div class="circle2"></div>
-                <h2 class="box__title">Why do we have a successful internship program?</h2>  
+                <h2 class="box__title"><?php the_field('right_title'); ?></h2>  
                 <p class="box__text"><?php the_field('right_text'); ?>  </p>  
-                <a class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
+                <a href="<?php the_field('right_link'); ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
             </div> 
         </div>   
     </div>

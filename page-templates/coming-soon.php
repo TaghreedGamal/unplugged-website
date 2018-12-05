@@ -46,6 +46,9 @@ get_header(); ?>
 			    <circle cx="546" cy="654" r="66" fill="#31006D" fill-rule="nonzero" transform="translate(-480 -588)"/>
 			</svg>
 		</div>
+		<div class="coming-soon__image__responsiveImage">
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/coming-soon/comp@2x.png" style="z-index:5"> 
+		</div>
 	</div>
 </section>
 

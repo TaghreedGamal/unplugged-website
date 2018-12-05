@@ -138,13 +138,13 @@
           top: 8%;
            &-responsive{
              display: none;
-             @media (max-width: 64em){
+             @media (max-width: 40em){
               display: block !important;
               font-size: 20px !important;
             }
           }
            &-desktop{
-             @media (max-width: 64em){
+             @media (max-width: 40em){
                display: none !important;
               }
            }

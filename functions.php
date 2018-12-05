@@ -66,7 +66,7 @@ _e( '&copy;Copyright  ' );
 //echo substr( $first_date, 0, 4 ) . "-" . date( 'Y' );
 //}
 echo ' <strong>' . get_bloginfo( 'name' ). '</strong> ';
-_e( 'All Rights Reserved. Made with Love & Coffe in Egypt.' );
+_e( 'All Rights Reserved. Made with Love & Coffee in Egypt.' );
 }
 function theme_gsap_script() {
     wp_enqueue_script( 'gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js', array(), false, true );
