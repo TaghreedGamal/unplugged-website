@@ -1057,13 +1057,17 @@ button{
         top: -38px;
         position: absolute;
         left: 0px;
-        // display: none;
+         @media (max-width: 40em){
+            display: none;
+        }
    } 
     #imgl2,#img2l2{
         top: -20px;
         position: absolute;
         left: 40px;
-        // display: none;
+        @media (max-width: 40em){
+            display: none;
+        }
     }
 // small lines on left image box    
     .left-boximgline-1{
