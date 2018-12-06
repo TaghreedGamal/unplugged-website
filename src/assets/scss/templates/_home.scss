@@ -569,16 +569,16 @@ button{
                height: 0px;
             }
     &.is-active{
-    a{
-        background-color: transparent;
-        font-weight: 600;
-        color:$title-color;  
-    }
-          img{
-              
-                height: auto;
+        a{
+            background-color: transparent;
+            font-weight: 600;
+            color:$title-color;  
         }
- }
+        img{
+              
+            height: auto;
+        }
+    }
     }
 }
 .tabs-content{
@@ -639,7 +639,6 @@ button{
             &__text{
                 padding-top:20px; 
                 font-family: $main-font;
-                text-align: justify;
             }    
             .button{
                     width: 150px;

@@ -23,7 +23,7 @@ get_header(); ?>
                 </svg></h1></div>
             <div class="img1"> 
                 <img class="fun1 zoom "  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner1">
-                <img class="fun2 fadeInUp"  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-2.png" alt="banner1">
+                <img class="fun2 fadeInUp"  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-2.webp" alt="banner1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="fun3"  x="0px" y="0px" width="132.333px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
                 <path opacity="0" fill="none" stroke="#FF7900" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289  c0.063,3.031,4.576,4.074,6.22,1.719c4.909-7.04,13.724-9.59,17.799-17.446"/>
                 </svg>
@@ -32,15 +32,15 @@ get_header(); ?>
                 </svg>
             </div>
             <div class="img2">
-                <img class="fun5 fadeInUp " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-4.png" alt="banner1">
-                <img class="fun6  zoom " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-5.png" alt="banner1">
+                <img class="fun5 fadeInUp " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-4.webp" alt="banner1">
+                <img class="fun6  zoom " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-5.webp" alt="banner1">
                 <img class="line1 show1" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/long_line.png" alt="banner1">
                 <img class="fun7  bouncess " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/gsmall_circle.png" alt="banner1">
                 <img class="line2 show2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/short_line.png" alt="banner1">
             </div>
             <div class="img3">
                 <img class="fun8  zoom " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner1">
-                <img class="fun9  fadeInUp "  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-3.png" alt="banner1">
+                <img class="fun9  fadeInUp "  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-3.webp" alt="banner1">
                 <img class="fun10 bouncess " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/big_circle.png" alt="banner1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="fun11"  x="0px" y="0px" width="132.333px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
                 <path opacity="0" fill="none" stroke="#FF7900" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"//>
@@ -123,23 +123,23 @@ get_header(); ?>
   <div class="home-slider__responsive__slides ">
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.webp" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.webp" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3.webp" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4.webp" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5.webp" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6.webp" alt=""></div>
         </div>
       </div>
   </div> 
@@ -230,7 +230,7 @@ get_header(); ?>
             			<path fill="#003947" d="M287.509,164.855c-2.31,3.442-4.512,7.022-6.552,10.639c-1.631,2.894-0.614,6.565,2.287,8.195     c0.933,0.524,1.949,0.777,2.949,0.777c2.1,0,4.139-1.102,5.247-3.063c1.883-3.346,3.93-6.655,6.066-9.844     c1.853-2.762,1.113-6.499-1.643-8.352C293.088,161.353,289.356,162.093,287.509,164.855z"/>
             			<path fill="#003947" d="M266.118,122.782c11.18,0,20.525-7.703,23.214-18.053h73.069c-1.696,1.625-2.352,4.17-1.455,6.5     c0.915,2.394,3.2,3.869,5.62,3.869c0.715,0,1.444-0.126,2.154-0.403c3.593-1.378,7.275-2.63,10.952-3.719     c2.774-0.824,4.387-3.472,4.164-6.246h13.931c0.259,0.21,0.445,0.505,0.734,0.668v3.34v14.045h22.066H432.6h14.04v-16.049     c1.282,0.205,2.569,0.385,3.839,0.626c0.379,0.072,0.752,0.102,1.12,0.102c2.039,0,3.892-1.071,4.987-2.732h13.113     c-0.188,0.319-0.44,0.584-0.566,0.938c-1.112,3.135,0.523,6.571,3.657,7.685c3.636,1.287,7.246,2.732,10.742,4.278     c0.795,0.355,1.624,0.517,2.438,0.517c2.305,0,4.514-1.336,5.507-3.58c1.348-3.039-0.025-6.595-3.063-7.937     c-1.553-0.692-3.185-1.258-4.773-1.901h72.175c2.688,10.35,12.026,18.053,23.213,18.053c13.274,0,24.07-10.796,24.07-24.07     s-10.796-24.07-24.07-24.07c-11.187,0-20.525,7.703-23.213,18.052H446.64V74.642H398.5v18.052H289.333     c-2.689-10.35-12.035-18.052-23.214-18.052c-13.275,0-24.07,10.795-24.07,24.07S252.843,122.782,266.118,122.782z      M579.021,86.677c6.637,0,12.036,5.397,12.036,12.035c0,6.637-5.399,12.035-12.036,12.035s-12.035-5.397-12.035-12.035     C566.986,92.074,572.385,86.677,579.021,86.677z M410.535,86.677h24.07v6.348v7.69v10.031H432.6h-12.033h-10.031v-2.004V93.031     V86.677z M266.118,86.677c6.637,0,12.034,5.397,12.034,12.035c0,6.637-5.397,12.035-12.034,12.035     c-6.638,0-12.036-5.397-12.036-12.035C254.083,92.074,259.48,86.677,266.118,86.677z"/>
             		</g>
-            		<image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-01.png" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
+            		<image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-01.webp" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
             	   </g>
                     </g>  
                 </svg>
@@ -355,7 +355,7 @@ get_header(); ?>
                 		</clipPath>
                 		<g clip-path="url(#SVGID_2_)">
                 			
-                				<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4400" height="4000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Mobile app.png" transform="matrix(0.1372 0 0 0.1372 157.1533 163.9941)">
+                				<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4400" height="4000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Mobile app.webp" transform="matrix(0.1372 0 0 0.1372 157.1533 163.9941)">
                 			</image>
                 		</g>
                 	</g>
@@ -396,7 +396,7 @@ get_header(); ?>
                 	
                 		<line class="serv-line" fill="none" stroke="#EE7719" stroke-width="7.517" stroke-linecap="round" stroke-miterlimit="10" x1="81.233" y1="73.745" x2="675.075" y2="666.084"/>
                 	
-                		<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="680" height="630" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/e-commerce-01-01.png" transform="matrix(0.9839 0 0 0.9839 116.0933 200.5605)">
+                		<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="680" height="630" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/e-commerce-01-01.webp" transform="matrix(0.9839 0 0 0.9839 116.0933 200.5605)">
                 	</image>
                 	<path class="serv-draw" fill="#EE771A" d="M107.478,360.646c-3.646-3.212-6.271-7.056-8.5-11.347c-0.6-1.153-1.972-1.264-3.026-0.792   c-5.495,2.457-9.295,7.113-13.938,10.75c-2.209-2.418-4.284-4.965-6.501-7.375c-1.508-1.639-4.66-5.759-7.339-5.446   c-6.056,0.708-10.47,7.517-14.758,12.125c-2.48-5.039-5.654-12.409-11.334-12.309c-6.862,0.119-9.806,8.89-13.801,13.215   c-1.931,2.09,1.188,5.227,3.127,3.126c3.287-3.558,5.266-8.618,9.164-11.574c3.832-2.91,9.015,10.052,10.361,12.306   c0.775,1.297,2.392,1.367,3.474,0.448c2.31-1.964,4.281-4.347,6.362-6.543c1.042-1.1,5.536-6.665,7.132-6.399   c2.148,0.36,5.144,4.884,6.497,6.399c1.935,2.168,3.755,4.452,5.777,6.543c0.645,0.667,1.887,0.905,2.68,0.347   c4.667-3.288,8.382-7.875,13.303-10.746c2.195,3.883,4.807,7.416,8.194,10.4C106.482,365.648,109.622,362.535,107.478,360.646z"/>
                 	<path class="serv-draw" fill="#EE771A" d="M107.478,383.647c-3.646-3.21-6.271-7.054-8.5-11.346c-0.6-1.153-1.972-1.264-3.026-0.793   c-5.495,2.456-9.295,7.112-13.938,10.749c-2.209-2.417-4.284-4.965-6.501-7.373c-1.508-1.639-4.66-5.76-7.339-5.448   c-6.056,0.708-10.47,7.516-14.758,12.125c-2.48-5.041-5.654-12.409-11.334-12.311c-6.862,0.119-9.806,8.892-13.801,13.216   c-1.931,2.09,1.188,5.225,3.127,3.126c3.287-3.557,5.266-8.618,9.164-11.575c3.832-2.908,9.015,10.054,10.361,12.309   c0.775,1.295,2.392,1.367,3.474,0.446c2.31-1.963,4.281-4.348,6.362-6.544c1.042-1.098,5.536-6.664,7.132-6.396   c2.148,0.359,5.144,4.882,6.497,6.396c1.935,2.17,3.755,4.455,5.777,6.544c0.645,0.667,1.887,0.906,2.68,0.346   c4.667-3.288,8.382-7.875,13.303-10.746c2.195,3.883,4.807,7.417,8.194,10.399C106.482,388.652,109.622,385.536,107.478,383.647z"/>
@@ -422,7 +422,7 @@ get_header(); ?>
                 	<path class="serv-line" fill="#EE771A" d="M341.032,351.677c-0.717,0-1.435-0.274-1.981-0.821L84.072,95.908c-1.094-1.094-1.094-2.868,0-3.962   c1.094-1.094,2.868-1.094,3.963,0l254.978,254.948c1.095,1.094,1.095,2.868,0,3.962   C342.467,351.403,341.749,351.677,341.032,351.677z"/>
                 	
                 	
-                	<image class="serv-img" overflow="visible" width="4168" height="3450" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Hosting-01.png" transform="matrix(0.1685 0 0 0.1685 32.188 133.1396)"></image>
+                	<image class="serv-img" overflow="visible" width="4168" height="3450" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Hosting-01.webp" transform="matrix(0.1685 0 0 0.1685 32.188 133.1396)"></image>
                 <path class="serv-shape" xmlns="http://www.w3.org/2000/svg" fill="#EE771A" d="M650.909,346.253c-2.888,0-5.46-2.024-6.06-4.962c-1.937-9.706-4.853-19.236-8.653-28.361   c-1.315-3.15,0.169-6.775,3.318-8.091c3.157-1.312,6.774,0.172,8.098,3.329c4.107,9.867,7.265,20.202,9.37,30.697   c0.657,3.348-1.505,6.592-4.854,7.272C651.72,346.218,651.311,346.253,650.909,346.253"/>
                 <path class="serv-shape" xmlns="http://www.w3.org/2000/svg" fill="#103A46" d="M571.529,588.353c-2.544,0-4.926-1.579-5.816-4.107c-1.148-3.229,0.526-6.767,3.74-7.907   c9.312-3.303,18.463-7.293,27.239-11.854c3.035-1.578,6.762-0.396,8.339,2.63c1.565,3.043,0.396,6.767-2.636,8.346   c-9.276,4.811-18.953,9.021-28.79,12.529C572.918,588.234,572.217,588.353,571.529,588.353"/>
                     <path class="serv-shape" xmlns="http://www.w3.org/2000/svg" fill="#EE771A" d="M526.917,222.752c-0.396,0-0.796-0.037-1.198-0.121c-9.574-1.87-19.424-2.821-29.265-2.821h-0.277   c-3.412,0-6.18-2.77-6.18-6.184c0-3.42,2.768-6.178,6.18-6.178h0.277c10.643,0,21.287,1.023,31.646,3.051   c3.348,0.662,5.526,3.906,4.875,7.261C532.399,220.709,529.812,222.752,526.917,222.752"/>
@@ -469,7 +469,7 @@ get_header(); ?>
                 	
                 		<line class="serv-line" fill="none" stroke="#EE7719" stroke-width="5.6342" stroke-linecap="round" stroke-miterlimit="10" x1="217.789" y1="310.217" x2="608.43" y2="699.659"/>
                 	
-                		<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="1000" height="1000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/phone- consulting-01.png" transform="matrix(0.762 0 0 0.724 34.3579 38)">
+                		<image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="1000" height="1000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/phone- consulting-01.webp" transform="matrix(0.762 0 0 0.724 34.3579 38)">
                 	</image>
                 	<path class="serv-draw" fill="#103A46" d="M392.078,316.661c-3.003-2.646-5.167-5.812-7-9.346c-0.494-0.949-1.626-1.042-2.494-0.653   c-4.525,2.023-7.654,5.858-11.479,8.853c-1.82-1.992-3.528-4.088-5.355-6.074c-1.244-1.35-3.839-4.743-6.044-4.486   c-4.989,0.583-8.623,6.19-12.157,9.989c-2.042-4.154-4.656-10.223-9.334-10.141c-5.654,0.099-8.076,7.321-11.366,10.885   c-1.592,1.722,0.978,4.304,2.575,2.574c2.706-2.93,4.337-7.097,7.548-9.534c3.157-2.396,7.425,8.28,8.533,10.138   c0.64,1.067,1.97,1.124,2.859,0.37c1.905-1.618,3.527-3.581,5.243-5.392c0.858-0.904,4.558-5.487,5.872-5.267   c1.771,0.294,4.239,4.019,5.354,5.267c1.594,1.788,3.094,3.669,4.758,5.392c0.531,0.55,1.553,0.746,2.208,0.284   c3.842-2.707,6.901-6.486,10.958-8.849c1.808,3.197,3.958,6.107,6.749,8.567C391.257,320.782,393.844,318.217,392.078,316.661z"/>
                 	<path class="serv-draw" fill="#103A46" d="M392.078,335.605c-3.003-2.644-5.167-5.809-7-9.343c-0.494-0.949-1.626-1.04-2.494-0.655   c-4.525,2.025-7.654,5.858-11.479,8.854c-1.82-1.99-3.528-4.091-5.355-6.073c-1.244-1.351-3.839-4.744-6.044-4.485   c-4.989,0.582-8.623,6.19-12.157,9.986c-2.042-4.153-4.656-10.222-9.334-10.141c-5.654,0.099-8.076,7.322-11.366,10.885   c-1.592,1.722,0.978,4.304,2.575,2.575c2.706-2.929,4.337-7.098,7.548-9.533c3.157-2.396,7.425,8.281,8.533,10.137   c0.64,1.067,1.97,1.125,2.859,0.369c1.905-1.618,3.527-3.582,5.243-5.39c0.858-0.904,4.558-5.49,5.872-5.27   c1.771,0.295,4.239,4.021,5.354,5.27c1.594,1.788,3.094,3.667,4.758,5.39c0.531,0.55,1.553,0.747,2.208,0.283   c3.842-2.704,6.901-6.486,10.958-8.848c1.808,3.198,3.958,6.107,6.749,8.565C391.257,339.728,393.844,337.162,392.078,335.605z"/>
@@ -502,7 +502,7 @@ get_header(); ?>
                 	<path class="serv-line" fill="#EE7719" d="M769.583,638.819c-0.936,0-1.872-0.355-2.589-1.067L163.251,36.944c-1.436-1.429-1.442-3.752-0.012-5.189   c1.429-1.436,3.753-1.441,5.189-0.012l603.744,600.806c1.437,1.431,1.442,3.754,0.013,5.19   C771.467,638.459,770.525,638.819,769.583,638.819z"/>
                 	<path class="serv-line" fill="#EE7719" d="M708.419,640.276c-0.937,0-1.872-0.355-2.589-1.068L102.086,38.401c-1.437-1.429-1.442-3.752-0.012-5.189   c1.429-1.437,3.753-1.441,5.189-0.012l603.743,600.806c1.437,1.431,1.442,3.754,0.014,5.19   C710.302,639.915,709.36,640.276,708.419,640.276z"/>
                 	<g>
-                			<image class="serv-img" overflow="visible" width="3000" height="2057" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/responsive-01.png" transform="matrix(0.2829 0 0 0.2829 -20 160.938)">
+                			<image class="serv-img" overflow="visible" width="3000" height="2057" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/responsive-01.webp" transform="matrix(0.2829 0 0 0.2829 -20 160.938)">
                 		</image>
                 		
                 			
@@ -768,8 +768,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div id="buttons">
-                                <a href="http://localhost/unplugged-website/portfolio/" class="button"><i class="fa fa-th">  </i>  View All</a> 
-                                <a href="<?php echo(get_post_permalink())?>" class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
+                                <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>" class="button"><i class="fa fa-th">  </i>  View All</a> 
+                                <a href="#" class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
                                </div> 
                             </div> 
                            </div>
@@ -798,8 +798,8 @@ get_header(); ?>
                                     ?>
                                 </div>       
                                <div id="buttons">
-                                <a class="button"><i class="fa fa-th">  </i>  View All</a> 
-                                <a href="<?php echo(get_post_permalink())?>"class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
+                                <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>" class="button"><i class="fa fa-th">  </i>  View All</a> 
+                                <a href="#" class="button">View Details   <i class="fa fa-long-arrow-right"></i></a> 
                                </div> 
                             </div> 
                            </div>
@@ -861,14 +861,14 @@ get_header(); ?>
     <div class="products container">
         <div class="mobile">
             <div class="v-line" style="opacity:0"></div>    
-            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L.png"> 
+            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L.webp"> 
             <div class="v-line2" style="opacity:0"></div>    
             <div class="v-circle" style="opacity:0"></div>        
-            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device.png">
+            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device.webp">
             <video class="mobile-video" id="myvideo" width="320" height="240" controls >
               <source src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/videos/Image from iOS.mp4" type="video/mp4">
             </video>
-            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R.png">  
+            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R.webp">  
             <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
         </div>  
          <div class="box">

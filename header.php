@@ -30,7 +30,7 @@
     <div class="contactCards"> 
             <div class="contactCards-sectionOne">
                <h1 >We'd Love to Hear from you !</h1>
-               <p>We are always happy to recive your ... </p>
+               <p>We are always happy to receive your ... </p>
                <button next-click class="button cont happy">Inquire About Something</button>
            </div>  
         <div class="contactCards-sectionTwo">
@@ -42,7 +42,7 @@
        </div> 
        <div class="contactCards-sectionThree">
            <h5>Address</h5>
-           <p>3 Abd El-Aziz Selim,Ad Daqi,Giza,Egypy</p>
+           <p>3 Abd El-Aziz Selim,Ad Doqi,Giza,Egypt</p>
            <a href="https://goo.gl/maps/Vu4WnBh9Ah52" target="_blank"><button  class="button cont Address"><i class="fa fa-map-marker"></i>  View on map</button></a>
        </div>
        <div class="contactCards-sectionFour">
@@ -61,7 +61,6 @@
 
 <div class="step" style="display:none;" id="demo1" >
     <button close-click class="close">x</button>
-    <!--     <h4 class="Question">Q1: What are you looking for?</h4>-->
     <div class="conform">
        <div class="grid-x">
            <div class="small-12 cell">
@@ -69,7 +68,6 @@
         </div>
     </div>
 </div>
-<!--   <button  next-click class="button cont" >Next  <i class="fa fa-long-arrow-right">         </i></button>-->
 </div>
 
 <header class="site-header" role="banner">
@@ -86,9 +84,9 @@
     <div class="full-menu__item">
         <button close-menu class="close close-responsive">X</button>
         <div class="img-content">
-           <a href="http://localhost/unplugged-website/about/">
+           <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.png" alt="Unplugged Logo">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.webp" alt="Unplugged Logo">
 
             <div class="text-content">
                 <p>About</p>
@@ -99,9 +97,9 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="http://localhost/unplugged-website/portfolio/">
+   <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.png" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.webp" alt="Unplugged Logo">
     <div class="text-content">
         <p>Portfolio</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -111,9 +109,9 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="http://localhost/unplugged-website/products/">
+   <a href="<?php echo esc_url( home_url( '/products' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.png" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.webp" alt="Unplugged Logo">
     <div class="text-content">
         <p>Products</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -124,9 +122,9 @@
 <div class="full-menu__item">
     <button close-menu class="close close-desktop">X</button>
     <div class="img-content">
-       <a href="http://localhost/unplugged-website/blog/">
+       <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.png" alt="Unplugged Logo">
+        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.webp" alt="Unplugged Logo">
         <div class="text-content">
             <p>Blog</p>
             <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">

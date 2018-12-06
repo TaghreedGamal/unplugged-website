@@ -10,7 +10,7 @@ get_header(); ?>
 			<h1 class="coming-soon__content__title">WE ARE IN MAKEOVER!</h1>
 			<div class="coming-soon__content__buttons">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
-				<a href="http://localhost/unplugged-website/wp-content/uploads/2018/12/Unplugged-Company-profile-2018.pdf" rel="home" class="button button-download">Download Profile</a>
+				<a href="<?php echo esc_url( home_url( '/wp-content/uploads/2018/12/Unplugged-Company-profile-2018.pdf' ) ); ?>" class="button button-download">Download Profile</a>
 			</div>	
 		</div>
 		<div class="coming-soon__image">

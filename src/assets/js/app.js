@@ -75,6 +75,7 @@ $('.clients').slick({
   centerPadding: '60px',
   slidesToShow: 6,
   autoplay:true,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 1000,
