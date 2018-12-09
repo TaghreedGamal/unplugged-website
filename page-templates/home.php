@@ -33,7 +33,7 @@ get_header(); ?>
             </div>
             <div class="img2">
                 <img class="fun5 fadeInUp " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-4-min.png" alt="banner1">
-                <img class="fun6  zoom " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-5.webp" alt="banner1">
+                <img class="fun6  zoom " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-5-min.png" alt="banner1">
                 <img class="line1 show1" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/long_line.png" alt="banner1">
                 <img class="fun7  bouncess " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/gsmall_circle.png" alt="banner1">
                 <img class="line2 show2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/short_line.png" alt="banner1">
@@ -123,23 +123,23 @@ get_header(); ?>
   <div class="home-slider__responsive__slides ">
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
-            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6.webp" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6-min.png" alt=""></div>
         </div>
       </div>
   </div> 
@@ -230,7 +230,7 @@ get_header(); ?>
                         <path fill="#003947" d="M287.509,164.855c-2.31,3.442-4.512,7.022-6.552,10.639c-1.631,2.894-0.614,6.565,2.287,8.195     c0.933,0.524,1.949,0.777,2.949,0.777c2.1,0,4.139-1.102,5.247-3.063c1.883-3.346,3.93-6.655,6.066-9.844     c1.853-2.762,1.113-6.499-1.643-8.352C293.088,161.353,289.356,162.093,287.509,164.855z"/>
                         <path fill="#003947" d="M266.118,122.782c11.18,0,20.525-7.703,23.214-18.053h73.069c-1.696,1.625-2.352,4.17-1.455,6.5     c0.915,2.394,3.2,3.869,5.62,3.869c0.715,0,1.444-0.126,2.154-0.403c3.593-1.378,7.275-2.63,10.952-3.719     c2.774-0.824,4.387-3.472,4.164-6.246h13.931c0.259,0.21,0.445,0.505,0.734,0.668v3.34v14.045h22.066H432.6h14.04v-16.049     c1.282,0.205,2.569,0.385,3.839,0.626c0.379,0.072,0.752,0.102,1.12,0.102c2.039,0,3.892-1.071,4.987-2.732h13.113     c-0.188,0.319-0.44,0.584-0.566,0.938c-1.112,3.135,0.523,6.571,3.657,7.685c3.636,1.287,7.246,2.732,10.742,4.278     c0.795,0.355,1.624,0.517,2.438,0.517c2.305,0,4.514-1.336,5.507-3.58c1.348-3.039-0.025-6.595-3.063-7.937     c-1.553-0.692-3.185-1.258-4.773-1.901h72.175c2.688,10.35,12.026,18.053,23.213,18.053c13.274,0,24.07-10.796,24.07-24.07     s-10.796-24.07-24.07-24.07c-11.187,0-20.525,7.703-23.213,18.052H446.64V74.642H398.5v18.052H289.333     c-2.689-10.35-12.035-18.052-23.214-18.052c-13.275,0-24.07,10.795-24.07,24.07S252.843,122.782,266.118,122.782z      M579.021,86.677c6.637,0,12.036,5.397,12.036,12.035c0,6.637-5.399,12.035-12.036,12.035s-12.035-5.397-12.035-12.035     C566.986,92.074,572.385,86.677,579.021,86.677z M410.535,86.677h24.07v6.348v7.69v10.031H432.6h-12.033h-10.031v-2.004V93.031     V86.677z M266.118,86.677c6.637,0,12.034,5.397,12.034,12.035c0,6.637-5.397,12.035-12.034,12.035     c-6.638,0-12.036-5.397-12.036-12.035C254.083,92.074,259.48,86.677,266.118,86.677z"/>
                     </g>
-                    <image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-01.webp" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
+                    <image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-01-min.png" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
                    </g>
                     </g>  
                 </svg>
@@ -355,7 +355,7 @@ get_header(); ?>
                         </clipPath>
                         <g clip-path="url(#SVGID_2_)">
                             
-                                <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4400" height="4000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Mobile app.webp" transform="matrix(0.1372 0 0 0.1372 157.1533 163.9941)">
+                                <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4400" height="4000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/Mobile app-min.png" transform="matrix(0.1372 0 0 0.1372 157.1533 163.9941)">
                             </image>
                         </g>
                     </g>
@@ -396,7 +396,7 @@ get_header(); ?>
                     
                         <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="7.517" stroke-linecap="round" stroke-miterlimit="10" x1="81.233" y1="73.745" x2="675.075" y2="666.084"/>
                     
-                        <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="680" height="630" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/e-commerce-01-01.webp" transform="matrix(0.9839 0 0 0.9839 116.0933 200.5605)">
+                        <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="680" height="630" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/e-commerce-01-01-min.png" transform="matrix(0.9839 0 0 0.9839 116.0933 200.5605)">
                     </image>
                     <path class="serv-draw" fill="#EE771A" d="M107.478,360.646c-3.646-3.212-6.271-7.056-8.5-11.347c-0.6-1.153-1.972-1.264-3.026-0.792   c-5.495,2.457-9.295,7.113-13.938,10.75c-2.209-2.418-4.284-4.965-6.501-7.375c-1.508-1.639-4.66-5.759-7.339-5.446   c-6.056,0.708-10.47,7.517-14.758,12.125c-2.48-5.039-5.654-12.409-11.334-12.309c-6.862,0.119-9.806,8.89-13.801,13.215   c-1.931,2.09,1.188,5.227,3.127,3.126c3.287-3.558,5.266-8.618,9.164-11.574c3.832-2.91,9.015,10.052,10.361,12.306   c0.775,1.297,2.392,1.367,3.474,0.448c2.31-1.964,4.281-4.347,6.362-6.543c1.042-1.1,5.536-6.665,7.132-6.399   c2.148,0.36,5.144,4.884,6.497,6.399c1.935,2.168,3.755,4.452,5.777,6.543c0.645,0.667,1.887,0.905,2.68,0.347   c4.667-3.288,8.382-7.875,13.303-10.746c2.195,3.883,4.807,7.416,8.194,10.4C106.482,365.648,109.622,362.535,107.478,360.646z"/>
                     <path class="serv-draw" fill="#EE771A" d="M107.478,383.647c-3.646-3.21-6.271-7.054-8.5-11.346c-0.6-1.153-1.972-1.264-3.026-0.793   c-5.495,2.456-9.295,7.112-13.938,10.749c-2.209-2.417-4.284-4.965-6.501-7.373c-1.508-1.639-4.66-5.76-7.339-5.448   c-6.056,0.708-10.47,7.516-14.758,12.125c-2.48-5.041-5.654-12.409-11.334-12.311c-6.862,0.119-9.806,8.892-13.801,13.216   c-1.931,2.09,1.188,5.225,3.127,3.126c3.287-3.557,5.266-8.618,9.164-11.575c3.832-2.908,9.015,10.054,10.361,12.309   c0.775,1.295,2.392,1.367,3.474,0.446c2.31-1.963,4.281-4.348,6.362-6.544c1.042-1.098,5.536-6.664,7.132-6.396   c2.148,0.359,5.144,4.882,6.497,6.396c1.935,2.17,3.755,4.455,5.777,6.544c0.645,0.667,1.887,0.906,2.68,0.346   c4.667-3.288,8.382-7.875,13.303-10.746c2.195,3.883,4.807,7.417,8.194,10.399C106.482,388.652,109.622,385.536,107.478,383.647z"/>
@@ -469,7 +469,7 @@ get_header(); ?>
                     
                         <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="5.6342" stroke-linecap="round" stroke-miterlimit="10" x1="217.789" y1="310.217" x2="608.43" y2="699.659"/>
                     
-                        <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="1000" height="1000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/phone- consulting-01.webp" transform="matrix(0.762 0 0 0.724 34.3579 38)">
+                        <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="1000" height="1000" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/phone- consulting-01-min.png" transform="matrix(0.762 0 0 0.724 34.3579 38)">
                     </image>
                     <path class="serv-draw" fill="#103A46" d="M392.078,316.661c-3.003-2.646-5.167-5.812-7-9.346c-0.494-0.949-1.626-1.042-2.494-0.653   c-4.525,2.023-7.654,5.858-11.479,8.853c-1.82-1.992-3.528-4.088-5.355-6.074c-1.244-1.35-3.839-4.743-6.044-4.486   c-4.989,0.583-8.623,6.19-12.157,9.989c-2.042-4.154-4.656-10.223-9.334-10.141c-5.654,0.099-8.076,7.321-11.366,10.885   c-1.592,1.722,0.978,4.304,2.575,2.574c2.706-2.93,4.337-7.097,7.548-9.534c3.157-2.396,7.425,8.28,8.533,10.138   c0.64,1.067,1.97,1.124,2.859,0.37c1.905-1.618,3.527-3.581,5.243-5.392c0.858-0.904,4.558-5.487,5.872-5.267   c1.771,0.294,4.239,4.019,5.354,5.267c1.594,1.788,3.094,3.669,4.758,5.392c0.531,0.55,1.553,0.746,2.208,0.284   c3.842-2.707,6.901-6.486,10.958-8.849c1.808,3.197,3.958,6.107,6.749,8.567C391.257,320.782,393.844,318.217,392.078,316.661z"/>
                     <path class="serv-draw" fill="#103A46" d="M392.078,335.605c-3.003-2.644-5.167-5.809-7-9.343c-0.494-0.949-1.626-1.04-2.494-0.655   c-4.525,2.025-7.654,5.858-11.479,8.854c-1.82-1.99-3.528-4.091-5.355-6.073c-1.244-1.351-3.839-4.744-6.044-4.485   c-4.989,0.582-8.623,6.19-12.157,9.986c-2.042-4.153-4.656-10.222-9.334-10.141c-5.654,0.099-8.076,7.322-11.366,10.885   c-1.592,1.722,0.978,4.304,2.575,2.575c2.706-2.929,4.337-7.098,7.548-9.533c3.157-2.396,7.425,8.281,8.533,10.137   c0.64,1.067,1.97,1.125,2.859,0.369c1.905-1.618,3.527-3.582,5.243-5.39c0.858-0.904,4.558-5.49,5.872-5.27   c1.771,0.295,4.239,4.021,5.354,5.27c1.594,1.788,3.094,3.667,4.758,5.39c0.531,0.55,1.553,0.747,2.208,0.283   c3.842-2.704,6.901-6.486,10.958-8.848c1.808,3.198,3.958,6.107,6.749,8.565C391.257,339.728,393.844,337.162,392.078,335.605z"/>
@@ -861,14 +861,14 @@ get_header(); ?>
     <div class="products container">
         <div class="mobile">
             <div class="v-line" style="opacity:0"></div>    
-            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L.webp"> 
+            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L-min.png"> 
             <div class="v-line2" style="opacity:0"></div>    
             <div class="v-circle" style="opacity:0"></div>        
-            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device.webp">
+            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
               <video class="mobile-video" id="myvideo" width="320" height="240" controls >
               <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
             </video>
-            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R.webp">  
+            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R-min.png">  
             <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
         </div>  
          <div class="box">

@@ -48,9 +48,9 @@
        <div class="contactCards-sectionFour">
         <h5>Follow Us</h5>
         <div class="ficons">
-           <div class="icon-circle"><a href="#"><i class="fa fa-linkedin"></i></a></div>
-           <div class="icon-circle"><a href="#"><i class="fa fa-instagram"></i></a></div>
-           <div class="icon-circle"><a href="#"><i class="fa fa-facebook-f"></i></a></div>
+           <div class="icon-circle"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
+           <div class="icon-circle"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
+           <div class="icon-circle"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
            <div class="icon-circle"><a href="#"><i class="fa fa-behance"></i></a></div>
        </div>
 </div>
@@ -86,7 +86,7 @@
         <div class="img-content">
            <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-about">
-            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.webp" alt="menu-about">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about-min.png" alt="menu-about">
 
             <div class="text-content">
                 <p>About</p>
@@ -99,7 +99,7 @@
   <div class="img-content">
    <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-portfolio">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.webp" alt="menu-portfolio">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port-min.png" alt="menu-portfolio">
     <div class="text-content">
         <p>Portfolio</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -111,7 +111,7 @@
   <div class="img-content">
    <a href="<?php echo esc_url( home_url( '/products' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-products">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.webp" alt=menu-blog">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product-min.png" alt=menu-blog">
     <div class="text-content">
         <p>Products</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -124,7 +124,7 @@
     <div class="img-content">
        <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.webp" alt="menu-blog">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog-min.png" alt="menu-blog">
         <div class="text-content">
             <p>Blog</p>
             <img class="mline"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">

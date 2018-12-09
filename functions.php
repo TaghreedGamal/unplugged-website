@@ -125,9 +125,3 @@ function create_taxonomies() {
  register_taxonomy( 'projects_categories', array( 'projects' ), $args );
 }
 ?>
-<?php 
-//function page_order_asc($query) {
-  //  $query->set('orderby', 'post_date');
-    //$query->set('order', 'ASC');  }
-//add_action( 'pre_get_posts', 'page_order_asc');  
-?> 

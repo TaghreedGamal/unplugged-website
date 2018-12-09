@@ -378,12 +378,15 @@ button{
                 width: 100%;
                 background-color:$background-color;
                 h1{
-                    padding-top: 220px;
+                    padding-top: 260px;
                     font-size: 70px;
                     line-height: 60px;
                     width: 555px;
+                    @media only screen and (width : 320px) {
+                        font-size: 35px !important;
+                    }
                     @media (max-width: 40em){
-                       font-size: 42px;
+                       font-size: 45px;
                        height: 140px;
                        line-height: 38px;
                        width: 100%;
@@ -703,6 +706,9 @@ button{
             left: 50%;
             transform: scale(0.8, 0.7);
             letter-spacing: 0.6px;
+             @media only screen and (width : 320px) {
+                font-size: 40px !important;
+             }
         }
         @media (width: 768px){
             .card-no{
@@ -718,8 +724,6 @@ button{
         }
         @media (max-width: 40em){
             svg{
-                // width: 121px;
-                // height: 141px;
                 width: 140px;
                 height: 175px;
                 path.obj{
@@ -741,6 +745,10 @@ button{
         padding-top: 20px;
         padding-bottom: 20px;
    }
+   @media only screen and (width : 320px) {
+        margin-right: 10px;
+        margin-left: -10px;
+    }
 }
 .cardhover{
     transform: translateX(50px);
@@ -802,6 +810,7 @@ button{
         a{
             display: flex;
             justify-content: space-around;
+            height: 32px;
         }
         @media (max-width: 64em){
             max-width: 100%;
@@ -1038,7 +1047,7 @@ button{
             &__title{font-size:18px;}
             &__text{font-size: 12px;} 
             .button{
-                font-size: 14px;
+                font-size: 12px;
                 width: 133px;
             }
             .circle,.circle2{
@@ -1241,14 +1250,11 @@ button{
             overflow: scroll;
             width: 100%;
             justify-content: end;
-            // li{
-            //     position: relative;
-            // }
         }
         @media (max-width: 40em){
             position: relative;
-            padding-top: 10%;
-            padding-bottom: 5%;
+            padding-top: 12%;
+            padding-bottom: 14%;
         }
     }
     .tabs-title{
@@ -1434,6 +1440,9 @@ button{
                 flex-flow:column;
                 align-items: center;
             }
+        }
+        @media (max-width: 40em){
+            padding: 0 !important;
         }
    
     }
