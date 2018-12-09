@@ -45,15 +45,18 @@ $('[close2-click]').on('click',function(){
     var x =  document.getElementById("demo");
     x.style.display = "none";
 })
-$('[close-menu]').on('click',function(){
-//    var x =  document.getElementById("menu");
-//    x.style.display = "none";
-     $(".full-menu").removeClass("active");
-})
 
 $('[menu-click]').on('click',function(){
  $(".full-menu").addClass("active");
+ $('html, body').css('overflowY', 'hidden'); 
 })
+
+$('[close-menu]').on('click',function(){
+    $(".full-menu").removeClass("active");
+    $('html, body').css('overflowY', 'visible'); 
+})
+
+
 
 if($(".home").length != 0){
     console.log("home");

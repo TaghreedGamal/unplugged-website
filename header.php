@@ -85,8 +85,8 @@
         <button close-menu class="close close-responsive">X</button>
         <div class="img-content">
            <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
-            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.webp" alt="Unplugged Logo">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-about">
+            <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_about.webp" alt="menu-about">
 
             <div class="text-content">
                 <p>About</p>
@@ -98,8 +98,8 @@
 <div class="full-menu__item">
   <div class="img-content">
    <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.webp" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-portfolio">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port.webp" alt="menu-portfolio">
     <div class="text-content">
         <p>Portfolio</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -110,8 +110,8 @@
 <div class="full-menu__item">
   <div class="img-content">
    <a href="<?php echo esc_url( home_url( '/products' ) ); ?>">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.webp" alt="Unplugged Logo">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-products">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product.webp" alt=menu-blog">
     <div class="text-content">
         <p>Products</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -123,11 +123,11 @@
     <button close-menu class="close close-desktop">X</button>
     <div class="img-content">
        <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">
-        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="Unplugged Logo">
-        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.webp" alt="Unplugged Logo">
+        <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog.webp" alt="menu-blog">
         <div class="text-content">
             <p>Blog</p>
-            <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
+            <img class="mline"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
         </div>
        </a>
 </div>
