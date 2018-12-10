@@ -50,41 +50,6 @@
   }
 }
 
-// Tablet and desktop menu
-
-.top-bar {
-
-  .top-bar-title a {
-    font-size: 1rem;
-    color: #B9B9B9;
-    padding-left: 1rem;
-    line-height: 1.8;
-  }
-
-  .menu a {
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
-
-    &:hover:not(.button) {
-      background-color: #42525D;
-    }
-  }
-
-  .menu .active > a { background-color: #ccc; }
-
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
-
-  .dropdown.menu .submenu { border: 0; }
-  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
-  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
-  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
-}
-
 .site-navigation {
   @include breakpoint(small only) {
     padding: 0; // prevents container visibility on small screens
@@ -106,9 +71,9 @@
 
 @media (max-width: 64em){
     .site-navigation.top-bar{
-      // display: flex;
-      // flex-flow:row;
-      align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        align-items: center;
     }
     .top-bar .top-bar-left, .top-bar .top-bar-right {
         flex: 0;

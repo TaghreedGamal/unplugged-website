@@ -36,5 +36,21 @@ $main-font:'DIN-Regular';
   font-weight: normal;
   font-style: normal;
 }
-$button-font:'DIN-Medium';
 $medium-font:'DIN-Medium';
+
+@font-face {
+  font-family: 'Cabin-Medium';
+  src: url('../fonts/Cabin-Medium.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+$button-font:'Cabin-Medium';
+$footer-menu:'Cabin-Medium';
+
+@font-face {
+  font-family: 'Cabin-Regular';
+  src: url('../fonts/Cabin-Regular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+$footer-text:'Cabin-Regular';

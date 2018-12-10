@@ -33,7 +33,6 @@
        padding-top: 10px;
        color: #afabab;
        font-size: 18px;
-       font-family: $main-font;
        @media (max-width: 64em){
           font-size: 12px;
        }
@@ -42,7 +41,7 @@
 
 footer{
     position: relative;
-    
+
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
@@ -91,19 +90,18 @@ footer{
         transform: translate(0px);
         padding: 2px;
         font-size: 18px;
-        font-family: $main-font;
         @media (max-width: 64em){
           right: 0;
           top: 35%;
           width: 125px;
           height: 40px;
-          font-size: 16px;
+          font-size: 14px;
         }
    }
     .footer-grid{
         justify-content: center;
-          font-family: $button-font;
-         font-size: 22px;
+        font-family: $footer-text !important;
+        font-size: 22px;
         .textwidget {
             p {
               color: #afabab;
@@ -139,7 +137,7 @@ footer{
 }
 #nav_menu-2 {
   .menu-main-container {
-        font-family: sans-serif;
+        font-family: $footer-menu;
     ul {
           margin-top: -30px;
       li + li {

@@ -761,6 +761,9 @@ button{
 }
 .dcardhover{
     transform: translateY(50px)!important;
+    &.unique{
+        transform: translate(55px,40px) !important;
+    }
 }
 
 @media (max-width: 64em){
