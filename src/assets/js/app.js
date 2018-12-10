@@ -381,35 +381,34 @@ $(window).scroll(function() {
     var top_of_screen = $(window).scrollTop();
     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
     if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
-          card.play();
-        }
+        card.play();
+    }
  });
 
 /////// video 
 
-var aud = document.getElementById("myvideo");
-var Topvideo=$(".products").offset().top;
-var count=0;
-Topvideo=Topvideo-300;
+ var aud = document.getElementById("myvideo");
+// var Topvideo=$(".products").offset().top;
+// Topvideo=Topvideo-300;
 $(window).scroll(function() {
-// console.log($(window).scrollTop());/
-     if($(window).scrollTop() > Topvideo && count == 0 )
-        {
-            aud.play();
-            var video=new TimelineMax();
-            video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
-            .to(".video-L",0.3,{x:30,opacity:1},0.1)
-            .to(".v-line",0.3,{x:0,opacity:1})
-            .to(".v-line2",0.3,{x:0,opacity:1})
-            .to(".v-circle",0.6,{scale:1,opacity:1})
-            .to(".v-scircle",0.3,{scale:1,opacity:1})
-            .to(".v-lcircle",0.3,{scale:1,opacity:1});
-            count=1;
-
-        }
-    if(count!=1){
-    aud.pause();
-
+    var v= $(".products");
+    var top_of_element = v.offset().top;
+    var bottom_of_element = v.offset().top + v.outerHeight();
+    var top_of_screen = $(window).scrollTop();
+    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element + '50')){
+        aud.play();
+        var video=new TimelineMax();
+        video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
+        .to(".video-L",0.3,{x:30,opacity:1},0.1)
+        .to(".v-line",0.3,{x:0,opacity:1})
+        .to(".v-line2",0.3,{x:0,opacity:1})
+        .to(".v-circle",0.6,{scale:1,opacity:1})
+        .to(".v-scircle",0.3,{scale:1,opacity:1})
+        .to(".v-lcircle",0.3,{scale:1,opacity:1});
+    }
+    else if (bottom_of_screen > bottom_of_element + '50') {
+        aud.pause();
     }
  });
 

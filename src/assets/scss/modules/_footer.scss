@@ -42,6 +42,7 @@
 
 footer{
     position: relative;
+    
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
@@ -138,7 +139,7 @@ footer{
 }
 #nav_menu-2 {
   .menu-main-container {
-    font-family: $medium-font;
+        font-family: sans-serif;
     ul {
           margin-top: -30px;
       li + li {
