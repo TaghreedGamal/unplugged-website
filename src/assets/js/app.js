@@ -370,17 +370,16 @@ $(window).scroll(function() {
 
 /////// video 
 
+var screenSize=$(window).width();
+if (screenSize > '1024'){
  var aud = document.getElementById("myvideo");
-// var Topvideo=$(".products").offset().top;
-// Topvideo=Topvideo-300;
 $(window).scroll(function() {
     var v= $(".products");
     var top_of_element = v.offset().top;
     var bottom_of_element = v.offset().top + v.outerHeight();
     var top_of_screen = $(window).scrollTop();
     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
-    //if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
-        if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
+    if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
         aud.play();
     }
     else{
@@ -397,7 +396,7 @@ $(window).scroll(function() {
         .to(".v-lcircle",0.3,{scale:1,opacity:1});
     };
  });
-
+}
 ////////// footer
 var path1 = $("#righl1 path"),
     length1 = path1[0].getTotalLength();

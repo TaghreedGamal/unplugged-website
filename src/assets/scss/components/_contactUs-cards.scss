@@ -147,7 +147,7 @@
         max-width: 104px;
     }
 }
-#demo{
+#demo,#demo1{
     padding-top: 20px;
     padding-left: 80px;
     padding-right: 80px;
@@ -165,6 +165,24 @@
     }
     @media (max-width: 64em){
         padding-left: 25px;
+    }
+}
+#demo1{
+    text-align: center;
+    h3{
+        font-family: $card-SecHeader-font;
+    }
+    .grouped-cards-buttons{
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        width: 50%;
+        margin-left: 25%;
+        .button{
+            margin-left: 0;
+            width: 260px;
+        }
     }
 }
 .contactCards{
@@ -230,6 +248,7 @@
         flex-wrap:wrap;
         &-sectionOne,&-sectionTwo,&-sectionThree,&-sectionFour{
             width: 50%;
+            margin-top: 0;
         }
         &-sectionTwo{
             margin: 0;

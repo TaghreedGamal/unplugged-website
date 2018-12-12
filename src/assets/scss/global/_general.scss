@@ -19,6 +19,9 @@ p{
     text-transform: uppercase;
     font-weight: 600;
     font-family: $title-font;
+    @media (max-width: 40em){
+    	font-size: 20px;
+    }
 }
 .grouped-buttons{
 	display: flex;
@@ -29,6 +32,14 @@ p{
     	width: 48%;
     	font-size: 18px;
     	justify-content: space-around;
+    	@media (max-width: 40em){
+			font-size: 10px !important;
+		}
+	}
+	&.cards{
+		.button{
+			background-color:$card-button-color;
+		}
 	}
 }
 i.fa.fa-long-arrow-right {

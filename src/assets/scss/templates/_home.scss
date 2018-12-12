@@ -360,7 +360,7 @@ button{
                 background-color:$background-color;
                 h1{
                     padding-top: 260px;
-                    font-size: 70px;
+                    font-size: 75px;
                     line-height: 60px;
                     width: 555px;
                     @media only screen and (width : 320px) {
@@ -378,18 +378,20 @@ button{
                 }
                 &__top-image {
                    float: right;
-                   padding-top: 5%;
-                   margin-right: 20px;
+                   padding-top: 3%;
+                   @media (max-width: 40em){
+                    margin-right: -2%;
+                   }
                    &.slide-2{
-                    padding-top: 10%;
+                    padding-top: 15%;
                    }
                 }
-                &__botton-image {
+                &__bottom-image {
                    float: right;
-                   padding-top: 15%;
+                   padding-top: 6%;
                    margin-right: 4%;
                    @media (max-width: 40em){
-                    padding-top: 33%;
+                    padding-top: 45%;
                     margin-right: 0;
                    }
                 }
@@ -450,8 +452,14 @@ button{
                 justify-content: center;
                 height: 100px;
                 align-items: center;
+                @media (width: 1024px){
+                    height: 80px !important;
+                }
                 @media (max-width: 64em){
-                    height: 80px;
+                    height: 140px;
+                }
+                @media (max-width: 40em){
+                    height: 64px;
                 }
             }
           }  
@@ -471,10 +479,7 @@ button{
             .logos{
                 width: 80%;
                 @media (max-width: 64em){
-                    width: 40%;
-                }
-                @media (width: 1024px){
-                    width: 65% !important;
+                    width: 90%;
                 }
             }
             @media(max-width: 64px){
@@ -488,8 +493,14 @@ button{
             height: 370px;
         }
         @media (max-width: 40em){
-            height: 300px;
+            height: 260px;
         }
+    }
+    @media (max-width: 40em){
+        padding-top: 120px;
+    }
+    @media (max-width: 64em){
+        padding-top: 180px;
     }
 }
 //---------- services------
@@ -504,8 +515,7 @@ button{
         margin: 0;
         @media(max-width: 64em){
             display: inline-flex;
-            padding-top: 20px;
-            overflow: scroll;
+            flex-wrap:wrap;
             width: 100vw;
         }
     }
@@ -513,7 +523,7 @@ button{
         margin-top: -130px;
         margin-bottom: 30px;
         @media(max-width: 64em){
-          padding-left: 25px;
+          margin-top: 0;
         }
     }
     &__list{
@@ -642,9 +652,6 @@ button{
                     font-size: 12px;
                     text-align: center;
                 }
-                .button{
-                    font-size: 14px;
-                }
             }
         }
         @media (max-width: 64em){
@@ -653,6 +660,7 @@ button{
     }
     @media (max-width: 64em){
         flex-flow:column;
+        padding-top: 0px;
     }
 }
 //------- Cards ----------
@@ -709,7 +717,7 @@ button{
    @media (max-width: 64em){
         flex-wrap:wrap;
         justify-content: flex-start;
-        padding-top: 20px;
+        padding-top: 100px;
         padding-bottom: 20px;
    }
    @media only screen and (width : 320px) {
@@ -786,9 +794,17 @@ button{
         .video-R{
             transform: translateX(-100px);
             z-index:1;
+            @media (max-width: 64em){
+                opacity: 1 !important;
+                transform: translateX(-30px);
+            }
         }
         .video-L{
-            transform: translateX(100px)
+            transform: translateX(100px);
+             @media (max-width: 64em){
+                opacity: 1 !important;
+                transform: translateX(30px);
+            }
         }
         .v-line{
             position: absolute;
@@ -804,6 +820,8 @@ button{
                 height: 320px;
                 top: -50px;
                 left: 160px;
+                 opacity: 1 !important;
+                transform: skew(40deg) translateX(0px);
             }
         }
         .v-line2{
@@ -816,6 +834,10 @@ button{
             height: 650px;
             background-color: #3bbaee;
             transform: skew(40deg) translateX(-200px);
+            @media (max-width: 64em){
+                opacity: 1 !important;
+                transform: skew(40deg) translateX(0px);
+            }
             @media(max-width: 64em){
                 height: 280px;
                 left: 150px;
@@ -827,10 +849,14 @@ button{
             top: 82%;
             left: -10px;
             z-index: -1;
-            background-color: #ff7900;
+            background-color:$orange-color;
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
+             @media (max-width: 64em){
+                opacity: 1 !important;
+                transform: scale(1) !important;
+            }
             @media(max-width: 40em){
                 height: 60px;
                 width: 60px;
@@ -848,6 +874,10 @@ button{
             position: absolute;
             border-radius: 50%;
             transform: scale(0.2);
+            @media (max-width: 64em){
+                opacity: 1 !important;
+                transform: scale(1) !important;
+            }
             @media(max-width: 40em){
                 border :2px solid #3bb9ed;
                 height: 80px;
@@ -871,13 +901,15 @@ button{
             @media (max-width: 64em){
                 top: -29%;
                 left: 400px;
+                opacity: 1 !important;
+                transform: scale(1) !important;
             }
             @media(max-width: 40em){
                 border:2px solid #000;
                 height: 115px;
                 width: 115px;
                 left: 200%;
-                top: -25%;;
+                top: -25%;
             }
         }
         .mobile-img {
@@ -913,6 +945,7 @@ button{
             padding-left: 0;
             padding:25px;
             text-align: center;
+            max-width: 100%;
             &__text{
                 text-align: center;
             }
@@ -927,11 +960,8 @@ button{
         }
     }
     @media (max-width: 40em){
-        padding-top: 100px;
+        padding-top: 200px;
         .box{
-            padding-left: 0;
-            padding:25px;
-            text-align: center;
             &__title1{
                 font-size: 16px;
             }
@@ -1124,7 +1154,7 @@ button{
             height: 380px;
         }
         @media (max-width: 40em){
-            top: 3%;
+            top: 20%;
             height: 200px;
             left: 145px;
         }
@@ -1151,7 +1181,7 @@ button{
         @media (max-width: 40em){
             height: 175px;
             left: 140px;
-            top: 51%;
+            top: 61%;
         }
     }
 @media (max-width: 64em){
@@ -1161,7 +1191,7 @@ button{
 }   
 @media (max-width: 40em){
     flex-flow:column;
-    padding-top: 20px;
+    padding-top: 200px;
     padding-bottom: 20px;
     .intern-left,.intern-right{
         width: 100%;
@@ -1350,7 +1380,7 @@ button{
                     font-size: 80px;
                     text-transform: uppercase;     
                      span{
-                         color: red;
+                         color: $orange-color;
                          font-size: 50px;
                          display: block;
                      }
@@ -1410,6 +1440,7 @@ button{
     }
     @media(max-width: 64em){
         height: 900px;
+        padding-top: 100px;
     }
  
 }
@@ -1452,7 +1483,7 @@ button{
 
        }
        .inline2{
-            margin-left: 70px;
+            margin-left: 82px;
        }
        .inv4 {
             top: 50px;
@@ -1525,7 +1556,7 @@ button{
             width: 220px;
             margin-left: 20px;
         }
-         .fun9,  .flex8,  .inv8 {
+        .fun9,  .flex8,  .inv8 {
             top: 80px;
             width: 500px;
         }
@@ -1551,7 +1582,7 @@ button{
                 width: 200px;
         }
         .fline1{
-              top: 60px;
+            top: 60px;
             margin-left: 38px;
             width: 220px;
         }

@@ -26,7 +26,7 @@
 
   <!--    first card-->    
   <div class="step" style="display:none;" id="demo">
-    <button close2-click class="close">x</button>
+    <button close2-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
     <div class="contactCards"> 
             <div class="contactCards-sectionOne">
                <h1 >We'd Love to <br>hear from you !</h1>
@@ -60,14 +60,29 @@
 <!--    second card-->
 
 <div class="step" style="display:none;" id="demo1" >
-    <button close-click class="close">x</button>
+    <button close-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
     <div class="conform">
        <div class="grid-x">
            <div class="small-12 cell">
-            <?php echo do_shortcode('[gravityform id="5" title ="false" ajax="true"]');?>
+            <h3>What are you looking for ? </h3>
+            <div class="grouped-cards-buttons">
+                <a class="button cont">Job Seeker </a> 
+                <a class="button cont">Service Seeker</a> 
+            </div>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="step" style="display:none;" id="demo2" >
+    <button close-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+    <div class="conform">
+       <div class="grid-x">
+           <div class="small-12 cell">
+              <?php echo do_shortcode('[gravityform id="5" title ="false" ajax="true"]');?>
+            </div>
+        </div>
+    </div>
 </div>
 
 <header class="site-header" role="banner">

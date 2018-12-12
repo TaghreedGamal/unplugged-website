@@ -117,21 +117,21 @@ get_header(); ?>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1-min.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4-min.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5-min.png" alt=""></div>
             <h1>We are fun, flexible, & innovative People!</h1>
-            <div class="home-slider__responsive__slides__slide-content__botton-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6-min.png" alt=""></div>
+            <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6-min.png" alt=""></div>
         </div>
       </div>
   </div> 
@@ -268,7 +268,7 @@ get_header(); ?>
                 </svg>
                
               <div class="box">
-                  <h1 class="box__title">Development</h1>  
+                  <h1 class="box__title"><span>Development<span></h1>  
                   <p class="box__text"><?php the_field('development_text'); ?> </p>    
                   <div class="grouped-buttons">
                     <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
@@ -829,7 +829,7 @@ get_header(); ?>
             <div class="v-line2" style="opacity:0"></div>    
             <div class="v-circle" style="opacity:0"></div>        
             <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
-              <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
+            <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
               <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
             </video>
             <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R-min.png">  
