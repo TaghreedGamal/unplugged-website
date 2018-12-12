@@ -29,8 +29,8 @@
     <button close2-click class="close">x</button>
     <div class="contactCards"> 
             <div class="contactCards-sectionOne">
-               <h1 >We'd Love to Hear from you !</h1>
-               <p>We are always happy to receive your ... </p>
+               <h1 >We'd Love to <br>hear from you !</h1>
+               <p>We are always happy to receive your inquiries,because we can provide you with the solution you read. </p>
                <button next-click class="button cont happy">Inquire About Something</button>
            </div>  
         <div class="contactCards-sectionTwo">
@@ -140,7 +140,7 @@
  <div class="top-bar-left">
     <div class="site-desktop-title top-bar-title">
        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/New logo.png" alt="Unplugged Logo"></a>
+        <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
     </div>
      <!-- <button close-project class="close" >X</button> -->
 </div>

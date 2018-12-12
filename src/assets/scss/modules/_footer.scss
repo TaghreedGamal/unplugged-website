@@ -41,7 +41,7 @@
 
 footer{
     position: relative;
-
+    margin-top: 350px;
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
@@ -83,13 +83,15 @@ footer{
    #gform_submit_button_6 {
         margin-top: 7px;
         height: 40px;
-        border-radius: 0 20px 20px 0;
+        border-radius:20px;
         position: absolute;
         right: 30%;
         top: 44%;
         transform: translate(0px);
         padding: 2px;
-        font-size: 18px;
+        font-size: 17px;
+        background-color: $subscribe-button;
+        box-shadow: none !important;
         @media (max-width: 64em){
           right: 0;
           top: 35%;
@@ -209,10 +211,9 @@ footer{
 
   .right{
     position: absolute;
-    top: 44%;
+    top: 47%;
     right: 2%;
     width: 200px;
-//    height: 200px;
     .righti{
       width: 180px;
       position: absolute;

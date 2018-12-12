@@ -54,6 +54,7 @@
   @include breakpoint(small only) {
     padding: 0; // prevents container visibility on small screens
   }
+  margin-top: 20px;
 }
 
 // WP post navigation
