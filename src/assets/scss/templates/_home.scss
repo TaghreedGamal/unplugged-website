@@ -1,7 +1,7 @@
 
 body{
     overflow-x: hidden;
-    max-width: 1400px;
+    // max-width: 1400px;
 }
 %border{
     border-radius: 10px 10px 10px 10px;
@@ -415,6 +415,7 @@ button{
             width: 40px;
             height: 2px;
             background: #9b9b9b;
+            // background: url("<?php the_field('project-logo'); ?>");
             margin-bottom: 5px;
             display: block;
             &.slick-active{
@@ -754,7 +755,7 @@ button{
 .products{
     height: auto;
     position: relative;
-    padding-top: 300px;
+    padding-top: 320px;
     // padding-bottom: 300px;
     display: flex;
     .box{
@@ -908,7 +909,7 @@ button{
                 border:2px solid #000;
                 height: 115px;
                 width: 115px;
-                left: 200%;
+                left: 150%;
                 top: -25%;
             }
         }
@@ -963,13 +964,16 @@ button{
         padding-top: 200px;
         .box{
             &__title1{
-                font-size: 16px;
+                font-size: 20px;
             }
             &__title2{
-                font-size: 26px;
+                font-size: 40px;
             }
             &__text{
                 text-align: center;
+            }
+            .button{
+                font-size: 13.2px !important;
             }
         }
     }
@@ -984,6 +988,9 @@ button{
     .intern-left,.intern-right{
         width: 50%;
         display: flex;
+    }
+    .intern-right{
+         transform: translateY(120px);
     }
     .box{
         padding-left: 100px;
@@ -1162,8 +1169,8 @@ button{
     .right-boxline2{
         position: absolute;
         bottom: 0px;
-        top: 250px;
-        right: 266px;
+        top: -86px;
+        right: 218px;
         z-index: -1;
         width: 5px;
         height: 600px;
@@ -1458,9 +1465,14 @@ button{
         width: 400px;
         right: 50px;   
        }
+       .flex5{
+         top: 20px;
+         right: 80px;
+         width: 380px;
+       }
        .inv5{
            max-width: 450px;
-           right: 50px; 
+           right: 35px;; 
        }
        .flex4{
            right: 45px;
@@ -1475,15 +1487,15 @@ button{
          }
        .inv6{
            width: 140px;
-           margin-left: 105px;
+           margin-left: 120px;
        }
        .inline1{
             width: 300px;
-            left: -100px;
+            left: -70px;
 
        }
        .inline2{
-            margin-left: 82px;
+            margin-left: 105px;
        }
        .inv4 {
             top: 50px;
@@ -1510,9 +1522,15 @@ button{
     left: 40%;
     width: 400px;
    .fun2,  .flex2, .inv3 {
-    z-index: 5;
-    width: 500px;
-      }
+        z-index: 5;
+        width: 500px;
+    }
+    .flex2{
+        top:120px;
+    }
+    .flex1{
+        top: 115px;
+    }
      .fline2{
          margin-left: 250px;
          width: 90px;
@@ -1542,6 +1560,7 @@ button{
          width: 100px;
          margin-left: 40px;
        }
+
     }
 
 .img3 {

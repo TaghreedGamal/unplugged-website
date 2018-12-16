@@ -66,8 +66,8 @@
            <div class="small-12 cell">
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
-                <a class="button cont">Job Seeker </a> 
-                <a class="button cont">Service Seeker</a> 
+                <a class="button cont" href="https://unpluggedweb.com/careers/">Job Seeker </a> 
+                <button  next-click class="button cont">Service Seeker</button> 
             </div>
             </div>
         </div>
@@ -75,11 +75,12 @@
 </div>
 
 <div class="step" style="display:none;" id="demo2" >
-    <button close-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+    <button close1-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
     <div class="conform">
        <div class="grid-x">
            <div class="small-12 cell">
-              <?php echo do_shortcode('[gravityform id="5" title ="false" ajax="true"]');?>
+              <h3>Provide your contact information</h3>
+              <?php echo do_shortcode('[gravityform id="7" title ="false" ajax="true"]');?>
             </div>
         </div>
     </div>

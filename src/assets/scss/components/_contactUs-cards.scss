@@ -37,21 +37,21 @@
     #gform_wrapper_5{
         margin: 1em 20%;
     }
-    #gf_progressbar_wrapper_5{
+    .gf_progressbar{
         display: none;
     }
     input,textarea{
-            @extend %border;
-            width: 70%;  
-          }
+        @extend %border;
+        width: 70%;  
+    }
     
     select{
-            @extend %border;
-       }
+         @extend %border;
+    }
     .gform_page_footer {
          display: flex;
-         justify-content: center;
-          border:0 !important;
+         justify-content: space-around;
+         border:0 !important;
     .gform_next_button, .gform_previous_button,.gform_button  {
         &.button{
             border-radius: 30px;
@@ -61,7 +61,7 @@
             font-size: 18px;
             box-shadow: 5px 10px 18px #00394633;
             text-align: center;
-            width: 150px;
+            width: 210px;
             background-color:#cdedfa;
             box-shadow: 2px 4px 18px #cdedfa59;
             color: black;
@@ -71,6 +71,9 @@
             }
         }
     }
+        .button.gform_previous_button {
+            margin-bottom: auto !important;
+        }
 }
     .top-titles{
         .gfield_label{
@@ -81,10 +84,11 @@
     label{
         &.gfield_label{
         font-size: 22px;
+        display: none !important;
         }
     }
     
-    #gform_wrapper_5 ul.top_label li.gfield label.gfield_label {
+    .gfield_label {
         display: block;
         margin: auto;
         font-family: $main-font;
@@ -95,29 +99,48 @@
     li#field_5_2 {
         text-align: center;
     }
-    #gform_wrapper_5 { 
-      max-width: 50%;
-      margin: 0 auto;
-      @media (max-width: 64em){
-        max-width: 90%;
-      }
+    .gform_wrapper { 
+        max-width: 65%;
+        margin: 0 auto;
+        padding-top: 20px;
+        @media (max-width: 64em){
+            max-width: 90%;
+        }
+        .gf_progressbar_wrapper {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            border-bottom: 0;
+        }
+         .top_label input.medium{
+            text-align: center;
+            // border : 2px solid red;
+            border-radius: 50px;
+            width: 90% !important;
+         }
     }
    
-      #gform_wrapper_5 ul li.gfield  .ginput_container_select,
-      #gform_wrapper_5 ul li.gfield  .ginput_container_text,
-      #gform_wrapper_5 ul li.gfield .gfield_description,
-      #gform_wrapper_5 div.ginput_complex label,  
-      #gform_wrapper_5 select, 
-      #gform_wrapper_5 textarea { 
+   .ginput_complex label { 
         text-align:center;
         @media (max-width: 64em){
             width:100% !important;
         }
       }
+      // #gform_wrapper_5 ul li.gfield  .ginput_container_select,
+      // #gform_wrapper_5 ul li.gfield  .ginput_container_text,
+      // #gform_wrapper_5 ul li.gfield .gfield_description,
+      // #gform_wrapper_5 div.ginput_complex label,  
+      // #gform_wrapper_5 select, 
+      // #gform_wrapper_5 textarea { 
+      //   text-align:center;
+      //   @media (max-width: 64em){
+      //       width:100% !important;
+      //   }
+      // }
    
     #gform_wrapper_5 ginput_container ginput_container_radio{
             text-align: left;
-        }
+    }
     .ginput_complex label,.gform_wrapper .gfield_radio li label {
         color: white;
         margin-top: 2px;
@@ -133,27 +156,14 @@
     }
           
 }
-.logo{
-    padding-left: 50px;
-    z-index: 7000;
-    max-width: 250px;
-    position: relative;
-    @media (max-width: 64em){
-        max-width: 180px;
-        padding-left: 0px;
-        padding-top: 0;
-    }
-    @media (max-width: 40em){
-        max-width: 104px;
-    }
-}
-#demo,#demo1{
+
+#demo,#demo1,#demo2{
     padding-top: 20px;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 20px;
     h5{
-    font-family: $card-SecHeader-font;
+        font-family: $card-SecHeader-font;
     }
     p{
         color: white;
@@ -167,7 +177,7 @@
         padding-left: 25px;
     }
 }
-#demo1{
+#demo1,#demo2{
     text-align: center;
     h3{
         font-family: $card-SecHeader-font;

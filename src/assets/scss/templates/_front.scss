@@ -141,7 +141,7 @@
 
   hr {
     @include xy-cell(12);
-    @extend .dotted;
+    // @extend .dotted;
     box-sizing: border-box;
   }
 }

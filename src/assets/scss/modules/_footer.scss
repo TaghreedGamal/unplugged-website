@@ -41,7 +41,7 @@
 
 footer{
     position: relative;
-    margin-top: 350px;
+    margin-top: 250px;
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
@@ -50,10 +50,15 @@ footer{
             margin-top: 10px;
             ul{
                 width: fit-content;
+                a{
+                  color: $dark-nav-color;
+                  font-size: 18px;
+                }
                 .is-active {
                 a{
                     background: white;
-                    color: #003a48;
+                    color: $orange-color;
+                    font-size: 20px;
                 }
               }
               @media (max-width: 64em){
@@ -159,6 +164,10 @@ footer{
           }
         }
     }
+  }
+  li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-46{
+    color: $dark-nav-color !important;
+            font-size: 18px;
   }
 #media_image-2{
     max-width: 230px

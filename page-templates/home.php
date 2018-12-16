@@ -167,30 +167,44 @@ get_header(); ?>
 
 <!--services section -->
 <section>
+     <div class="services-tabs container">
+        <div class="services-tabs__list">
+            <h3 class="section-titles">Our services</h3>
+            <ul class="vertical tabs" data-tabs id="service-tabs"> 
+            <li class="tabs-title is-active"><a href="#panel1s" aria-selected="true">UI / UX</a></li>
+            <li class="tabs-title"><a href="#panel2s">Development</a></li>
+            <li class="tabs-title"><a href="#panel3s">Mobile Apps</a></li>
+            <li class="tabs-title"><a href="#panel4s">E-Commerce</a></li>
+            <li class="tabs-title"><a href="#panel5s">Data Analytics </a></li>
+            <li class="tabs-title"><a href="#panel6s">Hosting & Maintenance</a></li>
+            </ul>
+        </div>
+
+        <div class="tabs-content" data-tabs-content="service-tabs">
+            <div class="slider">
+              <div class="tabs-panel is-active" id="panel1s">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="tabs-panel" id="panel2s">
+                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section>
     <div class="services-tabs container">
         <div class="services-tabs__list">
             <h3 class="section-titles">Our services</h3>
-          <ul class="vertical tabs" data-tabs id="example-tabs"> 
-            <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">UI / UX</a> 
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage5.png">-->
-              </li>
-            <li class="tabs-title"><a href="#panel2v">Development</a>
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage4.png">-->
-              </li>
-            <li class="tabs-title"><a href="#panel3v">Mobile Apps</a> 
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage5.png">-->
-              </li>
-            <li class="tabs-title"><a href="#panel4v">E-Commerce</a> 
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage5.png">-->
-              </li>
-            <li class="tabs-title"><a href="#panel5v">Data Analytics </a> 
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage4.png">-->
-              </li>
-            <li class="tabs-title"><a href="#panel6v">Hosting & Maintenance</a> 
-    <!--            <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/underimage3.png">-->
-              </li>
-
-          </ul>
+            <ul class="vertical tabs" data-tabs id="example-tabs"> 
+            <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">UI / UX</a></li>
+            <li class="tabs-title"><a href="#panel2v">Development</a></li>
+            <li class="tabs-title"><a href="#panel3v">Mobile Apps</a></li>
+            <li class="tabs-title"><a href="#panel4v">E-Commerce</a></li>
+            <li class="tabs-title"><a href="#panel5v">Data Analytics </a></li>
+            <li class="tabs-title"><a href="#panel6v">Hosting & Maintenance</a></li>
+            </ul>
         </div>
         <div class="tabs-content" data-tabs-content="example-tabs">
             <div class="tabs-panel is-active" data-service="design" id="panel1v">
@@ -847,5 +861,6 @@ get_header(); ?>
     </div>
 </section>   
         
+
 
 <?php get_footer();

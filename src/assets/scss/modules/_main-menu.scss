@@ -56,7 +56,7 @@
         }
         .text-content{
              transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-              transform: translate(0,250px);
+              transform: translate(0,250px) scale(0.7);
               color: #003946;
               @media (max-width: 40em){
                 font-size: 65px;
@@ -106,6 +106,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, calc(-50% + 200px ));
+        &.mline{
+          top: 62%;
+        }
       }          
     
  .text-content{
@@ -154,9 +157,6 @@
             top:13%;
            }
         }
-      }
-      img{
-        top: 55%;
       }
     }
 }

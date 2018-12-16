@@ -31,6 +31,29 @@ $('[next-click]').on('click',function(){
         contactSteps.eq(index+1).show();
 })
 
+$(".slider").slick({
+
+    autoplay: false,
+    dots: true,
+    responsive: [{ 
+        breakpoint: 500,
+        settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        } 
+    }]
+});
+
+
+
+$('#service-tabs').on('change.zf.tabs', function() {
+    var activeTab = $(".tabs-title.is-active");
+    console.log(activeTab.childNode)
+});
+
 
 
 $('[close-click]').on('click',function(){
@@ -162,7 +185,6 @@ tl1.to('.dot1', 0.5, {backgroundColor:"#003a47",width:60})
 
 
 .to('.dot2', 0.5, {backgroundColor:"#003a47",width:60})
-//.from(".Stitle2", 0.8, {yPercent:100,scale:0.5,delay:0.6,opacity:0})
 .to("#Slidflex", 0.8, {opacity:1,delay:0.2})
 .from(".fadeInUp2", 0.7, {yPercent:50, opacity:0})
 .from(".zoom2", 1.5, {scale:0.2,opacity:0})
@@ -182,7 +204,6 @@ tl1.to('.dot1', 0.5, {backgroundColor:"#003a47",width:60})
 .to(".show22", 0.2, {y:-100,opacity:0},"fly1+=0.4")
 .to(".zoom2", 0.8, {yPercent:-100,opacity:0},"fly1+=0.5")
 .to(".fadeInUp2", 0.7, {yPercent:-100, opacity:0},"fly1+=0.6")
-//.to(".Stitle2", 0.5, {yPercent:-100,opacity:0})
 .to('.dot2', 0.5, {backgroundColor:"#a9a9a9",width:40},"fly1+=0.8")
 
 
@@ -208,6 +229,8 @@ tl1.to('.dot1', 0.5, {backgroundColor:"#003a47",width:60})
 .to(".fadeInUp3", 0.7, {yPercent:-100, opacity:0},"fly2+=0.6")
 .to('.dot3', 0.5, {backgroundColor:"#a9a9a9",width:40},"fly2+=0.8");
 
+
+//project section
 
 var Bottomslider=$(".project-section").offset().top;
 $(window).scroll(function() {
@@ -242,7 +265,7 @@ if ( activeTab.length ) {
     if(servicesTimelines[service]){
         servicesTimelines[service].restart();
     }else{
-       console.log("img",img);
+       // console.log("img",img);
     servicesTimelines[service] = new TimelineMax();
     servicesTimelines[service]
     .addLabel("with")
@@ -397,6 +420,41 @@ $(window).scroll(function() {
     };
  });
 }
+
+}
+else if($(".page-template-coming-soon").length != 0) {
+var path11 = $(".top-drawLine1 path"),
+    length11 = path11[0].getTotalLength();
+var path22 = $(".top-drawLine2 path"),
+    length22 = path22[0].getTotalLength();
+var path33 = $(".botton-drawLine1 path"),
+    length33 = path33[0].getTotalLength();
+var path44 = $(".botton-drawLine2 path"),
+    length44 = path44[0].getTotalLength();
+
+var t = new TimelineMax();
+t.set(path11, {attr:{"stroke-dasharray": length11, "stroke-dashoffset": length11}})
+.set(path22, {attr:{"stroke-dasharray": length22, "stroke-dashoffset": length22}})
+.set(path33, {attr:{"stroke-dasharray": length33, "stroke-dashoffset": length33}})
+.set(path44, {attr:{"stroke-dasharray": length44, "stroke-dashoffset": length44}});
+
+var coming = new TimelineMax();
+coming.addLabel("img")
+.from(".coming-soon__image__mainImage", 0.7, {yPercent:50, opacity:0},"img")
+.from(".big-circle", 0.7, {scale:0.2,opacity:0},"img")
+.from(".small-circle", 1.5, {scale:0.2,opacity:0})
+.addLabel("show")
+.from(".tall-top-line",0.5,{y:100,opacity:0},"show")
+.from(".tall-botton-line",0.5,{y:100,opacity:0},"show")
+.from(".short-top-line",0.5,{y:100,opacity:0},"show+1")
+.from(".short-botton-line",0.5,{y:100,opacity:0},"show+1")
+.addLabel("both")
+.to(path11, 0.2, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path22, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path33, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
+.to(path44, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");
+
+}
 ////////// footer
 var path1 = $("#righl1 path"),
     length1 = path1[0].getTotalLength();
@@ -436,37 +494,3 @@ $(window).scroll(function() {
         }
 
  });
-}
-else if($(".page-template-coming-soon").length != 0) {
-var path11 = $(".top-drawLine1 path"),
-    length11 = path11[0].getTotalLength();
-var path22 = $(".top-drawLine2 path"),
-    length22 = path22[0].getTotalLength();
-var path33 = $(".botton-drawLine1 path"),
-    length33 = path33[0].getTotalLength();
-var path44 = $(".botton-drawLine2 path"),
-    length44 = path44[0].getTotalLength();
-
-var t = new TimelineMax();
-t.set(path11, {attr:{"stroke-dasharray": length11, "stroke-dashoffset": length11}})
-.set(path22, {attr:{"stroke-dasharray": length22, "stroke-dashoffset": length22}})
-.set(path33, {attr:{"stroke-dasharray": length33, "stroke-dashoffset": length33}})
-.set(path44, {attr:{"stroke-dasharray": length44, "stroke-dashoffset": length44}});
-
-var coming = new TimelineMax();
-coming.addLabel("img")
-.from(".coming-soon__image__mainImage", 0.7, {yPercent:50, opacity:0},"img")
-.from(".big-circle", 0.7, {scale:0.2,opacity:0},"img")
-.from(".small-circle", 1.5, {scale:0.2,opacity:0})
-.addLabel("show")
-.from(".tall-top-line",0.5,{y:100,opacity:0},"show")
-.from(".tall-botton-line",0.5,{y:100,opacity:0},"show")
-.from(".short-top-line",0.5,{y:100,opacity:0},"show+1")
-.from(".short-botton-line",0.5,{y:100,opacity:0},"show+1")
-.addLabel("both")
-.to(path11, 0.2, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-.to(path22, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-.to(path33, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-.to(path44, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");
-
-}
