@@ -9,9 +9,9 @@
 
 .footer-grid {
   @include xy-grid;
-        text-align: center;
+  text-align: center;
   padding: rem-calc(30) 0;
-    margin-top: 100px !important;
+  margin-top: 100px !important;
 
   section {
     @include xy-cell();
@@ -48,6 +48,7 @@ footer{
             margin:auto;
             color: #003a48;
             margin-top: 10px;
+            margin-left: 25% !important;
             ul{
                 width: fit-content;
                 a{
@@ -183,11 +184,10 @@ footer{
     top: -100px;
     left: 100px;
     width: 5px;
-    bottom: px;
     height: 400px;
     background-color: #ff7900;
     transform: skew(40deg) translateX(0);
-        opacity: 0;
+    opacity: 0;
     }
      &::after{
     content: "";
@@ -195,11 +195,13 @@ footer{
     top: -80px;
     margin-left: 20px;
     width: 5px;
-    bottom: px;
     height: 220px;
     background-color: #ff7900;
     transform: skew(40deg) translateX(0);
-         opacity: 0;
+    opacity: 0;
+     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+         left: 0;
+     }
     }
     &.animate{
         &::before{

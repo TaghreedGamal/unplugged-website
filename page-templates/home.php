@@ -166,7 +166,7 @@ get_header(); ?>
 
 
 <!--services section -->
-<section>
+<!-- <section>
      <div class="services-tabs container">
         <div class="services-tabs__list">
             <h3 class="section-titles">Our services</h3>
@@ -191,7 +191,7 @@ get_header(); ?>
           </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section>
     <div class="services-tabs container">

@@ -49,13 +49,6 @@ $(".slider").slick({
 
 
 
-$('#service-tabs').on('change.zf.tabs', function() {
-    var activeTab = $(".tabs-title.is-active");
-    console.log(activeTab.childNode)
-});
-
-
-
 $('[close-click]').on('click',function(){
     var x =  document.getElementById("demo1");
     x.style.display = "none";

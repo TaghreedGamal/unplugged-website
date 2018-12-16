@@ -85,6 +85,9 @@
 		}
 		&__mainImage{
 			position: relative;
+			@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                 width: 100%;
+             }
 		}
 		svg{
 			position: absolute;
