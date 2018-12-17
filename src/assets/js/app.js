@@ -31,23 +31,6 @@ $('[next-click]').on('click',function(){
         contactSteps.eq(index+1).show();
 })
 
-$(".slider").slick({
-
-    autoplay: false,
-    dots: true,
-    responsive: [{ 
-        breakpoint: 500,
-        settings: {
-            dots: false,
-            arrows: false,
-            infinite: false,
-            slidesToShow: 2,
-            slidesToScroll: 2
-        } 
-    }]
-});
-
-
 
 $('[close-click]').on('click',function(){
     var x =  document.getElementById("demo1");
@@ -75,7 +58,7 @@ $('[close-menu]').on('click',function(){
 
 
 if($(".home").length != 0){
-    console.log("home");
+    // console.log("home");
 
 $(document).ready(function(){
   $('.home-slider__responsive__slides').slick({
@@ -88,6 +71,40 @@ $(document).ready(function(){
   });
 });
 
+// responsive services
+ $('.services-slider-titles').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      asNavFor: '.services-slider-content',
+      responsive: [{ 
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 6,
+                slidesToScroll: 1
+            } 
+        }]
+});
+$('.services-slider-content').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.services-slider-titles',
+      responsive: [{ 
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            } 
+        }]
+});
+
+/// partner slider
 $(document).ready(function(){
 $('.clients').slick({
   centerMode: true,
@@ -111,6 +128,38 @@ $('.clients').slick({
 });
 
 
+// responsive projects
+$('.projects-slider-logos').slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      asNavFor: '.projects-slider-content',
+      responsive: [{ 
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            } 
+        }]
+});
+$('.projects-slider-content').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '.projects-slider-logos',
+      responsive: [{ 
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            } 
+        }]
+});
 // slide animation
 
 var path2 = $(".fun3 path"),
@@ -243,7 +292,6 @@ var servicesTimelines ={};
 $('#example-tabs').on('change.zf.tabs', function() {
     var activeTab = $(".tabs-panel.is-active");
 if ( activeTab.length ) {
-
     var service = activeTab.data("service"),
         box = activeTab.find(".box"),
         title = activeTab.find(".box__title"),

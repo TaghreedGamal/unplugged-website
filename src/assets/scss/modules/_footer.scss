@@ -48,26 +48,38 @@ footer{
             margin:auto;
             color: #003a48;
             margin-top: 10px;
-            margin-left: 25% !important;
+            
             ul{
                 width: fit-content;
                 a{
                   color: $dark-nav-color;
                   font-size: 18px;
+                   @media (max-width: 64em){
+                      font-size: 14px;
+                    }
+                    @media (width: 320px){
+                      font-size: 12px;
+                    }
                 }
                 .is-active {
                 a{
                     background: white;
                     color: $orange-color;
                     font-size: 20px;
+                    @media (max-width: 64em){
+                      font-size: 14px;
+                    }
+                     @media (width: 320px){
+                      font-size: 12px;
+                    }
                 }
               }
               @media (max-width: 64em){
                 text-align: center;
-                li{
-                  font-size: 15px;
-                }
               }
+            }
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                   margin-left: 25% !important;
             }
         }
     }
@@ -83,7 +95,7 @@ footer{
         } 
     }
       #input_6_1{
-         border-radius: 20px 0 0 20px;
+         border-radius: 20px ;
     }
 
    #gform_submit_button_6 {
@@ -99,11 +111,18 @@ footer{
         background-color: $baby-blue-color;
         box-shadow: none !important;
         @media (max-width: 64em){
-          right: 0;
+          right: 50px;
           top: 35%;
           width: 125px;
           height: 40px;
           font-size: 14px;
+        }
+        @media (max-width: 40em){
+          right: 19px;
+        }
+        @media (width: 320px){
+          right: 15px;
+          width: 100px;
         }
    }
     .footer-grid{
@@ -153,7 +172,10 @@ footer{
             &:before {
                color:$dark-nav-color !important;
                 content: "|";
-                margin-right: 20px;
+                margin-right: 30px;
+                @media (width: 320px){
+                  margin-right: 20px;
+                }
               }
               @media(max-width: 64em){
                 margin-right: 0px;
