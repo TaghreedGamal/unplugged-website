@@ -134,16 +134,28 @@ $('.projects-slider-logos').slick({
       slidesToScroll: 1,
       focusOnSelect: true,
       asNavFor: '.projects-slider-content',
-      responsive: [{ 
-            breakpoint: 500,
-            settings: {
+      responsive: [
+            { 
+                breakpoint: 500,
+                settings: {
                 dots: false,
                 arrows: false,
                 infinite: false,
                 slidesToShow: 3,
                 slidesToScroll: 1
-            } 
-        }]
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                dots: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 1
+                }
+            }
+        ]
 });
 $('.projects-slider-content').slick({
       slidesToShow: 1,
@@ -445,11 +457,6 @@ $(window).scroll(function() {
     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
     if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
         aud.play();
-    }
-    else{
-        aud.pause();
-    }
-    aud.onended = function() {
         var video=new TimelineMax();
         video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
         .to(".video-L",0.3,{x:30,opacity:1},0.1)
@@ -458,7 +465,20 @@ $(window).scroll(function() {
         .to(".v-circle",0.6,{scale:1,opacity:1})
         .to(".v-scircle",0.3,{scale:1,opacity:1})
         .to(".v-lcircle",0.3,{scale:1,opacity:1});
-    };
+    }
+    else{
+        aud.pause();
+    }
+    // aud.onended = function() {
+    //     var video=new TimelineMax();
+    //     video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
+    //     .to(".video-L",0.3,{x:30,opacity:1},0.1)
+    //     .to(".v-line",0.3,{x:0,opacity:1})
+    //     .to(".v-line2",0.3,{x:0,opacity:1})
+    //     .to(".v-circle",0.6,{scale:1,opacity:1})
+    //     .to(".v-scircle",0.3,{scale:1,opacity:1})
+    //     .to(".v-lcircle",0.3,{scale:1,opacity:1});
+    // };
  });
 }
 

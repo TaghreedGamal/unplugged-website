@@ -967,19 +967,17 @@ get_header(); ?>
             <div class="projects-slider-content">
              <?php $args = array('post_type' => 'projects', 'posts_per_page' =>8, 'orderby' => 'id','order' => 'ASC');
                         $loop = new WP_Query( $args );
-                $tabNo=1;
                 while ( $loop->have_posts() ) : $loop->the_post();  ?>
                     <?php 
                         if(has_post_thumbnail( $post->ID )) { 
                         $image2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
-                        }
-                    if($tabNo==1){ ?>
-                        <div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c"  data-accordion-item>
+                        }?>
+                    <div>
                         <div class="project-images" >
                            <img class="project-images__device-laptop" src="<?php echo $image2[0];?>">
                            <img class="project-images__device-mobile"src="<?php  echo get_field('project-mobile-image');?>">
                         </div>
-                          <div class="contain-box">
+                        <div class="contain-box">
                             <div class="box">
                                 <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
                                 <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
@@ -992,7 +990,6 @@ get_header(); ?>
                                     <?php
                                         endwhile;
                                     else :
-
                                     endif;
                                     ?>
                                 </div>
@@ -1002,38 +999,7 @@ get_header(); ?>
                               </div>
                             </div> 
                            </div>
-                        </div> <?php }
-                    else {    ?>
-                    <div class="tabs-panel " id="panel<?php echo $tabNo; ?>c"  data-accordion-item>
-                        <div class="project-images">
-                          <img class="project-images__device-laptop" src="<?php echo $image2[0];?>">
-                          <img class="project-images__device-mobile" src="<?php  echo get_field('project-mobile-image');?>">
-                        </div>
-                          <div class="contain-box">
-                            <div class="box">
-                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
-                               <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
-                            </br>
-                                <div class="small-icon">
-                                    <?php
-                                    if( have_rows('project_services') ):
-                                        while ( have_rows('project_services') ) : the_row();
-                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
-                                    <?php
-                                        endwhile;
-                                    else :
-
-                                    endif;
-                                    ?>
-                                </div>       
-                               <div class="grouped-buttons">
-                                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-                                <a class="button">Download Profile</a> 
-                              </div>
-                            </div> 
-                           </div>
-                        </div> <?php }
-                 $tabNo++;
+                        </div>  <?php 
                 endwhile; wp_reset_query(); ?>
         </div>
 </section>
