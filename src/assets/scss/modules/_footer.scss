@@ -9,9 +9,9 @@
 
 .footer-grid {
   @include xy-grid;
-        text-align: center;
+  text-align: center;
   padding: rem-calc(30) 0;
-    margin-top: 100px !important;
+  margin-top: 100px !important;
 
   section {
     @include xy-cell();
@@ -41,19 +41,25 @@
 
 footer{
     position: relative;
-    margin-top: 350px;
+    margin-top: 250px;
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
             margin:auto;
             color: #003a48;
             margin-top: 10px;
+            margin-left: 25% !important;
             ul{
                 width: fit-content;
+                a{
+                  color: $dark-nav-color;
+                  font-size: 18px;
+                }
                 .is-active {
                 a{
                     background: white;
-                    color: #003a48;
+                    color: $orange-color;
+                    font-size: 20px;
                 }
               }
               @media (max-width: 64em){
@@ -160,6 +166,10 @@ footer{
         }
     }
   }
+  li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-46{
+    color: $dark-nav-color !important;
+            font-size: 18px;
+  }
 #media_image-2{
     max-width: 230px
 }
@@ -174,11 +184,10 @@ footer{
     top: -100px;
     left: 100px;
     width: 5px;
-    bottom: px;
     height: 400px;
     background-color: #ff7900;
     transform: skew(40deg) translateX(0);
-        opacity: 0;
+    opacity: 0;
     }
      &::after{
     content: "";
@@ -186,11 +195,13 @@ footer{
     top: -80px;
     margin-left: 20px;
     width: 5px;
-    bottom: px;
     height: 220px;
     background-color: #ff7900;
     transform: skew(40deg) translateX(0);
-         opacity: 0;
+    opacity: 0;
+     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+         left: 0;
+     }
     }
     &.animate{
         &::before{

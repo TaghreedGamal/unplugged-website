@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="coming-soon container">
 		<div class="coming-soon__content">
 			<h1 class="coming-soon__content__title">WE ARE IN MAKEOVER!</h1>
-			<div class="coming-soon__content__buttons">
+			<div class="grouped-buttons">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
 				<a href="<?php echo esc_url( home_url( '/wp-content/uploads/2018/12/Unplugged-Company-profile-2018.pdf' ) ); ?>" class="button button-download">Download Profile</a>
 			</div>	

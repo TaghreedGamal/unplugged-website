@@ -72,7 +72,20 @@
 .nav-next {
   float:right;
 }
-
+.logo{
+    padding-left: 50px;
+    z-index: 7000;
+    max-width: 250px;
+    position: relative;
+    @media (max-width: 64em){
+        max-width: 180px;
+        padding-left: 0px;
+        padding-top: 0;
+    }
+    @media (max-width: 40em){
+        max-width: 104px;
+    }
+}
 @media (max-width: 64em){
     .site-navigation.top-bar{
         padding-right: 20px;

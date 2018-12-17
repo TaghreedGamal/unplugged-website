@@ -1,8 +1,11 @@
 .page-template-coming-soon{
-	height: 100vh;
-	overflow-y: hidden; 
-	.top-bar-right,.footer{
+	// height: 100vh;
+	// overflow-y: hidden; 
+	.top-bar-right{
 		display: none;
+	}
+	.footer{
+		margin-top: 100px;
 	}
 	header{
         &.site-header{
@@ -30,7 +33,7 @@
 	align-items: center;
 	&__content{
 		&__title{
-			font-size: 150px;
+			font-size: 145px;
 			line-height: 0.88;
 			position: relative;
 			padding-bottom: 5px;
@@ -41,10 +44,11 @@
 				font-size: 60px;
 			}
 		}
-		.button{
-			width: 260px;
-			font-size: 22px;
-			border-radius: 50px;
+		.grouped-buttons{
+			width: 75%;
+			.button{
+				font-size: 22px;
+			}
 		}
 		@media (max-width: 64em){
 			&__buttons{
@@ -81,6 +85,9 @@
 		}
 		&__mainImage{
 			position: relative;
+			@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                 width: 100%;
+             }
 		}
 		svg{
 			position: absolute;
@@ -104,7 +111,7 @@
 			right: 15%;
 		}
 		.tall-botton-line{
-			bottom: 55px;
+			bottom: 70px;
    			left: 70%;
 		}
 		.small-circle{

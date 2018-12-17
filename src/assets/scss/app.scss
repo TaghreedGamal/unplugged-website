@@ -5,6 +5,7 @@
 @import 'foundation';
 @import 'motion-ui';
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 @include foundation-global-styles;
 //@include foundation-grid;
 //@include foundation-flex-grid;
@@ -69,7 +70,7 @@
 
 // Modules
 @import "modules/navigation";
-@import "modules/content";
+// @import "modules/content";
 @import "modules/footer";
 @import "modules/editor-style";
 @import "modules/main-menu";
@@ -79,7 +80,7 @@
 @import "components/buttons";
 @import "components/contactUs-cards";
 @import "components/featured-image";
-@import "components/dividers";
+// @import "components/dividers";
 @import "components/links";
 @import "components/box";
 
@@ -88,7 +89,11 @@
 @import "templates/kitchen-sink";
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
 @import "templates/home";
+@import "templates/projects";
 @import "font-awesome";
 @import "templates/portfolio";
 @import "templates/coming-soon";
+<<<<<<< HEAD
 @import "templates/products";
+=======
+>>>>>>> d408fd237f7c084f1a588def388321205158797d
