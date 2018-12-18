@@ -124,4 +124,11 @@ function create_taxonomies() {
 
  register_taxonomy( 'projects_categories', array( 'projects' ), $args );
 }
+
+
+add_filter( 'gform_submit_button_7', 'add_paragraph_below_submit', 10, 2 );
+function add_paragraph_below_submit( $button, $form ) {
+    return $button .= "<p>your <a href='http://yourlink.com'>text</a> goes here</p>";
+}
 ?>
+

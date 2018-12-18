@@ -3,8 +3,9 @@ $('[list-view]').on('click',function(){
 	$('.filter-icons button').css( "opacity",'0.3');
   $(this).fadeTo( "slow", $(this).css("opacity",'1')); 
   $(".project-section__post").removeClass("grid");
-  $(".entry-content, #post-icons , #proj-buttons").removeClass("hide");
-  $(".entry-title a").removeClass("font-size"); 
+  $(".box__text,#post-icons,.grouped-buttons").removeClass("hide");
+  $(".box__title").removeClass("font-size"); 
+  $(".box__title span").removeClass("span-font-size"); 
   $(".project-section__post__box").removeClass("boxsize");
   $(".project-section__post__image").removeClass("imagesize");
 
@@ -14,25 +15,25 @@ $('[list-view]').on('click',function(){
 $('[grid-view]').on('click',function(){
   $('.filter-icons button').css("opacity",'0.3');
   $(this).fadeTo( "slow", $(this).css("opacity",'1'));
-
-  // $(".main-content__project-section").addClass("grid-flex");  
   $(".project-section__post").addClass("grid");
-  $(".entry-content, #post-icons ").addClass("hide");
+  $(" .box__text,#post-icons,.grouped-buttons ").addClass("hide");
   $(".project-section__post__box").addClass("boxsize"); 
-  $(".entry-title a").addClass("font-size"); 
+  $(".box__title").addClass("font-size"); 
+  $(".box__title span").addClass("span-font-size"); 
   $(".project-section__post__image").addClass("imagesize");
-  // $(".project-section__post__box").hover(
-  // 	function(){ 
-  // 		$(this).find('#proj-buttons').removeClass('hide');
-  // 		$(this).css("height","auto");
-  // 		$(this).css("transform", 'translateY(20px)');
-  //    }
-  // 	,function(){
-  // 		$(this).find('#proj-buttons').addClass('hide');
-  // 		$(this).css("height","150px");
-  // 		$(this).css("transform", 'translateY(90px)');
-  // 	}
-  // 	);
+ 
+  $(".project-section__post__box").hover(
+  	function(){ 
+  		$(this).find('.grouped-buttons').removeClass('hide');
+  		$(this).css("height","180px");
+  		$(this.getElementsByClassName(".box__title")).css("transform", 'translateY(-20px)');
+     }
+  	,function(){
+  		$(this).find('.grouped-buttons').addClass('hide');
+  		$(this).css("height","auto");
+  		$(this.getElementsByClassName(".box__title")).css("transform", 'translateY(0px)');
+  	}
+  	);
 })
 
 $(".scroll").click(function() {
