@@ -1,3 +1,101 @@
-h1{
-  font-family:$title-font;
+
+.products-page-container{
+
+  margin-top: -7em;
+  padding: 0 0 0 0;
+  & .products-page-container-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em;
+    padding-right: 0.5em;
+    padding-top: 10em;
+    & h1{
+      font-family:$title-font;
+      flex:1;
+      font-size: 8rem;
+    }
+    & .header-images{
+      flex:1.5;
+      & img{
+        display: inline-block;
+        &.last-rocket, &.empty-rocket{
+          position: relative;
+          z-index: 0;
+        }
+        &.last-rocket{
+          right: 6em;
+          height: 42em;
+          bottom: 1.5em;
+        }
+        &.empty-rocket{
+          left: 5em;
+          top: 1em;
+          z-index: -1;
+        }
+      }
+
+    }
+
+  }
+  & .main-container{
+    padding: 0;
+    margin:0;
+    max-width: unset;
+    & aside{
+      display: none;
+    }
+    & .main-grid{
+      width: 100%;
+      display: block;
+      margin: 0;
+
+      & .main-content{
+          display: flex;
+          margin: 0;
+          // padding-top: 15px;
+          flex-wrap: wrap;
+          padding: 15px 2em 0 2em;
+          & .filter-menu{
+            flex:1;
+            position: unset;
+            width: auto;
+            & h3{
+              letter-spacing: 2px;
+            }
+            & a{
+              font-family: 'DIN-Regular';
+            }
+          }
+          & .products-whole-section{
+            flex:4;
+            display: flex;
+            // flex-basis: 33%;
+            flex-wrap: wrap;
+            margin-top: -10em;
+
+            & .product-section{
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                height: auto;
+                margin-bottom: -25em;
+                & .product-section__post__image{
+                  display: flex;
+                  transform: scale(0.5);
+                  flex:1;
+                }
+                & .products{
+                  margin: auto 0;
+                  padding-top: 0;
+                  border:1px solid black;
+                  & h2{
+                    margin-top: 1.5em;
+                  }
+            }
+          }
+          }
+
+      }
+    }
+  }
 }

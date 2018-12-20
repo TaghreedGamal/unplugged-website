@@ -74,6 +74,7 @@ function theme_gsap_script() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
 
+
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
    register_post_type( 'projects',
@@ -123,5 +124,62 @@ function create_taxonomies() {
  );
 
  register_taxonomy( 'projects_categories', array( 'projects' ), $args );
+}
+
+
+
+//Products
+
+add_action( 'init', 'create_post_type_products' );
+function create_post_type_products() {
+   register_post_type( 'products',
+       array(
+           'labels' => array(
+               'name' => __( 'Products' ),
+               'singular_name' => __( 'Product' )
+               ),
+           'public' => true,
+           'has_archive' => true,
+           'rewrite' => array('slug' => 'products'),
+           'supports' => array(
+               'title',
+               'editor',
+               'revision',
+               'excerpt',
+               'thumbnail',
+           ),
+       )
+
+   );
+}
+
+
+add_action( 'init', 'create_products_taxonomies' );
+function create_products_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Products Categories', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Products Category', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Products Categories', 'textdomain' ),
+  'all_items'         => __( 'All Products Categories', 'textdomain' ),
+  'parent_item'       => __( 'Parent Products Category', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Products Category:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Products Category', 'textdomain' ),
+  'update_item'       => __( 'Update Products Category', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Products Category', 'textdomain' ),
+  'new_item_name'     => __( 'New Products Category Name', 'textdomain' ),
+  'menu_name'         => __( 'Products Categories', 'textdomain' ),
+);
+
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'products_categories' ),
+);
+
+register_taxonomy( 'products_categories', array( 'products' ), $args );
 }
 ?>
