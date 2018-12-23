@@ -10,32 +10,40 @@ get_header(); ?>
 
 
 <!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
-<div class="main-container ">
+<div class="main-container container">
 	<div class="main-grid ">
 		<main class="main-content main-content__project">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
 				<div class="main-content__project-content">
-				<?php get_template_part( 'template-parts/content', '' ); ?>
-				<div class="project-data">
-			    	<div class="project-data-category"><p></p>Category</div>
-			    	<div class="project-data-date"><p>Year<br><?php $date = get_field('project_date');
-			    	echo $date;?></p></div>
-			    	<div class="project-data-services">
-				    	<p>services
-				    		<div class="small-icon" id="post-icons">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">   
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/rubiks-responsive.png">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-mix.png">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
-							</div> 
-						</p>
+					<?php get_template_part( 'template-parts/content', '' ); ?>
+					<div class="project-data">
+				    	<div class="project-data-category"><p>Category</p>
+				    		<?php get_categories();?>
+				    	</div>
+				    	<div class="project-data-date"><p>Year</p>
+					    	<?php $date = get_field('project_date');
+					    	echo $date;?>
+				    	</div>
+				    	<div class="project-data-services">
+					    	<p>services</p>
+					    		<div class="small-icon">
+	                                <?php
+	                                if( have_rows('project_services') ):
+	                                    while ( have_rows('project_services') ) : the_row();
+	                                        ?> <img src="<?php the_sub_field('project_service_img')?>">
+	                                <?php
+	                                    endwhile;
+	                                else :
+	                                endif;
+	                                ?>
+								</div>
+					    </div>
 				    </div>
-			    </div>
-			     <div class="row-buttons">
-	                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
-	                <a class="button scroll" >Scroll for info.   <i class="fa fa-level-down"></i></a> 
-               </div>
+				     <div class="grouped-buttons">
+		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
+		                <a class="button scroll" >Scroll for info.   <i class="fa fa-level-down"></i></a> 
+	               	</div>
 				</div>
 				<div class="main-content__project-image">
 				<?php	the_post_thumbnail('large'); ?>
@@ -48,52 +56,57 @@ get_header(); ?>
 <!-- 	<?php get_sidebar(); ?>
  -->	</div>
 </div>
+<!-- Idea section -->
+<div class="project__Idea container two-parts" id="pIdea">
+	<div class="project__Idea-image">
+		<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
+	</div>
+	<div class="project__Idea-content">
+		<h1 class="project-title">The Idea</h1>
+		<p class="project-text">What we aimed to assess is the old website, by analysing the data we received from the client then, proposing our possible solutions to the hurdles they demonstrated through a modern, user-friendly aesthetic design.</p>
+		<div> 
+           	<a class="button top" ><i class="fa fa-angle-up"></i></a>
+        </div>
+	</div>
+</div>
+<!-- cycles section -->
 
-<div class="container">
-	<!-- Idea section -->
-		<div class="project__Idea" id="pIdea">
-			<div class="project__Idea-image">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
-			</div>
-			<div class="project__Idea-content">
-				<h1>The Idea</h1>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-				<div> 
-	               	<a class="button top" ><i class="fa fa-angle-up"></i></a>
-	            </div>
-       		</div>
-		</div>
-		<!-- cycles section -->
-		<div class="project__cycles">
-			<div class="tabs-content" data-tabs-content="example-tabs">
-			  <div class="tabs-panel is-active cycle-tabs" id="panel1">
-			    <h1>Title 1</h1>
-			    <carousel-3d>
-				    <slide :index="0">
-				      Slide 1 Content
-				    </slide>
-				    <slide :index="1">
-				      Slide 2 Content
-				    </slide>
-  				</carousel-3d>
-			   <!--  <div class="main">
-				  <div class="cycle-slider">
-		            <div><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project/cycle.png">  </div> 
-		          	<div><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project/cycle.png"></div>
-		          	<div><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project/cycle.png">  </div>
-		          	<div><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project/cycle.png">  </div>
-		          	<div><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project/cycle.png">  </div>
-		          </div>
-				</div> -->
-			  </div>
-			  <div class="tabs-panel" id="panel2">
-			    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-			  </div>
-			</div>
-			<ul class="tabs" data-tabs id="example-tabs">
-			  <li class="tabs-title is-active"><a href="#panel1" data-tabs-target="panel1" aria-selected="true">Tab 1</a></li>
-			  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
-			</ul>
-		</div>
+<div class="project__cycles">
+	<div class="tabs-content" data-tabs-content="example-tabs">
+	  <div class="tabs-panel is-active" id="panel1">
+	  	<section id="slider">
+		  <input type="radio" name="slider" id="s1">
+		  <input type="radio" name="slider" id="s2" checked>
+		  <input type="radio" name="slider" id="s3">
+		  <label for="s1" id="slide1" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
+		  <label for="s2" id="slide2" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
+		  <label for="s3" id="slide3" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
+		</section>
+	  </div>
+	  <div class="tabs-panel" id="panel2">
+	    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+	  </div>
+	</div>
+	<ul class="tabs container" data-tabs id="example-tabs">
+	  <li class="tabs-title is-active"><a href="#panel1" data-tabs-target="panel1" aria-selected="true">01. <br>On Boarding</a></li>
+	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">02. <br>Points Redeem</a></li>
+	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">03. <br>Products & Services</a></li>
+	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">04. <br>Offers & Subscriptions</a></li>
+	</ul>
+</div>
+
+<div class="project__Final container two-parts" id="pIdea">
+	<div class="project__Final-image">
+		<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
+	</div>
+	<div class="project__Final-content">
+		<h1 class="project-title">Final Result</h1>
+		<p class="project-text">From the very beginning of this project we wanted to bring the website to perfection, in terms of both functionality & aesthictal appeal, yet in the end, we can say that we are pleased with the final outcome, & so is Vodafone.</p>
+		<div class='grouped-buttons'> 
+           <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
+        </div>
+	</div>
+</div>
+
 </div>
 <?php get_footer();
