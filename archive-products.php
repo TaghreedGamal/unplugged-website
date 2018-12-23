@@ -95,6 +95,11 @@ get_header(); ?>
             <?php
 						the_post_thumbnail('full');
 						?>
+            <img class="line-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/line.svg" alt="">
+            <img class="circles-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/circles.svg" alt="">
+            <img class="orangle-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
+              <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
+              <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
           <?php else : ?>
             <div class="product_image">
