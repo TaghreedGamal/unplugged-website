@@ -147,6 +147,7 @@ function create_post_type_products() {
                'revision',
                'excerpt',
                'thumbnail',
+               'custom-fields'
            ),
        )
 

@@ -55,6 +55,37 @@
           // padding-top: 15px;
           flex-wrap: wrap;
           padding: 15px 2em 0 2em;
+          & .main-content__filter-section{
+            padding: 2em 1em;
+            & .search-bar{
+              padding: 2em 0;
+              display: flex;
+              & input{
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid #e6e6e6;
+                transition: border-bottom-color 0.3s linear;
+
+                &::placeholder{
+                  color: $title-color;
+                  letter-spacing: 1px;
+                  font-family: $title-font;
+                  font-size: 1.7rem;
+                }
+                &:focus{
+                  border-bottom-color: $title-color;
+                  &::placeholder{
+                        font-size: 0;
+                    }
+                }
+              }
+              & .search-button{
+                margin-left: -2.5em;
+              & img{
+
+                }
+              }
+            }
           & .filter-menu{
             flex:1;
             position: unset;
@@ -66,31 +97,104 @@
               font-family: 'DIN-Regular';
             }
           }
+        }
           & .products-whole-section{
             flex:4;
             display: flex;
             // flex-basis: 33%;
             flex-wrap: wrap;
-            margin-top: -10em;
+            // margin-top: -10em;
+            padding: 5em;
+            padding-right: 0;
 
             & .product-section{
                 display: flex;
                 flex-wrap: wrap;
-                width: 50%;
+                width: 40%;
                 height: auto;
-                margin-bottom: -25em;
+                margin: 3em 1em;
+                // margin-bottom: -25em;
+
                 & .product-section__post__image{
                   display: flex;
-                  transform: scale(0.5);
                   flex:1;
+                  // position: relative;
+                  & .product_image{
+                    position: relative;
+                    & .wp-post-image{
+                      width: 95%;
+                      height: 29em;
+                    }
+
+                    z-index: 4;
+
+                    & .line-image{
+                      position: absolute;
+                      left: -2em;
+                      top: 2em;
+                      z-index: 3;
+                      height: 26em;
+                    }
+                    & .circles-image{
+                      position: absolute;
+                      right: -3em;
+                      top: -3em;
+                      z-index: -1;
+                    }
+                    & .orangle-circle-image{
+                      position: absolute;
+                      bottom: -1em;
+                      left: -2em;
+                      z-index: -1;
+                    }
+                    & .zigzag-image{
+                      position: absolute;
+                      bottom: 4em;
+                      right: -2em;
+                      z-index: -1;
+                    }
+                    & .zigzag-image-2{
+                      position: absolute;
+                      bottom: 2.5em;
+                      right: -0.4em;
+                      z-index: 5;
+                    }
+                  }
+                  & .product_image_desktop{
+                    & .wp-post-image{
+                      transform: scale(1.2);
+                    }
+
+                    z-index: 4;
+                  }
+
                 }
-                & .products{
+                & .product-info{
                   margin: auto 0;
-                  padding-top: 0;
-                  border:1px solid black;
+                  padding: 2em;
+                  border:2px solid black;
+                  border-left: none;
+                  background-color: #f7f7f7;
+                  position: relative;
+                  left: -2em;
+                  & .products{
+                    padding-top: 0;
+                  }
+                  & .view-details-button{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.5s linear;
+                  }
                   & h2{
                     margin-top: 1.5em;
                   }
+                  &:hover{
+                    & .view-details-button{
+                      visibility: visible;
+                      opacity: 1;
+                    }
+                  }
+
             }
           }
           }

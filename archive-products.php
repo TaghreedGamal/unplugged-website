@@ -39,6 +39,12 @@ get_header(); ?>
 
 			<div class="main-content__filter-section">
 				<!-- <?php wp_list_categories()?> -->
+        <div class="search-bar">
+            <input type="text" name="" value="" placeholder="Search">
+            <a class="search-button" href="#">
+              <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
+            </a>
+        </div>
 				<div class="filter-menu">
 					<h3>Filter by</h3>
 					<?php
@@ -80,10 +86,37 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="product-section">
 					<div class="product-section__post__image">
-						<?php
+
+
+            <?php if(get_field('is_desktop')==true) : ?>
+            <div class="product_image_desktop">
+
+
+            <?php
 						the_post_thumbnail('full');
 						?>
-							<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+            </div>
+          <?php else : ?>
+            <div class="product_image">
+
+
+            <?php
+						the_post_thumbnail('full');
+						?>
+            <img class="line-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/line.svg" alt="">
+            <img class="circles-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/circles.svg" alt="">
+            <img class="orangle-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
+              <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
+              <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
+            </div>
+          <?php endif; ?>
+
+
+            <div class="product-info">
+              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <a class="view-details-button button"href="#">View details</a>
+            </div>
+
 					</div>
 
 				</div>
