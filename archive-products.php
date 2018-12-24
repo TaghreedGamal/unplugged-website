@@ -78,7 +78,7 @@ get_header(); ?>
 			</div>
 
 			<?php /* Start the Loop */ ?>
-				<div class="products-whole-section">
+				<div class="products-whole-section cute_scroll">
 				<?php if ( have_posts() ) : ?>
 
 
@@ -101,6 +101,10 @@ get_header(); ?>
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
+            <div class="product-info-desktop box">
+              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <a class="view-details-button button"href="#">View details</a>
+            </div>
           <?php else : ?>
             <div class="product_image">
 
@@ -114,13 +118,14 @@ get_header(); ?>
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
-          <?php endif; ?>
-
-
-            <div class="product-info">
+            <div class="product-info box">
               <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
               <a class="view-details-button button"href="#">View details</a>
             </div>
+          <?php endif; ?>
+
+
+
 
 					</div>
 

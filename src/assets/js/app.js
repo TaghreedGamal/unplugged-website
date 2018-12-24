@@ -1,7 +1,8 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 import slick from "slick-carousel";
-import projects from "./projects"; 
+import projects from "./projects";
+import products from "./products"; 
 import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 
 window.$ = $;
@@ -12,9 +13,9 @@ $(document).foundation();
 let contactSteps = $(".step");
 $('[data-click]').on('click',openContact)
 function openContact() {
- 
+
 var x =  document.getElementById("demo");
-    if (x.style.display == "none") 
+    if (x.style.display == "none")
     {
         x.style.display = "block";
     } else {
@@ -35,7 +36,7 @@ $(".slider").slick({
 
     autoplay: false,
     dots: true,
-    responsive: [{ 
+    responsive: [{
         breakpoint: 500,
         settings: {
             dots: false,
@@ -43,7 +44,7 @@ $(".slider").slick({
             infinite: false,
             slidesToShow: 2,
             slidesToScroll: 2
-        } 
+        }
     }]
 });
 
@@ -64,12 +65,12 @@ $('[close2-click]').on('click',function(){
 
 $('[menu-click]').on('click',function(){
  $(".full-menu").addClass("active");
- $('html, body').css('overflowY', 'hidden'); 
+ $('html, body').css('overflowY', 'hidden');
 })
 
 $('[close-menu]').on('click',function(){
     $(".full-menu").removeClass("active");
-    $('html, body').css('overflowY', 'visible'); 
+    $('html, body').css('overflowY', 'visible');
 })
 
 
@@ -107,7 +108,7 @@ $('.clients').slick({
     },
   ]
 });
-    
+
 });
 
 
@@ -270,7 +271,7 @@ if ( activeTab.length ) {
     .from(shape,0.4,{x:-200,opacity:0},"with+=0.7")
     .from(screen,0.4,{x:200,opacity:0},"with+=0.7")
     .from(lines,0.5,{y:200,opacity:0},"with+=1")
-    .from(draw,0.5,{x:-100,opacity:0},"with+=1");  
+    .from(draw,0.5,{x:-100,opacity:0},"with+=1");
     }
 }
 //    from(box,0.6,{x:-900,opacity:0}) box transform
@@ -297,8 +298,8 @@ if (screenSize > '480'){
               .from(container,0.3,{scaleX:0,transformOrigin:"right"},"go")
               .from(box1,0.5,{x:10,opacity:0,scaleX:0,transformOrigin:"right"},"go+=0.2")
               .from(img1,0.6,{x:800,opacity:0})
-              .from(img2,0.4,{scale:0.2,opacity:0}); 
-          
+              .from(img2,0.4,{scale:0.2,opacity:0});
+
         }
     }
     });
@@ -334,7 +335,7 @@ var inl = new TimelineMax();
             .from(".right-boximg2line-2",0.5,{y:200,opacity:0},"sline")
             .addLabel("draw")
             .to(path01, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
-            .to(path02, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4"); 
+            .to(path02, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4");
 inl.pause();
 
 $(window).scroll(function() {
@@ -365,8 +366,8 @@ $(".card1, .card2, .card3, .card4").hover(
     $(this).find(".datacard").addClass('dcardhover');
     $(this).find(".kora").addClass('dcardhover');
     $(this).find("p.card-no").addClass('cardno-hover');
-  },function(){    
-    $(this).find(".card").removeClass('cardhover');  
+  },function(){
+    $(this).find(".card").removeClass('cardhover');
     $(this).find(".obj").removeClass('objhover');
     $(this).find(".datacard").removeClass('dcardhover');
     $(this).find(".kora").removeClass('dcardhover');
@@ -384,7 +385,7 @@ $(window).scroll(function() {
     }
  });
 
-/////// video 
+/////// video
 
 var screenSize=$(window).width();
 if (screenSize > '1024'){
@@ -466,10 +467,10 @@ tl.set(path1, {attr:{"stroke-dasharray": length1, "stroke-dashoffset": length1}}
 var f=new TimelineMax();
 f.from(".right",0.5,{y:150,opacity:0},1)
 .from(".left",0.5,{y:-150,opacity:0},1)
-.call(function() { 
+.call(function() {
     $('.right').addClass("animate");
 }, null, null, 1.5)
-.call(function() { 
+.call(function() {
     $('.left').addClass("animate");
 }, null, null, 1.5)
 .addLabel("draw","+=1")
