@@ -17,7 +17,7 @@
 
 get_header(); ?>
 
-<div class="main-container">
+<div class="main-container container">
 	<div class="main-grid">
 		<main class="main-content">
 			<div class="main-content__filter-section">
@@ -65,20 +65,23 @@ get_header(); ?>
 									?>
 								</div>
 								<div class="project-section__post__box box">
-									<div>
-										<?php
-										get_template_part( 'template-parts/content', get_post_format() );
-										?>
-										<div class="small-icon" id="post-icons">
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">   
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/rubiks-responsive.png">
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-mix.png">
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/hostingv2.png">
-										</div>       
-										<div id="proj-buttons">
-											<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
-										</div> 
-									</div>
+									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
+									<h2 class="box__title"><?php the_title();?></h2>  
+									<div class="box__text"><?php the_excerpt(); ?></div> </br>
+									<div class="small-icon" id="post-icons">
+	                                    <?php
+	                                    if( have_rows('project_services') ):
+	                                        while ( have_rows('project_services') ) : the_row();
+	                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
+	                                    <?php
+	                                        endwhile;
+	                                    else :
+	                                    endif;
+	                                    ?>
+									</div>       
+									<div class="grouped-buttons">
+										<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+									</div> 
 								</div>
 							</div>
 						<?php 

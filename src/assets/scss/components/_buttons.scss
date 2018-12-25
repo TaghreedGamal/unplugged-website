@@ -95,13 +95,13 @@
         transform: translateY(1px);
     }
 }
-@media (max-width: 64em){
-    a{
-        &.button{
-            color: #fff !important;
-        }
-    }
-}
+// @media (max-width: 64em){
+//     a{
+//         &.button{
+//             color: #fff !important;
+//         }
+//     }
+// }
 .grouped-buttons{
     display: flex;
     align-items:center;
@@ -111,14 +111,24 @@
         width: 48%;
         font-size: 18px;
         justify-content: space-around;
+        @media (max-width: 64em){
+            width: 40%;
+        }
         @media (max-width: 40em){
-            font-size: 10px !important;
+            width: 48%;
+            font-size: 13px !important;
+        }
+        @media (width: 320px){
+            font-size: 10.8px !important
         }
     }
     &.cards{
         .button{
             background-color:$card-button-color;
         }
+    }
+    @media (max-width: 64em){
+        justify-content: center;
     }
 }
 i.fa.fa-long-arrow-right {

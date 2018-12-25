@@ -103,7 +103,7 @@
 <!-- full menu -->
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
-        <button close-menu class="close close-responsive">X</button>
+        <button close-menu class="close close-responsive"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
         <div class="img-content">
            <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-about">
@@ -141,7 +141,7 @@
 </div>
 </div>
 <div class="full-menu__item">
-    <button close-menu class="close close-desktop">X</button>
+    <button close-menu class="close close-desktop"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
     <div class="img-content">
        <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
