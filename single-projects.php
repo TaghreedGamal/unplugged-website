@@ -105,7 +105,11 @@ get_header(); ?>
 		<h1 class="project-title">Final Result</h1>
 		<p class="project-text">From the very beginning of this project we wanted to bring the website to perfection, in terms of both functionality & aesthictal appeal, yet in the end, we can say that we are pleased with the final outcome, & so is Vodafone.</p>
 		<div class='grouped-buttons'> 
-           <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
+			<?php 
+				$link = get_field('project_finalresult_link');
+				if( $link ): ?>
+					<a class="button" href="<?php echo $link; ?>"><i class="fa fa-desktop">  </i>  Visit Site</a>
+				<?php endif; ?>
         </div>
 	</div>
 </div>
