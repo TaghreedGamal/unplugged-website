@@ -116,6 +116,7 @@
 .project-section{
    &__post{
      display: flex;
+     height: 80vh;
      margin-bottom: 150px;
      padding-right: 25px;
      align-items: center;
@@ -128,21 +129,26 @@
         width: 85%;    
         height: fit-content;
         padding-left: 100px;
-        padding-bottom: 30px;
+        padding-bottom: 30px;    
      }
      &.grid{
-          padding-right: 25px;
-       #proj-buttons{
-        display: none;
-       }
-        .boxsize{
-           &:hover #proj-buttons{
-              display: inline-block !important;
-           }       
+        padding-right: 25px;
+        align-items: flex-end;
+      }
+      .box.boxsize:hover{
+        .grouped-buttons{
+             display: block !important;
+            .button{
+              font-size: 12px !important;
+              width: 100%;
+              padding-top: 0;
+            } 
         }
-     }
+         transition: all 1s ease-in-out;
+      }
   }
 }
+
 //// for tail and grid sections
 .hide{
   display: none !important;
@@ -159,22 +165,19 @@
   height: auto;
   padding:20px;
   text-align: center;
-  width: 50%;
-  display: flex;
-  align-items: center;
-
+  width: 40%;
+  border:2px solid;
 }
 .imagesize{
-  width: 50%;
-  transform:translateX(50px);
+  width: 70%;
+  transform:translateX(30px);
   z-index: 1;
 }
 .font-size{
-  font-size: 50px !important;
+  padding-top: 20px;
+  font-size: 40px !important;
 }
-.span-font-size{
-  font-size: 30px !important;
-}
+
 ///////////////
 
 .updated,.byline.author{

@@ -66,7 +66,7 @@ get_header(); ?>
 								</div>
 								<div class="project-section__post__box box">
 									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
-									<h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
+									<h2 class="box__title"><?php the_title();?></h2>  
 									<div class="box__text"><?php the_excerpt(); ?></div> </br>
 									<div class="small-icon" id="post-icons">
 	                                    <?php
