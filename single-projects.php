@@ -109,6 +109,7 @@ get_header(); ?>
 	</div>
 </div>
 
+
 <!-- final testimonials -->
 <div class="project__Testimonial container two-parts" id="pIdea">
 	<div class="project__Testimonial-title">
@@ -121,7 +122,6 @@ get_header(); ?>
 		<i class="fa fa-quote-right" aria-hidden="true"></i>
 	</div>
 </div>
-
 
 </div>
 <?php get_footer();
