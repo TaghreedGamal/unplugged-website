@@ -61,10 +61,7 @@
    			margin-top: 30px;
    			.button{
    				width:250px;
-<<<<<<< HEAD
 
-=======
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
    				justify-content:space-evenly;
    				font-size: 22px;
    			}
@@ -131,15 +128,11 @@
 			}
 			#s3:checked ~ #slide1{
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-<<<<<<< HEAD
-
-=======
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
 			  transform: translate3d(130%,0,-150px);
 			}
 			#s3:checked ~ #slide2 {
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-<<<<<<< HEAD
+
 			  transform: translate3d(-130%, 0, -150px);
 			}
 
@@ -149,43 +142,25 @@
 
 			  transform: translate3d(-130%, 0, -150px)
 
-=======
-			  transform: translate3d(-130%, 0, -150px);;
-			}
-			#s2:checked ~ #slide1
-			 {
-			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
-			  transform: translate3d(-130%, 0, -150px)
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
 			}
 			#s2:checked ~ #slide3
 			 {
 			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
-<<<<<<< HEAD
 
 			  transform: translate3d(130%,0,-150px);
 
-=======
-			  transform: translate3d(130%,0,-150px);
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
 			}
 
 			#s1:checked ~ #slide2 {
 			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
 			  transform: translate3d(130%,0,-150px);
-<<<<<<< HEAD
 
-=======
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
 			}
 
 			#s1:checked ~ #slide3 {
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 			  transform: translate3d(-130%, 0, -150px);
-<<<<<<< HEAD
 
-=======
->>>>>>> a850cc8f8873112064795819773b35587c6fd679
 			}
 			#s1:checked ~ #slide1, #s2:checked ~ #slide2,
 			#s3:checked ~ #slide3 {
