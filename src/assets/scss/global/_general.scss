@@ -26,3 +26,17 @@ p{
     	font-size: 23.6px;
     }
 }
+.fa-quote-left{
+    position: absolute;
+    font-size: 150px !important;
+    z-index: -1;
+    top: -65px;
+    left: -20px;
+}
+.fa-quote-right{
+    position: absolute;
+    font-size: 150px !important;
+    z-index: -1;
+    bottom: -20px;
+    right: -15px;
+}

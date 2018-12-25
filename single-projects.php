@@ -16,6 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
 				<div class="main-content__project-content">
+					<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"class="close-page">&times</a>
 					<?php get_template_part( 'template-parts/content', '' ); ?>
 					<div class="project-data">
 				    	<div class="project-data-category"><p>Category</p>
@@ -46,10 +47,10 @@ get_header(); ?>
 	               	</div>
 				</div>
 				<div class="main-content__project-image">
-				<?php	the_post_thumbnail('large'); ?>
+					<?php if( get_field('project-img') ): ?>
+						<img src="<?php the_field('project-img'); ?>" />
+					<?php endif; ?>
 			    </div>
-				 <!-- <?php the_post_navigation(); ?>  -->
-				<?php comments_template(); ?>
 			<?php endwhile; ?>
 		</main>
 	</div>
@@ -113,7 +114,7 @@ get_header(); ?>
 <!-- final testimonials -->
 <div class="project__Testimonial container two-parts" id="pIdea">
 	<div class="project__Testimonial-title">
-		<h1 class="project-title">Final Testimonial</h1>
+		<h1 class="project-title">Final<br> Testimonial</h1>
 	</div>
 	<div class="project__Testimonial-content">
 		<i class="fa fa-quote-left"></i>
@@ -123,5 +124,19 @@ get_header(); ?>
 	</div>
 </div>
 
+<!-- footer -->
+<?php
+	$next_post = get_next_post();
+	if (!empty( $next_post )): ?>
+		<div class="project__footer container two-parts">
+			<div class="project__footer-image">
+			 <?php echo get_the_post_thumbnail( $next_post->ID, 'medium-large' ); ?>
+			</div>
+			<div class="project__footer-content">
+			 <h1 class="project-title"><?php echo esc_attr( $next_post->post_title ); ?></h1>
+			 <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" class="button">Next project<i class="fa fa-long-arrow-right"></i></a>
+			</div>
+		</div>
+<?php endif; ?>
 </div>
 <?php get_footer();
