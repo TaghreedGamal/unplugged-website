@@ -60,9 +60,9 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div class="project-section__post">
 								<div class="project-section__post__image">
-									<?php
-									the_post_thumbnail('full'); 
-									?>
+									<?php if( get_field('project-img') ): ?>
+										<img src="<?php the_field('project-img'); ?>" />
+									<?php endif; ?>
 								</div>
 								<div class="project-section__post__box box">
 									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
@@ -106,7 +106,7 @@ get_header(); ?>
 					</div>
 
 				</div>
-			</main>
+			
 			<?php get_sidebar(); ?>
 
 
