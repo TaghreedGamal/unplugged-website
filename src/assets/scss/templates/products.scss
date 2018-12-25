@@ -30,13 +30,17 @@
     padding: 5em;
     padding-right: 0.5em;
     padding-top: 10em;
-    & h1{
+    height: 101vh;
+    & .products-header{
       font-family:$title-font;
       flex:1;
       font-size: 8rem;
+      padding: 0.5em 0;
     }
     & .header-images{
       flex:1.5;
+      display: block;
+      text-align: right;
       & img{
         display: inline-block;
         &.last-rocket, &.empty-rocket{
@@ -164,7 +168,7 @@
                       top: -3em;
                       z-index: -1;
                     }
-                    & .orangle-circle-image{
+                    & .orange-circle-image{
                       position: absolute;
                       bottom: -1em;
                       left: -2em;
@@ -207,7 +211,7 @@
                       top: -2em;
                       z-index: -1;
                     }
-                    & .orangle-circle-image{
+                    & .orange-circle-image{
                       position: absolute;
                       bottom: 1em;
                       left: 3em;

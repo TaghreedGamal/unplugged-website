@@ -19,7 +19,7 @@ get_header(); ?>
 
 <div class="products-page-container container" >
   <div class="products-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
-    <h1>We Desvise and
+    <h1 class="products-header">We Desvise and
   Launch Digital
   Products</h1>
   <div class="header-images">
@@ -97,7 +97,7 @@ get_header(); ?>
 						?>
             <img class="line-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/line.svg" alt="">
             <img class="circles-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/circles.svg" alt="">
-            <img class="orangle-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
+            <img class="orange-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
@@ -114,7 +114,7 @@ get_header(); ?>
 						?>
             <img class="line-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/line.svg" alt="">
             <img class="circles-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/circles.svg" alt="">
-            <img class="orangle-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
+            <img class="orange-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
