@@ -1,8 +1,9 @@
 import $ from 'jquery';
+import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 import whatInput from 'what-input';
 import slick from "slick-carousel";
 import projects from "./projects"; 
-import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
+
 
 window.$ = $;
 
@@ -291,7 +292,6 @@ $(window).scroll(function() {
      if($(window).scrollTop()*8 > Bottomslider )
         {
           tl1.pause();
-//            console.log('jjjjjj');
         }
     else{
         tl1.play();
