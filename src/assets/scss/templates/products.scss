@@ -82,6 +82,7 @@
           padding: 15px 2em 0 2em;
           & .main-content__filter-section{
             padding: 2em 1em;
+            width: 20%;
             & .search-bar{
               padding: 2em 0;
               display: flex;
@@ -203,7 +204,7 @@
                       top: 1.5em;
                       z-index: 3;
                       height: 24em;
-                      transform: rotate(-6.5deg);
+                      transform: rotate(-5.5deg);
                     }
                     & .circles-image{
                       position: absolute;
@@ -213,21 +214,21 @@
                     }
                     & .orange-circle-image{
                       position: absolute;
-                      bottom: 1em;
-                      left: 3em;
+                      bottom: 2em;
+                      left: 2em;
                       z-index: -1;
 
                     }
                     & .zigzag-image{
                       position: absolute;
                       bottom: 4em;
-                      right: 7em;
+                      right: 6em;
                       z-index: -1;
                     }
                     & .zigzag-image-2{
                       position: absolute;
                       bottom: 2.5em;
-                      right: 7.5em;
+                      right: 6.5em;
                       z-index: 5;
                     }
                   }
@@ -243,6 +244,14 @@
                   left: -3em;
                   margin-bottom: 2em;
                   transition: margin-bottom 0.5s linear;
+                  &.box{
+                    padding: 1em 2em;
+                  & .box__title{
+                    & a{
+                      color: unset;
+                    }
+                  }
+                  }
                   & .products{
                     padding-top: 0;
                   }
@@ -256,8 +265,9 @@
                     // transition: visibility 0s, opacity 0.5s linear;
                   }
                   & h2{
-                    margin-top: 1.5em;
+                    margin-top: 0.5em;
                     vertical-align: middle;
+                    // font-family: $title-font;
                   }
                   &:hover{
                     // margin-bottom: 5;
@@ -279,6 +289,11 @@
               transition: margin-bottom 0.5s linear;
               &.box{
                 padding: 1em 2em;
+              & .box__title{
+                & a{
+                  color: unset;
+                }
+              }
               }
               & .products{
                 padding-top: 0;
@@ -293,8 +308,9 @@
                 // transition: visibility 0s, opacity 0.5s linear;
               }
               & h2{
-                margin-top: 1.5em;
+                margin-top: 0.5em;
                 vertical-align: middle;
+                  // font-family: $title-font;
               }
               &:hover{
                 // margin-bottom: 5;
