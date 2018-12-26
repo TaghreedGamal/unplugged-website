@@ -183,4 +183,32 @@ $args = array(
 
 register_taxonomy( 'products_categories', array( 'products' ), $args );
 }
+
+
+
+
+//blog
+add_action( 'init', 'create_post_type_blogs' );
+function create_post_type_blogs() {
+   register_post_type( 'blogs',
+       array(
+           'labels' => array(
+               'name' => __( 'Blogs' ),
+               'singular_name' => __( 'Blog' )
+               ),
+           'public' => true,
+           'has_archive' => true,
+           'rewrite' => array('slug' => 'blogs'),
+           'supports' => array(
+               'title',
+               'editor',
+               'revision',
+               'excerpt',
+               'thumbnail',
+               'custom-fields'
+           ),
+       )
+
+   );
+}
 ?>

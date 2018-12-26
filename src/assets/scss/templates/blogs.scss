@@ -1,0 +1,43 @@
+.blogs-page-container{
+
+  margin-top: -7em;
+  padding: 0 0 0 0;
+  & .blogs-page-container-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em;
+    padding-right: 0.5em;
+    padding-top: 10em;
+    height: 101vh;
+    position: relative;
+    & .blogs-header{
+      font-family:$title-font;
+      flex:1;
+      font-size: 8rem;
+      padding: 0.5em 0;
+    }
+    & .small-typewriter{
+      position: absolute;
+      top: 1em;
+      width: 15em;
+      left: 35%;
+    }
+    & .header-images{
+      flex:1.5;
+      display: block;
+      text-align: right;
+      & img{
+        display: inline-block;
+        &.typewriter{
+          position: relative;
+          z-index: 0;
+          // width: 85%;
+          padding-top: 2.5em;
+        }
+
+      }
+
+    }
+
+  }
+}

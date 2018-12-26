@@ -3,6 +3,8 @@ import whatInput from 'what-input';
 import slick from "slick-carousel";
 import projects from "./projects";
 import products from "./products";
+import blogs from "./blogs";
+
 import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 
 window.$ = $;
