@@ -40,11 +40,28 @@ Connect, & Inspire.</h1>
 			<div class="featured-articles-slider">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="featured-articles-slide">
-				<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+				<div class="featured-articles-slide slide">
+          <h2 class="blog-post-header">
+            <?php the_title(); ?>
+          </h2>
+          <div class="author">
+            <img src=" <?php the_field('author_avatar') ?>" alt="">
+            <span class="author-name">By: <?php the_field('author') ?></span>
+          </div>
+          <p class="blog-post-content"><?php the_content(); ?></p>
+          <div class="blog-post-details">
+            <div class="blog-post-time">
+            <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
+            </div>
+            <div class="blog-post-date">
+              <?php echo get_the_date(); ?>
+            </div>
+          </div>
+				<!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
 				<?php
 				the_post_thumbnail('full');
 				?>
+        <a class="button read-more"href="#">Read More →</a>
 				</div>
 				<?php endwhile; ?>
 			</div>

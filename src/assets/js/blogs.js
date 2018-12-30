@@ -1,26 +1,45 @@
+//import slick from "slick-carousel";
+
+$(document).ready(function(){
 $('.featured-articles-slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+       centerMode: true,
+       centerPadding: '0px',
+       slidesToShow: 3,
+       infinite: true,
+       slidesToScroll:1,
+       // autoplay:true,
+       // fade: true,
+       autoplaySpeed:1000,
+       dots:true,
+       // slidesToScroll: 1,
+       // dots: true,
+       // arrows:false,
+       // autoplay:false,
+       // infinite: true,
+       // // speed: 1500,
+       // // autoplaySpeed:2100,
+       // cssEase: 'linear',
+       // responsive: [
+       //   {
+       //     breakpoint: 1200,
+       //     settings: {
+       //       slidesToShow: 3,
+       //       slidesToScroll: 3,
+       //       infinite: true,
+       //       dots: true
+       //     }
+       //   },
+       //   {
+       //     breakpoint: 767,
+       //     settings: {
+       //       slidesToShow: 1,
+       //       slidesToScroll: 1
+       //     }
+       //   }
+       //   // You can unslick at a given breakpoint now by adding:
+       //   // settings: "unslick"
+       //   // instead of a settings object
+       // ]
+     });
+
 });
