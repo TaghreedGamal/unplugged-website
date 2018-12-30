@@ -109,7 +109,7 @@ get_header(); ?>
 <!-- cycles section -->
 
 <div class="project__cycles">
-	<div class="tabs-content" data-tabs-content="example-tabs">
+	<!-- <div class="tabs-content" data-tabs-content="example-tabs">
 	  <div class="tabs-panel is-active" id="panel1">
 	  	<section id="slider">
 		  <input type="radio" name="slider" id="s1">
@@ -123,13 +123,83 @@ get_header(); ?>
 	  <div class="tabs-panel" id="panel2">
 	    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
 	  </div>
+	</div> -->
+	<div class="tabs-content projtabs" data-tabs-content="example-tabs">
+        <?php 
+	        $tabNo=1;
+	        if( have_rows('project-steps-title') ): 
+                while( have_rows('project-steps-title') ): the_row(); 
+            		if($tabNo==1){ 
+            			 $s=1;?>
+                	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
+	                	<section id="slider">
+		                	<?php 
+	                			if( have_rows('proj-step-images') ): 
+	                				while( have_rows('proj-step-images') ): the_row();?>
+	                					 <input type="radio" name="slider" id="<?php echo ("s".$s) ?>" checked>
+	                					 <label for="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><div class="overlayer"></div>
+	                					 </label>
+	                    					
+	                    				<?php
+	                    					$s++;
+	                    			endwhile;	   
+	                			endif;
+		              		?>
+	              	    </section>
+                	</div>
+                    <?php }
+		     		else{
+		     			$s=1;?>
+		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
+		                	<section id="slider">
+			                	<?php 
+		                			if( have_rows('proj-step-images') ): 
+		                				while( have_rows('proj-step-images') ): the_row();?>
+		                					 <input type="radio" name="slider" id="<?php echo ("s".$s) ?>" checked>
+		                					 <label for="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><div class="overlayer"></div>
+		                					 </label>
+		                    					
+		                    				<?php
+		                    					$s++;
+		                    			endwhile;	   
+		                			endif;		
+			              		?>
+		              	    </section>
+		            	</div> 
+	            <?php 	}
+	         	$tabNo++;
+	         	endwhile;
+	         	endif;
+       ?>
 	</div>
-	<ul class="tabs container" data-tabs id="example-tabs">
-	  <li class="tabs-title is-active"><a href="#panel1" data-tabs-target="panel1" aria-selected="true">01. <br>On Boarding</a></li>
-	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">02. <br>Points Redeem</a></li>
-	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">03. <br>Products & Services</a></li>
-	  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">04. <br>Offers & Subscriptions</a></li>
-	</ul>
+    <ul class="tabs container" data-tabs id="example-tabs">
+    	<?php $url = 1;
+        $stepNo=1;
+        if( have_rows('project-steps-title') ):
+   			 while ( have_rows('project-steps-title') ) : the_row();
+       		 if($url==1){ ?>
+            <li class="tabs-title is-active">
+            	<a href="#panel<?php echo $url;?>c" aria-selected="true">
+	            	<?php echo("0".$stepNo.".");?>
+	            	<br>
+	            	<?php the_sub_field('proj-step-title');?>
+	            </a>
+            </li>
+         <?php }
+        else { ?>        
+            <li class="tabs-title">
+                <a href="#panel<?php echo $url;?>c" aria-selected="true">
+	            	<?php echo("0".$stepNo.".");?>
+	            	<br>
+	            	<?php the_sub_field('proj-step-title');?>
+	            </a>
+            </li>
+            <?php }
+            $url++;
+            $stepNo++;
+            endwhile;
+		endif;?>
+    </ul> 
 </div>
 
 <!-- final results -->

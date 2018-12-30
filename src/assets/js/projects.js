@@ -42,6 +42,7 @@ $(document).scroll(function() {
   }
 });
 
+if($(".single-projects").length != 0){
 //single project image
 var projImg = new TimelineMax();
 // .from(".main-content__project-image",0.5, {x:10,opacity:0,scaleX:0,transformOrigin:"right"},0.2)
@@ -75,4 +76,4 @@ $(window).scroll(function() {
          ideaImg.play();
         }
  });
-    
+}

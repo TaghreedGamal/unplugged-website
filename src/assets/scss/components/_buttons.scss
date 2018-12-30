@@ -80,6 +80,7 @@
     align-items: center;
     .button{
         margin-right: 20px;
+        width: 170px;
     }
     @media (max-width: 40em){
         .button{
@@ -95,13 +96,6 @@
         transform: translateY(1px);
     }
 }
-// @media (max-width: 64em){
-//     a{
-//         &.button{
-//             color: #fff !important;
-//         }
-//     }
-// }
 .grouped-buttons{
     display: flex;
     align-items:center;
@@ -133,4 +127,20 @@
 }
 i.fa.fa-long-arrow-right {
     padding-top: 1px;
+}
+.page-name{
+    width: 160px;
+    height: 47px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: -35px;
+    color: black;
+    background-color: #808080b3;
+    font-family: $button-font;
+    font-size: 20px;
+    text-transform: capitalize;
+    z-index: 3000;
+    border-radius: 30px;
+    text-align: center;
 }
