@@ -217,6 +217,6 @@ function create_post_type_blogs() {
   function plugin_myContentFilter($content)
   {
     // Take the existing content and return a subset of it
-    return substr($content, 0, 250);
+    return substr($content, 0, 550);
   }
 ?>

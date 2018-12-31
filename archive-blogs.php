@@ -41,6 +41,29 @@ Connect, & Inspire.</h1>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div class="featured-articles-slide slide">
+
+          <div class="blog-post-image">
+            <div class="post-images">
+              <img class="orange-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/oval.svg" alt="">
+
+              <img class="blue-line-1" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+              <img class="blue-line-2" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+
+              <img class="zigzag-line-1" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
+              <img class="zigzag-line-2" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
+
+              <img class="blue-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+              <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+
+              <img class="zigzag-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
+              <img class="zigzag-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
+
+            </div>
+            <?php
+            the_post_thumbnail('full');
+            ?>
+          </div>
+          <div class="blog-post-text">
           <h2 class="blog-post-header">
             <?php the_title(); ?>
           </h2>
@@ -49,18 +72,19 @@ Connect, & Inspire.</h1>
             <span class="author-name">By: <?php the_field('author') ?></span>
           </div>
           <p class="blog-post-content"><?php the_content(); ?></p>
-          <div class="blog-post-details">
-            <div class="blog-post-time">
-            <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
             </div>
+          <div class="blog-post-details">
             <div class="blog-post-date">
               <?php echo get_the_date(); ?>
             </div>
+            <div class="blog-post-time">
+              <img src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/clock-icon.svg" alt="">
+              <span><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ); ?></span>
+            </div>
+
           </div>
 				<!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
-				<?php
-				the_post_thumbnail('full');
-				?>
+
         <a class="button read-more"href="#">Read More →</a>
 				</div>
 				<?php endwhile; ?>

@@ -3,13 +3,13 @@
 $(document).ready(function(){
 $('.featured-articles-slider').slick({
        centerMode: true,
-       centerPadding: '0px',
-       slidesToShow: 3,
-       infinite: true,
-       slidesToScroll:1,
+       centerPadding: '500px',
+       slidesToShow: 1,
+       // infinite: true,
+       // slidesToScroll:1,
        // autoplay:true,
        // fade: true,
-       autoplaySpeed:1000,
+       // autoplaySpeed:1000,
        dots:true,
        // slidesToScroll: 1,
        // dots: true,
