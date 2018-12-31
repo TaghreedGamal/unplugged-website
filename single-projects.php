@@ -133,18 +133,18 @@ get_header(); ?>
             			 $s=1;?>
                 	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
 	                	<section id="slider">
+	                		<ul>
 		                	<?php 
 	                			if( have_rows('proj-step-images') ): 
 	                				while( have_rows('proj-step-images') ): the_row();?>
-	                					 <input type="radio" name="slider" id="<?php echo ("s".$s) ?>" checked>
-	                					 <label for="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><div class="overlayer"></div>
-	                					 </label>
-	                    					
+	                					 <li class="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+	                					 </li>		
 	                    				<?php
 	                    					$s++;
 	                    			endwhile;	   
 	                			endif;
 		              		?>
+		              		</ul>
 	              	    </section>
                 	</div>
                     <?php }
@@ -152,18 +152,18 @@ get_header(); ?>
 		     			$s=1;?>
 		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
 		                	<section id="slider">
+		                		<ul>
 			                	<?php 
 		                			if( have_rows('proj-step-images') ): 
 		                				while( have_rows('proj-step-images') ): the_row();?>
-		                					 <input type="radio" name="slider" id="<?php echo ("s".$s) ?>" checked>
-		                					 <label for="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><div class="overlayer"></div>
-		                					 </label>
-		                    					
+		                					 <li class="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+		                					 </li>
 		                    				<?php
 		                    					$s++;
 		                    			endwhile;	   
 		                			endif;		
 			              		?>
+			              		</ul>
 		              	    </section>
 		            	</div> 
 	            <?php 	}

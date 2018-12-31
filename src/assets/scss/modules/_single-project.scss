@@ -163,6 +163,7 @@
 	}
 	&__cycles{
 		margin-top: 150px;
+		position: relative;
 		.tabs-content{
 			border:0;
 			[type=radio] {
@@ -174,8 +175,11 @@
 			  perspective: 1000px;
 			  transform-style: preserve-3d;
 			}
+			#slider ul{
+				list-style: none;
+			}
 
-			#slider label {
+			#slider li {
 			  margin: auto;
 			  width: 45%;
 			  height: 100%;
@@ -185,6 +189,33 @@
 			  cursor: pointer;
 			  transition: transform 0.4s ease;
 			}
+			//position
+			.leftSlider{
+				transform: translate3d(-120%,-10px,10px);
+				
+			}
+			.centerSlider{
+				transform: translate3d(0,0,10px);
+			}
+			.rightSlider{
+				transform:translate3d(120%,-10px,10px);
+				
+			}
+			//animation
+			.goCenter{
+				box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+			  	transform: translate3d(0,0,10px);
+			 ;
+			}
+			.goRight{
+				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+				transform:translate3d(120%,-10px,10px);
+			}
+			.goLeft{
+				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
+				transform: translate3d(-120%,-10px,-10px);
+			}
+
 			#s3:checked{
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 			  transform: translate3d(0,0,-200px);

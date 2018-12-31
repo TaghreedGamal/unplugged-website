@@ -76,4 +76,46 @@ $(window).scroll(function() {
          ideaImg.play();
         }
  });
+
+
+// $("li#slide1").click(function(){
+//   console.log("clickeeed");
+//   $(this).animate({left:'200px'});
+
+// })
+ $( "li#slide1" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+  if(index==0){
+    $(this).addClass("leftSlider");
+  }
+  else if (index==1){
+    $(this).addClass("centerSlider");
+  }
+  else if (index==2){
+    $(this).addClass("rightSlider");
+  }
+ });
+
+ $( "li#slide1").click(function(){
+      if ($(this).hasClass("leftSlider")) {
+        $(this).removeClass().addClass("goCenter");
+        $(this).next().removeClass().addClass("goRight");
+        $(this).next().next().removeClass().addClass("goLeft");
+      }
+      else if ($(this).hasClass("rightSlider")) {
+        $(this).removeClass().addClass("goCenter");
+        $(this).prev().removeClass().addClass("goLeft");
+        $(this).prev().prev().removeClass().addClass("goRight");
+      }
+      else if ($(this).hasClass("goRight")) {
+        $(this).removeClass().addClass("goCenter");
+        $(this).prev().removeClass().addClass("goLeft");
+        $(this).prev().prev().removeClass().addClass("goRight");
+      }
+      if ($(this).hasClass("goLeft")) {
+        $(this).removeClass().addClass("goCenter");
+        $(this).next().removeClass().addClass("goRight");
+        $(this).next().next().removeClass().addClass("goLeft");
+      }
+  })
 }
