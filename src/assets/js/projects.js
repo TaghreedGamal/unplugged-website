@@ -77,7 +77,28 @@ $(window).scroll(function() {
         }
  });
 
-
+// finalResult-img
+var finalImg = new TimelineMax();
+    finalImg.addLabel("with")
+      .from('.finalImg',0.7,{x:-500,opacity:0},'with')
+      .from('.finalCircle', 0.7, {scale:0.2,opacity:0},'with+=0.2')
+      .from('.purplepath',0.5,{y:100,opacity:0},'with+=0.4')
+      .from('.orangepath',0.5,{y:100,opacity:0},'with+=0.6')
+      .from('.smallCircle',0.5,{x:-100,opacity:0})
+      .addLabel('line')
+      .from('.circleLine1',0.5,{x:-200,opacity:0},'line')
+      .from('.circleLine2',0.5,{x:-200,opacity:0},'line'); 
+finalImg.pause();
+$(window).scroll(function() {
+    var final= $(".project__Final");
+    var top_of_element = final.offset().top;
+    var bottom_of_element = final.offset().top + final.outerHeight();
+    var top_of_screen = $(window).scrollTop();
+    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        finalImg.play();
+    }
+ });
 // $("li#slide1").click(function(){
 //   console.log("clickeeed");
 //   $(this).animate({left:'200px'});
@@ -97,25 +118,30 @@ $(window).scroll(function() {
  });
 
  $( "li#slide1").click(function(){
-      if ($(this).hasClass("leftSlider")) {
-        $(this).removeClass().addClass("goCenter");
-        $(this).next().removeClass().addClass("goRight");
-        $(this).next().next().removeClass().addClass("goLeft");
-      }
-      else if ($(this).hasClass("rightSlider")) {
-        $(this).removeClass().addClass("goCenter");
-        $(this).prev().removeClass().addClass("goLeft");
-        $(this).prev().prev().removeClass().addClass("goRight");
-      }
-      else if ($(this).hasClass("goRight")) {
-        $(this).removeClass().addClass("goCenter");
-        $(this).prev().removeClass().addClass("goLeft");
-        $(this).prev().prev().removeClass().addClass("goRight");
-      }
-      if ($(this).hasClass("goLeft")) {
-        $(this).removeClass().addClass("goCenter");
-        $(this).next().removeClass().addClass("goRight");
-        $(this).next().next().removeClass().addClass("goLeft");
-      }
+    $(this).parent().find("leftSlider").removeClass("leftSlider").addClass("rightSlider");
+    $(this).parent().find("rightSlider").removeClass("rightSlider").addClass("leftSlider");
+    $(this).removeClass().addClass("centerSlider");
+
+
+      // if ($(this).hasClass("leftSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).next().removeClass().addClass("rightSlider");
+      //   $(this).next().next().removeClass().addClass("leftSlider");
+      // }
+      // else if ($(this).hasClass("rightSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).prev().removeClass().addClass("leftSlider");
+      //   $(this).prev().prev().removeClass().addClass("rightSlider");
+      // }
+      // else if ($(this).hasClass("rightSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).prev().removeClass().addClass("rightSlider");
+      //   $(this).next().removeClass().addClass("leftSlider");
+      // }
+      // else if ($(this).hasClass("leftSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).next().removeClass().addClass("leftSlider");
+      //   $(this).prev().removeClass().addClass("rightSlider");
+      // }
   })
 }

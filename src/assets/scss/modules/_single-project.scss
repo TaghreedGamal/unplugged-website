@@ -313,6 +313,41 @@
 	 			justify-content:space-evenly;
 	 		}
 	 	}
+	 	&-image{
+	 		position: relative;
+	 		svg{
+	 			position: absolute;
+	 		}
+	 		img{
+	 			position: relative;
+	 		}
+	 		.finalCircle{
+	 			top: -40px;	
+	 		}
+	 		.purplepath{
+				left: 95px;
+				top: -75px;
+	 		}
+	 		.orangepath{
+	 			left: 130px;
+	 			top: 3px;
+	 			z-index: 1;
+	 		}
+	 		.smallCircle{
+	 			bottom: 125px;
+    			right: 95px;
+	 		}
+	 		.circleLine1{
+	 			bottom: 108px;
+			    right: 35px;
+			    z-index: 2;
+	 		}
+	 		.circleLine2{
+	 			bottom: 130px;
+    			right: 60px;
+    			z-index: -1;
+	 		}
+	 	}
 	}
 	&__Testimonial{
 		justify-content:space-evenly;
