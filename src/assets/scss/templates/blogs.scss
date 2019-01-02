@@ -40,13 +40,20 @@
     }
 
   }
+  & .featured-articles-title{
+    font-size: 5rem;
+    font-family: $title-font;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+  }
   & .featured-articles-slider{
     width: 100% !important;
-    padding: 10em 0;
+    padding: 2em 0;
     display: block;
     margin: 0 auto;
     & .slick-slide{
-      margin: 0 5em;
+      margin: 5em 5em;
+      margin-top: 5em;
       &:not(.slick-active)
       {
         filter: blur(2px);
@@ -60,6 +67,7 @@
       padding: 2em;
       height: 35em;
       margin: 0 2em;
+      background-color: white;
       & .blog-post-text{
         padding-left: 30%;
         & .blog-post-header{
@@ -93,9 +101,15 @@
       & .blog-post-image{
         position: absolute;
         left: -15em;
-        width: 69%;
+        width: 59%;
         border: 5px solid $baby-blue-color;
         z-index: 5;
+        height: 95%;
+        bottom: 0.1em;
+        & img.attachment-full.size-full.wp-post-image
+        {
+          height: 100%;
+        }
         & .post-images{
           & .zigzag-line-1{
             position: absolute;
@@ -119,29 +133,26 @@
           }
           & .blue-line-1{
               position: absolute;
-            top: 0;
-            right: 0;
+              top: -7em;
+              right: 6em;
+              width: 25%;
+              z-index: -2;
           }
           & .blue-line-2{
               position: absolute;
             top: 1em;
             right: 0;
+            // width: 25%;
+            top: -5em;
+            right: 4em;
+            width: 30%;
           }
-          & .blue-line-3{
-              position: absolute;
-            bottom: 0;
-            right: 0;
-          }
-          & .blue-line-4{
-              position: absolute;
-              bottom: 1em;
-              right: 0;
-          }
+
           & .orange-circle{
             position: absolute;
-            top: -2em;
-            right: 0;
-            z-index: 3;
+            top: -3em;
+            right: 3.5em;
+            z-index: -1;
           }
         }
       }
@@ -193,6 +204,21 @@
           opacity: 1;
         }
       }
+
+      & .blue-line-3{
+        position: absolute;
+        bottom: -4em;
+        right: -3.5em;
+        width: 20%;
+      }
+      & .blue-line-4{
+          position: absolute;
+          width: 20%;
+          bottom: -3em;
+          right: -4em;
+          z-index: -1;
+
+      }
     }
 
       & .slick-dots {
@@ -222,6 +248,37 @@
           width: 1rem;
     			height: 1rem;
     		}
+    }
+  }
+}
+
+
+@media only screen and (min-width:1340px) and (max-width: 1904px) {
+  .blogs-page-container {
+    & .blogs-page-container-header {
+      & .blogs-header
+      {
+        font-size: 6rem;
+      }
+    }
+
+    & .featured-articles-slider{
+      & .featured-articles-slide{
+        & .blog-post-text{
+          padding-left: 24%;
+        }
+        & .blog-post-image
+        {
+          height: 95%;
+          width: 75%;
+          bottom: 0.5em;
+          z-index: 5;
+          & img.attachment-full.size-full.wp-post-image
+          {
+            height: 100%;
+          }
+        }
+      }
     }
   }
 }

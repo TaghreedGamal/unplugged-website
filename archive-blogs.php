@@ -32,11 +32,12 @@ Connect, & Inspire.</h1>
   </div>
   </div>
 
-
+  <h1 class="featured-articles-title">Featured Articles</h1>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
 		<?php if ( have_posts() ) : ?>
+
 			<div class="featured-articles-slider">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -52,8 +53,6 @@ Connect, & Inspire.</h1>
               <img class="zigzag-line-1" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
               <img class="zigzag-line-2" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
 
-              <img class="blue-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
-              <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
 
               <img class="zigzag-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
               <img class="zigzag-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
@@ -75,7 +74,10 @@ Connect, & Inspire.</h1>
             </div>
           <div class="blog-post-details">
             <div class="blog-post-date">
-              <?php echo get_the_date(); ?>
+              <?php echo get_the_date('M, j'); ?>
+              <br>
+              <?php echo get_the_date('Y'); ?>
+
             </div>
             <div class="blog-post-time">
               <img src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/clock-icon.svg" alt="">
@@ -85,7 +87,10 @@ Connect, & Inspire.</h1>
           </div>
 				<!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
 
-        <a class="button read-more"href="#">Read More →</a>
+        <a class="button read-more"href="<?php the_permalink(); ?>">Read More →</a>
+        <img class="blue-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+        <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
+
 				</div>
 				<?php endwhile; ?>
 			</div>
