@@ -24,7 +24,7 @@ get_header(); ?>
   Products</h1>
   <div class="header-images">
     <img class="empty-rocket" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-wireframe.png" alt="">
-    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-toy.png" alt="">
+    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/middle-rocket-2.png" alt="">
     <img class="last-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-toy.png" alt="">
   </div>
   </div>
