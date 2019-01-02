@@ -75,6 +75,7 @@
    			width: 100%;
    			.button{
    				width:250px;
+
    				justify-content:space-evenly;
    				font-size: 22px;
    			}
@@ -226,27 +227,35 @@
 			}
 			#s3:checked ~ #slide2 {
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-			  transform: translate3d(-130%, 0, -150px);;
+
+			  transform: translate3d(-130%, 0, -150px);
 			}
+
 			#s2:checked ~ #slide1
 			 {
 			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
+
 			  transform: translate3d(-130%, 0, -150px)
+
 			}
 			#s2:checked ~ #slide3
 			 {
 			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
+
 			  transform: translate3d(130%,0,-150px);
+
 			}
 
 			#s1:checked ~ #slide2 {
 			  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
 			  transform: translate3d(130%,0,-150px);
+
 			}
 
 			#s1:checked ~ #slide3 {
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 			  transform: translate3d(-130%, 0, -150px);
+
 			}
 			#s1:checked ~ #slide1, #s2:checked ~ #slide2,
 			#s3:checked ~ #slide3 {
@@ -257,7 +266,7 @@
 
 			#slide1 ,
 			#slide2 ,
-			#slide3 {    
+			#slide3 {
 			 background-repeat: no-repeat;
    			 background-size: cover;
    			 position: relative;
@@ -272,7 +281,7 @@
 			    height: 100%;
    			}
    			}
-   			
+
 		}
 		.tabs{
 			border: 0px !important;
@@ -296,10 +305,10 @@
 				    line-height: 1.07;
 				    border-bottom: 6px solid $title-color;
 				}
-			}	
+			}
 		}
 		.tabs-panel{
-			
+
 		}
 	}
 	&__Final{

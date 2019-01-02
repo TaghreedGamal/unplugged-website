@@ -74,6 +74,7 @@ function theme_gsap_script() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
 
+
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
    register_post_type( 'projects',
@@ -126,10 +127,6 @@ function create_taxonomies() {
 }
 
 
-// add_filter( 'gform_submit_button_7', 'add_paragraph_below_submit', 10, 2 );
-// function add_paragraph_below_submit( $button, $form ) {
-//     return $button .= "<p>your <a href='http://yourlink.com'>text</a> goes here</p>";
-// }
 
 
 //Products
@@ -153,8 +150,12 @@ function create_post_type_products() {
                'custom-fields'
            ),
        )
+
+
    );
 }
+
+
 add_action( 'init', 'create_products_taxonomies' );
 function create_products_taxonomies() {
 // Add new taxonomy, make it hierarchical (like categories)
@@ -171,6 +172,7 @@ $labels = array(
   'new_item_name'     => __( 'New Products Category Name', 'textdomain' ),
   'menu_name'         => __( 'Products Categories', 'textdomain' ),
 );
+
 $args = array(
   'hierarchical'      => true,
   'labels'            => $labels,
@@ -179,8 +181,44 @@ $args = array(
   'query_var'         => true,
   'rewrite'           => array( 'slug' => 'products_categories' ),
 );
+
 register_taxonomy( 'products_categories', array( 'products' ), $args );
 }
 
-?>
 
+
+
+
+//blog
+add_action( 'init', 'create_post_type_blogs' );
+function create_post_type_blogs() {
+   register_post_type( 'blogs',
+       array(
+           'labels' => array(
+               'name' => __( 'Blogs' ),
+               'singular_name' => __( 'Blog' )
+               ),
+           'public' => true,
+           'has_archive' => true,
+           'rewrite' => array('slug' => 'blogs'),
+           'supports' => array(
+               'title',
+               'editor',
+               'revision',
+               'excerpt',
+               'thumbnail',
+               'custom-fields'
+           ),
+       )
+
+   );
+}
+
+  add_filter("the_content", "plugin_myContentFilter");
+
+  function plugin_myContentFilter($content)
+  {
+    // Take the existing content and return a subset of it
+    return substr($content, 0, 550);
+  }
+?>
