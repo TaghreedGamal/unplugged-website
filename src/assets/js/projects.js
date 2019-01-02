@@ -41,3 +41,107 @@ $(document).scroll(function() {
     $('.top').fadeOut();
   }
 });
+
+if($(".single-projects").length != 0){
+//single project image
+var projImg = new TimelineMax();
+// .from(".main-content__project-image",0.5, {x:10,opacity:0,scaleX:0,transformOrigin:"right"},0.2)
+projImg.from(".main-content__project-image",0.5, {x:-800,y:200,scale:0.2,opacity:1},0.2)
+.to(".main-content__project-image",1, {opacity:1},0.2)
+.from(".main-content__project-content",0.5,{y:100,opacity:0},0.5)
+.to(".main-content__project-content",0.6, {opacity:1},0.5)
+.from(".close-page",1,{opacity:0});
+
+// idea-img
+var ideaImg = new TimelineMax();
+    ideaImg.addLabel("with")
+      .from('.ideaImg',0.7,{x:-500,opacity:0},'with')
+      .from('.ideaCircle', 0.7, {scale:0.2,opacity:0},'with+=0.2')
+      .from('.ideaL1',0.5,{y:500,opacity:0},'with+=0.4')
+      .from('.ideaL11',0.5,{y:500,opacity:0},'with+=0.6')
+      .from('.ideaL2',0.5,{y:500,opacity:0},'with+=0.4')
+      .from('.ideaL21',0.5,{y:500,opacity:0},'with+=0.6')
+      .from('.ideaSCircle',0.7,{scale:0.2,opacity:0})
+      .addLabel('zig')
+      .from('.ideaZigzag1',0.5,{x:200,opacity:0},'zig')
+      .from('.ideaZigzag2',0.5,{x:200,opacity:0},'zig'); 
+ideaImg.pause();
+$(window).scroll(function() {
+    var idea= $(".project__Idea");
+    var top_of_element = idea.offset().top;
+    var bottom_of_element = idea.offset().top + idea.outerHeight();
+    var top_of_screen = $(window).scrollTop();
+    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+         ideaImg.play();
+        }
+ });
+
+// finalResult-img
+var finalImg = new TimelineMax();
+    finalImg.addLabel("with")
+      .from('.finalImg',0.7,{x:-500,opacity:0},'with')
+      .from('.finalCircle', 0.7, {scale:0.2,opacity:0},'with+=0.2')
+      .from('.purplepath',0.5,{y:100,opacity:0},'with+=0.4')
+      .from('.orangepath',0.5,{y:100,opacity:0},'with+=0.6')
+      .from('.smallCircle',0.5,{x:-100,opacity:0})
+      .addLabel('line')
+      .from('.circleLine1',0.5,{x:-200,opacity:0},'line')
+      .from('.circleLine2',0.5,{x:-200,opacity:0},'line'); 
+finalImg.pause();
+$(window).scroll(function() {
+    var final= $(".project__Final");
+    var top_of_element = final.offset().top;
+    var bottom_of_element = final.offset().top + final.outerHeight();
+    var top_of_screen = $(window).scrollTop();
+    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        finalImg.play();
+    }
+ });
+// $("li#slide1").click(function(){
+//   console.log("clickeeed");
+//   $(this).animate({left:'200px'});
+
+// })
+ $( "li#slide1" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+  if(index==0){
+    $(this).addClass("leftSlider");
+  }
+  else if (index==1){
+    $(this).addClass("centerSlider");
+  }
+  else if (index==2){
+    $(this).addClass("rightSlider");
+  }
+ });
+
+ $( "li#slide1").click(function(){
+    $(this).parent().find("leftSlider").removeClass("leftSlider").addClass("rightSlider");
+    $(this).parent().find("rightSlider").removeClass("rightSlider").addClass("leftSlider");
+    $(this).removeClass().addClass("centerSlider");
+
+
+      // if ($(this).hasClass("leftSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).next().removeClass().addClass("rightSlider");
+      //   $(this).next().next().removeClass().addClass("leftSlider");
+      // }
+      // else if ($(this).hasClass("rightSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).prev().removeClass().addClass("leftSlider");
+      //   $(this).prev().prev().removeClass().addClass("rightSlider");
+      // }
+      // else if ($(this).hasClass("rightSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).prev().removeClass().addClass("rightSlider");
+      //   $(this).next().removeClass().addClass("leftSlider");
+      // }
+      // else if ($(this).hasClass("leftSlider")) {
+      //   $(this).removeClass().addClass("centerSlider");
+      //   $(this).next().removeClass().addClass("leftSlider");
+      //   $(this).prev().removeClass().addClass("rightSlider");
+      // }
+  })
+}

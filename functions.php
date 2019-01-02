@@ -128,8 +128,8 @@ function create_taxonomies() {
 
 
 
-//Products
 
+//Products
 add_action( 'init', 'create_post_type_products' );
 function create_post_type_products() {
    register_post_type( 'products',
@@ -150,6 +150,7 @@ function create_post_type_products() {
                'custom-fields'
            ),
        )
+
 
    );
 }
@@ -183,6 +184,7 @@ $args = array(
 
 register_taxonomy( 'products_categories', array( 'products' ), $args );
 }
+
 
 
 

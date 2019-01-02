@@ -32,10 +32,10 @@ get_header(); ?>
 					foreach ( $parent_terms as $pterm ) {
 						$link = add_query_arg('projects_categories', $pterm->slug);
 					// echo($link); don't go to link
-						echo '<li class="accordion-item" data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
+						echo '<li class="accordion-item " data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
     				//Get the Child terms
 						$terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-						echo '<div class="accordion-content" data-tab-content><ul id="filter-ul">';
+						echo '<div class="accordion-content " data-tab-content><ul class="cute_scroll" id="filter-ul">';
 						foreach ( $terms as $term ) {
 							$link = add_query_arg('projects_categories', $term->slug);?>
 							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>   
