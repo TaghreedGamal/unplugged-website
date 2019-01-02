@@ -8,7 +8,7 @@ $('[list-view]').on('click',function(){
   $(".box__title").removeClass("font-size"); 
   $(".box__title span").removeClass("span-font-size"); 
   $(".project-section__post__box").removeClass("boxsize");
-  $(".project-section__post__image").removeClass("imagesize");
+  $(".project-section__post__box__image").removeClass("imagesize");
   $(".box__title").css("transform", 'translateY(0px)');
 
 })
@@ -22,7 +22,7 @@ $('[grid-view]').on('click',function(){
   $(".project-section__post__box").addClass("boxsize"); 
   $(".box__title").addClass("font-size"); 
   $(".box__title span").addClass("span-font-size"); 
-  $(".project-section__post__image").addClass("imagesize");
+  $(".project-section__post__box__image").addClass("imagesize");
 })
 
 $(".scroll").click(function() {

@@ -19,12 +19,10 @@ get_header(); ?>
 
 <div class="products-page-container container" >
   <div class="products-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
-    <h1 class="products-header">We Desvise and
-  Launch Digital
-  Products</h1>
+    <h1 class="products-header">We Desvise and Launch Digital Products</h1>
   <div class="header-images">
     <img class="empty-rocket" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-wireframe.png" alt="">
-    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-toy.png" alt="">
+    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-middle.png" alt="">
     <img class="last-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-toy.png" alt="">
   </div>
   </div>
@@ -34,9 +32,6 @@ get_header(); ?>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
-
-
-
 			<div class="main-content__filter-section">
 				<!-- <?php wp_list_categories()?> -->
         <div class="search-bar">
@@ -69,11 +64,6 @@ get_header(); ?>
 					}
 					echo '</ul>';
 					?>
-
-					<!-- <div class="filter-icons">
-						<button list-view><i class="fa fa-th-list"></i><p>Tile View</p></button>
-						<button grid-view><i class="fa fa-th-large"></i><p>Grid View</p></button>
-					</div> -->
 				</div>
 			</div>
 
@@ -99,9 +89,6 @@ get_header(); ?>
             <img class="circles-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/circles.svg" alt="">
             <img class="orange-circle-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
-              <!-- <svg class="zigzag-image"xmlns="http://www.w3.org/2000/svg" id="" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="100px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-              <path opacity="1" fill="none" stroke="red"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  "/>
-              </svg> -->
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
             <div class="product-info-desktop box">

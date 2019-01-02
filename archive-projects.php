@@ -59,29 +59,31 @@ get_header(); ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div class="project-section__post">
-								<div class="project-section__post__image">
-									<?php if( get_field('project-img') ): ?>
-										<img src="<?php the_field('project-img'); ?>" />
-									<?php endif; ?>
-								</div>
 								<div class="project-section__post__box box">
+									<div class="project-section__post__box__image">
+										<?php if( get_field('project-img') ): ?>
+											<img src="<?php the_field('project-img'); ?>" />
+										<?php endif; ?>
+									</div>
 									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
-									<h2 class="box__title"><?php the_title();?></h2>  
-									<div class="box__text"><?php the_excerpt(); ?></div> </br>
-									<div class="small-icon" id="post-icons">
-	                                    <?php
-	                                    if( have_rows('project_services') ):
-	                                        while ( have_rows('project_services') ) : the_row();
-	                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
-	                                    <?php
-	                                        endwhile;
-	                                    else :
-	                                    endif;
-	                                    ?>
-									</div>       
-									<div class="grouped-buttons">
-										<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
-									</div> 
+									<div class="project-section__post__box__content">
+										<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
+										<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
+										<div class="small-icon" id="post-icons">
+		                                    <?php
+		                                    if( have_rows('project_services') ):
+		                                        while ( have_rows('project_services') ) : the_row();
+		                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
+		                                    <?php
+		                                        endwhile;
+		                                    else :
+		                                    endif;
+		                                    ?>
+										</div>       
+										<div class="grouped-buttons">
+											<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+										</div> 
+									</div>
 								</div>
 							</div>
 						<?php 
