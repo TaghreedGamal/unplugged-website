@@ -124,7 +124,7 @@ get_header(); ?>
 	    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
 	  </div>
 	</div> -->
-	<div class="tabs-content projtabs" data-tabs-content="example-tabs">
+	<div class="tabs-content projtabs" data-tabs-content="slide-tabs">
         <?php 
 	        $tabNo=1;
 	        if( have_rows('project-steps-title') ): 
@@ -137,7 +137,7 @@ get_header(); ?>
 		                	<?php 
 	                			if( have_rows('proj-step-images') ): 
 	                				while( have_rows('proj-step-images') ): the_row();?>
-	                					 <li class="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+	                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
 	                					 </li>		
 	                    				<?php
 	                    					$s++;
@@ -156,7 +156,7 @@ get_header(); ?>
 			                	<?php 
 		                			if( have_rows('proj-step-images') ): 
 		                				while( have_rows('proj-step-images') ): the_row();?>
-		                					 <li class="<?php echo ('s'.$s) ?>" id="slide1" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+		                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
 		                					 </li>
 		                    				<?php
 		                    					$s++;
@@ -172,7 +172,7 @@ get_header(); ?>
 	         	endif;
        ?>
 	</div>
-    <ul class="tabs container" data-tabs id="example-tabs">
+    <ul class="tabs container" data-tabs id="slide-tabs">
     	<?php $url = 1;
         $stepNo=1;
         if( have_rows('project-steps-title') ):
