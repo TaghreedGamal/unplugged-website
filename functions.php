@@ -211,12 +211,12 @@ function create_post_type_blogs() {
 
    );
 }
-
-  add_filter("the_content", "plugin_myContentFilter");
-
-  function plugin_myContentFilter($content)
-  {
-    // Take the existing content and return a subset of it
-    return substr($content, 0, 150);
-  }
+  // 
+  // add_filter("the_content", "plugin_myContentFilter");
+  //
+  // function plugin_myContentFilter($content)
+  // {
+  //   // Take the existing content and return a subset of it
+  //   return substr($content, 0, 150);
+  // }
 ?>

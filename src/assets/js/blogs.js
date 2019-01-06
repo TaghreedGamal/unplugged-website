@@ -3,7 +3,7 @@
 $(document).ready(function(){
 $('.featured-articles-slider').slick({
        centerMode: true,
-       centerPadding: '500px',
+       centerPadding: '300px',
        slidesToShow: 1,
        // infinite: true,
        // slidesToScroll:1,
