@@ -1,3 +1,6 @@
+
+////////////////////////////////archive blogs/////////////////////////////////////////
+
  .featured-articles-slide{
   // width: 50% !important;
   width: 85%!important;
@@ -463,5 +466,159 @@
 
     }
 
+  }
+}
+
+
+
+////////////////////////////////archive blogs/////////////////////////////////////////
+
+
+//single blog/////
+
+
+.single-blogs-page-container{
+  margin-top: -7em;
+  padding: 0 0 0 0;
+  & .single-blogs-page-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    // transform: scale(0.8);
+  }
+  & .single-blogs-blog-header{
+    position: relative;
+    padding: 8em;
+    & .author-avatar{
+      position: absolute;
+      // top: 0;
+      background-color: white;
+      padding: 1.5em;
+      border-radius: 50%;
+      top: -6em;
+      left: 8em;
+      z-index: 3;
+      & .author-image{
+
+        border: 3px solid $baby-blue-color;
+        border-radius: 50%;
+      }
+      & .purple-line{
+        position: absolute;
+        &-1{
+          top: -3em;
+          left: -2em;
+          z-index: -1;
+
+        }
+        &-2{
+          top: -1em;
+          left: -1em;
+          width: 40%;
+        }
+        &-3{
+          bottom: 0em;
+          left: 11em;
+          z-index: -1;
+        }
+        &-4{
+          bottom: 0.5em;
+          left: 10em;
+          width: 40%;
+        }
+      }
+      & .zigzag{
+        position: absolute;
+        width: 30%;
+        &-1{
+          z-index: -1;
+          bottom: 4em;
+          left: -0.5em;
+        }
+        &-2{
+          bottom: 3em;
+          left: 1em;
+        }
+      }
+
+    }
+    & .blog-post-title{
+      color: $title-color;
+      font-family: $title-font;
+      font-size: 5rem;
+    }
+    & .blog-post-info{
+      display: flex;
+      justify-content: space-between;
+      & .author-details{
+        width: 50%;
+        font-family: $main-font;
+        & span{
+          font-family: $medium-font;
+          color: $indigo;
+        }
+      }
+      & .share-social-media{
+        width: 50%;
+        font-family: $main-font;
+        & .icon-container{
+          background-color: blue;
+          border-radius: 50%;
+          padding: 0.4em;
+          // padding-top: 2em;
+          // padding-bottom: 1.5em;
+          // padding-right: 0.9em;
+          margin: 1em 0.1em;
+          text-align: center;
+          color: white;
+          display: inline-block;
+          text-align: center;
+          &:first-child{
+            margin-left: 0;
+          }
+          & i{
+            font-size: 1.2rem;
+            &:before{
+              color: white;
+            }
+            // &:last-child :before{
+            //   color: #4a4a4a;
+            // }
+
+          }
+          &.facebook
+          {
+            background-color: #4e598f;
+          }
+          &.gplus{
+            background-color: #cf4c3c;
+          }
+          &.linkedin{
+          background-color:  #4376b1
+          }
+          &.pinterest
+          {
+            background-color: #862328;
+          }
+          &.twitter{
+            background-color: #65a2d9;
+          }
+          &.quora{
+            background-color: #b0271e;
+          }
+          &.instagram{
+            background-color: #6c27b3;
+          }
+          &.link{
+            background-color: #cdcdcd;
+          }
+        }
+      }
+    }
   }
 }
