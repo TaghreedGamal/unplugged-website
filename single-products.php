@@ -8,18 +8,14 @@
 
 get_header(); ?>
 
-<h1>single product</h1>
-<?php get_template_part( 'template-parts/featured-image' ); ?>
-<div class="main-container">
+<div class="main-container container">
 	<div class="main-grid">
-		<main class="main-content">
+		<main class="main-content main-content__product">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', '' ); ?>
-				<?php the_post_navigation(); ?>
-				<?php comments_template(); ?>
+				
 			<?php endwhile; ?>
 		</main>
-		<?php get_sidebar(); ?>
 	</div>
 </div>
 <?php get_footer();

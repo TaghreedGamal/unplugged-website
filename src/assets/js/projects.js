@@ -110,7 +110,30 @@ function calculateSlider(){
   // left=center -1;
   // right=center+1;
    $( ".tabs-panel.is-active #slider ul li#slide" ).each(function( index ) {
-      index=index+1;
+      index=index+1; 
+      //only 2 slides
+      if (slideNo==2){
+         if (index==1){
+           $(this).addClass("setleft");
+         }
+         else if(index==2){
+           $(this).addClass("setright");
+         }
+      }
+      // only 3 slides
+      else if (slideNo==3){
+        if (index==center){
+          $(this).addClass("centerSlider");
+        }
+        else if (index == center -1){
+          $(this).addClass("leftSlider");
+        }
+        else if (index == center +1){
+          $(this).addClass("rightSlider");
+        }
+      }
+      // more than 3 slides
+      else {
       if (index==center){
         $(this).addClass("centerSlider");
       }
@@ -120,19 +143,31 @@ function calculateSlider(){
       else if (index == center +1){
         $(this).addClass("rightSlider");
       }
-      else if(index < center){
-        $(this).addClass("left2Slider"); 
+      else if(index < center && !(index== 1)){
+        $(this).addClass("leftSlider"); 
       }
-      else if(index > center){
-        $(this).addClass("right2Slider"); 
+      else if(index > center  && !(index == slideNo)){
+        $(this).addClass("rightSlider"); 
       }
+    }
     })
    $( "li#slide").click(function(){
      $(this).removeClass().addClass("centerSlider");
-     $(this).next().removeClass().addClass("rightSlider");
-     $(this).next().next().removeClass().addClass("left2Slider");
-     $(this).prev().removeClass().addClass("leftSlider");
-     $(this).prev().prev().removeClass().addClass("right2Slider");
+     // next and prev found 
+     if($(this).prev("li").length >0 && $(this).next("li").length > 0){
+        console.log("condition3");
+        $(this).next().removeClass().addClass("rightSlider");
+        $(this).next().next().removeClass().addClass("left2Slider");
+        $(this).prev().removeClass().addClass("leftSlider");
+        $(this).prev().prev().removeClass().addClass("right2Slider");
+      }
+      else {
+          console.log("condition2");
+          $(this).prev().prev().removeClass().addClass("rightSlider");
+          $(this).prev().removeClass().addClass("leftSlider");
+          $(this).next().removeClass().addClass("rightSlider");
+          $(this).next().next().removeClass().addClass("leftSlider");
+      }
    });
 }
 

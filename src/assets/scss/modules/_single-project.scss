@@ -221,6 +221,7 @@
 				transform:translate3d(115%,-15px,10px);
 				box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
 				height: 95% !important;
+				z-index: 1 !important;
 				
 			}
 			.right2Slider{
@@ -232,7 +233,18 @@
 				box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0   2px 2px 0 rgba(0,0,0,.2);
 				height: 95% !important;
 			}
-		
+		    .setleft{
+		    	transform: translate3d(-57%,-10px,-10px);	
+		    	.overlayer{
+		    		background-color:#0a0a0a6b !important;
+		    	}
+		    }
+		    .setright{
+		    	transform: translate3d(57%,-10px,-10px);	
+		    	.overlayer{
+		    		background-color:#0a0a0a6b !important;
+		    	}
+		    }
 
 			#s3:checked{
 			  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
