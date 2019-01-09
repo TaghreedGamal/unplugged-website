@@ -484,7 +484,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5em;
-    height: 60vh;
+    height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -555,15 +555,21 @@
     & .blog-post-info{
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid #9b9b9b;
+      padding-bottom: 1em;
       & .author-details{
+        font-size: 2rem;
         width: 50%;
         font-family: $main-font;
         & span{
           font-family: $medium-font;
           color: $indigo;
+          font-size: 1.7rem;
         }
       }
       & .share-social-media{
+        line-height: normal;
+        font-size: 2rem;
         width: 50%;
         font-family: $main-font;
         & .icon-container{
@@ -578,6 +584,7 @@
           color: white;
           display: inline-block;
           text-align: center;
+          font-size: initial;
           &:first-child{
             margin-left: 0;
           }

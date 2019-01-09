@@ -36,7 +36,9 @@ get_header(); ?>
 									Written By: <br> <span><?php the_field('author') ?></span>
 								</div>
 								<div class="share-social-media">
-									Share on: <br>
+									Share on:
+									<!-- <br> -->
+									<div class="social-icons">
 									<a class="icon-container facebook"href="#"> <i class="icon-facebook-squared"></i> </a>
 									<a class="icon-container gplus"href="#"> <i class="icon-gplus"></i> </a>
 									<a class="icon-container linkedin"href="#"> <i class="icon-linkedin-squared"></i> </a>
@@ -45,8 +47,91 @@ get_header(); ?>
 									<a class="icon-container quora"href="#"> <i class="icon-quora"></i> </a>
 									<a class="icon-container instagram"href="#"> <i class="icon-instagram"></i> </a>
 									<a class="icon-container link"href="#"> <i class="icon-link"></i> </a>
+									</div>
 								</div>
 							</div>
+					</div>
+					<div class="single-blogs-blog-content">
+						<?php the_field('introduction') ?>
+						<?php while(have_rows('topics')): the_row(); ?>
+							<div class="topic">
+								<?php the_sub_field('topic_title') ?>
+									<div class="subtopics">
+										<?php while(have_rows('subtopics')): the_row();?>
+
+
+										<!-- right right_aligned_image -->
+
+										<?php if(get_sub_field('right_aligned_image')['image']): ?>
+											<div class="subtopic subtopic-with-right-aligned-image">
+
+
+											<?php the_sub_field('subtopic_title') ?>
+											<?php the_sub_field('subtopic_text') ?>
+											<img class="right_aligned_image"src="<?php echo get_sub_field('right_aligned_image')['image']?>" alt="">
+													<span><?php echo get_sub_field('right_aligned_image')['title'] ?></span>
+											</div>
+										<!--  right_aligned_image -->
+
+										<!-- bottom aligned image -->
+									<?php else: ?>
+										<?php  if(get_sub_field('large_bottom_aligned_image')['image']): ?>
+											<div class="subtopic subtopic-with-large-bottom-aligned-image">
+
+
+											<?php the_sub_field('subtopic_title') ?>
+											<?php the_sub_field('subtopic_text') ?>
+											<img class="large_bottom_aligned_image" src="<?php echo get_sub_field('large_bottom_aligned_image')['image']?>" alt="">
+											<span><?php echo get_sub_field('large_bottom_aligned_image')['title'] ?></span>
+										</div>
+										<!-- bottom aligned image -->
+										<!-- top aligned image -->
+									<?php else: ?>
+										<?php  if(get_sub_field('large_top_aligned_image')['image']): ?>
+											<div class="subtopic subtopic-with-large-top-aligned-image">
+												<?php the_sub_field('subtopic_title') ?>
+											<img class="large_top_aligned_image" src="<?php echo get_sub_field('large_top_aligned_image')['image']?>" alt="" >
+											<span><?php echo get_sub_field('large_top_aligned_image')['title'] ?></span>
+											<?php the_sub_field('subtopic_text') ?>
+											</div>
+
+										<!-- top aligned image -->
+										<!-- several images -->
+									<?php else: ?>
+										<?php if(have_rows('small_images')): ?>
+												<div class="subtopic subtopic-with-several-images">
+													<?php the_sub_field('subtopic_title') ?>
+													<?php the_sub_field('subtopic_text') ?>
+												<?php while(have_rows('small_images')): the_row(); ?>
+													<img class="small_images small_images_aligned" alt="" src="<?php echo get_sub_field('small_image')['image'] ?>">
+													<span><?php echo get_sub_field('small_image')['title'] ?></span>
+												<?php endwhile; ?>
+											</div>
+											<!-- several images -->
+											<!--  quote-->
+										<?php else: ?>
+											<?php if(get_sub_field('quote')['text']): ?>
+													<div class="subtopic subtopic-with-quote">
+														<?php the_sub_field('subtopic_title') ?>
+														<?php the_sub_field('subtopic_text') ?>
+												<span><?php the_sub_field('quote')['text'] ?></span>
+												<span><?php the_sub_field('quote')['author'] ?></span>
+											</div>
+										<?php else: ?>
+											<?php the_sub_field('subtopic_title') ?>
+											<?php the_sub_field('subtopic_text') ?>
+											<?php endif; ?>
+											<!--  quote-->
+										<?php endif; ?>
+										<?php endif; ?>
+										<?php endif; ?>
+
+										<?php endif; ?>
+									</div>
+								<?php endwhile; ?>
+							</div>
+
+						<?php endwhile; ?>
 					</div>
 
 
