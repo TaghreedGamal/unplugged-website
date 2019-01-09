@@ -118,7 +118,7 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>">
+   <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-portfolio">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port-min.png" alt="menu-portfolio">
     <div class="text-content">

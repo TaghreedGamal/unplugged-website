@@ -137,7 +137,7 @@ get_header(); ?>
 		                	<?php 
 	                			if( have_rows('proj-step-images') ): 
 	                				while( have_rows('proj-step-images') ): the_row();?>
-	                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+	                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);" data-index="<?php echo $s; ?>"><?php echo $s;?><div class="overlayer"></div>
 	                					 </li>		
 	                    				<?php
 	                    					$s++;
@@ -156,7 +156,7 @@ get_header(); ?>
 			                	<?php 
 		                			if( have_rows('proj-step-images') ): 
 		                				while( have_rows('proj-step-images') ): the_row();?>
-		                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);"><?php echo $s;?><div class="overlayer"></div>
+		                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);" data-index="<?php echo $s; ?>"><?php echo $s;?><div class="overlayer"></div>
 		                					 </li>
 		                    				<?php
 		                    					$s++;

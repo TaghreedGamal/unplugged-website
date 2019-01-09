@@ -6,6 +6,11 @@
 .main-grid{
 	width: 100%;
 }
+.two-parts{
+	display: flex;
+ 	align-items: center;
+ 	height: 100vh;
+}
 .main-content{
 	margin-left: 0 !important;
 	margin-right: 0 !important;
@@ -33,14 +38,14 @@
 		      color: $title-color;
 		      font-family:$title-font;
 		      font-size: 80px;
-		      line-height: 1.2;
+		      line-height: 1;
 		    }
-		    .entry-content p{
-		      font-family:$main-font;
-		      line-height: 1.46;
-		      font-size: 20px;
-  			  letter-spacing: 0.9px;
-		      color: $project-text;
+		    .entry-content{
+		      font-family:$main-font !important;
+		      line-height: 1.2 !important;
+		      font-size: 16px !important;
+  			  letter-spacing: 0.8px !important;
+		      color: $project-text !important;
 		    }
 		    .project-data{
 		    	p{
@@ -71,11 +76,10 @@
    		}
    		.grouped-buttons{
    			position: absolute;
-   			bottom: 20px;
+   			bottom: 10%;
    			width: 100%;
    			.button{
    				width:250px;
-
    				justify-content:space-evenly;
    				font-size: 22px;
    			}
@@ -179,7 +183,6 @@
 			#slider ul{
 				list-style: none;
 			}
-
 			#slider li {
 			  margin: auto;
 			  width: 45%;
@@ -323,7 +326,9 @@
 		}
 	}
 	&__Final{
-		margin-top: 100px;
+		margin-top: 200px;
+		height: 60vh !important;
+		margin-bottom: 50px;
 		&-image,&-content{
 	 		width: 50%;
 	 	}
@@ -371,6 +376,8 @@
 	}
 	&__Testimonial{
 		justify-content:space-evenly;
+		height: 40vh !important;
+		margin-top: 130px;
 		&-title,&-content{
 			width:45%;
 		}
@@ -395,28 +402,31 @@
 			color: #55bbeb;
 			font-size: 18px;
 			font-family: $main-font;
-
 		}
 	}
 	&__footer{
 		background-color: $project-footer-bg;
-		height: 75vh !important;
+		height: fit-content !important;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		display: none;
+		// opacity: 0;
 		&.two-parts{
 			justify-content:center;
 		}
 		&-image{
-	 		width: 35%;
+	 		width: 25%;
 	 	}
 	 	&-content{
+	 		h1{
+	 			font-size: 70px;
+	 		}
 	 		.button{
 	 			display: flex;
 	 			justify-content:space-evenly;
+	 			font-size: 18px;
 	 		}
 	 	}
 	}
 }
-.two-parts{
-	display: flex;
- 	align-items: center;
- 	height: 100vh;
-}
+
