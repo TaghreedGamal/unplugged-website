@@ -180,18 +180,38 @@ get_header(); ?>
 					</a>
 				</div>
 				<div class="blog-controls">
-						<?php previous_post(); ?>
+						<div class="previous-post">
+
+						<div class="prev-next-post-title">
+
+
+						<?php previous_post_link( '%link', '%title' ); ?>
+						<div class="prev-next-artcile button">
+							Prev Artcile
+						</div>
+						</div>
 						<?php
 						$prevPost = get_previous_post();
 						$prevThumbnail = get_the_post_thumbnail( $prevPost->ID );
 						previous_post_link( '%link', $prevThumbnail);
  						?>
-							<?php next_post(); ?>
+						</div>
+						<div class="next-post">
+
 						<?php
 						$nextPost = get_next_post();
 						$nextThumbnail = get_the_post_thumbnail( $nextPost->ID );
 						next_post_link( '%link', $nextThumbnail);
  						?>
+						<div class="prev-next-post-title">
+
+
+						<?php next_post_link( '%link', '%title' ); ?>
+						<div class="prev-next-artcile button">
+							Next Artcile
+						</div>
+						</div>
+							</div>
 				</div>
 
 
