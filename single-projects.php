@@ -109,6 +109,7 @@ get_header(); ?>
 <!-- cycles section -->
 
 <div class="project__cycles">
+
 	<!-- <div class="tabs-content" data-tabs-content="example-tabs">
 	  <div class="tabs-panel is-active" id="panel1">
 	  	<section id="slider">
@@ -130,41 +131,15 @@ get_header(); ?>
 	        if( have_rows('project-steps-title') ): 
                 while( have_rows('project-steps-title') ): the_row(); 
             		if($tabNo==1){ 
-            			 $s=1;?>
+            			?>
                 	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
-	                	<section id="slider">
-	                		<ul>
-		                	<?php 
-	                			if( have_rows('proj-step-images') ): 
-	                				while( have_rows('proj-step-images') ): the_row();?>
-	                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);" data-index="<?php echo $s; ?>"><?php echo $s;?><div class="overlayer"></div>
-	                					 </li>		
-	                    				<?php
-	                    					$s++;
-	                    			endwhile;	   
-	                			endif;
-		              		?>
-		              		</ul>
-	              	    </section>
+	                	<?php the_sub_field('proj-step-slider'); ?>
                 	</div>
                     <?php }
 		     		else{
-		     			$s=1;?>
+		     			?>
 		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
-		                	<section id="slider">
-		                		<ul>
-			                	<?php 
-		                			if( have_rows('proj-step-images') ): 
-		                				while( have_rows('proj-step-images') ): the_row();?>
-		                					 <li class="<?php echo ('s'.$s) ?>" id="slide" style="background-image:url(<?php the_sub_field('step-image')?>);" data-index="<?php echo $s; ?>"><?php echo $s;?><div class="overlayer"></div>
-		                					 </li>
-		                    				<?php
-		                    					$s++;
-		                    			endwhile;	   
-		                			endif;		
-			              		?>
-			              		</ul>
-		              	    </section>
+		                	<?php the_sub_field('proj-step-slider'); ?>
 		            	</div> 
 	            <?php 	}
 	         	$tabNo++;

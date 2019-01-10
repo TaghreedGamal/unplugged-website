@@ -130,7 +130,7 @@ $('.clients').slick({
   centerMode: true,
   centerPadding: '120px',
   slidesToShow: 4,
-  autoplay:true,
+  autoplay:false,
   focusOnSelect: true,
   responsive: [
     {
