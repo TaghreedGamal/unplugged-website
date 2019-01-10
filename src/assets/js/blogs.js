@@ -44,3 +44,9 @@ $('.featured-articles-slider').slick({
      });
 
 });
+$('.scroll-top-button').click(function(){
+  console.log('scrolled')
+    $('.single-blogs-page-container').animate({
+        scrollTop: 0
+    }, 2000);
+});

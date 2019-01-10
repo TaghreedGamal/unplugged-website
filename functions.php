@@ -211,7 +211,7 @@ function create_post_type_blogs() {
 
    );
 }
-  // 
+  //
   // add_filter("the_content", "plugin_myContentFilter");
   //
   // function plugin_myContentFilter($content)
@@ -219,4 +219,16 @@ function create_post_type_blogs() {
   //   // Take the existing content and return a subset of it
   //   return substr($content, 0, 150);
   // }
+
+
+  add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+function posts_link_attributes_1() {
+    return 'class="prev-post"';
+}
+function posts_link_attributes_2() {
+    return 'class="next-post"';
+}
+
 ?>
