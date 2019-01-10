@@ -209,17 +209,12 @@
 				background-color:grey;
 				border:3px white solid;
 				border-radius:50%;
-			
-				// width: 16px;
-				// height: 16px;
 		    }
 			.allinone_carousel.charming .bottomNavButtonON {
 				background:none ;
 				background-color:white;
 				border:5px grey solid;
 				border-radius:50%;
-				// width: 16px;
-				// height: 16px;	
 			}
 		}
 	}
@@ -305,10 +300,11 @@
 	&__footer{
 		background-color: $project-footer-bg;
 		height: fit-content !important;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		display: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		// opacity: 0;
+		display: none;
+		
 		&.two-parts{
 			justify-content:center;
 		}
