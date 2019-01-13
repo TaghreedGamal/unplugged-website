@@ -8,6 +8,10 @@
 .icon-pinterest-circled:before { content: '\f0d2'; } /* '' */
 .icon-gplus:before { content: '\f0d5'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-down:before { content: '\f175'; } /* '' */
+.icon-up:before { content: '\f176'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */
 .icon-quora:before { content: '\f2c4'; } /* '' */
 .icon-facebook-squared:before { content: '\f308'; } /* '' */
 .icon-linkedin-squared:before { content: '\f30c'; } /* '' */

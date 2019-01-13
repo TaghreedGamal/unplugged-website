@@ -50,3 +50,8 @@ $('.scroll-top-button').click(function(){
         scrollTop: 0
     }, 2000);
 });
+
+//archive blogs
+//typewriters
+TweenMax.from('.small-typewriter', 2, {y:400, opacity:0})
+TweenMax.from('.typewriter', 2, {y:400, opacity:0})

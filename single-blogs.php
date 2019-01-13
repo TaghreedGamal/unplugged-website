@@ -188,7 +188,7 @@ get_header(); ?>
 						<div class="prev-next-post-title">
 						<?php previous_post_link( '%link', '%title' ); ?>
 							<a href="<?php  echo  get_permalink( get_adjacent_post()->ID ); ?>"class="prev-next-artcile button">
-								<span>&larr;</span> Prev Article
+								<i class="icon-left"></i> Prev Article
 							</a>
 						</div>
 						<?php
@@ -224,7 +224,7 @@ get_header(); ?>
 
 						<?php next_post_link( '%link', '%title' ); ?>
 						<a href="<?php echo get_permalink( get_adjacent_post( false, '', false )->ID ); ?>"class="prev-next-artcile button">
-							Next Article <span>&rarr;</span>
+							Next Article <i class="icon-right"></i>
 						</a>
 						</div>
 							</div>

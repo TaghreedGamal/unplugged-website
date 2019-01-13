@@ -646,7 +646,7 @@
       & p{
         color: #4a4a4a;
         font-family: $main-font;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
     & .topic{
@@ -842,11 +842,6 @@
 
     & .prev-next-artcile{
       display: block;
-      & span{
-        vertical-align: text-top;
-        font-size: inherit;
-        font-weight: bold;
-      }
     }
 
     & .next-post{
@@ -901,6 +896,11 @@
         & .prev-next-artcile{
           margin-left: auto;
         }
+    }
+  }
+  & body:has(.single-blogs-page-container){
+    & footer{
+      display: none;
     }
   }
 }
