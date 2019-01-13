@@ -33,7 +33,9 @@ get_header(); ?>
 							<h1 class="blog-post-title"><?php the_title(); ?></h1>
 							<div class="blog-post-info">
 								<div class="author-details">
-									Written By: <br> <span><?php the_field('author') ?></span>
+									Written By: <br> <span><?php the_field('author') ?>
+										<?php if(get_field('author_job_title')): ?>
+											- <?php the_field('author_job_title'); endif;?></span>
 								</div>
 								<div class="share-social-media">
 									Share on:
@@ -180,38 +182,53 @@ get_header(); ?>
 					</a>
 				</div>
 				<div class="blog-controls">
-						<div class="previous-post">
 
+					<?php  if( get_previous_post() ): ?>
+					<div class="previous-post">
 						<div class="prev-next-post-title">
-
-
 						<?php previous_post_link( '%link', '%title' ); ?>
-						<div class="prev-next-artcile button">
-							Prev Artcile
-						</div>
+							<a href="<?php  echo  get_permalink( get_adjacent_post()->ID ); ?>"class="prev-next-artcile button">
+								<span>&larr;</span> Prev Article
+							</a>
 						</div>
 						<?php
 						$prevPost = get_previous_post();
 						$prevThumbnail = get_the_post_thumbnail( $prevPost->ID );
-						previous_post_link( '%link', $prevThumbnail);
+						echo "<div class='previous-post-image post-image'>";previous_post_link( '%link', $prevThumbnail);echo "</div>";
  						?>
 						</div>
+					<?php endif; ?>
+					<?php if(get_next_post()): ?>
 						<div class="next-post">
 
 						<?php
 						$nextPost = get_next_post();
 						$nextThumbnail = get_the_post_thumbnail( $nextPost->ID );
-						next_post_link( '%link', $nextThumbnail);
+						echo "<div class='next-post-image post-image'>";next_post_link( '%link', $nextThumbnail);
+						echo "<img class='zigzag zigzag-1' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-2' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-3' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-4' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "</div>";
  						?>
 						<div class="prev-next-post-title">
 
 
 						<?php next_post_link( '%link', '%title' ); ?>
-						<div class="prev-next-artcile button">
-							Next Artcile
-						</div>
+						<a href="<?php echo get_permalink( get_adjacent_post( false, '', false )->ID ); ?>"class="prev-next-artcile button">
+							Next Article <span>&rarr;</span>
+						</a>
 						</div>
 							</div>
+						<?php endif; ?>
 				</div>
 
 

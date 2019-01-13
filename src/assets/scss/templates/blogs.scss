@@ -823,40 +823,83 @@
   & .blog-controls{
     background-color: rgba(170, 170, 170, 0.15);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 5em;
-    & img{
-      width: 40%;
+    & img:not(.zigzag){
+      // width: 40%;
       border:5px solid $baby-blue-color;
     }
     & .prev-next-post-title{
-      // width: 50%;
-      & a{
-        font-size: 2rem;
-        font-family: $title-font;
-        color: $title-color;
-      }
-      & .prev-next-artcile{
-        display: block;
+      flex:1;
+      padding: 0 2em;
+      & a:not(.prev-next-artcile){
+      font-family: $title-font;
+      color: $title-color;
+      font-size:3.5rem;
+        }
+    }
+
+    & .prev-next-artcile{
+      display: block;
+      & span{
+        vertical-align: text-top;
+        font-size: inherit;
+        font-weight: bold;
       }
     }
+
     & .next-post{
       display: flex;
-      flex:1;
-      & a{
-        font-size: 2rem;
-        font-family: $title-font;
-        color: $title-color;
+      // flex:1;
+      width: 50%;
+      padding-left: 1em;
+      & .post-image{
+        position: relative;
+        flex:1;
+        & .zigzag{
+          position: absolute;
+          &-1{
+            top: -1.5em;
+            left: 0.5em;
+          }
+          &-2{
+            top: 0.5em;
+            left: 2em;
+          }
+          &-3{
+            bottom: 0.5em;
+            right: 1.5em;
+          }
+          &-4{
+            bottom: -1.5em;
+            right: 0;
+          }
+        }
+      }
+      & .prev-next-post-title{
+        text-align: left;
+      }
+      & .prev-next-artcile{
+        margin-right:auto;
       }
     }
     & .previous-post{
       display: flex;
-      flex: 1;
-
-
+      // flex: 1;
+      width: 50%;
+      padding-right: 1em;
         & img{
           filter: blur(3px);
+        }
+        & .post-image{
+          flex:1;
+        }
+        & .prev-next-post-title{
+          text-align: right;
+        }
+        & .prev-next-artcile{
+          margin-left: auto;
         }
     }
   }
@@ -904,6 +947,11 @@
     & .blog-footer{
       & .share-social-media{
         flex:4;
+      }
+    }
+    & .blog-controls{
+      & .prev-next-post-title a:not(.prev-next-artcile){
+          font-size: 2.5rem;
       }
     }
   }
