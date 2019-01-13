@@ -5,6 +5,7 @@ body{
 %border{
     border-radius: 10px 10px 10px 10px;
 }
+//// remove header buttons & make it transperent
 .home{
     header{
         &.site-header{
@@ -17,17 +18,21 @@ body{
         }
     }
 }
-.projects-template-default{
+.projects-template-default,.products-template-default{
     header{
-        &.site-header{
-            background-color: transparent;
-            position: absolute;
-            width: 100vw;
-        }
         .top-bar-right{
             .button{
                 display: none;
             }
+        }
+    }
+}
+.projects-template-default{
+    header{
+         &.site-header{
+            background-color: transparent;
+            position: absolute;
+            width: 100vw;
         }
     }
 }

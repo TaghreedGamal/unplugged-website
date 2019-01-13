@@ -8,13 +8,10 @@
 
 get_header(); ?>
 
-
-<!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
 <div class="main-container container">
 	<div class="main-grid ">
 		<main class="main-content main-content__project">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
 				<div class="main-content__project-content">
 					<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"class="close-page">&times</a>
 					<?php get_template_part( 'template-parts/content', '' ); ?>
@@ -42,8 +39,8 @@ get_header(); ?>
 					    	<p>services :</p>
 					    		<div class="small-icon">
 	                                <?php
-	                                if( have_rows('project_services') ):
-	                                    while ( have_rows('project_services') ) : the_row();
+	                                if( have_rows('services_icons') ):
+	                                    while ( have_rows('services_icons') ) : the_row();
 	                                        ?> <img src="<?php the_sub_field('project_service_img')?>">
 	                                <?php
 	                                    endwhile;
@@ -109,22 +106,6 @@ get_header(); ?>
 <!-- cycles section -->
 
 <div class="project__cycles">
-
-	<!-- <div class="tabs-content" data-tabs-content="example-tabs">
-	  <div class="tabs-panel is-active" id="panel1">
-	  	<section id="slider">
-		  <input type="radio" name="slider" id="s1">
-		  <input type="radio" name="slider" id="s2" checked>
-		  <input type="radio" name="slider" id="s3">
-		  <label for="s1" id="slide1" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
-		  <label for="s2" id="slide2" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
-		  <label for="s3" id="slide3" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/project-page/cycle.png);"><div class="overlayer"></div></label>
-		</section>
-	  </div>
-	  <div class="tabs-panel" id="panel2">
-	    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-	  </div>
-	</div> -->
 	<div class="tabs-content projtabs" data-tabs-content="slide-tabs">
         <?php 
 	        $tabNo=1;

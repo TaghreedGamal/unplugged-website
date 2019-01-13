@@ -6,11 +6,19 @@
 .main-grid{
 	width: 100%;
 }
+.close-page{
+	position: absolute;
+	font-size: 45px;
+	color: #4a4a4abf;
+	top:0;
+	right: -20%;
+}
 .two-parts{
 	display: flex;
  	align-items: center;
  	height: 100vh;
 }
+
 .main-content{
 	margin-left: 0 !important;
 	margin-right: 0 !important;
@@ -27,13 +35,6 @@
         	padding-top: 130px;
         	position: relative;	
         	opacity: 0;
-        	.close-page{
-        		position: absolute;
-        		font-size: 45px;
-    			color: #4a4a4abf;
-        		top:0;
-        		right: -20%;
-        	}
         	.entry-title{
 		      color: $title-color;
 		      font-family:$title-font;
