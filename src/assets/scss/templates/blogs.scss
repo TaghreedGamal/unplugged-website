@@ -487,6 +487,46 @@
     font-size: 2rem;
     width: 50%;
     font-family: $main-font;
+    & .sd-sharing-enabled{
+      & h3{
+        display: none;
+        font-size: 2rem;
+        font-family: $main-font;
+        font-weight: 100;
+        margin: 0;
+        &:before{
+          content: unset;
+          border:none;
+          margin: 0;
+        }
+      }
+      & .sd-content{
+        & a{
+          padding: 0.8em;
+          &:before{
+            font-size: 2rem;
+          }
+          &:hover{
+            padding: 0.8em;
+          }
+        }
+        & .share-custom-quora{
+          & a{
+            padding: 1.3em !important;
+            background: url(https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/quora-512.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 15px !important;
+            &:hover{
+              padding: 1.3em;
+            }
+          }
+          & span{
+            background: none;
+          }
+        }
+      }
+    }
     & .icon-container{
       background-color: blue;
       border-radius: 50%;
@@ -547,7 +587,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5em;
-    height: 50vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -557,6 +597,8 @@
   & .single-blogs-blog-header{
     position: relative;
     padding: 8em;
+    margin-top: -30em;
+    background-color: white;
     & .author-avatar{
       position: absolute;
       // top: 0;
@@ -802,6 +844,9 @@
     & .share-social-media{
       flex: 6;
       padding-left: 2em;
+      & .sd-title{
+        display: none;
+      }
       & .icon-container{
         & i{
           font-size: 1.5rem;
@@ -898,10 +943,11 @@
         }
     }
   }
-  & body:has(.single-blogs-page-container){
-    & footer{
-      display: none;
-    }
+
+}
+ .single-blogs{
+  & footer{
+    display: none;
   }
 }
 @media only screen and (min-width:1340px) and (max-width:1904px) {

@@ -53,5 +53,103 @@ $('.scroll-top-button').click(function(){
 
 //archive blogs
 //typewriters
-TweenMax.from('.small-typewriter', 2, {y:400, opacity:0})
-TweenMax.from('.typewriter', 2, {y:400, opacity:0})
+var typewriters_animation = new TimelineMax();
+typewriters_animation.from('.small-typewriter', 2, {y:400, opacity:0},1)
+                     .from('.typewriter', 2, {y:400, opacity:0},1)
+
+//baby blue semi circle
+                      .from('.blue-semi-circle', 2, {scale:0,  opacity:0},2)
+                      .from('.blue-semi-circle-2', 2, {scale:0, opacity:0},2)
+
+//zigzags
+                      .from('.zigzag-line-5', 1, {y:200,  opacity:0},3)
+                      .from('.zigzag-line-6', 1, {y:200, opacity:0},3)
+//dark blue circle
+                      .from('.dark-blue-circle', 1, {scale:0, opacity:0},3)
+//orange lines
+                      .from('.orange-line-1', 1, {x:100, opacity:0},3)
+                      .from('.orange-line-2', 1, {x:100, opacity:0},3)
+
+
+//slider
+var slides_animation = new TimelineMax();
+slides_animation.from('.featured-articles-slider .zigzag-line-1', 0.5, {y:50, opacity:0},1)
+                .from('.featured-articles-slider .zigzag-line-2',0.5,{y:50, opacity:0},1)
+                .from('.featured-articles-slider .zigzag-line-3', 0.5, {y:50, opacity:0},1)
+                .from('.featured-articles-slider .zigzag-line-4', 0.5, {y:50, opacity:0},1)
+                .from('.featured-articles-slider .orange-circle', 1, {scale:0, opacity:0},1)
+                .from('.featured-articles-slider .blue-line-1', 0.5, {x:100, opacity:0},1)
+                .from('.featured-articles-slider .blue-line-2', 0.5, {x:100, opacity:0},1)
+                .from('.featured-articles-slider .blue-line-3', 0.5, {x:100, opacity:0},1)
+                .from('.featured-articles-slider .blue-line-4', 0.5, {x:100, opacity:0},1)
+slides_animation.pause();
+$(window).scroll(function() {
+  var featured_articles_slider= $(".featured-articles-slider");
+  if(featured_articles_slider.length!=0){
+  var top_of_element = featured_articles_slider.offset().top;
+  var bottom_of_element = featured_articles_slider.offset().top + featured_articles_slider.outerHeight();
+  var top_of_screen = $(window).scrollTop();
+  var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+  if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        slides_animation.play();
+      }
+    }
+});
+
+//latest artciles
+var latest_artciles_animation = new TimelineMax();
+latest_artciles_animation.from('.article .zigzag-line-1', 0.5, {y:50, opacity:0},1)
+                .from('.article .zigzag-line-2',0.5,{y:50, opacity:0},1)
+                .from('.article .zigzag-line-3', 0.5, {y:50, opacity:0},1)
+                .from('.article .zigzag-line-4', 0.5, {y:50, opacity:0},1)
+                .from('.article .orange-circle', 1, {scale:0, opacity:0},1)
+                .from('.article .blue-line-1', 0.5, {x:100, opacity:0},1)
+                .from('.article .blue-line-2', 0.5, {x:100, opacity:0},1)
+                .from('.article .blue-line-3', 0.5, {x:100, opacity:0},1)
+                .from('.article .blue-line-4', 0.5, {x:100, opacity:0},1)
+latest_artciles_animation.pause();
+$(window).scroll(function() {
+  var articles_container= $(".articles-container");
+  if(articles_container.length!=0){
+  var top_of_element = articles_container.offset().top;
+  var bottom_of_element = articles_container.offset().top + articles_container.outerHeight();
+  var top_of_screen = $(window).scrollTop();
+  var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+  if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        latest_artciles_animation.play();
+      }
+    }
+});
+
+//single blogs
+var blog_content_animation = new TimelineMax();
+blog_content_animation.from('.single-blog', 1.5, {y:500, opacity:0},1)
+                      .from('.author-avatar', 1, {scale:0, opacity:0},1)
+                      .from('.author-avatar .purple-line-1', 0.5,{x:50, opacity:0},2)
+                      .from('.author-avatar .purple-line-2', 0.5,{x:50, opacity:0},2)
+                      .from('.author-avatar .purple-line-3', 0.5,{x:50, opacity:0},2)
+                      .from('.author-avatar .purple-line-4', 0.5,{x:50, opacity:0},2)
+                      .from('.author-avatar .zigzag-1', 0.5,{y:50, opacity:0},2)
+                      .from('.author-avatar .zigzag-2', 0.5,{y:50, opacity:0},2)
+blog_content_animation.play();
+
+
+var blog_controls_animation = new TimelineMax();
+blog_controls_animation.from('.blog-controls .next-post .zigzag-1', 0.5,{y:50, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-2', 0.5,{y:50, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-3', 0.5,{y:50, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-4', 0.5,{y:50, opacity:0},1)
+blog_controls_animation.pause();
+$(window).scroll(function() {
+  var blog_controls= $(".blog-controls");
+  if(blog_controls.length!=0){
+
+  var top_of_element = blog_controls.offset().top;
+  var bottom_of_element = blog_controls.offset().top + blog_controls.outerHeight();
+  var top_of_screen = $(window).scrollTop();
+  var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+  if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        blog_controls_animation.play();
+      }
+    }
+});

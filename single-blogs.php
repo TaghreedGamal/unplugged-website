@@ -20,6 +20,8 @@ get_header(); ?>
 							<!-- <?php   the_post_thumbnail('full'); ?> -->
 							<!-- <h1>jjjjjjjjj</h1> -->
 					</div>
+					<div class="single-blog">
+
 					<div class="single-blogs-blog-header">
 							<div class="author-avatar">
     						<img class="author-image"src=" <?php the_field('author_avatar') ?>" alt="">
@@ -41,14 +43,15 @@ get_header(); ?>
 									Share on:
 									<!-- <br> -->
 									<div class="social-icons">
-									<a class="icon-container facebook"href="#"> <i class="icon-facebook-squared"></i> </a>
+									<!-- <a class="icon-container facebook"href="#"> <i class="icon-facebook-squared"></i> </a>
 									<a class="icon-container gplus"href="#"> <i class="icon-gplus"></i> </a>
 									<a class="icon-container linkedin"href="#"> <i class="icon-linkedin-squared"></i> </a>
 									<a class="icon-container pinterest"href="#"> <i class="icon-pinterest-circled"></i> </a>
 									<a class="icon-container twitter"href="#"> <i class="icon-twitter"></i> </a>
 									<a class="icon-container quora"href="#"> <i class="icon-quora"></i> </a>
 									<a class="icon-container instagram"href="#"> <i class="icon-instagram"></i> </a>
-									<a class="icon-container link"href="#"> <i class="icon-link"></i> </a>
+									<a class="icon-container link"href="#"> <i class="icon-link"></i> </a> -->
+										<?php the_content(); ?>
 									</div>
 								</div>
 							</div>
@@ -167,14 +170,15 @@ get_header(); ?>
 						Spread the love:
 						<!-- <br> -->
 						<div class="social-icons">
-						<a class="icon-container facebook"href="#"> <i class="icon-facebook-squared"></i> </a>
+							<?php the_content(); ?>
+						<!-- <a class="icon-container facebook"href="#"> <i class="icon-facebook-squared"></i> </a>
 						<a class="icon-container gplus"href="#"> <i class="icon-gplus"></i> </a>
 						<a class="icon-container linkedin"href="#"> <i class="icon-linkedin-squared"></i> </a>
 						<a class="icon-container pinterest"href="#"> <i class="icon-pinterest-circled"></i> </a>
 						<a class="icon-container twitter"href="#"> <i class="icon-twitter"></i> </a>
 						<a class="icon-container quora"href="#"> <i class="icon-quora"></i> </a>
 						<a class="icon-container instagram"href="#"> <i class="icon-instagram"></i> </a>
-						<a class="icon-container link"href="#"> <i class="icon-link"></i> </a>
+						<a class="icon-container link"href="#"> <i class="icon-link"></i> </a> -->
 						</div>
 					</div>
 					<a href="#"class="scroll-top-button">
@@ -230,6 +234,7 @@ get_header(); ?>
 							</div>
 						<?php endif; ?>
 				</div>
+			</div>
 
 
 				<?php endwhile; ?>

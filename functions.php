@@ -186,7 +186,6 @@ register_taxonomy( 'products_categories', array( 'products' ), $args );
 
 
 
-
 //blog
 add_action( 'init', 'create_post_type_blogs' );
 function create_post_type_blogs() {
@@ -211,6 +210,35 @@ function create_post_type_blogs() {
 
    );
 }
+add_action( 'init', 'create_blogs_taxonomies' );
+function create_blogs_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Year', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Year', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Year', 'textdomain' ),
+  'all_items'         => __( 'All Year', 'textdomain' ),
+  'parent_item'       => __( 'Parent Year', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Year:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Year', 'textdomain' ),
+  'update_item'       => __( 'Update Year', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Year', 'textdomain' ),
+  'new_item_name'     => __( 'New Blogs Year', 'textdomain' ),
+  'menu_name'         => __( 'Years', 'textdomain' ),
+);
+
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'year-category' ),
+);
+
+register_taxonomy( 'year-category', array( 'blogs' ), $args );
+}
+
   //
   // add_filter("the_content", "plugin_myContentFilter");
   //

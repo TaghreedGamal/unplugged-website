@@ -43,14 +43,17 @@ Connect, & Inspire.</h1>
   </div>
 
   <h1 class="featured-articles-title">Featured Articles</h1>
+  <?php $query = array(
+    'post_type' => 'blogs');
+$loop = new WP_Query($query);?>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
 		<?php if ( have_posts() ) : ?>
 
 			<div class="featured-articles-slider">
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="featured-articles-slide slide">
 
           <div class="blog-post-image">
@@ -80,7 +83,7 @@ Connect, & Inspire.</h1>
             <img src=" <?php the_field('author_avatar') ?>" alt="">
             <span class="author-name">By: <?php the_field('author') ?></span>
           </div>
-          <p class="blog-post-content"><?php the_excerpt(); ?></p>
+          <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 750) ,"..";?></p>
             </div>
           <div class="blog-post-details">
             <div class="blog-post-date">
@@ -134,14 +137,16 @@ Connect, & Inspire.</h1>
   <div class="latest-articles-container">
     <div class="main-content__filter-section">
       <!-- <?php wp_list_categories()?> -->
-      <div class="search-bar">
-          <input type="text" name="" value="" placeholder="Search">
+      <form class="search-bar" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+          <input type="text" name="" value="<?php the_search_query(); ?>" placeholder="Search">
           <a class="search-button" href="#">
             <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
           </a>
-      </div>
-      <div class="filter-menu">
-        <h3>Filter by</h3>
+          <!-- <input type="submit" class="search-button" id="searchsubmit" value=""/> -->
+
+      </form>
+      <!-- <div class="filter-menu"> -->
+        <!-- <h3>Filter by</h3>
         <ul class="accordion" data-accordion data-allow-all-closed="true">
           <li class="accordion-item" data-accordion-item>
              <a href="#" class="accordion-title">Date/Time</a>
@@ -163,8 +168,51 @@ Connect, & Inspire.</h1>
           </div>
           </li>
         </ul>
+      </div> -->
+
+      <div class="filter-menu">
+        <h3>Filter by</h3>
+        <ul class="accordion" data-accordion data-allow-all-closed="true">
+          <li class="accordion-item" data-accordion-item>
+            <a href="#">Date & Time</a>
+            <div class="accordion-content" data-tab-content>
+              <ul id="filter-ul">
+            <?php
+            $taxonomyName = "year-category";
+            $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
+            // var_dump($terms)
+              foreach ( $terms as $term ) {
+                $link = add_query_arg('year-category', $term->slug);?>
+                <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+              <?php  }?>
+            </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- <?php
+        $taxonomyName = "year-category";
+      //This gets top layer terms only.  This is done by setting parent to 0.
+        $parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+        foreach ( $parent_terms as $pterm ) {
+          $link = add_query_arg('year-category', $pterm->slug);
+         //echo($link); //don't go to link
+          echo '<li class="accordion-item" data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
+          //Get the Child terms
+          $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
+          echo '<div class="accordion-content" data-tab-content><ul id="filter-ul">';
+          foreach ( $terms as $term ) {
+            $link = add_query_arg('year-category', $term->slug);?>
+            <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+          <?php }
+            // echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';
+          // }
+          echo '</ul></div></li>';
+        }
+        echo '</ul>';
+        ?> -->
+
       </div>
-    </div>
+        </div>
     <div class="articles-container">
         <?php if(have_posts()) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
@@ -198,7 +246,7 @@ Connect, & Inspire.</h1>
                   <img src=" <?php the_field('author_avatar') ?>" alt="">
                   <span class="author-name">By: <?php the_field('author') ?></span>
                 </div>
-                <p class="blog-post-content"><?php the_excerpt(); ?></p>
+                <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 750) ,"..";?></p>
                   </div>
                 <div class="blog-post-details">
                   <div class="blog-post-date">
@@ -227,8 +275,10 @@ Connect, & Inspire.</h1>
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; // End have_posts() check. ?>
-          <?php load_more_button(); ?>
-    </div>
+          <!-- <?php load_more_button(); ?> -->
+        <!-- <?php echo do_shortcode('[ajax_load_more id="articles-container" container_type="div" css_classes="articles-container" post_type="blogs" pause="true" scroll="false" button_label="Load More" button_loading_label="Loading"]') ?> -->
+      </div>
+
   </div>
 </div>
 </div>
