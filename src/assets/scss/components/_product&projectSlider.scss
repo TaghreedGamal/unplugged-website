@@ -1,0 +1,52 @@
+.project,.product{
+	&__cycles{
+			.tabs-content{
+			border:0;
+			.allinone_carousel.powerful{
+				width: 100% !important;
+			}
+		}
+		.tabs{
+			border: 0px !important;
+			display: flex;
+			justify-content:space-around;
+			align-items:center;
+			margin-top: 40px;
+			li{
+				a{
+					font-size: 20px;
+					color: $opaque-color;
+					font-family: $medium-font;
+					border-bottom: 5px solid $opaque-color;
+					line-height: 2.09;
+				}
+				>a[aria-selected='true'] {
+					font-size: 40px;
+				    background: transparent;
+				    color: $title-color;
+				    font-family: $title-font;
+				    line-height: 1.07;
+				    border-bottom: 6px solid $title-color;
+				}
+			}
+		}
+		.tabs-panel{
+			.bottomNav{
+				width: fit-content !important;
+				left: 45% !important;
+			}
+			.allinone_carousel.charming .bottomNavButtonOFF {
+				background:none ;
+				background-color:grey;
+				border:3px white solid;
+				border-radius:50%;
+		    }
+			.allinone_carousel.charming .bottomNavButtonON {
+				background:none ;
+				background-color:white;
+				border:5px grey solid;
+				border-radius:50%;
+			}
+		}
+	}
+}

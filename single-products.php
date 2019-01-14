@@ -213,18 +213,18 @@ get_header(); ?>
 	<div class="tabs-content prodtabs" data-tabs-content="slide-tabs">
         <?php 
 	        $tabNo=1;
-	        if( have_rows('project-steps-title') ): 
-                while( have_rows('project-steps-title') ): the_row(); 
+	        if( have_rows('product_tabs') ): 
+                while( have_rows('product_tabs') ): the_row(); 
             		if($tabNo==1){ 
             			?>
                 	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
-	                	<?php the_sub_field('proj-step-slider'); ?>
+	                	<?php the_sub_field('product_tabs_slider'); ?>
                 	</div>
                     <?php }
 		     		else{
 		     			?>
 		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
-		                	<?php the_sub_field('proj-step-slider'); ?>
+		                	<?php the_sub_field('product_tabs_slider'); ?>
 		            	</div> 
 	            <?php 	}
 	         	$tabNo++;
@@ -235,14 +235,14 @@ get_header(); ?>
     <ul class="tabs container" data-tabs id="slide-tabs">
     	<?php $url = 1;
         $stepNo=1;
-        if( have_rows('project-steps-title') ):
-   			 while ( have_rows('project-steps-title') ) : the_row();
+        if( have_rows('product_tabs') ):
+   			 while ( have_rows('product_tabs') ) : the_row();
        		 if($url==1){ ?>
             <li class="tabs-title is-active">
             	<a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
 	            	<br>
-	            	<?php the_sub_field('proj-step-title');?>
+	            	<?php the_sub_field('product_tabs_titles');?>
 	            </a>
             </li>
          <?php }
@@ -251,7 +251,7 @@ get_header(); ?>
                 <a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
 	            	<br>
-	            	<?php the_sub_field('proj-step-title');?>
+	            	<?php the_sub_field('product_tabs_titles');?>
 	            </a>
             </li>
             <?php }
