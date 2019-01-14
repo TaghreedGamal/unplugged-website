@@ -137,7 +137,8 @@
 .full-menu{
       &__item{
         .close {
-          top: 4%;
+              top: 7%;
+              font-size: 45px;
            &-responsive{
              display: none;
              @media (max-width: 40em){

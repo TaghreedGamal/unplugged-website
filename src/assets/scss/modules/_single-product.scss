@@ -1,11 +1,4 @@
-.single-products{
-	.footer{
-		display: none;
-	}
-}
-.main-grid{
-	width: 100%;
-}
+
 .background{
 	background-color:$background-color;
 	height: 65vh;
@@ -20,13 +13,13 @@
 	display: block;
 	&__product{
 		padding-top: 70px !important;
-		height: 100vh;
+		height: 90vh;
 		display: flex;
 		justify-content:space-around;
 		&-content{
 			width: 90%;
 			.close-page{
-				top: 5%;
+				top: 1%;
 				right: 47%;
 				font-size: 55px;
 			}
@@ -40,7 +33,7 @@
 			.data{
 				display: flex;
 				justify-content:space-between;
-				padding-top: 30px;
+				padding-top: 50px;
 				p{
 					font-size: 24px;
 		    		font-family: $title-font;
@@ -93,16 +86,16 @@
 	   					top: -50px;
 					}
 					&.orange-circle-image{
-						bottom: 120px;
+						bottom: 55px;
 						left: -70px;
 					}
 					&.zigzag-image{
-						bottom: 180px;
+						bottom: 100px;
 						left:138px;
 						z-index: 1;
 					}
 					&.zigzag-image-2{
-						bottom: 160px;
+						bottom: 120px;
 						left: 125px;
 					}
 				}
@@ -119,21 +112,222 @@
 	   					top: -30px;
 					}
 					&.orange-circle-image{
-						bottom: 150px;
+						bottom: 120px;
 						left: 40px;
 					}
 					&.zigzag-image{
-						bottom: 200px;
+						bottom: 135px;
 						left:170px;
 						z-index: 1;
 					}
 					&.zigzag-image-2{
-						bottom: 225px;
-						left: 180px;
+						bottom: 155px;
+    					left: 170px;
 					}
 				}
 			}
 		}
 		
 	}
+}
+.Product {
+	&__brief{
+		margin-top: 100px;
+		&-image{
+			position: absolute;
+		}
+		&-content{
+			.top{
+		 		border-radius: 50% !important;
+		 		width: 50px;
+    			height: 50px;
+		 		position: fixed;
+		 		bottom: 0;
+		 		right: 45px;
+		 		display: none;
+		 		&:hover{
+		 			transform :translateY(0);
+		 		}
+	 		}
+		}
+		&-image,&-content{
+			width: 50%;
+		}
+		&-image{
+			position: relative;
+			svg{
+	 			position: absolute;
+	 		}
+	 		.briefImg{
+	 			left: 90px;
+	 			position: relative;
+	 			z-index: 4;
+	 		}
+	 		.briefCircle{
+	 			z-index: 0;
+	 			top:-20px;
+	 		}
+	 		.briefL1{
+	 			z-index: 1;
+	 			top: 0;
+    			left: -25px;
+	 		}
+	 		.briefL11{
+	 			z-index: 1;
+	 			top: 32px;
+	 			left: 50px;
+	 		}
+	 		.briefL2{
+	 			z-index: 1;
+	 			bottom:-55px;
+    			right: 20px;
+	 		}
+	 		.briefL21{
+	 			z-index: 6;
+	 			bottom: -5px;
+    			right: 25px;
+	 		}
+	 		.briefSCircle{
+	 			bottom: 35px;
+			    right: 90px;
+			    z-index: 5;
+	 		}
+	 		.briefZigzag1{
+	 			top: 100px;
+    			right: 50px;
+	 		}
+	 		.briefZigzag2{
+	 			top: 65px;
+    			right: 100px;
+    			z-index: 6;
+	 		}
+		}
+	}
+	&__background{
+		margin-top: 100px;
+		justify-content:space-between;
+		&-content{
+			width: 55%;
+			.two-parts-title{
+				font-size: 65px;
+			}
+		}
+		&-image{
+			width: 40%;
+		}
+	}
+	&__concept{
+		margin-top: 100px;
+		&-content,&-image{
+			width: 50%;
+		}
+		&-content{
+			.two-parts-title{
+				font-size: 65px;
+			}
+			p{
+				font-size: 20px !important;
+			    line-height: 1.3;
+			    letter-spacing: 0.8px;
+			    font-family: $main-font;
+			    color:$project-text;
+			}
+		}
+		&-image{
+			position: relative;
+			.desktop-img{
+				svg{
+					position: absolute;
+				}
+				.concept-img{
+					position: relative;
+					left: 35px;
+				}
+				.conceptCircle{
+					z-index: -5;
+					top: -60px;
+					left: 15px;
+				}
+				.conceptLine-image{
+					left: 50px;
+					top: 10px;
+				}
+				.conceptZigzag-image {
+				    top: 150px;
+				    right: 85px;
+				}
+				.conceptZigzag-image-2 {
+				    top: 120px;
+				    right: 95px;
+				    z-index: 1;
+				}
+				.conceptL1{
+					top: -60px;
+				    left: 20px;
+				    z-index: -7;
+				}
+				.conceptL11{
+					z-index: 3;
+				    top: -22px;
+				    left: 50px;
+				}
+				.conceptL2{
+					bottom: 5px;
+					right: 100px;
+				}
+				.conceptL21{
+					bottom: 40px;
+				    z-index: 2;
+				    right: 125px;
+				}
+			}
+			.mobile-img{
+				svg{
+					position: absolute;
+				}
+				.concept-img{
+					position: relative;
+					left: 35px;
+					top: 15px;
+				}
+				.conceptCircle{
+					z-index: -5;
+					top: -60px;
+					left: 15px;
+				}
+				.conceptLine-image{
+					left: -30px;
+    				top: 110px;
+				}
+				.conceptZigzag-image {
+				    top: 92px;
+				    z-index: 1;
+				    left: 300px;
+				}
+				.conceptZigzag-image-2 {
+				    top: 120px;
+   					right: 165px;
+				}
+				.conceptL1{
+					top: -8px;
+				    left: 20px;
+				}
+				.conceptL11{
+					z-index: 3;
+				    top: 8px;
+				    left: 85px;
+				}
+				.conceptL2{
+					bottom: 5px;
+					right: 100px;
+				}
+				.conceptL21{
+					bottom: 40px;
+				    z-index: 2;
+				    right: 125px;
+				}
+			}
+		}
+	}
+
 }

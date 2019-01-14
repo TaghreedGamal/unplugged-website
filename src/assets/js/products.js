@@ -22,3 +22,4 @@ proImg.from('.orange-circle-image',0.8,{scale:0,opacity:0})
 .addLabel('zigzag')
 .from('.zigzag-image', 0.5, {y:100, opacity:0},'zigzag')
 .from('.zigzag-image-2', 0.5, {y:100, opacity:0},'zigzag');
+

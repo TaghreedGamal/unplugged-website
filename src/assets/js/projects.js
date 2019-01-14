@@ -29,11 +29,11 @@ $('[grid-view]').on('click',function(){
 
 $(".scroll").click(function() {
     $('html,body').animate({
-        scrollTop: $("#pIdea").offset().top},'slow');
+        scrollTop: $(".scrollToInfo").offset().top},'slow');
     $('.top').fadeIn();
 });
 $(".top").click(function() {
-    $('html,body').animate({scrollTop: $(".main-container").offset().top},'slow');
+    $('html,body').animate({scrollTop: $(".top-bar").offset().top},'slow');
 });
 $(document).scroll(function() {
   var y = $(this).scrollTop();

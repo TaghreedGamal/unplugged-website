@@ -40,3 +40,35 @@ p{
     bottom: -20px;
     right: -15px;
 }
+
+.single-projects,.single-products{
+    .footer{
+        display: none;
+    }
+}
+.main-grid{
+    width: 100%;
+}
+.close-page{
+    position: absolute;
+    font-size: 45px;
+    color: #4a4a4abf;
+    top:0;
+    right: -20%;
+}
+.two-parts{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.two-parts-title{
+    font-size: 95px;
+    color:$title-color;
+}
+.two-parts-text{
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    font-family: $main-font;
+    color:$project-text;
+}

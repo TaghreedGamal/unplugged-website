@@ -63,11 +63,10 @@ get_header(); ?>
 			<?php endwhile; ?>
 		</main>
 	</div>
-<!-- 	<?php get_sidebar(); ?>
- -->	</div>
+  </div>
 </div>
 <!-- Idea section -->
-<div class="project__Idea container two-parts" id="pIdea">
+<div class="project__Idea container two-parts scrollToInfo" ">
 	<div class="project__Idea-image">
 		<svg class="ideaCircle" xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 439 452">
 		    <path fill="#55BBEB" fill-rule="evenodd" d="M401.662 212.987c.135-32.272 12.087-60.156 35.5-82.845.08-.094.162-.159.243-.226.453-.773.917-1.512 1.345-2.29.271-.432.34-.933.116-1.416-.467-1-.937-2.014-1.461-3.034-9.037-17.464-20.296-33.479-33.672-48.053-12.515-13.612-26.502-25.64-42.028-35.946-22.17-14.721-46.207-25.366-72.158-31.914a242.137 242.137 0 0 0-33.689-5.931c-4.814-.487-9.63-.824-14.441-1.068-10.413-.55-20.835-.197-31.22.66-.138.019-.258.019-.381.036-5.038.66-10.1 1.145-15.113 1.903-10.046 1.56-19.94 3.72-29.685 6.56a232.4 232.4 0 0 0-48.605 20.22C93.453 42.383 73.29 58.513 55.96 77.94c-14.092 15.822-25.727 33.208-34.81 52.2-5.548 11.58-10.081 23.547-13.478 35.902-2.696 9.836-4.814 19.732-6.076 29.864-.125.933-.214 1.886-.332 2.837-.57 5.583-2.61 29.057.133 53.898.185 1.442.376 2.9.578 4.332.883 6.52 2.133 12.985 3.64 19.37 3.801 16.127 9.242 31.672 16.489 46.635 9.408 19.404 21.355 37.156 35.94 53.247 12.685 13.999 26.91 26.324 42.733 36.832 19.017 12.68 39.532 22.351 61.534 28.967 9.724 2.918 19.583 5.225 29.621 6.821 3.761.595 7.52 1.207 11.32 1.568 3.918.364 7.817.933 11.738 1.108 7.247.339 14.469.675 21.722.339 4.952-.211 9.889-.293 14.833-.74a321.076 321.076 0 0 0 18.129-2.287c9.79-1.558 19.407-3.811 28.892-6.615 15.733-4.65 30.8-10.856 45.167-18.66 17.533-9.517 33.532-21.043 48.017-34.561 3.42-3.192 6.71-6.5 9.91-9.882v-166.13z"/>
@@ -96,8 +95,8 @@ get_header(); ?>
 		</svg>
 	</div>
 	<div class="project__Idea-content">
-		<h1 class="project-title">The Idea</h1>
-		<p class="project-text">What we aimed to assess is the old website, by analysing the data we received from the client then, proposing our possible solutions to the hurdles they demonstrated through a modern, user-friendly aesthetic design.</p>
+		<h1 class="two-parts-title">The Idea</h1>
+		<p class="two-parts-text">What we aimed to assess is the old website, by analysing the data we received from the client then, proposing our possible solutions to the hurdles they demonstrated through a modern, user-friendly aesthetic design.</p>
 		<div> 
            	<a class="button top" ><i class="fa fa-angle-up"></i></a>
         </div>
@@ -159,7 +158,7 @@ get_header(); ?>
 </div>
 
 <!-- final results -->
-<div class="project__Final container two-parts" id="pIdea">
+<div class="project__Final container two-parts">
 	<div class="project__Final-image">
 		<svg class="finalCircle" xmlns="http://www.w3.org/2000/svg" width="358" height="368" viewBox="0 0 358 368">
 		    <path fill="#55BBEB" fill-rule="evenodd" d="M327.551 173.405c.11-26.274 9.857-48.976 28.95-67.449.066-.076.132-.129.198-.184.37-.629.748-1.23 1.097-1.864.221-.352.277-.76.095-1.153-.381-.815-.765-1.64-1.192-2.47-7.37-14.219-16.55-27.257-27.459-39.123-10.206-11.082-21.612-20.875-34.273-29.266-18.08-11.985-37.682-20.652-58.844-25.983a197.753 197.753 0 0 0-27.473-4.829c-3.926-.396-7.854-.67-11.777-.87-8.491-.447-16.99-.16-25.46.538-.112.016-.21.016-.31.03-4.109.537-8.237.932-12.325 1.549-8.192 1.27-16.26 3.029-24.207 5.34a189.692 189.692 0 0 0-39.638 16.463C76.21 34.507 59.767 47.639 45.636 63.456c-11.492 12.882-20.98 27.037-28.388 42.5-4.524 9.427-8.22 19.17-10.99 29.23-2.2 8.007-3.926 16.064-4.955 24.313-.103.76-.175 1.536-.271 2.31-.466 4.545-2.128 23.658.108 43.881.15 1.175.307 2.361.472 3.528.72 5.307 1.739 10.572 2.968 15.77 3.1 13.13 7.537 25.786 13.446 37.968 7.673 15.798 17.416 30.251 29.309 43.352 10.344 11.397 21.945 21.432 34.849 29.987 15.508 10.324 32.237 18.198 50.18 23.583 7.93 2.377 15.97 4.255 24.155 5.554 3.068.485 6.133.983 9.232 1.276 3.195.297 6.375.76 9.572.903 5.91.276 11.799.55 17.714.276 4.038-.172 8.064-.239 12.096-.602a262.24 262.24 0 0 0 14.784-1.863c7.983-1.268 15.827-3.103 23.562-5.385 12.83-3.786 25.116-8.84 36.832-15.192a189.995 189.995 0 0 0 39.158-28.139c2.788-2.599 5.472-5.292 8.082-8.045V173.405z"/>
@@ -188,8 +187,8 @@ get_header(); ?>
 
 	</div>
 	<div class="project__Final-content">
-		<h1 class="project-title">Final Result</h1>
-		<p class="project-text"><?php echo get_field('project_finalresult_content') ?></p>
+		<h1 class="two-parts-title">Final Result</h1>
+		<p class="two-parts-text"><?php echo get_field('project_finalresult_content') ?></p>
 		<div class='grouped-buttons'> 
 			<a class="button" href="<?php echo get_field('project_finalresult_link') ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
         </div>
@@ -200,11 +199,11 @@ get_header(); ?>
 <!-- final testimonials -->
 <div class="project__Testimonial container two-parts" id="pIdea">
 	<div class="project__Testimonial-title">
-		<h1 class="project-title">Final<br> Testimonial</h1>
+		<h1 class="two-parts-title">Final<br> Testimonial</h1>
 	</div>
 	<div class="project__Testimonial-content">
 		<i class="fa fa-quote-left"></i>
-		<p class="project-text"><?php echo get_field('project-testimonial') ?></p>
+		<p class="two-parts-text"><?php echo get_field('project-testimonial') ?></p>
 		<p class="quote-teller"><?php echo get_field('project-testimonial-teller') ?></p>
 		<i class="fa fa-quote-right" aria-hidden="true"></i>
 	</div>
@@ -221,7 +220,7 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 			<div class="project__footer-content">
-			 <h1 class="project-title"><?php echo esc_attr( $next_post->post_title ); ?></h1>
+			 <h1 class="two-parts-title"><?php echo esc_attr( $next_post->post_title ); ?></h1>
 			 <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" class="button">Next project<i class="fa fa-long-arrow-right"></i></a>
 			</div>
 		</div>
