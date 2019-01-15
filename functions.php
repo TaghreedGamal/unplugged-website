@@ -187,8 +187,6 @@ register_taxonomy( 'products_categories', array( 'products' ), $args );
 
 
 
-
-
 //blog
 add_action( 'init', 'create_post_type_blogs' );
 function create_post_type_blogs() {
@@ -213,12 +211,73 @@ function create_post_type_blogs() {
 
    );
 }
+//blog years
+add_action( 'init', 'create_blogs_taxonomies' );
+function create_blogs_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Year', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Year', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Year', 'textdomain' ),
+  'all_items'         => __( 'All Year', 'textdomain' ),
+  'parent_item'       => __( 'Parent Year', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Year:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Year', 'textdomain' ),
+  'update_item'       => __( 'Update Year', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Year', 'textdomain' ),
+  'new_item_name'     => __( 'New Blogs Year', 'textdomain' ),
+  'menu_name'         => __( 'Years', 'textdomain' ),
+);
 
-  add_filter("the_content", "plugin_myContentFilter");
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'year-category' ),
+);
 
-  function plugin_myContentFilter($content)
-  {
-    // Take the existing content and return a subset of it
-    return substr($content, 0, 550);
-  }
+register_taxonomy( 'year-category', array( 'blogs' ), $args );
+}
+
+//blog department
+add_action( 'init', 'create_blogs_department_taxonomies' );
+function create_blogs_department_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Blog Departments', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Blog Departments', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Blog Departments', 'textdomain' ),
+  'all_items'         => __( 'All Blog Departments', 'textdomain' ),
+  'parent_item'       => __( 'Parent Blog Departments', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Blog Departments:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Blog Departments', 'textdomain' ),
+  'update_item'       => __( 'Update Blog Departments', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Blog Departments', 'textdomain' ),
+  'new_item_name'     => __( 'New Blogs Blog Departments', 'textdomain' ),
+  'menu_name'         => __( 'Blog Departments', 'textdomain' ),
+);
+
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'blog_departments' ),
+);
+
+register_taxonomy( 'blog_departments', array( 'blogs' ), $args );
+}
+
+
+  //
+  // add_filter("the_content", "plugin_myContentFilter");
+  //
+  // function plugin_myContentFilter($content)
+  // {
+  //   // Take the existing content and return a subset of it
+  //   return substr($content, 0, 150);
+  // }
 ?>

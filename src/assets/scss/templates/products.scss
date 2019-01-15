@@ -41,6 +41,7 @@
       flex:1.5;
       display: block;
       text-align: right;
+      padding-top: 3em;
       & img{
         display: inline-block;
         &.last-rocket, &.empty-rocket{
@@ -49,12 +50,12 @@
         }
         &.last-rocket{
           right: 6em;
-          height: 42em;
-          bottom: 1.5em;
+      /* height: 42em; */
+      bottom: 1.5em;
         }
         &.empty-rocket{
-          left: 5em;
-          top: 1em;
+          left: 6.2em;
+          top: -1em;
           z-index: -1;
         }
       }
@@ -245,7 +246,7 @@
                   margin-bottom: 2em;
                   transition: margin-bottom 0.5s linear;
                   &.box{
-                    padding: 1em 2em;
+                    padding: 4em 2em;
                   & .box__title{
                     & a{
                       color: unset;
@@ -288,7 +289,7 @@
               margin-bottom: 2em;
               transition: margin-bottom 0.5s linear;
               &.box{
-                padding: 1em 2em;
+                padding: 4em 2em;
               & .box__title{
                 & a{
                   color: unset;
@@ -340,24 +341,24 @@
     & .header-images{
       & img{
       &.empty-rocket{
-       width: 25%;
-    left: 4.3em;
-    top: 2em;
-    z-index: -1;
-    height: 21em;
+        width: 25%;
+        left: 4.3em;
+        top: 1.3em;
+        z-index: -1;
         position: relative;
       }
       &.middle-rocket{
-            width: 30%;
-    position: relative;
-    top: 2em;
-    right: -0.2em;
+        position: relative;
+        top: 2em;
+        right: -0.2em;
+        width: 30%;
       }
       &.last-rocket{
-          right: 3.7em;
-    height: 100%;
-    bottom: -0.8em;
-    width: 30%;
+        right: 3.7em;
+        // height: 95%;
+        bottom: 0em;
+        width: 30%;
+
       }
     }
     }

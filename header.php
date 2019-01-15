@@ -10,16 +10,16 @@
 
     ?>
     <!doctype html>
-  <!--    <html class="ie6"> 
-<html class="ie7"> 
-<html class="ie8"> 
+  <!--    <html class="ie6">
+<html class="ie7">
+<html class="ie8">
 <html class="ie9"> -->
     <html class="no-js" <?php language_attributes(); ?> >
-   
+
     <head>
       <meta charset="<?php bloginfo( 'charset' ); ?>" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
+
 
       <?php wp_head(); ?>
   </head>
@@ -29,22 +29,22 @@
       <?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
   <?php endif; ?>
 
-  <!--    first card-->    
+  <!--    first card-->
   <div class="step" style="display:none;" id="demo">
     <button close2-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
-    <div class="contactCards"> 
+    <div class="contactCards">
             <div class="contactCards-sectionOne">
                <h1 >We'd Love to <br>hear from you !</h1>
                <p>We are always happy to receive your inquiries,because we can provide you with the solution you read. </p>
                <button next-click class="button cont happy">Inquire About Something</button>
-           </div>  
+           </div>
         <div class="contactCards-sectionTwo">
            <h5>Contact</h5>
            <p>info<span>@</span>unpluggedweb.com <br />
                (+2) 12254575 <br />
-               (+2) 01273239777<br /> 
+               (+2) 01273239777<br />
            </p>
-       </div> 
+       </div>
        <div class="contactCards-sectionThree">
            <h5>Address</h5>
            <p>3 Abd El-Aziz Selim,Ad Doqi,Giza,Egypt</p>
@@ -71,8 +71,8 @@
            <div class="small-12 cell">
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
-                <a class="button cont" href="https://unpluggedweb.com/careers/">Job Seeker </a> 
-                <button  next-click class="button cont">Service Seeker</button> 
+                <a class="button cont" href="https://unpluggedweb.com/careers/">Job Seeker </a>
+                <button  next-click class="button cont">Service Seeker</button>
             </div>
             </div>
         </div>
@@ -132,7 +132,7 @@
   <div class="img-content">
    <a href="<?php echo esc_url( home_url( '/products' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-products">
-    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product-min.png" alt=menu-blog">
+    <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_product-min.png" alt="menu-blog">
     <div class="text-content">
         <p>Products</p>
         <img class="mline" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline2.png">
@@ -169,16 +169,16 @@
 <div class="top-bar-right">
 
     <button data-click  class="button">Contact us</button>
-    <div class="page-name">
-        <?php 
-        // $thisP = get_queried_object();
-        // if (!$thisP->label == ''){
-        //    echo $thisP->label;
-        // }
-        // else{
-        $pagename= basename(get_permalink()); echo $pagename;
-      // }
-       ?>
+
+    <div class="page-name"><?php wp_title(''); ?>
+
+        <!-- <?php $thisP = get_queried_object();
+        if (!$thisP->label == ''){
+           echo $thisP->label;
+        }
+        else{
+        $pagename= basename(get_permalink()); echo $pagename;} ?> -->
+
    </div>
     <button menu-click  class="menu-button">
         <span></span>
@@ -196,5 +196,3 @@
 </nav>
 
 </header>
-
-    

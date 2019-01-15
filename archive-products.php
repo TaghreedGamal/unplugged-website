@@ -22,7 +22,7 @@ get_header(); ?>
     <h1 class="products-header">We Desvise and Launch Digital Products</h1>
   <div class="header-images">
     <img class="empty-rocket" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-wireframe.png" alt="">
-    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-middle.png" alt="">
+    <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/middle-rocket-2.png" alt="">
     <img class="last-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-toy.png" alt="">
   </div>
   </div>
@@ -92,7 +92,8 @@ get_header(); ?>
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
             <div class="product-info-desktop box">
-              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
+                    <a class="box__title"href="#"><?php the_title(); ?></a>
               <a class="view-details-button button"href="#">View details</a>
             </div>
           <?php else : ?>
@@ -109,7 +110,8 @@ get_header(); ?>
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
             <div class="product-info box">
-              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
+              <a class="box__title"href="#"><?php the_title(); ?></a>
               <a class="view-details-button button"href="#">View details</a>
             </div>
           <?php endif; ?>
