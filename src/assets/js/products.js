@@ -4,11 +4,11 @@ var products_page_header_animation = new TimelineMax();
 products_page_header_animation.from(".products-header", 1, {y:150, opacity:0},1)
 //last rocket
 
-                              .from(".last-rocket", 1, {y:150, opacity:0},2)
+.from(".last-rocket", 1, {y:150, opacity:0},2)
 //middle rocket
-                              .from('.middle-rocket',1,{x:250,opacity:0},3)
+.from('.middle-rocket',1,{x:250,opacity:0},3)
 //empty rocket
-                              .from('.empty-rocket',1,{x:150,opacity:0},4)
+.from('.empty-rocket',1,{x:150,opacity:0},4)
 
 products_page_header_animation.play();
 //orange circles
@@ -16,14 +16,14 @@ products_page_header_animation.play();
 var products_animation = new TimelineMax();
 products_animation.from('.orange-circle-image',1.5,{scale:0,opacity:0},1)
 //circles
-                  .from('.circles-image',1.5,{scale:0, opacity:0},1)
+.from('.circles-image',1.5,{scale:0, opacity:0},1)
 
 //dotted line
-                  .from('.line-image', 1.5, {x:-100, opacity:0},1)
+.from('.line-image', 1.5, {x:-100, opacity:0},1)
 
 //zigzag lines
-                  .from('.zigzag-image', 1, {y:100, opacity:0},1)
-                  .from('.zigzag-image-2', 1, {y:100, opacity:0},1)
+.from('.zigzag-image', 1, {y:100, opacity:0},1)
+.from('.zigzag-image-2', 1, {y:100, opacity:0},1)
 
 
 products_animation.pause();
@@ -42,7 +42,7 @@ $(window).scroll(function() {
 });
 
 if($(".single-products").length != 0){
-
+products_animation.play();
 //////////////////brief animation
 var Brief= new TimelineMax();
 Brief.addLabel("with")

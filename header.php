@@ -170,14 +170,11 @@
 
     <button data-click  class="button">Contact us</button>
 
-    <div class="page-name"><?php wp_title(''); ?>
-
-        <!-- <?php $thisP = get_queried_object();
-        if (!$thisP->label == ''){
-           echo $thisP->label;
-        }
-        else{
-        $pagename= basename(get_permalink()); echo $pagename;} ?> -->
+    <div class="page-name">
+    
+    <?php 
+    $parent = get_post_type( $post->ID );
+    echo $parent?>
 
    </div>
     <button menu-click  class="menu-button">
