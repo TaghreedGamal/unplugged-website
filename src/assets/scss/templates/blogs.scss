@@ -610,11 +610,14 @@
     background-position-y: top;
     // transform: scale(0.8);
   }
+  & .single-blog{
+    background-color: white;
+  }
   & .single-blogs-blog-header{
     position: relative;
     padding: 8em;
     margin-top: -30em;
-    background-color: white;
+    // background-color: white;
     & .author-avatar{
       position: absolute;
       // top: 0;
