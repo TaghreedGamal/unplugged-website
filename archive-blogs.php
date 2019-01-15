@@ -141,11 +141,7 @@ $loop = new WP_Query($query);?>
       <!-- <?php wp_list_categories()?> -->
       <form class="search-bar" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
           <input type="text" name="" value="" placeholder="Search">
-          <a class="search-button" href="" onclick="<?php
-           $query_args = array( 's' => '6','post_type' => 'blogs',
-    'suppress_filters' => TRUE,
-    'posts_per_page' => '-1' );
-$query = new WP_Query( $query_args ); ?>">
+          <a class="search-button" href="#">
             <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
           </a>
         </form>
