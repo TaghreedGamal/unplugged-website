@@ -170,12 +170,15 @@
 
     <button data-click  class="button">Contact us</button>
     <div class="page-name">
-        <?php $thisP = get_queried_object();
-        if (!$thisP->label == ''){
-           echo $thisP->label;
-        }
-        else{
-        $pagename= basename(get_permalink()); echo $pagename;} ?>
+        <?php 
+        // $thisP = get_queried_object();
+        // if (!$thisP->label == ''){
+        //    echo $thisP->label;
+        // }
+        // else{
+        $pagename= basename(get_permalink()); echo $pagename;
+      // }
+       ?>
    </div>
     <button menu-click  class="menu-button">
         <span></span>

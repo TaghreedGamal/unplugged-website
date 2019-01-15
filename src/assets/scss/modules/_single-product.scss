@@ -329,5 +329,106 @@
 			}
 		}
 	}
+	&__final{
+		margin-top: 120px;
+		&-image,&-content{
+			width: 50%;
+		}
+		&-image{
+			position: relative;
+			top: 15px;
+			.desktop-img{
+				svg{
+					position: absolute;
+				}
+				.final-img{
+					position: relative;
+					left: 35px;
+					bottom: 50px;
+				}
+				.finalCircle{
+					z-index: -5;
+					bottom: 40px;
+					left: 40px;
+				}
+				.finalLine-image{
+					left: 10px;
+					bottom:65px;
+				}
+				.finalL1{
+					top: -90px;
+				    left: 80px;
+				    z-index: -5;
+				}
+				.finalL11{
+					z-index: 3;
+				    top: -30px;
+				    left: 115px;
+				}
+				.finalL2{
+					bottom: 100px;
+					right: 90px;
+				}
+				.finalL21{
+					bottom: 110px;
+				    z-index: 2;
+				    right: 125px;
+				}
+				.finalSCircle{
+					bottom: 135px;
+				    right: 140px;
+				    z-index: 1;
+				}
+			}
+			.mobile-img{
+				svg{
+					position: absolute;
+				}
+				.final-img{
+					position: relative;
+					left: 35px;
+					bottom: 50px;
+				}
+				.finalCircle{
+					z-index: -5;
+					top: 0;
+					left: 25px;
+				}
+				.finalLine-image{
+					left: 40px;
+					bottom:7px;
+				}
+				.finalL1{
+					top: -90px;
+				    left: 80px;
+				    z-index: -5;
+				}
+				.finalL11{
+					z-index: 3;
+				    top: -30px;
+				    left: 115px;
+				}
+				.finalL2{
+					bottom: 100px;
+					right: 90px;
+				}
+				.finalL21{
+					bottom: 110px;
+				    z-index: 2;
+				    right: 125px;
+				}
+				.finalSCircle{
+					bottom: 135px;
+				    right: 140px;
+				    z-index: 1;
+				}
+			}
+		}
+		.grouped-buttons{
+			.button{
+				width: 32% !important;
+			}
+		}
+	}
 
 }

@@ -215,9 +215,7 @@ get_header(); ?>
 	if (!empty( $next_post )): ?>
 		<div class="project__footer container two-parts">
 			<div class="project__footer-image">
-				<?php if( get_field('project-img') ): ?>
-					<img src="<?php the_field('project-img',$next_post->ID); ?>" />
-				<?php endif; ?>
+			   <img src="<?php the_field('project-img',$next_post->ID); ?>" />
 			</div>
 			<div class="project__footer-content">
 			 <h1 class="two-parts-title"><?php echo esc_attr( $next_post->post_title ); ?></h1>

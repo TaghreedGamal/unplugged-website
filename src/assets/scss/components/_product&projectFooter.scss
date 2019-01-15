@@ -1,0 +1,26 @@
+.product,.project{
+	&__footer{
+		background-color: $project-footer-bg;
+		height: fit-content !important;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		&.two-parts{
+			justify-content:center;
+		}
+		&-image{
+	 		width: 25%;
+	 	}
+	 	&-content{
+	 		h1{
+	 			font-size: 80px;
+	 			line-height: 1;
+				width: 430px;
+	 		}
+	 		.button{
+	 			display: flex;
+	 			justify-content:space-evenly;
+	 			font-size: 18px;
+	 		}
+	 	}
+	}
+}
