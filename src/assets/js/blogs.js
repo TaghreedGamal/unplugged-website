@@ -5,6 +5,7 @@ $('.featured-articles-slider').slick({
        centerMode: true,
        centerPadding: '300px',
        slidesToShow: 1,
+       draggable: true,
        // infinite: true,
        // slidesToScroll:1,
        // autoplay:true,

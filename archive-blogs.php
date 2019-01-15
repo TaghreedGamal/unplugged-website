@@ -49,11 +49,12 @@ $loop = new WP_Query($query);?>
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
-		<?php if ( have_posts() ) : ?>
+		<?php if ( $loop->have_posts() ) : ?>
 
 			<div class="featured-articles-slider">
 
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <?php if(get_field('add_to_featured_articles')==true): ?>
 				<div class="featured-articles-slide slide">
 
           <div class="blog-post-image">
@@ -105,6 +106,7 @@ $loop = new WP_Query($query);?>
         <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
 
 				</div>
+      <?php endif; ?>
 				<?php endwhile; ?>
 			</div>
 		<?php else : ?>
@@ -138,43 +140,25 @@ $loop = new WP_Query($query);?>
     <div class="main-content__filter-section">
       <!-- <?php wp_list_categories()?> -->
       <form class="search-bar" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
-          <input type="text" name="" value="<?php the_search_query(); ?>" placeholder="Search">
-          <a class="search-button" href="#">
+          <input type="text" name="" value="" placeholder="Search">
+          <a class="search-button" href="" onclick="<?php
+           $query_args = array( 's' => '6','post_type' => 'blogs',
+    'suppress_filters' => TRUE,
+    'posts_per_page' => '-1' );
+$query = new WP_Query( $query_args ); ?>">
             <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
           </a>
+        </form>
+
           <!-- <input type="submit" class="search-button" id="searchsubmit" value=""/> -->
 
-      </form>
-      <!-- <div class="filter-menu"> -->
-        <!-- <h3>Filter by</h3>
-        <ul class="accordion" data-accordion data-allow-all-closed="true">
-          <li class="accordion-item" data-accordion-item>
-             <a href="#" class="accordion-title">Date/Time</a>
-          <div class="accordion-content" data-tab-content>
-            <ul id="filter-ul">
-            <?php
-            $all_dates = array();
-             while ( have_posts() ) : the_post();
-                $date = get_the_date('M, j, Y');
-                if(!in_array($date, $all_dates))
-                {
-                  array_push($all_dates, $date);
-                  echo'<li><a href="">'.$date.'</a></li>';
-                }
-              endwhile;
-             ?>
 
-            </ul>
-          </div>
-          </li>
-        </ul>
-      </div> -->
 
       <div class="filter-menu">
         <h3>Filter by</h3>
         <ul class="accordion" data-accordion data-allow-all-closed="true">
-          <li class="accordion-item" data-accordion-item>
-            <a href="#">Date & Time</a>
+          <li class="accordion-item " data-accordion-item>
+            <a class="accordion-title" href="#">Date & Time</a>
             <div class="accordion-content" data-tab-content>
               <ul id="filter-ul">
             <?php
@@ -186,6 +170,22 @@ $loop = new WP_Query($query);?>
                 <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
               <?php  }?>
             </ul>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Departments</a>
+            <div class="accordion-content" data-tab-content>
+              <ul id='filter-ul-departments'>
+                <?php
+      					$taxonomyName = "blog_departments";
+                $parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+                foreach ( $parent_terms as $pterm ) {
+                  $link = add_query_arg('blog_departments', $pterm->slug);
+                  echo '<li><a href='. $link .' class="">' . $pterm ->name . '</a></li>';
+
+                }
+                ?>
+              </ul>
             </div>
           </li>
         </ul>

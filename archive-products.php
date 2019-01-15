@@ -105,7 +105,8 @@ get_header(); ?>
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
             <div class="product-info-desktop box">
-              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
+                    <a class="box__title"href="#"><?php the_title(); ?></a>
               <a class="view-details-button button"href="#">View details</a>
             </div>
           <?php else : ?>
@@ -122,7 +123,8 @@ get_header(); ?>
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
             <div class="product-info box">
-              <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+              <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
+              <a class="box__title"href="#"><?php the_title(); ?></a>
               <a class="view-details-button button"href="#">View details</a>
             </div>
           <?php endif; ?>

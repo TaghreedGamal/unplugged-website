@@ -1,22 +1,40 @@
 import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
+var products_page_header_animation = new TimelineMax();
 //page header
-TweenMax.from(".products-header", 1, {y:150, opacity:0});
+products_page_header_animation.from(".products-header", 1, {y:150, opacity:0},1)
 //last rocket
-TweenMax.from(".last-rocket", 1, {y:150, delay:1, opacity:0});
+                              .from(".last-rocket", 1, {y:150, opacity:0},2)
 //middle rocket
-TweenMax.from('.middle-rocket',1,{x:250, delay:2,opacity:0})
+                              .from('.middle-rocket',1,{x:250,opacity:0},3)
 //empty rocket
-TweenMax.from('.empty-rocket',1,{x:150, delay:3,opacity:0})
+                              .from('.empty-rocket',1,{x:150,opacity:0},4)
 
-
+products_page_header_animation.play();
 //orange circles
-TweenMax.from('.orange-circle-image',1.5,{scale:0,opacity:0})
+var products_animation = new TimelineMax();
+products_animation.from('.orange-circle-image',1.5,{scale:0,opacity:0},1)
 //circles
-TweenMax.from('.circles-image',1.5,{scale:0, delay:1.5, opacity:0})
+                  .from('.circles-image',1.5,{scale:0, opacity:0},1)
 
 //dotted line
-TweenMax.from('.line-image', 1.5, {x:-100, delay:3, opacity:0})
+                  .from('.line-image', 1.5, {x:-100, opacity:0},1)
 
 //zigzag lines
-TweenMax.from('.zigzag-image', 1, {y:100, delay:4.5, opacity:0})
-TweenMax.from('.zigzag-image-2', 1, {y:100, delay:4.5, opacity:0})
+                  .from('.zigzag-image', 1, {y:100, opacity:0},1)
+                  .from('.zigzag-image-2', 1, {y:100, opacity:0},1)
+
+
+products_animation.pause();
+
+$(window).scroll(function() {
+  var products_whole_section= $(".products-whole-section");
+  if(products_whole_section.length!=0){
+  var top_of_element = products_whole_section.offset().top;
+  var bottom_of_element = products_whole_section.offset().top + products_whole_section.outerHeight();
+  var top_of_screen = $(window).scrollTop();
+  var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+  if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+        products_animation.play();
+      }
+    }
+});
