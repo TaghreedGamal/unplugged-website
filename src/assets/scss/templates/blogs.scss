@@ -13,6 +13,9 @@
   background-color: white;
   & .blog-post-text{
     padding-left: 20%;
+      & p{
+        font-size: 1.2rem;
+      }
     & .blog-post-header{
       font-family: $title-font;
       color: $title-color;
@@ -39,6 +42,7 @@
       font-family: $main-font;
       color: #4a4a4a;
       text-align: justify;
+
     }
   }
   & .blog-post-image{
@@ -299,6 +303,9 @@
      background-color: white;
      & .blog-post-text{
        padding-left: 15%;
+       & p{
+           font-size: 1.4rem;
+       }
      }
      & .blog-post-image{
        // position: absolute;
@@ -499,6 +506,11 @@
         font-size: 15px;
         width: 180px;
         margin-top: 0em;
+      }
+      & .blog-post-text{
+        & p{
+          font-size: 0.5rem;
+        }
       }
     }
     & .featured-articles-slider{
