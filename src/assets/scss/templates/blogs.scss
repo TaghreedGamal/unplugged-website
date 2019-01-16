@@ -141,6 +141,9 @@
     transition: opacity 800ms, visibility 500ms linear;
     display: block;
     margin: 0 auto;
+    & .icon-right{
+      vertical-align: middle;
+    }
   }
   &:hover{
     & .read-more{
@@ -443,17 +446,70 @@
     & .blogs-page-container-header {
       & .blogs-header
       {
-        font-size: 6rem;
-        padding: 0.5em 0;
+        font-size: 5rem;
+        padding: 1.5em 0;
+      }
+      & .small-typewriter-container{
+        & .blue-semi-circle{
+          top: 0.5em;
+          left: 35%;
+          width: 13%;
+        }
+        & .zigzag-line-5{
+          top: 9em;
+          left: 36%;
+          width: 5%;
+        }
+        & .zigzag-line-6{
+          top: 10em;
+          left: 34.3%;
+          width: 5%;
+        }
+      }
+      & .header-images{
+        & img{
+          &.blue-semi-circle-2{
+            top: 13%;
+            right: 50%;
+            z-index: 0;
+            width: 30%;
+          }
+          &.dark-blue-circle{
+            top: 27%;
+            left: 29%;
+          }
+          &.orange-line-1{
+            top: 18%;
+            left: 21%;
+          }
+          &.orange-line-2{
+            top: 21%;
+            left: 27%;
+          }
+        }
       }
     }
 
+    & .featured-articles-title{
+      font-size: 4rem;
+    }
+    & .featured-articles-slide{
+      & .read-more{
+        padding: 12px !important;
+        font-size: 15px;
+        width: 180px;
+        margin-top: 0em;
+      }
+    }
     & .featured-articles-slider{
       & .featured-articles-slide{
         & .blog-post-text{
           padding-left: 12%;
           & .blog-post-header{
-            font-size: 2rem;
+            font-size: 1.5rem;
+          }
+          & p{
+            font-size: 0.5rem;
           }
         }
         & .blog-post-image
@@ -468,10 +524,19 @@
             height: 100%;
           }
         }
+        & .read-more{
+          padding: 12px !important;
+          font-size: 15px;
+          width: 180px;
+          margin-top: 0em;
+        }
       }
     }
     & .latest-articles-section
     {
+      & .latest-articles-header{
+        font-size: 4rem;
+      }
       & .latest-articles-container
       {
         & .articles-container

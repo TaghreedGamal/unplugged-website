@@ -84,7 +84,7 @@ $loop = new WP_Query($query);?>
             <img src=" <?php the_field('author_avatar') ?>" alt="">
             <span class="author-name">By: <?php the_field('author') ?></span>
           </div>
-          <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 750) ,"..";?></p>
+          <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 350) ,"..";?></p>
             </div>
           <div class="blog-post-details">
             <div class="blog-post-date">
@@ -101,7 +101,7 @@ $loop = new WP_Query($query);?>
           </div>
 				<!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
 
-        <a class="button read-more"href="<?php the_permalink(); ?>">Read More →</a>
+        <a class="button read-more"href="<?php the_permalink(); ?>">Read More <i class="icon-right"></i> </a>
         <img class="blue-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
         <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
 
@@ -154,7 +154,7 @@ $loop = new WP_Query($query);?>
         <h3>Filter by</h3>
         <ul class="accordion" data-accordion data-allow-all-closed="true">
           <li class="accordion-item " data-accordion-item>
-            <a class="accordion-title" href="#">Date & Time</a>
+            <a class="accordion-title" href="#">Years</a>
             <div class="accordion-content" data-tab-content>
               <ul id="filter-ul">
             <?php
@@ -242,12 +242,12 @@ $loop = new WP_Query($query);?>
                   <img src=" <?php the_field('author_avatar') ?>" alt="">
                   <span class="author-name">By: <?php the_field('author') ?></span>
                 </div>
-                <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 750) ,"..";?></p>
+                <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 500) ,"..";?></p>
                   </div>
                 <div class="blog-post-details">
                   <div class="blog-post-date">
                     <?php echo get_the_date('M, j'); ?>
-                    <br>
+                    <b1remr>
                     <?php echo get_the_date('Y'); ?>
 
                   </div>
@@ -259,7 +259,7 @@ $loop = new WP_Query($query);?>
                 </div>
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
 
-              <a class="button read-more"href="<?php the_permalink(); ?>">Read More →</a>
+              <a class="button read-more"href="<?php the_permalink(); ?>">Read More <i class="icon-right"></i></a>
               <img class="blue-line-3" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
               <img class="blue-line-4" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-2.svg" alt="">
 
