@@ -143,8 +143,6 @@
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; // End have_posts() check. ?>
-          <!-- <?php load_more_button(); ?> -->
-        <!-- <?php echo do_shortcode('[ajax_load_more id="articles-container" container_type="div" css_classes="articles-container" post_type="blogs" pause="true" scroll="false" button_label="Load More" button_loading_label="Loading"]') ?> -->
-      </div>
+        </div>
 
   </div>
