@@ -1,0 +1,263 @@
+body.search{
+  & #search-results{
+    display: block;
+  }
+  & .latest-articles-container{
+    padding: 5em;
+  }
+  & .entry-title{
+    padding: 1.7em;
+    padding-bottom: 0;
+  }
+  & .products-filters{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+  & .main-content__filter-section{
+    padding: 2em 1em;
+    width: 20%;
+    & .search-bar{
+      padding: 2em 0;
+      display: flex;
+      & input{
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        transition: border-bottom-color 0.3s linear;
+
+        &::placeholder{
+          color: $title-color;
+          letter-spacing: 1px;
+          font-family: $title-font;
+          font-size: 1.7rem;
+        }
+        &:focus{
+          border-bottom-color: $title-color;
+          &::placeholder{
+                font-size: 0;
+            }
+        }
+      }
+      & .search-button{
+        margin-left: -2em;
+        margin-top: -1em;
+      & img{
+          width: 90%;
+        }
+      }
+    }
+  & .filter-menu{
+    flex:1;
+    position: unset;
+    width: auto;
+    & h3{
+      letter-spacing: 2px;
+    }
+    & a{
+      font-family: 'DIN-Regular';
+    }
+  }
+}
+  & .products-whole-section{
+    flex:5;
+    display: flex;
+    // flex-basis: 33%;
+    flex-wrap: wrap;
+    // margin-top: -10em;
+    padding: 5em;
+    padding-right: 0;
+    height: 76vh;
+    overflow-y: scroll;
+
+    & .product-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        height: auto;
+        margin: 3em 1em;
+        // margin-bottom: -25em;
+
+        & .product-section__post__image{
+          display: flex;
+          flex:1;
+          // position: relative;
+          & .product_image{
+            position: relative;
+            & .wp-post-image{
+              width: 85%;
+              height: 33em;
+            }
+
+            z-index: 4;
+
+            & .line-image{
+              position: absolute;
+              left: -2em;
+              top: 2em;
+              z-index: 3;
+              height: 29em;
+            }
+            & .circles-image{
+              position: absolute;
+              right: -3em;
+              top: -3em;
+              z-index: -1;
+            }
+            & .orange-circle-image{
+              position: absolute;
+              bottom: -1em;
+              left: -2em;
+              z-index: -1;
+            }
+            & .zigzag-image{
+              position: absolute;
+              bottom: 4em;
+              right: 0em;
+              z-index: -1;
+            }
+            & .zigzag-image-2{
+              position: absolute;
+              bottom: 2.5em;
+              right: 0.4em;
+              z-index: 5;
+            }
+          }
+          & .product_image_desktop{
+            position: relative;
+            left: -2em;
+            & .wp-post-image{
+              height: 33em;
+              width: 100%;
+            }
+
+            z-index: 4;
+
+            & .line-image{
+              position: absolute;
+              left: -0.5em;
+              top: 1.5em;
+              z-index: 3;
+              height: 24em;
+              transform: rotate(-5.5deg);
+            }
+            & .circles-image{
+              position: absolute;
+              right: -0.5em;
+              top: -2em;
+              z-index: -1;
+            }
+            & .orange-circle-image{
+              position: absolute;
+              bottom: 2em;
+              left: 2em;
+              z-index: -1;
+
+            }
+            & .zigzag-image{
+              position: absolute;
+              bottom: 4em;
+              right: 6em;
+              z-index: -1;
+            }
+            & .zigzag-image-2{
+              position: absolute;
+              bottom: 2.5em;
+              right: 6.5em;
+              z-index: 5;
+            }
+          }
+
+        }
+        & .product-info{
+          margin: auto 0;
+          // padding: 2em;
+          // border:2px solid black;
+          border-left: none;
+          // background-color: #f7f7f7;
+          position: relative;
+          left: -3em;
+          margin-bottom: 2em;
+          transition: margin-bottom 0.5s linear;
+          &.box{
+            padding: 4em 2em;
+          & .box__title{
+            & a{
+              color: unset;
+            }
+          }
+          }
+          & .products{
+            padding-top: 0;
+          }
+          & .view-details-button{
+            // display: none;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.5s linear;
+            // visibility: hidden;
+            // opacity: 0;
+            // transition: visibility 0s, opacity 0.5s linear;
+          }
+          & h2{
+            margin-top: 0.5em;
+            vertical-align: middle;
+            // font-family: $title-font;
+          }
+          &:hover{
+            // margin-bottom: 5;
+            & .view-details-button{
+              // visibility: visible;
+              position: static;
+              opacity: 1;
+              // display: block;
+            }
+          }
+
+    }
+    & .product-info-desktop{
+      margin: auto 0;
+      border-left: none;
+      position: relative;
+      left: -3em;
+      margin-bottom: 2em;
+      transition: margin-bottom 0.5s linear;
+      &.box{
+        padding: 4em 2em;
+      & .box__title{
+        & a{
+          color: unset;
+        }
+      }
+      }
+      & .products{
+        padding-top: 0;
+      }
+      & .view-details-button{
+        // display: none;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s linear;
+        // visibility: hidden;
+        // opacity: 0;
+        // transition: visibility 0s, opacity 0.5s linear;
+      }
+      & h2{
+        margin-top: 0.5em;
+        vertical-align: middle;
+          // font-family: $title-font;
+      }
+      &:hover{
+        // margin-bottom: 5;
+        & .view-details-button{
+          // visibility: visible;
+          position: static;
+          opacity: 1;
+          // display: block;
+        }
+      }
+
+}
+  }
+  }
+}
+}

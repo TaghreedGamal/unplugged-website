@@ -57,7 +57,7 @@ $('.scroll-top-button').click(function(){
 var typewriters_animation = new TimelineMax();
 typewriters_animation.from('.small-typewriter', 2, {y:400, opacity:0},1)
                      .from('.typewriter', 2, {y:400, opacity:0},1)
-
+                     .from('.blogs-header',2 ,{y:400, opacity:0},0)
 //baby blue semi circle
                       .from('.blue-semi-circle', 2, {scale:0,  opacity:0},2)
                       .from('.blue-semi-circle-2', 2, {scale:0, opacity:0},2)

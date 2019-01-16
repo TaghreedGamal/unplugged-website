@@ -81,6 +81,8 @@
           // padding-top: 15px;
           flex-wrap: wrap;
           padding: 15px 2em 0 2em;
+          & .products-filters{
+            display: flex;
           & .main-content__filter-section{
             padding: 2em 1em;
             width: 20%;
@@ -107,9 +109,10 @@
                 }
               }
               & .search-button{
-                margin-left: -2.5em;
+                margin-left: -2em;
+                margin-top: -1em;
               & img{
-
+                  width: 90%;
                 }
               }
             }
@@ -326,6 +329,7 @@
         }
           }
           }
+        }
 
       }
     }
