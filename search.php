@@ -11,12 +11,12 @@ get_header(); ?>
 <div class="main-container">
 	<div class="main-grid">
 		<main id="search-results" class="main-content">
-
+				<!-- <?php var_dump(get_query_var('post_type')); ?> -->
 		<header>
 			<h1 class="entry-title"><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h1>
 		</header>
 
-		<?php if ( have_posts() ) : ?>
+		<!-- <?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
@@ -25,7 +25,11 @@ get_header(); ?>
 			<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+		<?php endif; ?> -->
+		<?php if(get_query_var('post_type')=='blogs'):?>
+		<?php include 'blogs-filters.php' ?>
+	<?php else: include 'products-filters.php'; ?>
+	<?php endif; ?>
 
 		<?php
 		if ( function_exists( 'foundationpress_pagination' ) ) :
