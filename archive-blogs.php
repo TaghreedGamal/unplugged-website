@@ -44,7 +44,7 @@ Connect, & Inspire.</h1>
 
   <h1 class="featured-articles-title">Featured Articles</h1>
   <?php $query = array(
-    'post_type' => 'blogs');
+    'post_type' => 'blogs', 'posts_per_page' => -1);
 $loop = new WP_Query($query);?>
 <div class="main-container">
 	<div class="main-grid">
@@ -137,6 +137,13 @@ $loop = new WP_Query($query);?>
 <div class="latest-articles-section">
   <h1 class="latest-articles-header">Latest Articles</h1>
     <?php include 'blogs-filters.php'; ?>
+    <?php
+global $wp_query; // you can remove this line if everything works for you
+
+// don't display the button if there are not enough posts
+if (  $wp_query->max_num_pages > 1 )
+	echo '<div class="misha_loadmore">More posts</div>'; // you can use <a> as well
+?>
 </div>
 </div>
 

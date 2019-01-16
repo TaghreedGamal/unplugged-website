@@ -83,7 +83,7 @@
         </div>
     <div class="articles-container">
         <?php if(have_posts()) : ?>
-          <?php while ( have_posts() ) : the_post(); ?>
+          <?php while ( have_posts() ) :the_post(); ?>
             <div class="article">
               <div class="featured-articles-slide slide">
 
