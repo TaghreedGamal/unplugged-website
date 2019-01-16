@@ -47,6 +47,18 @@
     @media (max-width: 64em){
         margin-right: 6px !important;
     }
+    &.scroll-top{
+        border-radius: 50% !important;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        right: 45px;
+        display: none;
+        &:hover{
+            transform :translateY(0);
+        }
+    }
 }
 
 .menu-button{

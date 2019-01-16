@@ -69,17 +69,17 @@ get_header(); ?>
 									<div class="project-section__post__box__content">
 										<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
 										<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
-										<div class="small-icon" id="post-icons">
-		                                    <?php
-		                                    if( have_rows('project_services') ):
-		                                        while ( have_rows('project_services') ) : the_row();
-		                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
-		                                    <?php
-		                                        endwhile;
-		                                    else :
-		                                    endif;
-		                                    ?>
-										</div>       
+										<div class="small-icon" id="post-icon">
+			                                <?php
+				                                if( have_rows('services-icons') ):
+				                                    while ( have_rows('services-icons') ) : the_row();
+				                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
+				                                <?php
+				                                    endwhile;
+				                                else :
+				                                endif;
+			                                ?>
+										</div>      
 										<div class="grouped-buttons">
 											<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
 										</div> 

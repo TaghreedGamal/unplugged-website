@@ -24,9 +24,9 @@ get_header(); ?>
 					    	<p>services :</p>
 				    		<div class="small-icon">
                                 <?php
-                                if( have_rows('services') ):
-                                    while ( have_rows('services') ) : the_row();
-                                        ?> <img src="<?php the_sub_field('project_service_img')?>">
+                                if( have_rows('services-icons') ):
+                                    while ( have_rows('services-icons') ) : the_row();
+                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
                                 <?php
                                     endwhile;
                                 else :
@@ -125,7 +125,7 @@ get_header(); ?>
 		<h1 class="two-parts-title">Product Brief</h1>
 		<p class="two-parts-text"><?php the_field('product_brief_text'); ?></p>
 		<div> 
-           	<a class="button top" ><i class="fa fa-angle-up"></i></a>
+           	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
 	</div>
 </div>

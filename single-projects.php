@@ -37,17 +37,17 @@ get_header(); ?>
 				    	</div>
 				    	<div class="project-data-services">
 					    	<p>services :</p>
-					    		<div class="small-icon">
-	                                <?php
-	                                if( have_rows('services_icons') ):
-	                                    while ( have_rows('services_icons') ) : the_row();
-	                                        ?> <img src="<?php the_sub_field('project_service_img')?>">
+					    	<div class="small-icon">
+                                <?php
+	                                if( have_rows('services-icons') ):
+	                                    while ( have_rows('services-icons') ) : the_row();
+	                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
 	                                <?php
 	                                    endwhile;
 	                                else :
 	                                endif;
-	                                ?>
-								</div>
+                                ?>
+							</div>
 					    </div>
 				    </div>
 				     <div class="grouped-buttons">
@@ -98,7 +98,7 @@ get_header(); ?>
 		<h1 class="two-parts-title">The Idea</h1>
 		<p class="two-parts-text">What we aimed to assess is the old website, by analysing the data we received from the client then, proposing our possible solutions to the hurdles they demonstrated through a modern, user-friendly aesthetic design.</p>
 		<div> 
-           	<a class="button top" ><i class="fa fa-angle-up"></i></a>
+           	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
 	</div>
 </div>

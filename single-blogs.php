@@ -181,9 +181,9 @@ get_header(); ?>
 						<a class="icon-container link"href="#"> <i class="icon-link"></i> </a> -->
 						</div>
 					</div>
-					<a href="#"class="scroll-top-button">
-						<i class="icon-up-open"></i>
-					</a>
+					<div class="blog-scrollButton">
+						<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
+					</div>
 				</div>
 				<div class="blog-controls">
 

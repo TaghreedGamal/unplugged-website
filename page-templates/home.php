@@ -984,9 +984,9 @@ get_header(); ?>
                                  </br>
                                 <div class="small-icon">
                                     <?php
-                                    if( have_rows('project_services') ):
-                                        while ( have_rows('project_services') ) : the_row();
-                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
+                                    if( have_rows('services-icons') ):
+                                        while ( have_rows('services-icons') ) : the_row();
+                                            ?> <img src="<?php the_sub_field('services-icons-img')?>">
                                     <?php
                                         endwhile;
                                     else :
@@ -1068,13 +1068,12 @@ get_header(); ?>
                                  </br>
                                 <div class="small-icon">
                                     <?php
-                                    if( have_rows('project_services') ):
-                                        while ( have_rows('project_services') ) : the_row();
-                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
+                                    if( have_rows('services-icons') ):
+                                        while ( have_rows('services-icons') ) : the_row();
+                                            ?> <img src="<?php the_sub_field('services-icons-img')?>">
                                     <?php
                                         endwhile;
                                     else :
-
                                     endif;
                                     ?>
                                 </div>
@@ -1098,13 +1097,12 @@ get_header(); ?>
                             </br>
                                 <div class="small-icon">
                                     <?php
-                                    if( have_rows('project_services') ):
-                                        while ( have_rows('project_services') ) : the_row();
-                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
+                                    if( have_rows('services-icons') ):
+                                        while ( have_rows('services-icons') ) : the_row();
+                                            ?> <img src="<?php the_sub_field('services-icons-img')?>">
                                     <?php
                                         endwhile;
                                     else :
-
                                     endif;
                                     ?>
                                 </div>       

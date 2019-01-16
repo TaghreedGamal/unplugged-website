@@ -30,17 +30,17 @@ $('[grid-view]').on('click',function(){
 $(".scroll").click(function() {
     $('html,body').animate({
         scrollTop: $(".scrollToInfo").offset().top},'slow');
-    $('.top').fadeIn();
+    $('.scroll-top').fadeIn();
 });
-$(".top").click(function() {
+$(".scroll-top").click(function() {
     $('html,body').animate({scrollTop: $(".top-bar").offset().top},'slow');
 });
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 500) {
-    $('.top').fadeIn();
+    $('.scroll-top').fadeIn();
   } else {
-    $('.top').fadeOut();
+    $('.scroll-top').fadeOut();
   }
 });
 

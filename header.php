@@ -10,10 +10,6 @@
 
     ?>
     <!doctype html>
-  <!--    <html class="ie6">
-<html class="ie7">
-<html class="ie8">
-<html class="ie9"> -->
     <html class="no-js" <?php language_attributes(); ?> >
 
     <head>
@@ -81,10 +77,10 @@
 
 <div class="step" style="display:none;" id="demo2" >
     <button close1-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+     <!-- <h3>Provide your contact information</h3> -->
     <div class="conform">
        <div class="grid-x">
            <div class="small-12 cell">
-              <h3>Provide your contact information</h3>
               <?php echo do_shortcode('[gravityform id="7" title ="false" ajax="true"]');?>
             </div>
         </div>
