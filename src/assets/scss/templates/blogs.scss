@@ -689,11 +689,12 @@
   }
   & .single-blog{
     background-color: white;
+    margin-top: -30em;
   }
   & .single-blogs-blog-header{
     position: relative;
     padding: 8em;
-    margin-top: -30em;
+    // margin-top: -30em;
     // background-color: white;
     & .author-avatar{
       position: absolute;
@@ -1051,6 +1052,9 @@
 }
 @media only screen and (min-width:1340px) and (max-width:1904px) {
   .single-blogs-page-container{
+    & .single-blog{
+      margin-top: -25em;
+    }
    & .single-blogs-blog-header{
      padding-bottom: 4em;
       & .blog-post-title{
