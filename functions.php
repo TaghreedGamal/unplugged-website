@@ -284,13 +284,17 @@ register_taxonomy( 'blog_departments', array( 'blogs' ), $args );
   function template_chooser($template)
 {
   global $wp_query;
-  $post_type = get_query_var('blogs');
-  if( $wp_query->is_search && $post_type == 'blogs' )
+  // $post_type = get_query_var('blogs');
+  // // $proj_type = get_query_var('projects');
+  if($wp_query->is_search && $post_type == 'projects'){
+     return locate_template('archive-projects.php');
+  }
+  else if( $wp_query->is_search && $post_type == 'blogs' )
   {
     return locate_template('archive-blogs.php');  //  redirect to archive-search.php
   }
   else{
-    $post_type = get_query_var('products');
+    // $post_type = get_query_var('products');
     if($wp_query->is_search && $post_type == 'products')
     {
       return locate_template('archive-products.php');

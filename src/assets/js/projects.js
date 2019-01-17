@@ -19,7 +19,7 @@ $('[grid-view]').on('click',function(){
   $('.filter-icons button').css("opacity",'0.3');
   $(this).fadeTo( "slow", $(this).css("opacity",'1'));
   $(".project-section__post").addClass("grid");
-  $(".box__text,#post-icons,.grouped-buttons ").addClass("hide");
+  $(".box__text,#post-icon,.grouped-buttons ").addClass("hide");
   $(".project-section__post__box").addClass("boxsize"); 
   $(".project-section__post__box__content").addClass("gridcontent");
   $(".box__title").addClass("font-size"); 

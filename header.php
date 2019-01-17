@@ -169,8 +169,11 @@
     <div class="page-name">
     
     <?php 
-    $parent = get_post_type( $post->ID );
-    echo $parent?>
+      $parent = get_post_type( $post->ID );
+      if($parent){
+      echo $parent;
+      }
+    ?>
 
    </div>
     <button menu-click  class="menu-button">
