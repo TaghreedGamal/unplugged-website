@@ -82,6 +82,12 @@
       </div>
         </div>
     <div class="articles-container">
+      <?php
+      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : '1';
+       $query = array(
+        'post_type' => 'blogs', 'posts_per_page' => -1, 'paged'=>$paged, 'nopaging'=>false);
+
+    $loop = new WP_Query($query);?>
         <?php if(have_posts()) : ?>
           <?php while ( have_posts() ) :the_post(); ?>
             <div class="article">
@@ -143,6 +149,26 @@
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; // End have_posts() check. ?>
+        <?php
+        // var_dump($query);
+        // wp_reset_postdata();
+        // next_posts_link( 'Older Entries »', $loop->max_num_pages ); /* Display navigation to next/previous pages when applicable */ ?>
+
+        <a class="load-more">Load more</a>
+        <div class="loadmorehidden" style="display:none;">
+           <?php echo get_next_posts_link( $max_pages ); ?>
+         </div>
+        <?php
+
+  			if ( function_exists( 'foundationpress_pagination' ) ) :
+  				foundationpress_pagination();
+  			elseif (is_paged() ) :
+  			?>
+  				<nav id="post-nav">
+  					<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+  					<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+  				</nav>
+  			<?php endif; ?>
         </div>
 
   </div>

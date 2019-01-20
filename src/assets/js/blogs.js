@@ -154,3 +154,62 @@ $(window).scroll(function() {
       }
     }
 });
+
+
+//
+jQuery(document).ready( function($) {
+  var ppp = 3; // Post per page
+  var pageNumber = 1;
+
+function load_posts(){
+  pageNumber++;
+  var str =  '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
+  if($('.loadmorehidden').children()!=undefined){
+  $.ajax({
+      type: "POST",
+      dataType: "html",
+      url: $('.loadmorehidden').children()[0].href,
+      data: str,
+      success: function(data){
+          var $data = $(data);
+          if($data.length){
+            let new_load_more_hidden_button = $data.find('.articles-container .loadmorehidden');
+            // let new_load_more_button = $data.find('.articles-container .load-more');
+            let articles = $data.find('.articles-container .article');
+
+              $('.articles-container .loadmorehidden').remove();
+              // let new_load_more_button=   $(".articles-container .load-more").clone();
+              // $(".articles-container .load-more").remove();
+
+              $(".articles-container").append(articles);
+
+              $('.articles-container').append(new_load_more_hidden_button);
+                if($('.articles-container .loadmorehidden').children()!=undefined){
+              $(".articles-container").append($(".articles-container .load-more"));
+            }
+
+              $(".load-more").attr("disabled",false);
+          } else{
+              $(".load-more").attr("disabled",true);
+          }
+      },
+      error : function(jqXHR, textStatus, errorThrown) {
+          $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+      }
+
+  });
+  return false;
+}
+}
+
+    $(".load-more").on("click",function(){ // When btn is pressed.
+      if($('.loadmorehidden').children()!=undefined){
+      // console.log($('.loadmorehidden').children()[0])
+      $(".load-more").attr("disabled",true); // Disable the button, temp.
+      alert('clicked')
+      load_posts();
+    }
+
+    });
+
+});

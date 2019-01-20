@@ -100,7 +100,7 @@
             <div class="product-info box">
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
               <a class="box__title"href="#"><?php the_title(); ?></a>
-              <a class="view-details-button button"href="#">View details</a>
+              <a class="view-details-button button"href="<?php the_permalink(); ?>">View details</a>
             </div>
           <?php endif; ?>
 

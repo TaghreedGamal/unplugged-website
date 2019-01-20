@@ -406,12 +406,19 @@
         }
       }
     }
+    & li.accordion-item
+    {
+      & a{
+        font-family: $main-font;
+      }
+    }
     & .filter-menu{
       position: static;
       width: 100%;
       & .accordion{
+
         & .accordion-item{
-          font-family: $main-font;
+          font-family: 'DIN-Regular';
           color: #aaaa;
           & .accordion-content{
             font-family: $main-font;
