@@ -158,13 +158,17 @@ $(window).scroll(function() {
 
 //
 jQuery(document).ready( function($) {
+    if($('.loadmorehidden').children()[0]==undefined){
+        $(".latest-articles-section .load-more").remove();
+    }
   var ppp = 3; // Post per page
   var pageNumber = 1;
 
 function load_posts(){
   pageNumber++;
   var str =  '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
-  if($('.loadmorehidden').children()!=undefined){
+  // console.log($('.loadmorehidden').children()[0])
+  if($('.loadmorehidden').children()[0]!=undefined){
   $.ajax({
       type: "POST",
       dataType: "html",
@@ -184,8 +188,11 @@ function load_posts(){
               $(".articles-container").append(articles);
 
               $('.articles-container').append(new_load_more_hidden_button);
-                if($('.articles-container .loadmorehidden').children()!=undefined){
-              $(".articles-container").append($(".articles-container .load-more"));
+                if($('.articles-container .loadmorehidden').children()[0]!=undefined){
+              // $(".latest").append($(".articles-container .load-more"));
+            }
+            else{
+              $(".latest-articles-section .load-more").remove();
             }
 
               $(".load-more").attr("disabled",false);
@@ -203,10 +210,10 @@ function load_posts(){
 }
 
     $(".load-more").on("click",function(){ // When btn is pressed.
-      if($('.loadmorehidden').children()!=undefined){
+      if($('.loadmorehidden').children()[0]!=undefined){
       // console.log($('.loadmorehidden').children()[0])
       $(".load-more").attr("disabled",true); // Disable the button, temp.
-      alert('clicked')
+      // alert('clicked')
       load_posts();
     }
 

@@ -154,7 +154,6 @@
         // wp_reset_postdata();
         // next_posts_link( 'Older Entries »', $loop->max_num_pages ); /* Display navigation to next/previous pages when applicable */ ?>
 
-        <a class="load-more">Load more</a>
         <div class="loadmorehidden" style="display:none;">
            <?php echo get_next_posts_link( $max_pages ); ?>
          </div>

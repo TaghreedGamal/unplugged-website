@@ -137,7 +137,8 @@ $loop = new WP_Query($query);?>
 <div class="latest-articles-section">
   <h1 class="latest-articles-header">Latest Articles</h1>
     <?php include 'blogs-filters.php'; ?>
-
+    <a class="load-more button">Load More</a>
+  
 </div>
 </div>
 
