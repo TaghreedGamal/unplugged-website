@@ -209,7 +209,7 @@ get_header(); ?>
 </div>
 
 <!-- product steps -->
-<div class="product__cycles">
+<div class="product__tabs">
 	<div class="tabs-content prodtabs" data-tabs-content="slide-tabs">
         <?php 
 	        $tabNo=1;

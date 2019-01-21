@@ -104,7 +104,7 @@ get_header(); ?>
 </div>
 <!-- cycles section -->
 
-<div class="project__cycles">
+<div class="project__tabs">
 	<div class="tabs-content projtabs" data-tabs-content="slide-tabs">
         <?php 
 	        $tabNo=1;

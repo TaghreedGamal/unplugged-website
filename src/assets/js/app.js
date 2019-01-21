@@ -6,6 +6,8 @@ import projects from "./projects";
 import products from "./products";
 import blogs from "./blogs";
 import comindSoon from "./comingSoon";
+import about from "./about";
+import team from "./team";
 
 
 window.$ = $;

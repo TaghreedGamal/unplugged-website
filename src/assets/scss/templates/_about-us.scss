@@ -2,12 +2,19 @@
 	&__header{
 		background-color: $background-color;
 		height: 100vh;
-		&__title{
+		&__title1,&__title2{
 			position: absolute;
 			top:40%;
-			font-size: 100px;
-			line-height: 0.98;
-			width: 600px;
+			overflow-y:hidden;
+			h1{
+				font-size: 100px;
+				line-height: 0.98;
+				width: 600px;
+				transform: translateY(150px);
+			}
+		}
+		&__title2{
+			top:56%;
 		}
 		&__top-image{
 			position: relative;
@@ -23,6 +30,7 @@
 				z-index: 3;
 				position: absolute;
 				top: 55px;
+				left:20px;
 			}
 			.topL1{
 				top:50px;
@@ -30,19 +38,130 @@
 				z-index: 1;
 			}
 			.topL11{
-				top: 40px;
+				top: 10px;
+				left: -50px;
 			}
 			.topSCircle{
 				z-index: 0;
 				left: -20px;
-				top:20px;
+				top:50px;
 			}
 			.topL2{
-				bottom: 0;
+				top: 110px;
+				left: 80px;
 			}
 			.topL21{
-				bottom: 0;
+				top: 130px;
+				left: 55px;
+			}
+		}
+		&__bottom-image{
+			position: relative;
+			left: 70%;
+			top:280px;
+			svg{
+				position: absolute;
+			}
+			.bottom-img{
+				position: absolute;
+				width: 30%;
+			}
+			.bottomCircle{
+				top: 45px;
+    			left: -120px;
+			}
+			.bottomSCircle{
+				left: 225px;
+			    top: 380px;
+			}
+			.bottomZigzag-1{
+				top: 400px;
+				left: 160px;
+			}
+			.bottomZigzag-2{
+				top: 430px;
+				left: 135px;
 			}
 		}
 	}
-} 
+	&__tabs{
+		margin-top: 200px;
+		.tabs{
+			justify-content:center;
+		}
+		.tabs-title{
+			width: 40%;
+			margin-left: 30px;
+			margin-right: 30px;
+			text-align: center;
+		}
+		.team-info{
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-between;
+			margin-top: 70px;
+			&__perMember{
+				width: 22.3%;
+				display: flex;
+				position: relative;
+			    justify-content: center;
+			    align-items: flex-end;
+			    margin-bottom: 70px;
+			    .perMember__img{
+			    	// width: 100%;
+			    	position: relative;
+			    	img{
+			    		position: absolute;
+			    		top: 0;
+			    	}
+			    	.gif-img{
+			    		position: relative;
+			    		z-index: 1;
+			    	}
+			    	.f-img,.t-img,.b-img,.r-img,.l-img,.tr-img,.tl-img,.br-img,.bl-img{
+			    		z-index: 0;
+			    	}
+			    }
+			    .perMember__description{
+					border:2px solid black;
+					position: absolute;
+					// margin-left: -30px;
+					left: 0;
+					bottom: -30px;
+					min-width: 250px;
+					height: 80px;
+					background-color: $team-description-bg;
+					padding: 10px;
+					opacity: 0;
+					&__name{
+						font-size: 25px;
+						margin-bottom: 0;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+					}
+					&__position{
+						font-size: 16px;
+						font-family: $medium-font;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+			
+	}
+}
+
+.show{
+	opacity: 1 !important;
+	z-index: 20;
+    // transform: rotate(45deg);
+    transition: all 0.7s ease-in-out;
+    margin-left: -30px;
+
+}
+.visible{
+	z-index: 10 !important;
+}
+.hidden{
+	z-index: 0 !important;
+}
