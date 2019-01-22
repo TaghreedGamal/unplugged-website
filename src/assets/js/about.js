@@ -1,4 +1,8 @@
 if($(".page-template-about-us").length != 0){
+	// console.log(window.location.hash)
+	if(window.location.hash !== ''){
+		$('a[href="'+window.location.hash+'"]').trigger('click')
+	}
 var line1 = $(".bottomZigzag-1 path"),
     length1 = line1[0].getTotalLength();
 var line2 = $(".bottomZigzag-2 path"),
@@ -20,5 +24,4 @@ h.addLabel("t")
 .from(".topL1,.topL2,.topL11,.topL21",0.5,{y:100,opacity:0},"both")
 .to(line1, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
 .to(line2, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
-
 }

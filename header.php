@@ -170,9 +170,13 @@
     
     <?php 
       $parent = get_post_type( $post->ID );
-      if($parent){
-      echo $parent;
+      if($parent == 'page'){
+        echo basename(get_permalink());
       }
+      else {
+        echo $parent;
+      }
+      
     ?>
 
    </div>
