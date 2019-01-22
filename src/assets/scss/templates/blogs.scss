@@ -345,6 +345,11 @@
   }
   & .latest-articles-section{
     padding: 0 5em;
+    & .load-more{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
     & .latest-articles-header{
       font-family: $card-FrsHeader-font;
       color: $title-color;
@@ -373,6 +378,10 @@
     & .article{
       margin: 8em 0;
     }
+    & .pagination{
+      display: none;
+    }
+
   }
   & .main-content__filter-section{
     width: 20%;
@@ -389,7 +398,8 @@
           color: $title-color;
           letter-spacing: 1px;
           font-family: $title-font;
-          font-size: 1.7rem;
+          font-size: 2.2rem;
+          padding: 0 0.5rem;
         }
         &:focus{
           border-bottom-color: $title-color;
@@ -400,18 +410,30 @@
       }
       & .search-button{
         margin-left: -2em;
-        margin-top: -1em;
+        margin-top: -1.7em;
       & img{
           width: 90%;
         }
       }
     }
+    & li.accordion-item
+    {
+      & a{
+        font-family: $main-font;
+        font-size: 1.5rem;
+      }
+    }
     & .filter-menu{
       position: static;
       width: 100%;
+      & h3{
+        font-size: 2.2rem;
+        padding: 0 1rem;
+      }
       & .accordion{
+
         & .accordion-item{
-          font-family: $main-font;
+          font-family: 'DIN-Regular';
           color: #aaaa;
           & .accordion-content{
             font-family: $main-font;
@@ -428,6 +450,7 @@
 
   }
 }
+
 
 @media only screen and (min-width:1340px) and (max-width: 1904px) {
 
