@@ -603,6 +603,31 @@
 
 
 
+
+//archive  blogs responsive
+
+@media only screen and (max-width: 1024px) {
+
+  .blogs-page-container{
+    width: 100vw;
+    padding: 0 !important;
+    & .blogs-page-container-header{
+      & .blogs-header{
+        font-size: 3rem;
+      }
+    }
+    & .featured-articles-slider{
+      display: none;
+    }
+  }
+
+  .latest-articles-container{
+    display: none;
+  }
+}
+
+
+
 ////////////////////////////////archive blogs/////////////////////////////////////////
 
 
