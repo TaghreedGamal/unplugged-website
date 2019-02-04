@@ -34,7 +34,7 @@
         font-weight: 600;
         &.happy{
             margin-left: auto;
-            width:250px;
+            width:85%;
         }
         &.Address{
         margin-left: auto
@@ -115,7 +115,7 @@
     .button{
         display: flex;
         width: 48%;
-        font-size: 18px;
+        font-size: 13.3px;
         justify-content: space-around;
         @media (max-width: 64em){
             width: 40%;

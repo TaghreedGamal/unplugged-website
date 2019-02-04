@@ -4,12 +4,14 @@
     color: $q-card;
     z-index: 4000;
     position: relative;
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
 .close{
     position: absolute;
     right: 50px;
     color: $q-card;
     font-size: 28px;
-    top: 0;
+    top: 40px;
     @media (max-width: 64em){
         right: 35px;
     }
@@ -183,6 +185,8 @@
         color: white;
         font-family: $main-font;
         font-size: 20px;
+        width: 90%;
+        line-height: 1.2;
         span{
             font-family: $title-font;
         }
@@ -274,6 +278,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-top: 0;
+                margin-left: 0;
                 i{
                     border: 1px dashed black;
                     padding: 8px;

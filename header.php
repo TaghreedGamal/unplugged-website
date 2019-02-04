@@ -49,10 +49,10 @@
        <div class="contactCards-sectionFour">
         <h5>Follow Us</h5>
         <div class="ficons">
-           <div class="icon-circle"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
-           <div class="icon-circle"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
-           <div class="icon-circle"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
-           <div class="icon-circle"><a href="#"><i class="fa fa-behance"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
+           <div class="icon-circle button cont"><a href="#"><i class="fa fa-behance"></i></a></div>
        </div>
 </div>
 </div>
@@ -97,6 +97,8 @@
    </div>
 </div>
 <!-- full menu -->
+<a class="menu-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+  <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt=Unplugged Logo"></a>
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
         <button close-menu class="close close-responsive">&times</button>
@@ -157,7 +159,7 @@
  <div class="top-bar-left">
     <div class="site-desktop-title top-bar-title">
        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
+        <img class="home-logo logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
     </div>
      <!-- <button close-project class="close" >X</button> -->
 </div>

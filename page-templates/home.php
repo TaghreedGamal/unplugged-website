@@ -1172,10 +1172,13 @@ get_header(); ?>
             <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-L-min.png"> 
             <div class="v-line2" style="opacity:0"></div>    
             <div class="v-circle" style="opacity:0"></div>        
-            <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
-            <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
-              <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
-            </video>
+            
+            <div class="video-container">
+                <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
+              <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
+                <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
+              </video>
+            </div>
             <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/video-R-min.png">  
             <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
         </div>  

@@ -70,11 +70,15 @@ $('[close2-click]').on('click',function(){
 $('[menu-click]').on('click',function(){
  $(".full-menu").addClass("active");
  $('html, body').css('overflowY', 'hidden');
+ $('.menu-logo').addClass('menu-logo-appear');
+ $('.home-logo').css('zIndex','0');
 })
 
 $('[close-menu]').on('click',function(){
     $(".full-menu").removeClass("active");
     $('html, body').css('overflowY', 'visible');
+    $('.menu-logo').removeClass('menu-logo-appear');
+    $('.home-logo').css('zIndex','1000');
 })
 
 
@@ -132,7 +136,7 @@ $('.clients').slick({
   centerMode: true,
   centerPadding: '120px',
   slidesToShow: 4,
-  autoplay:false,
+  autoplay:true,
   focusOnSelect: true,
   responsive: [
     {
@@ -420,7 +424,7 @@ inl.pause();
 
 $(window).scroll(function() {
     var inter= $(".intern");
-    var top_of_element = inter.offset().top;
+    var top_of_element = inter.offset().top + 200;
     var bottom_of_element = inter.offset().top + inter.outerHeight();
     var top_of_screen = $(window).scrollTop();
     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
@@ -434,10 +438,10 @@ $(window).scroll(function() {
 ////////// cards animation
 
 var card = new TimelineMax();
-card.from(".datacard",0.8,{x:500,opacity:0})
-.from(".kora",0.8, {scale:0.2,opacity:0})
-.from(".cardl",0.6,{y:200,opacity:0})
-.from(".obj",0.6,{x:200,opacity:0});
+card.from(".datacard",0.4,{x:500,opacity:0})
+.from(".kora",0.4, {scale:0.2,opacity:0})
+.from(".cardl",0.4,{y:200,opacity:0})
+.from(".obj",0.4,{x:200,opacity:0});
 card.pause();
 $(".card1, .card2, .card3, .card4").hover(
   function () {
