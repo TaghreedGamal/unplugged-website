@@ -45,11 +45,11 @@
 			?>
     </div>
 				<div class="filter-menu filter-menu-mobile">
-					 <ul class="accordion" data-accordion data-allow-all-closed="true">
+					 <ul class="accordion accordion-outer" data-accordion data-allow-all-closed="true">
 
 					 	<li class="accordion-item" data-accordion-item>
 					 		<a href="#" class="accordion-title">Filter By</a>
-							<div class="accordion-content" data-tab-content>
+							<div class="accordion-content content-outer" data-tab-content>
 
 									<?php
 									$taxonomyName = "products_categories";
@@ -116,7 +116,7 @@
             <div class="product-info-desktop box">
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
                     <a class="box__title"href="#"><?php the_title(); ?></a>
-              <a class="view-details-button button"href="#">View details</a>
+              <a class="view-details-button button"href="<?php the_permalink(); ?>">View details <i class="icon-right"></i> </a>
             </div>
           <?php else : ?>
             <div class="product_image">
@@ -134,7 +134,7 @@
             <div class="product-info box">
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
               <a class="box__title"href="#"><?php the_title(); ?></a>
-              <a class="view-details-button button"href="<?php the_permalink(); ?>">View details</a>
+              <a class="view-details-button button"href="<?php the_permalink(); ?>">View details <i class="icon-right"></i></a>
             </div>
           <?php endif; ?>
 
