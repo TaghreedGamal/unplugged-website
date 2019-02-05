@@ -1078,8 +1078,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-                                <a class="button">Download Profile</a> 
+                                <a class="button home-btn">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
+                                <a class="button home-btn">Download Profile</a> 
                               </div>
                             </div> 
                            </div>
@@ -1107,8 +1107,8 @@ get_header(); ?>
                                     ?>
                                 </div>       
                                <div class="grouped-buttons">
-                                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-                                <a class="button">Download Profile</a> 
+                                <a class="button home-btn">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
+                                <a class="button home-btn">Download Profile</a> 
                               </div>
                             </div> 
                            </div>
@@ -1187,8 +1187,8 @@ get_header(); ?>
             <h1 class="box__title2"><?php the_field('gamification_title'); ?></h1>  
             <p class="box__text"><?php the_field('gamification_text'); ?> </p>   
             <div class="grouped-buttons">
-                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-                <a class="button">Download Profile</a> 
+                <a class="button home-btn">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
+                <a class="button home-btn">Download Profile</a> 
             </div>
         </div>   
     </div>

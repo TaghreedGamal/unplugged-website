@@ -52,7 +52,11 @@ get_header(); ?>
 				    </div>
 				     <div class="grouped-buttons">
 		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
-		                <a class="button scroll" >Scroll for info.   <i class="fa fa-level-down"></i></a> 
+		                <a class="button scroll" >Scroll for info.  
+		                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 13 16">
+						    <path fill="#F7F7F7" fill-rule="evenodd" d="M4.401 9.012H.923c-.537 0-.684.341-.33.76l5.16 5.912a.812.812 0 0 0 1.284 0l5.17-5.912c.355-.42.206-.76-.33-.76H8.4v-1c0-3.82-3.166-7.087-6.586-7.883a5.785 5.785 0 0 0-.77-.125c-.268-.03-.327.1-.139.291a11.46 11.46 0 0 1 3.5 7.719v1l-.005-.002z"/>
+						</svg>
+						</a> 
 	               	</div>
 				</div>
 				<div class="main-content__project-image">
@@ -65,6 +69,7 @@ get_header(); ?>
 	</div>
   </div>
 </div>
+<div class="remain-page hide-remainPage">
 <!-- Idea section -->
 <div class="project__Idea container two-parts scrollToInfo" ">
 	<div class="project__Idea-image">
@@ -223,5 +228,6 @@ get_header(); ?>
 			</div>
 		</div>
 <?php endif; ?>
+</div>
 </div>
 <?php get_footer();

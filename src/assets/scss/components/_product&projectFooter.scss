@@ -1,14 +1,14 @@
 .product,.project{
 	&__footer{
 		background-color: $project-footer-bg;
-		height: fit-content !important;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		height: 70vh;
+		padding-top: 18px;
+		padding-bottom: 18px;
 		&.two-parts{
 			justify-content:center;
 		}
 		&-image{
-	 		width: 25%;
+	 		width: 30%;
 	 	}
 	 	&-content{
 	 		h1{

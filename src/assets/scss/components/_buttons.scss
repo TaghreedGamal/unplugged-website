@@ -115,7 +115,7 @@
     .button{
         display: flex;
         width: 48%;
-        font-size: 13.3px;
+        font-size: 15px;
         justify-content: space-around;
         @media (max-width: 64em){
             width: 40%;
@@ -126,6 +126,9 @@
         }
         @media (width: 320px){
             font-size: 10.8px !important
+        }
+        &.home-btn{
+            font-size: 13.3px;
         }
     }
     &.cards{

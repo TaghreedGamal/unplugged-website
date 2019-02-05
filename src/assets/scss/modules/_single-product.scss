@@ -1,7 +1,7 @@
 
 .background{
 	background-color:$background-color;
-	height: 65vh;
+	height: 60vh;
     position: absolute;
     width: 100%;
     z-index: -5555;
@@ -12,8 +12,8 @@
 	margin-right: 0 !important;
 	display: block;
 	&__product{
-		padding-top: 70px !important;
-		height: 90vh;
+		padding-top: 40px !important;
+		height: 80vh;
 		display: flex;
 		justify-content:space-around;
 		&-content{
@@ -33,7 +33,7 @@
 			.data{
 				display: flex;
 				justify-content:space-between;
-				padding-top: 50px;
+				padding-top: 45px;
 				p{
 					font-size: 24px;
 		    		font-family: $title-font;
@@ -64,6 +64,7 @@
 				width: 70%;
 				.button{
 					width: 40%;
+					font-size: 20px;
 				}
 			}
 		}
@@ -191,7 +192,6 @@
 		}
 	}
 	&__background{
-		margin-top: 100px;
 		justify-content:space-between;
 		&-content{
 			width: 55%;
@@ -201,10 +201,15 @@
 		}
 		&-image{
 			width: 40%;
+			span{
+				margin-left: 25%;
+				font-size: 20px;
+				font-family:$main-font;
+				color:$indigo;
+			}
 		}
 	}
 	&__concept{
-		margin-top: 100px;
 		&-content,&-image{
 			width: 50%;
 		}

@@ -78,6 +78,10 @@
 }
 .menu-logo{
   display: none;
+  .logo{
+    position: fixed !important;
+    top:10%;
+  }
 }
 
 .logo{

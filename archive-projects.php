@@ -21,14 +21,6 @@ get_header(); ?>
 	<div class="main-grid">
 		<main class="main-content">
 			<div class="main-content__filter-section">
-				<!-- <?php wp_list_categories()?> -->
-				<!-- <form role="search" class="search-bar" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
-		           <input type="text" name="s" placeholder="Search"/>
-		           <input type="hidden" name="post_type" value="" /> // hidden 'products' value
-		           <button class="search-button"type="submit" alt="Search" value="Search">
-		            <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
-		          </button>
-		        </form> -->
 				<div class="filter-menu">
 					<h3>Filter by</h3>	
 					<?php
@@ -42,7 +34,7 @@ get_header(); ?>
 						echo '<li class="accordion-item " data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
     				//Get the Child terms
 						$terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-						echo '<div class="accordion-content " data-tab-content><ul class="cute_scroll" id="filter-ul">';
+						echo '<div class="accordion-content " data-tab-content><ul id="filter-ul">';
 						foreach ( $terms as $term ) {
 							$link = add_query_arg('projects_categories', $term->slug);?>
 							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>   
@@ -61,7 +53,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="main-content__project-section">
-				<div class="scroll-posts cute_scroll">
+				<div class="scroll-posts ">
 					<?php if ( have_posts() ) : ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -72,7 +64,6 @@ get_header(); ?>
 											<img src="<?php the_field('project-img'); ?>" />
 										<?php endif; ?>
 									</div>
-									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
 									<div class="project-section__post__box__content">
 										<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
 										<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
@@ -100,26 +91,19 @@ get_header(); ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 						<?php endif; // End have_posts() check. ?>
-
+						<a class="load-more button">Load More</a>
 						<?php /* Display navigation to next/previous pages when applicable */ ?>
-						<?php
-						if ( function_exists( 'foundationpress_pagination' ) ) :
-							foundationpress_pagination();
-						elseif ( is_paged() ) :
-							?>
-							<nav id="post-nav">
-								<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-								<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-							</nav>
-						<?php endif; ?>
+
 					</div>
 
 				</div>
-			
-			<?php get_sidebar(); ?>
 
 
 		</div>
+		  <div class="loadmorehidden" style="display:none;">
+           <?php echo get_next_posts_link( $max_pages ); ?>
+         </div>
 	</div>
+  
 
 	<?php get_footer();
