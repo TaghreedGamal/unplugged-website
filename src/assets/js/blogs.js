@@ -27,15 +27,18 @@ $('.featured-articles-slider').slick({
              slidesToShow: 1,
              // slidesToScroll: 3,
              infinite: true,
-             centerPadding:'300px',
+             // centerPadding:'300px',
              dots: true
            }
          },
          {
-           breakpoint: 767,
+           breakpoint: 1024,
            settings: {
+             centerMode:true,
+             centerPadding:'0px',
              slidesToShow: 1,
-             slidesToScroll: 1
+             // slidesToScroll: 1,
+             draggable: true,
            }
          }
          // You can unslick at a given breakpoint now by adding:

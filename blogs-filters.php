@@ -120,7 +120,7 @@
                   <img src=" <?php the_field('author_avatar') ?>" alt="">
                   <span class="author-name">By: <?php the_field('author') ?></span>
                 </div>
-                <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 500) ,"..";?></p>
+                <div class="blog-post-content"><?php echo substr(strip_tags(get_field('introduction')), 0, 400) ," ...";?></div>
                   </div>
                 <div class="blog-post-details">
                   <div class="blog-post-date">
