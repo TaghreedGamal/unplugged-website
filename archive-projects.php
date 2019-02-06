@@ -54,56 +54,79 @@ get_header(); ?>
 			</div>
 			<div class="main-content__project-section">
 				<div class="scroll-posts ">
-					<?php if ( have_posts() ) : ?>
-						<?php /* Start the Loop */ ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<div class="project-section__post">
-								<div class="project-section__post__box box">
-									<div class="project-section__post__box__image">
-										<?php if( get_field('project-img') ): ?>
-											<img src="<?php the_field('project-img'); ?>" />
-										<?php endif; ?>
-									</div>
-									<div class="project-section__post__box__content">
-										<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
-										<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
-										<div class="small-icon" id="post-icon">
-			                                <?php
-				                                if( have_rows('services-icons') ):
-				                                    while ( have_rows('services-icons') ) : the_row();
-				                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
-				                                <?php
-				                                    endwhile;
-				                                else :
-				                                endif;
-			                                ?>
-										</div>      
-										<div class="grouped-buttons">
-											<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
-										</div> 
-									</div>
-								</div>
+					<?php $args = array('post_type' => 'projects', 'posts_per_page' =>5, 'orderby' => 'id');
+                    $loop = new WP_Query( $args );
+                     if ( $loop -> have_posts() ) : ?>
+					<?php /* Start the Loop */ 
+                    while ( $loop->have_posts() ) : $loop->the_post();  ?>
+					<div class="project-section__post">
+						<div class="project-section__post__box box">
+							<div class="project-section__post__box__image">
+								<?php if( get_field('project-img') ): ?>
+									<img src="<?php the_field('project-img'); ?>" />
+								<?php endif; ?>
 							</div>
-						<?php 
+							<div class="project-section__post__box__content">
+								<h2 class="project-section__post__box__content__title box__title"><?php echo $i; the_title();?></h2>  
+								<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
+								<div class="small-icon" id="post-icon">
+	                                <?php
+		                                if( have_rows('services-icons') ):
+		                                    while ( have_rows('services-icons') ) : the_row();
+		                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
+		                                <?php
+		                                    endwhile;
+		                                else :
+		                                endif;
+	                                ?>
+								</div>      
+								<div class="grouped-buttons">
+									<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+								</div> 
+							</div>
+						</div>
+					</div>
+					<?php 
 					endwhile; 
 					wp_reset_postdata(); ?>
 						<?php else : ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 						<?php endif; // End have_posts() check. ?>
-						<a class="load-more button">Load More</a>
-						<?php /* Display navigation to next/previous pages when applicable */ ?>
-
-					</div>
-
 				</div>
-
-
-		</div>
-		  <div class="loadmorehidden" style="display:none;">
-           <?php echo get_next_posts_link( $max_pages ); ?>
-         </div>
+                <div class="loadmore button">Load More ... </div>			
+			</div>
+		</main>
 	</div>
-  
+</div>
+
+
+<script type="text/javascript">
+var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
+var page = 2;
+jQuery(function($) {
+    $('body').on('click', '.loadmore', function() {
+        var data = {
+            'action': 'load_posts_by_ajax',
+            'page': page,
+            'security': '<?php echo wp_create_nonce("load_more_posts"); ?>'
+        };
+ 
+        
+
+        $.post(ajaxurl, data, function(response) {
+        	// console.log(response);
+        	if(response){
+	            $('.scroll-posts').append(response);
+	            page++;
+            }
+            else {
+            	$('.loadmore').remove();
+            	$('.scroll-posts').append('<h3 class="loadmore-msg">No more projects</h3>');
+            }
+        });
+    });
+});
+
+</script>
 
 	<?php get_footer();

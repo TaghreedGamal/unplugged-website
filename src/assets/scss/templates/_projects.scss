@@ -116,7 +116,7 @@
     width: 90%;
     margin-top: 20px;
     .scroll-posts{
-      height: 70vh;
+      // height: 70vh;
       // overflow-y: scroll;
       display: flex;
       flex-wrap: wrap;
@@ -129,8 +129,7 @@
 }
 .project-section{
    &__post{
-     height: 80vh;
-     margin-bottom: 250px;
+     height: 95vh;
      padding-right: 90px;
      width: 100%;
       &__box{
@@ -265,3 +264,13 @@
 }
 
 
+.loadmore,.loadmore-msg{
+  left: 35%;
+}
+.loadmore-msg{
+    position: relative;
+    font-family: $bold-font;
+    color: $title-color;
+    font-size: 45px;
+    
+}

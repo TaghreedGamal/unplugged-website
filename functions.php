@@ -354,4 +354,54 @@ add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 
 
+ //// projects load more button
+add_action('wp_ajax_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+add_action('wp_ajax_nopriv_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+function load_posts_by_ajax_callback() {
+    check_ajax_referer('load_more_posts', 'security');
+    $paged = $_POST['page'];
+    $args = array(
+        'post_type' => 'projects',
+        'post_status' => 'publish',
+        'posts_per_page' => '5',
+        'paged' => $paged,
+    );
+    $my_posts = new WP_Query( $args );
+    if ( $my_posts->have_posts() ) :
+        ?>
+        <?php while ( $my_posts->have_posts() ) : $my_posts->the_post() ?>
+            <div class="project-section__post">
+                <div class="project-section__post__box box">
+                  <div class="project-section__post__box__image">
+                    <?php if( get_field('project-img') ): ?>
+                      <img src="<?php the_field('project-img'); ?>" />
+                    <?php endif; ?>
+                  </div>
+                  <div class="project-section__post__box__content">
+                    <h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
+                    <div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
+                    <div class="small-icon" id="post-icon">
+                      <?php
+                        if( have_rows('services-icons') ):
+                            while ( have_rows('services-icons') ) : the_row();
+                                ?> <img src="<?php the_sub_field('services-icons-img')?>">
+                        <?php
+                            endwhile;
+                        else :
+                        endif;
+                      ?>
+                    </div>      
+                    <div class="grouped-buttons">
+                      <a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+                    </div> 
+                  </div>
+                </div>
+              </div>
+        <?php endwhile ?>
+        <?php
+    endif;
+ 
+    wp_die();
+}
+
 ?>
