@@ -6,40 +6,24 @@ $('.featured-articles-slider').slick({
        centerPadding: '300px',
        slidesToShow: 1,
        draggable: true,
-       // infinite: true,
-       // slidesToScroll:1,
-       // autoplay:true,
-       // fade: true,
-       // autoplaySpeed:1000,
+       infinite: true,
        dots:true,
-       // slidesToScroll: 1,
-       // dots: true,
-       // arrows:false,
-       // autoplay:false,
-       // infinite: true,
-       // // speed: 1500,
-       // // autoplaySpeed:2100,
-       // cssEase: 'linear',
+       arrows: false,
+       slidesToScroll: 1,
        responsive: [
          {
-           breakpoint: 1500,
+           breakpoint: 1330,
            settings: {
-             slidesToShow: 1,
-             // slidesToScroll: 3,
-             infinite: true,
-             // centerPadding:'300px',
-             dots: true
            }
          },
          {
-           breakpoint: 1024,
-           settings: {
-             centerMode:true,
-             centerPadding:'0px',
-             slidesToShow: 1,
-             // slidesToScroll: 1,
-             draggable: true,
-           }
+           breakpoint: 450,
+           settings: 'unslick',
+           // {
+           //   //centerMode:false,
+           //   infinite: false,
+           //   centerPadding: '0px',
+           // }
          }
          // You can unslick at a given breakpoint now by adding:
          // settings: "unslick"
@@ -48,6 +32,16 @@ $('.featured-articles-slider').slick({
      });
 
 });
+
+
+if($(window).width()<=414)
+{
+  $('.featured-articles-slider').slick({
+    dots: true
+  });
+}
+
+
 $('.scroll-top-button').click(function(){
   console.log('scrolled')
     $('.single-blogs-page-container').animate({

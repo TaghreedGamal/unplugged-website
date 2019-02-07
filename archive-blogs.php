@@ -20,7 +20,7 @@ get_header(); ?>
 
 <div class="blogs-page-container container" >
   <div class="blogs-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
-    <h1 class="blogs-header">We create to Share,
+    <h1 class="blogs-header">We create to Share, <br>
 Connect, & Inspire.</h1>
 <div class="small-typewriter-container">
   <img class="blue-semi-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/circle-1.svg" alt="">

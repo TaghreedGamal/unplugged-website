@@ -10,7 +10,7 @@
         </form> -->
 
           <!-- <input type="submit" class="search-button" id="searchsubmit" value=""/> -->
-          <div>
+          <!-- <div> -->
              <!-- <h3>Search Blogs</h3> -->
              <form role="search" class="search-bar" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
              <input type="text" name="s" placeholder="Search"/>
@@ -19,7 +19,7 @@
               <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
             </button>
            </form>
-          </div>
+          <!-- </div> -->
 
 
       <div class="filter-menu">
