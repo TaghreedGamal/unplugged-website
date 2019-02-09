@@ -110,9 +110,6 @@ jQuery(function($) {
             'page': page,
             'security': '<?php echo wp_create_nonce("load_more_posts"); ?>'
         };
- 
-        
-
         $.post(ajaxurl, data, function(response) {
         	// console.log(response);
         	if(response){

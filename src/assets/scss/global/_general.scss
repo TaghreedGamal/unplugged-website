@@ -61,10 +61,17 @@ p{
     display: flex;
     align-items: center;
     height: 100vh;
+    @media (max-width: 40em){
+        flex-direction:column;
+        text-align: center;
+    }
 }
 .two-parts-title{
     font-size: 95px;
     color:$title-color;
+    @media (max-width: 40em){
+        font-size: 45px;
+    }
 }
 .two-parts-text{
     font-size: 20px;
@@ -72,4 +79,10 @@ p{
     letter-spacing: 0.8px;
     font-family: $main-font;
     color:$project-text;
+    @media (max-width: 40em){
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        text-align: justify;
+    }
 }

@@ -35,7 +35,7 @@ $(".scroll").click(function() {
 
 });
 $(".scroll-top").click(function() {
-    $('html,body').animate({scrollTop: $(".top-bar").offset().top},'slow');
+    $('html,body').animate({scrollTop: $(".site-header").offset().top},'slow');
     $('.remain-page').addClass('hide-remainPage');
 });
 $(document).scroll(function() {
