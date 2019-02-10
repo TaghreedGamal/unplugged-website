@@ -1,37 +1,9 @@
 //import slick from "slick-carousel";
 
 $(document).ready(function(){
-$('.featured-articles-slider').slick({
-       centerMode: true,
-       centerPadding: '300px',
-       slidesToShow: 1,
-       draggable: true,
-       infinite: true,
-       dots:true,
-       arrows: false,
-       slidesToScroll: 1,
-       responsive: [
-         {
-           breakpoint: 1330,
-           settings: {
-           }
-         },
-         {
-           breakpoint: 450,
-           settings: 'unslick',
-           // {
-           //   //centerMode:false,
-           //   infinite: false,
-           //   centerPadding: '0px',
-           // }
-         }
-         // You can unslick at a given breakpoint now by adding:
-         // settings: "unslick"
-         // instead of a settings object
-       ]
-     });
 
-});
+
+
 
 
 if($(window).width()<=414)
@@ -40,7 +12,38 @@ if($(window).width()<=414)
     dots: true
   });
 }
-
+else{
+  $('.featured-articles-slider').slick({
+         centerMode: true,
+         centerPadding: '300px',
+         slidesToShow: 1,
+         draggable: true,
+         infinite: true,
+         dots:true,
+         arrows: false,
+         slidesToScroll: 1,
+         responsive: [
+           {
+             breakpoint: 1330,
+             settings: {
+             }
+           },
+           {
+             breakpoint: 450,
+             settings: 'unslick',
+             // {
+             //   //centerMode:false,
+             //   infinite: false,
+             //   centerPadding: '0px',
+             // }
+           }
+           // You can unslick at a given breakpoint now by adding:
+           // settings: "unslick"
+           // instead of a settings object
+         ]
+       });
+}
+});
 
 $('.scroll-top-button').click(function(){
   console.log('scrolled')
