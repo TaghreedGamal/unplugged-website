@@ -138,9 +138,13 @@ get_header(); ?>
 <div class="Product__background container two-parts" >
 	<div class="Product__background-content">
 		<h1 class="two-parts-title">Background</h1>
+		<div class="Product__background-image mobile">
+			<img src="<?php echo get_field('product_background_img')['bg-img']; ?>" />
+			<span class="image-title"><?php echo get_field('product_background_img')['bg-img-title']; ?></span>
+		</div>
 		<p class="two-parts-text"><?php the_field('product_background_text'); ?></p>
 	</div>
-	<div class="Product__background-image">
+	<div class="Product__background-image desktop">
 		<img src="<?php echo get_field('product_background_img')['bg-img']; ?>" />
 		<span class="image-title"><?php echo get_field('product_background_img')['bg-img-title']; ?></span>
 	</div>
@@ -148,6 +152,7 @@ get_header(); ?>
 
 <!-- product concept -->
 <div class="Product__concept container two-parts" >
+	<h1 class="two-parts-title mobile">Product Concept</h1>
 	<div class="Product__concept-image">
 			<?php if(get_field('is_desktop')==true) : ?>
 					<div class="desktop-img">
@@ -208,7 +213,7 @@ get_header(); ?>
 					<?php endif; ?>	
 	</div>
 	<div class="Product__concept-content">
-		<h1 class="two-parts-title">Product Concept</h1>
+		<h1 class="two-parts-title desktop">Product Concept</h1>
 		<p class="two-parts-text"><?php the_field('product_concept_text'); ?></p>
 	</div>
 </div>
@@ -322,7 +327,7 @@ get_header(); ?>
 						    </div>
 					<?php endif; ?>	
 	</div>
-	<div class="Product__concept-content">
+	<div class="Product__final-content">
 		<h1 class="two-parts-title">Final Experience</h1>
 		<p class="two-parts-text"><?php the_field('product_final_text'); ?></p>
 		<div class="grouped-buttons">

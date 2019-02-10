@@ -81,6 +81,12 @@
   .logo{
     position: fixed !important;
     top:10%;
+    @media (max-height: 60em){
+      top: 2%;
+    }
+    @media (width: 320px){
+      top: 1.2%;
+    }
   }
 }
 
