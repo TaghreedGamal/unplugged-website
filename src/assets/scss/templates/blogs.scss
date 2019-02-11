@@ -1700,6 +1700,224 @@
   }
 }
 
+//ipad
+@media only screen and (min-width: 768px) and(max-width:1024px){
+
+  .blogs-page-container{
+    & .blogs-page-container-header{
+      & .small-typewriter-container{
+        & .small-typewriter{
+          top: 12%;
+          width: 45%;
+          left: 31%;
+        }
+        & .blue-semi-circle{
+          top: 10%;
+          left: 30%;
+          width: 35%;
+        }
+        & .zigzag-line-5{
+          top: 32%;
+          left: 35%;
+          width: 12%;
+        }
+        & .zigzag-line-6{
+          top: 34%;
+          left: 31%;
+          width: 12%;
+        }
+      }
+      & .blogs-header{
+        flex:unset;
+        font-size: 4rem;
+        margin: 2em auto;
+        margin-bottom: 4em;
+        margin-top: 3em;
+        padding: 0;
+      }
+      & .header-images{
+        & img{
+          &.typewriter{
+            width: 70%;
+            left: 0;
+            top: -8em;
+            right: unset;
+            left: 15%;
+            position: absolute;
+          }
+          &.blue-semi-circle-2{
+            top: -13em;
+            right: 14em;
+            z-index: 0;
+            width: 40%;
+          }
+          &.dark-blue-circle{
+            top: -9em;
+            left: 14em;
+            z-index: 6;
+            width: 10%;
+          }
+          &.orange-line-1{
+            top: -11em;
+            left: 10em;
+            z-index: 5;
+            width: 15%;
+          }
+          &.orange-line-2{
+            top: -10em;
+            left: 13em;
+            z-index: 7;
+            width: 15%;
+          }
+        }
+      }
+    }
+    & .featured-articles-title{
+      font-size: 3.5rem;
+    }
+    & .featured-articles-slider{
+      & .featured-articles-slide{
+        & .read-more{
+          margin-left: 0;
+        }
+        & .blog-post-image{
+          left: -2.5em;
+          width: 55%;
+          height: 90%;
+          bottom: 0em;
+        }
+      }
+    }
+    & .latest-articles-section{
+      & .latest-articles-header{
+        font-size: 3.5rem;
+      }
+      & .load-more{
+        font-size: 25px;
+        width: 210px;
+      }
+    }
+    & .latest-articles-container
+    {
+      & .main-content__filter-section{
+        & .filter-menu{
+          & .accordion-outer{
+              & .content-outer{
+                width: 96%;
+              }
+          }
+        }
+      }
+      & .articles-container{
+        & .article{
+          & .featured-articles-slide{
+            width: 60% !important;
+            padding-left: 13em;
+            & .read-more{
+              margin-left: 0;
+            }
+            & .blog-post-image{
+              height: 100%;
+              bottom: 0em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+//ipad pro
+@media only screen and (width: 1024px){
+  .blogs-page-container{
+    & .blogs-page-container-header{
+      & .blogs-header{
+        flex: unset;
+        font-size: 8rem;
+        margin: 2em auto;
+        margin-bottom: 2em;
+        margin-top: 2.5em;
+        padding: 0;
+      }
+      & .header-images{
+        & img{
+          &.typewriter{
+            top: -6em;
+          }
+          &.blue-semi-circle-2{
+            top: -14em;
+            right: 18em;
+
+          }
+          &.dark-blue-circle{
+            top: -8em;
+            left: 19em;
+          }
+          &.orange-line-1{
+            top: -11em;
+            left: 13em;
+
+          }
+          &.orange-line-2{
+            top: -10em;
+            left: 16em;
+          }
+        }
+      }
+    }
+
+    & .featured-articles-slider{
+      & .featured-articles-slide{
+        height: 21em;
+        padding-left: 11em;
+        & .blog-post-text{
+          & .blog-post-header{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    & .latest-articles-section{
+      & .load-more{
+        font-size: 25px;
+        width: 210px;
+      }
+    }
+    & .latest-articles-container
+    {
+      & .main-content__filter-section{
+        & .filter-menu{
+          & .accordion-outer{
+              & .content-outer{
+                width: 96%;
+              }
+          }
+        }
+      }
+      & .articles-container{
+        & .article{
+          & .featured-articles-slide{
+            width: 50% !important;
+            & .blog-post-text{
+              & .blog-post-header{
+                font-size: 2.2rem;
+              }
+            }
+            & .blog-post-image{
+              height: 100%;
+              bottom: 0em;
+              width: 42%;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+
 ////////////////////////////////archive blogs/////////////////////////////////////////
 
 

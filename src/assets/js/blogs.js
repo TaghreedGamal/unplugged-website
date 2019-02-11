@@ -24,8 +24,9 @@ else{
          slidesToScroll: 1,
          responsive: [
            {
-             breakpoint: 1330,
+             breakpoint: 1024,
              settings: {
+               centerPadding:'200px'
              }
            },
            {
