@@ -158,6 +158,12 @@
 					bottom:0;
 				}
 			}
+			@media (max-width:1000px) and (min-width:768px) {
+		        width: 65%;
+		        .title{
+		        	font-size: 65px;
+		        }
+		    }
 			@media (max-width: 40em){
 				width: 60%;
 			}
@@ -371,6 +377,10 @@
 	 			left: 90px;
 	 			position: relative;
 	 			z-index: 4;
+	 			@media (max-width:1000px) and (min-width:768px) {
+			        width: 75%;
+			        left:65px;
+			    }
 	 			@media (max-width: 40em){
 					width:60%;
 					left: 45px;
@@ -379,6 +389,10 @@
 	 		.briefCircle{
 	 			z-index: 0;
 	 			top:-20px;
+	 			@media (max-width:1000px) and (min-width:768px) {
+			        width: 80%;
+			        top: -140px;
+			    }
 	 			@media (max-width: 40em){
 					width: 70%;
     				top: -140px;
@@ -524,6 +538,7 @@
 				display: none;
 				@media (max-width: 40em){
 					display: block;
+					font-size: 26px;
 				}
 			}
 		}
@@ -650,6 +665,9 @@
 					z-index: -5;
 					top: -60px;
 					left: 15px;
+					@media (max-width:1000px) and (min-width:768px) {
+						width: 90%;
+					}
 					@media (max-width: 40em){
 						width: 60%;
     					top: -125px;
@@ -658,7 +676,7 @@
 				.conceptLine-image{
 					left: -30px;
     				top: 110px;
-    				@media (max-width: 40em){
+    				@media (max-width: 60em){
 						// height: 78%;
 					 //    top: 70px;
 					 //    left: -50px;
@@ -672,7 +690,7 @@
 				    @media (max-width: 40em){
 				    	top: 75px;
 					    width: 20%;
-					    left: 245px;
+					    left: 235px;
 				    }
 				}
 				.conceptZigzag-image-2 {
@@ -750,11 +768,19 @@
 					position: relative;
 					left: 35px;
 					bottom: 50px;
+					@media (max-width:1000px) and (min-width:768px) {
+						left: 0;
+					}
 				}
 				.finalCircle{
 					z-index: -5;
 					bottom: 40px;
 					left: 40px;
+					@media (max-width:1000px) and (min-width:768px) {
+						bottom: 15px;
+					    left: 10px;
+					    width: 90%;
+					}
 					@media (max-width: 40em){
 						width: 90%;
 						bottom: 5px;
@@ -766,6 +792,10 @@
 					@media (max-width: 40em){
 						height: 63%;
     					left: -10px;
+					}
+					@media (max-width:1000px) and (min-width:768px) {
+						left: -60px;
+    					height: 65%;
 					}
 				}
 				.finalL1{
@@ -819,11 +849,20 @@
 					position: relative;
 					left: 35px;
 					bottom: 50px;
+				    @media (max-width:1000px) and (min-width:768px) {
+						left: 0;
+						bottom: 0;
+					}
 				}
 				.finalCircle{
 					z-index: -5;
 					top: 0;
 					left: 25px;
+					@media (max-width:1000px) and (min-width:768px) {
+						bottom: 15px;
+					    left: 10px;
+					    width: 90%;
+					}
 					@media (max-width: 40em){
 				    	width: 85%;
     					top: -68px;
@@ -836,6 +875,10 @@
 				.finalLine-image{
 					left: 40px;
 					bottom:7px;
+					@media (max-width:1000px) and (min-width:768px) {
+						left: 0;
+    					height: 80%;
+					}
 					@media (max-width: 40em){
 						left: 15px;
 					    bottom: 65px;
@@ -910,5 +953,4 @@
 			}
 		}
 	}
-
 }
