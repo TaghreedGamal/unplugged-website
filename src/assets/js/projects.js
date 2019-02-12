@@ -9,6 +9,7 @@ $('[list-view]').on('click',function(){
 var screenSize=$(window).width();
 if (screenSize < '480'){
   $('.scroll-posts').addClass('grid-view');
+  $('ul#filter-menu').hide();
 }
 $('[grid-view]').on('click',function(){
   $('.filter-icons button').css("opacity",'0.3');
@@ -93,8 +94,17 @@ $(window).scroll(function() {
     }
  });
 
-
-
-
-
 }
+// filtration menu in responsive
+$('[open-filter]').on('click',function(){
+   if ($('ul#filter-menu').is(":hidden")) {
+    $('ul#filter-menu').show();
+    $('.filter-menu').css('border-bottom','none');
+   }
+   else {
+     $('ul#filter-menu').hide();
+     $('.filter-menu').css('border-bottom','1px solid #9b9b9b');
+   }
+   var h=$('.filter-menu').height();
+   $('.scroll-posts ').css('margin-top',h);
+ });

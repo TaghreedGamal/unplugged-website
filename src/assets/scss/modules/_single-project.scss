@@ -16,6 +16,9 @@
     			height: 100%;
     			position: absolute;
     		}
+    		@media (max-width: 40em){
+    			transform: translateX(60px);
+    		}
    		 }
     	&-content{
         	width: 50%;
@@ -28,6 +31,11 @@
 		      font-size: 80px;
 		      line-height: 1;
 		      text-transform: capitalize;
+		      @media(max-width: 40em){
+		      	font-size: 26px;
+		      	text-align: center;
+		      	letter-spacing: 0.3px;
+		      }
 		    }
 		    .entry-content{
 		      font-family:$main-font !important;
@@ -35,6 +43,12 @@
 		      font-size: 16px !important;
   			  letter-spacing: 0.8px !important;
 		      color: $project-text !important;
+		      @media(max-width: 40em){
+		      	font-size: 12px !important;
+		      	line-height: 1.33 !important;
+				letter-spacing: 0.4px !important;
+				text-align: justify;
+		      }
 		    }
 		    .project-data{
 		    	p{
@@ -44,6 +58,9 @@
 		    		text-transform: capitalize;
 		    		img{
 		    			width: 60%;
+		    		}
+		    		@media (max-width: 40em){
+		    			font-size: 13px;
 		    		}
 		    	}
 		    	strong{
@@ -71,6 +88,42 @@
    				width:225px;
    				justify-content:space-evenly;
    				font-size: 20px;
+   				@media (max-width: 40em){
+   					width: 45%;
+					font-size: 14px !important;
+					svg{
+						height: 14px;
+					}
+					@media (width: 320px){
+						width: 42%;
+						font-size: 10px !important;
+						height: 35px;
+						svg{
+							height: 10px;
+						}
+					}
+   				}
+   			}
+   			@media (max-width: 40em){
+   				bottom: 0;
+   			}
+   		}
+   		@media (max-width: 40em){
+   			flex-direction:column-reverse;
+   			height: 100vh;
+   			&-image{
+   				width: 100%;
+   				height: 45vh;
+   			}
+   			&-content{
+   				width: 100%;
+   				padding-top: 0;
+   				height: 48vh;
+   				.close-page{
+   					font-size: 40px;
+				    top: -347px;
+				    right: 45%;
+   				}
    			}
    		}
 	}
@@ -94,6 +147,9 @@
 	 	}
 	 	&-image,&-content{
 	 		width: 50%;
+	 		@media (max-width: 40em){
+			 width: 100%;
+	 		}
 	 	}
 	 	&-image{
 	 		position: relative;
@@ -104,35 +160,60 @@
 	 			left: 90px;
 	 			position: relative;
 	 			z-index: 5;
+	 			@media(max-width: 40em){
+	 				width: 80%;
+	 				left: 50px;
+	 				top: 30px;
+	 			}
 	 		}
 	 		.ideaCircle{
 	 			z-index: 0;
 	 			top:50px;
+	 			@media (max-width: 40em){
+	 				width: 80%;
+	 				top: -30px;
+	 				left: 0;
+	 			}
 	 		}
 	 		.ideaL1{
 	 			z-index: 1;
 	 			top: 0;
     			left: -25px;
+    			@media (max-width: 40em){
+    				width: 40%;
+    			}
 	 		}
 	 		.ideaL11{
 	 			z-index: 1;
 	 			top: 32px;
 	 			left: 50px;
+	 			@media (max-width: 40em){
+	 				width: 40%;
+	 			}
 	 		}
 	 		.ideaL2{
 	 			z-index: 3;
 	 			bottom: 95px;
     			right: 20px;
+    			@media (max-width: 40em){
+    				width: 40%;
+    			}
 	 		}
 	 		.ideaL21{
 	 			z-index: 1;
 	 			bottom: 180px;
     			right: 60px;
+    			@media (max-width: 40em){
+    				width: 40%;
+    			}
 	 		}
 	 		.ideaSCircle{
 	 			bottom: 200px;
 			    right: 90px;
 			    z-index: 2;
+			    @media (max-width: 40em){
+			    	width: 40%;
+			    }
 	 		}
 	 		.ideaZigzag1{
 	 			bottom: 136px;

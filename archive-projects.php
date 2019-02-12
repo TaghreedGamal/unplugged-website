@@ -22,12 +22,12 @@ get_header(); ?>
 		<main class="main-content">
 			<div class="main-content__filter-section">
 				<div class="filter-menu">
-					<h3>Filter by</h3>	
+					<h3>Filter by<span open-filter>+</span></h3>	
 					<?php
 					$taxonomyName = "projects_categories";
 				//This gets top layer terms only.  This is done by setting parent to 0.  
 					$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) ); 
-					echo '<ul class="accordion" data-accordion data-allow-all-closed="true">';
+					echo '<ul class="accordion" id="filter-menu" data-accordion data-allow-all-closed="true">';
 					foreach ( $parent_terms as $pterm ) {
 						$link = add_query_arg('projects_categories', $pterm->slug);
 					// echo($link); don't go to link

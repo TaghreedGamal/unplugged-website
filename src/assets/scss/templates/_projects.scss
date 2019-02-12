@@ -31,6 +31,9 @@
         font-family: $bold-font;
         color: $title-color;
         font-size: 35px;
+        @media (max-width: 40em){
+          font-size: 20px;
+        }
     }
     ul{
       &#filter-ul {
@@ -38,10 +41,11 @@
        margin-left: 0;
        height: 80px;
        overflow-y: scroll;
-      }
-      @media (max-width: 40em){
-        display: none;
+       @media (max-width: 40em){
+          overflow: initial;
+          height: 100%;
        }
+      }
     }
     li{
       &.accordion-item {
@@ -49,6 +53,9 @@
           color: $opaque-color;
           font-size: 20px;
           font-family:$main-font;
+          @media (max-width: 40em){
+            font-size: 14px;
+          }
         }
 
       }
@@ -60,6 +67,9 @@
            content: '\2716';
            font-size: large;
            top:50%;
+           @media (max-width: 40em){
+            font-size: small;
+          }
         }
       }
     }
@@ -72,6 +82,9 @@
         content: '+';
         font-weight: bold;
         font-size: xx-large;
+        @media (max-width: 40em){
+          font-size: inherit;
+        }
       }
     }
     .accordion-title,.accordion-content{
@@ -83,10 +96,23 @@
       width: 15%;
       z-index: 1;
       top:25%;
+      span{
+        display: none;
+      }
       @media (max-width: 40em){
           position: absolute;
-          width: 100%;
+          width: 90%;
           top: 15%;
+          border-bottom: 1px solid $opaque-color;
+          z-index: 500;
+          span{
+            display: block;
+            font-weight: bold;
+            position: absolute;
+            left: 91%;
+            top: 0;
+            font-size: inherit;
+          }
       }
     }
     .filter-icons{
@@ -117,15 +143,13 @@
     width: 90%;
     margin-top: 20px;
     .scroll-posts{
-      // height: 70vh;
-      // overflow-y: scroll;
       display: flex;
       flex-wrap: wrap;
      }
     @media (max-width: 40em){
       width: 100%;
-    }
-      
+      margin-top: 25%;
+    }     
   }
   footer{
     display: none;
@@ -157,14 +181,13 @@
            width: 60%;
            left: -30px;
            bottom: 0;
-            @media (width: 320px){
+            @media (max-width: 40em){
               width: 65%;
-              left: -13%;
+              left: -16%;
             }
         }
         &__content{
           border: 2px solid;
-          // min-width: 350px;
           width: 100%;
           padding: 0;
           min-height: 170px; 
@@ -188,24 +211,22 @@
             @media (max-width: 40em){
               display: block !important;
               .button{
-                width: 70%;
-                left: 20%;
-                @media (width: 320px){
-                  width: 60%;
-                  left: 30%;
-                }
+                width: 60%;
+                left: 30%;
+                margin-left: 0;
+                z-index: 1;
               }
             }
         }
         @media (max-width: 40em){
-          padding-left: 25%;
+          padding-left: 20%;
         }
         @media (width: 320px){
-          padding-left: 20%;
+          padding-left: 15%;
         }
       }
       &:hover{
-         min-height: 250px;
+         min-height: 250px !important;
         .grouped-buttons{
            display: block !important;
           .button{
@@ -215,34 +236,27 @@
             padding-top: 0;
             margin-top: 0;
             margin-left: 32%; 
+            @media (max-width: 40em){
+              width: 60%;
+              left: 30%;
+              margin-left: 0;
+            }
           } 
         }
       }
-      @media (max-width: 40em){
-        min-height: 150px;
-        padding:0;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-        border:0;
-        background-color: transparent;
-        &:hover{
-          min-height: 150px;
-          .grouped-buttons{
-            .button{
-              font-size: 14px !important;
-              justify-content: space-around;
-              width: 77%;
-              padding-top: 0;
-              margin-top: 0;
-              margin-left: 0;
-            } 
-          }
-        }
-      }
         @media (max-width: 40em){
+          min-height: 150px;
+          padding:0;
+          margin: 0;
+          position: initial;
+          text-align: center;
           width:290px;
           left: 20%;
+          border:0;
+          background-color: transparent;
+          &:hover{
+            min-height: 150px !important;
+          }
         }
         @media (width: 320px){
           width: 252px; 
@@ -251,6 +265,8 @@
       }
       @media (max-width: 40em){
         width: 100%;
+        left: 0;
+        padding-right: 0;
       }
     }
   }
@@ -302,9 +318,9 @@
   }
 }
 //// for tail and grid sections
-// .hide{
-//   display: none !important;
-// }
+.hide{
+  display: none;
+}
 // .grid{
 //   width: 47%;
 //   height: auto;
@@ -424,7 +440,9 @@
     
 }
 
-
+.show-filter{
+  display: block;
+}
 
 
 // .cute_scroll::-webkit-scrollbar
