@@ -40,8 +40,8 @@ $(window).scroll(function() {
       }
     }
 });
-
-if($(".single-products").length != 0){
+var screenSize=$(window).width();
+if($(".single-products").length != 0 && (screenSize >'1024')){
 products_animation.play();
 //////////////////brief animation
 var Brief= new TimelineMax();

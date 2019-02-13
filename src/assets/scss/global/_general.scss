@@ -36,6 +36,14 @@ p{
     z-index: -1;
     top: -65px;
     left: -20px;
+    @media (max-width: 40em){
+        font-size: 100px !important;
+        top: -45px;
+    }
+    @media (width: 320px){
+        font-size: 90px !important;
+        top: -25px;
+    }
 }
 .fa-quote-right{
     position: absolute;
@@ -43,6 +51,14 @@ p{
     z-index: -1;
     bottom: -20px;
     right: -15px;
+     @media (max-width: 40em){
+        font-size: 100px !important;
+        bottom: -5px;
+    }
+    @media (width: 320px){
+        font-size: 90px !important;
+        bottom: 10px;
+    }
 }
 
 .single-projects,.single-products,.post-type-archive-projects,.post-type-archive-products
@@ -66,7 +82,7 @@ p{
     align-items: center;
     height: 100vh;
     @media (max-width:1000px) and (min-width:768px) {
-        height: 60vh;
+        height: 25vh;
     }
     @media (width: 1024px){
         height: 50vh;

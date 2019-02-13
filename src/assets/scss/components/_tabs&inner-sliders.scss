@@ -1,5 +1,6 @@
 .project,.product,.about-us{
 	&__tabs{
+		position: relative;
 			.tabs-content{
 			border:0;
 			.allinone_carousel.powerful{
@@ -12,6 +13,7 @@
 			justify-content:space-around;
 			align-items:center;
 			margin-top: 40px;
+			
 			li{
 				a{
 					font-size: 20px;
@@ -19,8 +21,17 @@
 					font-family: $medium-font;
 					border-bottom: 5px solid $opaque-color;
 					line-height: 2.09;
+					@media (max-width: 64em){
+				    	font-size: 12px;
+				    }
 					@media (max-width: 40em){
-						font-size: 0px;
+						font-size: 0;
+					}
+					&.active-tab-title.Responsive{
+						display: none;
+						@media (max-width: 40em){
+							display: block;
+						}
 					}
 				}
 				>a[aria-selected='true'] {
@@ -30,8 +41,26 @@
 				    font-family: $title-font;
 				    line-height: 1.07;
 				    border-bottom: 6px solid $title-color;
+				    @media (max-width: 64em){
+				    	font-size: 25px;
+				    }
 				    @media (max-width: 40em){
 						font-size: 0px;
+					}
+				}
+				@media (max-width: 40em){
+					a[aria-selected='true']{
+						&.active-tab-title.Responsive{
+							font-size: 26px !important;
+							border-bottom: none;
+							position: absolute;
+							top: -25%;
+							left: 0;
+						}
+					}
+					a.active-tab-title.Responsive{
+						border-bottom: none;
+						position: absolute;
 					}
 				}
 			}

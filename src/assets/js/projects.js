@@ -7,7 +7,7 @@ $('[list-view]').on('click',function(){
 
 // Grid View
 var screenSize=$(window).width();
-if (screenSize < '480'){
+if (screenSize <= '1024'){
   $('.scroll-posts').addClass('grid-view');
   $('ul#filter-menu').hide();
 }
@@ -17,7 +17,7 @@ $('[grid-view]').on('click',function(){
   $('.scroll-posts').addClass('grid-view');
 })
 $(".scroll").click(function() {
-    $('.remain-page').removeClass('hide-remainPage');
+    // $('.remain-page').removeClass('hide-remainPage');
     $('html,body').animate({
         scrollTop: $(".scrollToInfo").offset().top},'slow');
     $('.scroll-top').fadeIn();
@@ -25,7 +25,7 @@ $(".scroll").click(function() {
 });
 $(".scroll-top").click(function() {
     $('html,body').animate({scrollTop: $(".site-header").offset().top},'slow');
-    $('.remain-page').addClass('hide-remainPage');
+    // $('.remain-page').addClass('hide-remainPage');
 });
 $(document).scroll(function() {
   var y = $(this).scrollTop();
@@ -36,7 +36,7 @@ $(document).scroll(function() {
   }
 });
 
-if($(".single-projects").length != 0){
+if($(".single-projects").length != 0 && (screenSize >'1024')){
 //single project image
 var projImg = new TimelineMax();
 // .from(".main-content__project-image",0.5, {x:10,opacity:0,scaleX:0,transformOrigin:"right"},0.2)

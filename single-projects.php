@@ -139,9 +139,13 @@ get_header(); ?>
    			 while ( have_rows('project-steps-title') ) : the_row();
        		 if($url==1){ ?>
             <li class="tabs-title is-active">
-            	<a href="#panel<?php echo $url;?>c" aria-selected="true">
+            	<a class="active-tab-title" href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
 	            	<br>
+	            	<?php the_sub_field('proj-step-title');?>
+	            </a>
+	            <a class="active-tab-title Responsive" href="#panel<?php echo $url;?>c" aria-selected="true">
+	            	<?php echo("0".$stepNo.".");?>
 	            	<?php the_sub_field('proj-step-title');?>
 	            </a>
             </li>
@@ -151,6 +155,10 @@ get_header(); ?>
                 <a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
 	            	<br>
+	            	<?php the_sub_field('proj-step-title');?>
+	            </a>
+	            <a class="active-tab-title Responsive" href="#panel<?php echo $url;?>c" >
+	            	<?php echo("0".$stepNo.".");?>
 	            	<?php the_sub_field('proj-step-title');?>
 	            </a>
             </li>

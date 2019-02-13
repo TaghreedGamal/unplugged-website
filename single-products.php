@@ -254,6 +254,10 @@ get_header(); ?>
 	            	<br>
 	            	<?php the_sub_field('product_tabs_titles');?>
 	            </a>
+	            <a class="active-tab-title Responsive" href="#panel<?php echo $url;?>c" aria-selected="true">
+	            	<?php echo("0".$stepNo.".");?>
+	            	<?php the_sub_field('product_tabs_titles');?>
+	            </a>
             </li>
          <?php }
         else { ?>        
@@ -261,6 +265,10 @@ get_header(); ?>
                 <a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
 	            	<br>
+	            	<?php the_sub_field('product_tabs_titles');?>
+	            </a>
+	            <a class="active-tab-title Responsive" href="#panel<?php echo $url;?>c" >
+	            	<?php echo("0".$stepNo.".");?>
 	            	<?php the_sub_field('product_tabs_titles');?>
 	            </a>
             </li>
