@@ -10,7 +10,7 @@
         </form> -->
 
           <!-- <input type="submit" class="search-button" id="searchsubmit" value=""/> -->
-          <div>
+          <!-- <div> -->
              <!-- <h3>Search Blogs</h3> -->
              <form role="search" class="search-bar" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
              <input type="text" name="s" placeholder="Search"/>
@@ -19,10 +19,52 @@
               <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
             </button>
            </form>
-          </div>
+          <!-- </div> -->
 
+          <div class="filter-menu filter-menu-mobile">
+  					 <ul class="accordion accordion-outer" data-accordion data-allow-all-closed="true">
 
-      <div class="filter-menu">
+  					 	<li class="accordion-item" data-accordion-item>
+  					 		<a href="#" class="accordion-title">Filter By</a>
+  							<div class="accordion-content content-outer" data-tab-content>
+                  <ul class="accordion" data-accordion data-allow-all-closed="true">
+                    <li class="accordion-item " data-accordion-item>
+                      <a class="accordion-title" href="#">Years</a>
+                      <div class="accordion-content" data-tab-content>
+                        <ul id="filter-ul">
+                      <?php
+                      $taxonomyName = "year-category";
+                      $terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+                        foreach ( $terms as $term ) {
+                          $link = add_query_arg('year-category', $term->slug);?>
+                          <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+                        <?php  }?>
+                      </ul>
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Departments</a>
+                      <div class="accordion-content" data-tab-content>
+                        <ul id='filter-ul-departments'>
+                          <?php
+                          $taxonomyName = "blog_departments";
+                          $parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+                          foreach ( $parent_terms as $pterm ) {
+                            $link = add_query_arg('blog_departments', $pterm->slug);
+                            echo '<li><a href='. $link .' class="">' . $pterm ->name . '</a></li>';
+
+                          }
+                          ?>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+             </ul>
+            </div>
+
+      <div class="filter-menu filter-menu-desktop">
         <h3>Filter by</h3>
         <ul class="accordion" data-accordion data-allow-all-closed="true">
           <li class="accordion-item " data-accordion-item>
@@ -31,9 +73,9 @@
               <ul id="filter-ul">
             <?php
             $taxonomyName = "year-category";
-            $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-            // var_dump($terms)
-              foreach ( $terms as $term ) {
+            $terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+
+               foreach ( $terms as $term ) {
                 $link = add_query_arg('year-category', $term->slug);?>
                 <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
               <?php  }?>
@@ -57,28 +99,6 @@
             </div>
           </li>
         </ul>
-        <!-- <?php
-        $taxonomyName = "year-category";
-      //This gets top layer terms only.  This is done by setting parent to 0.
-        $parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
-        foreach ( $parent_terms as $pterm ) {
-          $link = add_query_arg('year-category', $pterm->slug);
-         //echo($link); //don't go to link
-          echo '<li class="accordion-item" data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
-          //Get the Child terms
-          $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-          echo '<div class="accordion-content" data-tab-content><ul id="filter-ul">';
-          foreach ( $terms as $term ) {
-            $link = add_query_arg('year-category', $term->slug);?>
-            <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
-          <?php }
-            // echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';
-          // }
-          echo '</ul></div></li>';
-        }
-        echo '</ul>';
-        ?> -->
-
       </div>
         </div>
     <div class="articles-container">
@@ -120,7 +140,7 @@
                   <img src=" <?php the_field('author_avatar') ?>" alt="">
                   <span class="author-name">By: <?php the_field('author') ?></span>
                 </div>
-                <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 500) ,"..";?></p>
+                <div class="blog-post-content"><?php echo substr(strip_tags(get_field('introduction')), 0, 400) ," ...";?></div>
                   </div>
                 <div class="blog-post-details">
                   <div class="blog-post-date">

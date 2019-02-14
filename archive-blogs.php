@@ -20,10 +20,10 @@ get_header(); ?>
 
 <div class="blogs-page-container container" >
   <div class="blogs-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
-    <h1 class="blogs-header">We create to Share,
+    <h1 class="blogs-header">We create to Share, <br>
 Connect, & Inspire.</h1>
 <div class="small-typewriter-container">
-  <img class="blue-semi-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/semi-circle.svg" alt="">
+  <img class="blue-semi-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/circle-1.svg" alt="">
   	<img class="small-typewriter" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/small-typewriter.png" alt="">
     <img class="zigzag-line-5" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
     <img class="zigzag-line-6" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/fill-1.svg" alt="">
@@ -55,8 +55,8 @@ $loop = new WP_Query($query);?>
 
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <?php if(get_field('add_to_featured_articles')==true): ?>
-				<div class="featured-articles-slide slide">
 
+				<div class="featured-articles-slide slide">
           <div class="blog-post-image">
             <div class="post-images">
               <img class="orange-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/oval.svg" alt="">
@@ -76,6 +76,7 @@ $loop = new WP_Query($query);?>
             the_post_thumbnail('full');
             ?>
           </div>
+
           <div class="blog-post-text">
           <h2 class="blog-post-header">
             <?php the_title(); ?>
@@ -84,7 +85,7 @@ $loop = new WP_Query($query);?>
             <img src=" <?php the_field('author_avatar') ?>" alt="">
             <span class="author-name">By: <?php the_field('author') ?></span>
           </div>
-          <p class="blog-post-content"><?php echo substr(get_field('introduction'), 0, 350) ,"..";?></p>
+          <div class="blog-post-content"><?php echo substr(strip_tags(get_field('introduction')), 0, 280)," ...";?></div>
             </div>
           <div class="blog-post-details">
             <div class="blog-post-date">
@@ -138,7 +139,7 @@ $loop = new WP_Query($query);?>
   <h1 class="latest-articles-header">Latest Articles</h1>
     <?php include 'blogs-filters.php'; ?>
     <a class="load-more button">Load More</a>
-  
+
 </div>
 </div>
 
