@@ -92,9 +92,9 @@ get_header(); ?>
 						<?php else : ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 						<?php endif; // End have_posts() check. ?>
+			
 				</div>
-                <div class="loadmore button">Load More ... </div>			
-			</div>
+                <div class="loadmore button">Load More ... 	</div>
 		</main>
 	</div>
 </div>
@@ -113,6 +113,7 @@ jQuery(function($) {
         $.post(ajaxurl, data, function(response) {
         	// console.log(response);
         	if(response){
+        		console.log(response)
 	            $('.scroll-posts').append(response);
 	            page++;
             }

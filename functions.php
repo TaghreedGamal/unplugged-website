@@ -312,6 +312,13 @@ function query_business_challenges( $query ) {
         } // end if
     }
     add_action( 'pre_get_posts', 'query_business_challenges', 1 );
+function query_business_challenges2( $query ) {
+
+        if ( ! is_admin() && $query->is_main_query() && is_post_type_archive('projects')) {
+            $query->set( 'posts_per_page', 5 );
+        } // end if
+    }
+    add_action( 'pre_get_posts', 'query_business_challenges2', 1 );
 
 
 
@@ -394,14 +401,26 @@ function load_posts_by_ajax_callback() {
                     <div class="grouped-buttons">
                       <a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
                     </div> 
+                          <?php
+      if ( function_exists( 'foundationpress_pagination' ) ) :
+        foundationpress_pagination();
+      elseif ( is_paged() ) :
+      ?>
+        <nav id="post-nav">
+          <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+          <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+        </nav>
+      <?php endif; ?>
+      <div class="loadmoreHidden"><?php echo get_next_posts_link( $max_pages ); ?> </div>
+
                   </div>
                 </div>
               </div>
         <?php endwhile ?>
         <?php
     endif;
- 
     wp_die();
+
 }
 
 ?>

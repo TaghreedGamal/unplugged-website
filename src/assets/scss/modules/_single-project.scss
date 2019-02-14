@@ -56,6 +56,9 @@
 		    		img{
 		    			width: 60%;
 		    		}
+		    		@media (max-width: 64em){
+		    			font-size: 15px;
+		    		}
 		    		@media (max-width: 40em){
 		    			font-size: 13px;
 		    		}
@@ -121,10 +124,16 @@
    			}
    		}
    		@media (max-width: 64em){
-   			height: 60vh;
+   			height: 63vh;
    			&-image{
    				height: 43vh;
    			}
+   		}
+   		@media (max-width: 40em){
+   			height: 60vh;
+   		}
+   		@media (width: 1024px){
+   			height: 45vh;
    		}
    		@media (max-width: 40em) {
    			flex-direction:column-reverse;
