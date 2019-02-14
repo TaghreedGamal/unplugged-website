@@ -497,8 +497,12 @@ body.search{
               }
 
           }
+          & .main-container{
+           & .main-grid {
+           & .main-content {
+             padding: 2em;
           & .products-filters{
-            padding: 2em;
+            padding: 0;
             & .main-content__filter-section{
               & .filter-menu{
                 & h3{
@@ -518,21 +522,21 @@ body.search{
               }
             }
        & .products-whole-section{
-         height: 65vh;
+           height: 70vh;
        &  .product-section  {
          & .product-section__post__image{
          & .product_image{
-           left: 1em;
+           left: 0;
 
            & .wp-post-image{
-             width: 90%;
+             width: 100%;
              // height: 22em;
-             height: 100%;
-
+             height: auto;
            }
            & .line-image{
              left: -1.5em;
              // height: 23em;
+             top: 1em;
              height: 85%;
            }
            & .zigzag-image{
@@ -565,7 +569,7 @@ body.search{
                  left: -1.3em;
                    & .box__title {
 
-                       font-size: 2rem;
+                       font-size: 2.5rem;
 
                    }
                    & .view-details-button{
@@ -574,7 +578,7 @@ body.search{
                    }
                }
                & .product_image_desktop{
-                 bottom: -5em;
+                 bottom: -6em;
                  left: 0;
                  top: unset;
                  & .wp-post-image{
@@ -586,14 +590,14 @@ body.search{
                  }
                  & .zigzag-image{
                    right: 0em;
-                   bottom: 8em;
+                   bottom: 9em;
                  }
                  & .zigzag-image-2{
                    right: 1.5em;
-                   bottom: 7.5em;
+                   bottom: 8.5em;
                  }
                  & .orange-circle-image{
-                   bottom: 7em;
+                   bottom: 8em;
                  }
                  & .line-image{
                    height: 8em;
@@ -605,6 +609,9 @@ body.search{
            }
          }
        }
+     }
+   }
+ }
   }
 }
 @media only screen and (min-width:1150px) and (max-width:1339px) {

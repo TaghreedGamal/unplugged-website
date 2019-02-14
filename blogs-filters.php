@@ -34,8 +34,7 @@
                         <ul id="filter-ul">
                       <?php
                       $taxonomyName = "year-category";
-                      $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-                      // var_dump($terms)
+                      $terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
                         foreach ( $terms as $term ) {
                           $link = add_query_arg('year-category', $term->slug);?>
                           <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
@@ -74,9 +73,9 @@
               <ul id="filter-ul">
             <?php
             $taxonomyName = "year-category";
-            $terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-            // var_dump($terms)
-              foreach ( $terms as $term ) {
+            $terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
+
+               foreach ( $terms as $term ) {
                 $link = add_query_arg('year-category', $term->slug);?>
                 <li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
               <?php  }?>
@@ -100,8 +99,6 @@
             </div>
           </li>
         </ul>
-
-
       </div>
         </div>
     <div class="articles-container">

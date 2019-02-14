@@ -2171,12 +2171,19 @@
 
     & .featured-articles-slider{
       & .featured-articles-slide{
+        width: 90% !important;
         height: 21em;
         padding-left: 11em;
         & .blog-post-text{
           & .blog-post-header{
             font-size: 2rem;
           }
+        }
+        & .blog-post-image{
+          left: -4.5em;
+          width: 46%;
+          height: 85%;
+          bottom: 2em;
         }
       }
     }

@@ -206,7 +206,7 @@
                       left: -2em;
                       top: 2em;
                       z-index: 3;
-                      height: 29em;
+                      height: 24em;
                     }
                     & .circles-image{
                       position: absolute;
@@ -250,7 +250,7 @@
                       left: -0.5em;
                       top: 0.5em;
                       z-index: 3;
-                      height: 24em;
+                      height: 21em;
                       transform: rotate(-8deg);
                     }
                     & .circles-image{
@@ -455,6 +455,7 @@
           & .line-image{
             left: -1.5em;
             // height: 23em;
+            top: 1em;
             height: 85%;
           }
           & .zigzag-image{
@@ -487,7 +488,7 @@
                 left: -1.3em;
                   & .box__title {
 
-                      font-size: 2rem;
+                      font-size: 2.5rem;
 
                   }
                   & .view-details-button{
@@ -496,7 +497,7 @@
                   }
               }
               & .product_image_desktop{
-                bottom: -5em;
+                bottom: -6em;
                 left: 0;
                 top: unset;
                 & .wp-post-image{
@@ -508,14 +509,14 @@
                 }
                 & .zigzag-image{
                   right: 0em;
-                  bottom: 8em;
+                  bottom: 9em;
                 }
                 & .zigzag-image-2{
                   right: 1.5em;
-                  bottom: 7.5em;
+                  bottom: 8.5em;
                 }
                 & .orange-circle-image{
-                  bottom: 7em;
+                  bottom: 8em;
                 }
                 & .line-image{
                   height: 8em;
