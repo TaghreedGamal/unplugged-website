@@ -312,15 +312,6 @@ function query_business_challenges( $query ) {
         } // end if
     }
     add_action( 'pre_get_posts', 'query_business_challenges', 1 );
-function query_business_challenges2( $query ) {
-
-        if ( ! is_admin() && $query->is_main_query() && is_post_type_archive('projects')) {
-            $query->set( 'posts_per_page', 5 );
-        } // end if
-    }
-    add_action( 'pre_get_posts', 'query_business_challenges2', 1 );
-
-
 
     wp_localize_script( 'twentyfifteen-script', 'ajax_posts', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),

@@ -34,7 +34,7 @@ get_header(); ?>
 						echo '<li class="accordion-item " data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
     				//Get the Child terms
 						$terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-						echo '<div class="accordion-content " data-tab-content><ul id="filter-ul">';
+						echo '<div class="accordion-content " data-tab-content><ul class="cute_scroll" id="filter-ul">';
 						foreach ( $terms as $term ) {
 							$link = add_query_arg('projects_categories', $term->slug);?>
 							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>   
@@ -53,8 +53,8 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="main-content__project-section">
-				<div class="scroll-posts ">
-					<?php $args = array('post_type' => 'projects', 'posts_per_page' =>5, 'orderby' => 'id');
+				<div class="scroll-posts cute_scroll" >
+					<?php $args = array('post_type' => 'projects', 'posts_per_page' =>-1, 'orderby' => 'id');
                     $loop = new WP_Query( $args );
                      if ( $loop -> have_posts() ) : ?>
 					<?php /* Start the Loop */ 
@@ -92,39 +92,11 @@ get_header(); ?>
 						<?php else : ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 						<?php endif; // End have_posts() check. ?>
-			
 				</div>
-                <div class="loadmore button">Load More ... 	</div>
+               
 		</main>
 	</div>
 </div>
 
-
-<script type="text/javascript">
-var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
-var page = 2;
-jQuery(function($) {
-    $('body').on('click', '.loadmore', function() {
-        var data = {
-            'action': 'load_posts_by_ajax',
-            'page': page,
-            'security': '<?php echo wp_create_nonce("load_more_posts"); ?>'
-        };
-        $.post(ajaxurl, data, function(response) {
-        	// console.log(response);
-        	if(response){
-        		console.log(response)
-	            $('.scroll-posts').append(response);
-	            page++;
-            }
-            else {
-            	$('.loadmore').remove();
-            	$('.scroll-posts').append('<h3 class="loadmore-msg">No more projects</h3>');
-            }
-        });
-    });
-});
-
-</script>
 
 	<?php get_footer();
