@@ -24,7 +24,7 @@
 
   margin-top: -7em;
   padding: 0 0 0 0;
-  & .products-page-container-header{
+  &-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5em;
@@ -176,6 +176,7 @@
             padding-right: 0;
             height: 76vh;
             overflow-y: scroll;
+            overflow-x: hidden;
 
             & .product-section{
                 display: flex;

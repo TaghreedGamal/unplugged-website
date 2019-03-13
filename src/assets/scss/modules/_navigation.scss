@@ -72,6 +72,24 @@
 .nav-next {
   float:right;
 }
+.menu-logo-appear{
+  display: block !important;
+  margin-top: 50px;
+}
+.menu-logo{
+  display: none;
+  .logo{
+    position: fixed !important;
+    top:10%;
+    @media (max-height: 60em){
+      top: 2%;
+    }
+    @media (width: 320px){
+      top: 1.2%;
+    }
+  }
+}
+
 .logo{
     padding-left: 50px;
     z-index: 7000;

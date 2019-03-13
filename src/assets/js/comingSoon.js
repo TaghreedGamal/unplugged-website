@@ -1,13 +1,14 @@
 import {TweenMax, Power2, TimelineLite} from "gsap/TweenMax";
 
+if($(".page-template-coming-soon").length != 0) {
 var path11 = $(".top-drawLine1 path"),
-    length11 = path1[0].getTotalLength();
+    length11 = path11[0].getTotalLength();
 var path22 = $(".top-drawLine2 path"),
-    length22 = path2[0].getTotalLength();
+    length22 = path22[0].getTotalLength();
 var path33 = $(".botton-drawLine1 path"),
-    length33 = path3[0].getTotalLength();
+    length33 = path33[0].getTotalLength();
 var path44 = $(".botton-drawLine2 path"),
-    length44 = path4[0].getTotalLength();
+    length44 = path44[0].getTotalLength();
 
 var t = new TimelineMax();
 t.set(path11, {attr:{"stroke-dasharray": length11, "stroke-dashoffset": length11}})
@@ -30,3 +31,5 @@ coming.addLabel("img")
 .to(path22, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
 .to(path33, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both")
 .to(path44, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"both");
+
+}

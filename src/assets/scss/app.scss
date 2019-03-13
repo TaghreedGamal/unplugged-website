@@ -75,6 +75,7 @@
 @import "modules/editor-style";
 @import "modules/main-menu";
 @import "modules/single-project";
+@import "modules/single-product";
 
 // Components
 @import "components/buttons";
@@ -83,6 +84,8 @@
 // @import "components/dividers";
 @import "components/links";
 @import "components/box";
+@import "components/tabs&inner-sliders.scss";
+@import "components/product&projectFooter";
 
 //icons fontello
 
@@ -100,3 +103,4 @@
 @import "templates/products";
 @import "templates/blogs";
 @import "templates/search";
+@import "templates/about-us";

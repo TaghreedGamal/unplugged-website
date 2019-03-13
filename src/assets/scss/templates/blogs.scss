@@ -2623,16 +2623,10 @@
         }
       }
     }
-    & .scroll-top-button{
-      background-color: $title-color;
-      color: white;
-      position: absolute;
-      right: 0;
-      top: 45%;
-      border-radius: 50%;
-      font-size: 3rem;
-      display: inline-block;
-      text-align: center;
+    .blog-scrollButton{
+      .button.scroll-top{
+        bottom: 4%;
+      }
     }
   }
   & .blog-controls{

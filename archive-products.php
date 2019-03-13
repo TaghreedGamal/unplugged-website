@@ -19,6 +19,7 @@ get_header(); ?>
 
 <div class="products-page-container container" >
   <div class="products-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
+
     <h1 class="products-header">We Devise and <br>
   Launch Digital
   Products</h1>
@@ -35,7 +36,9 @@ get_header(); ?>
 	<div class="main-grid">
 		<main class="main-content">
 
+
 <?php include 'products-filters.php'; ?>
+
 			<?php /* Display navigation to next/previous pages when applicable */ ?>
 			<?php
 			if ( function_exists( 'foundationpress_pagination' ) ) :

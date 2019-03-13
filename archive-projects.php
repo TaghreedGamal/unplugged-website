@@ -21,21 +21,20 @@ get_header(); ?>
 	<div class="main-grid">
 		<main class="main-content">
 			<div class="main-content__filter-section">
-				<!-- <?php wp_list_categories()?> -->
 				<div class="filter-menu">
-					<h3>Filter by</h3>	
+					<h3>Filter by<span open-filter>+</span></h3>	
 					<?php
 					$taxonomyName = "projects_categories";
 				//This gets top layer terms only.  This is done by setting parent to 0.  
 					$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) ); 
-					echo '<ul class="accordion" data-accordion data-allow-all-closed="true">';
+					echo '<ul class="accordion" id="filter-menu" data-accordion data-allow-all-closed="true">';
 					foreach ( $parent_terms as $pterm ) {
 						$link = add_query_arg('projects_categories', $pterm->slug);
 					// echo($link); don't go to link
-						echo '<li class="accordion-item" data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
+						echo '<li class="accordion-item " data-accordion-item><a href='. $link .' class="accordion-title">' . $pterm ->name . '</a>';
     				//Get the Child terms
 						$terms = get_terms( $taxonomyName, array( 'parent' => $pterm->term_id, 'orderby' => 'slug', 'hide_empty' => false ) );
-						echo '<div class="accordion-content" data-tab-content><ul id="filter-ul">';
+						echo '<div class="accordion-content " data-tab-content><ul class="cute_scroll" id="filter-ul">';
 						foreach ( $terms as $term ) {
 							$link = add_query_arg('projects_categories', $term->slug);?>
 							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>   
@@ -54,63 +53,56 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="main-content__project-section">
-				<div class="scroll-posts cute_scroll">
+				<div class="scroll-posts cute_scroll" >
+					<?php 
+					// $args = array('post_type' => 'projects', 'posts_per_page' =>-1, 'orderby' => 'id');
+     //                $loop = new WP_Query( $args );
+     //                 if ( $loop -> have_posts() ) :
+     //                while ( $loop->have_posts() ) : $loop->the_post(); 
+                     ?>
+                    <?php /* Start the Loop */ ?>
 					<?php if ( have_posts() ) : ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<div class="project-section__post">
-								<div class="project-section__post__image">
-									<?php if( get_field('project-img') ): ?>
-										<img src="<?php the_field('project-img'); ?>" />
-									<?php endif; ?>
-								</div>
-								<div class="project-section__post__box box">
-									<!-- <?php get_template_part( 'template-parts/content', get_post_format() );?> -->
-									<h2 class="box__title"><?php the_title();?></h2>  
-									<div class="box__text"><?php the_excerpt(); ?></div> </br>
-									<div class="small-icon" id="post-icons">
-	                                    <?php
-	                                    if( have_rows('project_services') ):
-	                                        while ( have_rows('project_services') ) : the_row();
-	                                            ?> <img src="<?php the_sub_field('project_service_img')?>">
-	                                    <?php
-	                                        endwhile;
-	                                    else :
-	                                    endif;
-	                                    ?>
-									</div>       
-									<div class="grouped-buttons">
-										<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
-									</div> 
-								</div>
+					<div class="project-section__post">
+						<div class="project-section__post__box box">
+							<div class="project-section__post__box__image">
+								<?php if( get_field('project-img') ): ?>
+									<img src="<?php the_field('project-img'); ?>" />
+								<?php endif; ?>
 							</div>
-						<?php 
+							<div class="project-section__post__box__content">
+								<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
+								<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
+								<div class="small-icon" id="post-icon">
+	                                <?php
+		                                if( have_rows('services-icons') ):
+		                                    while ( have_rows('services-icons') ) : the_row();
+		                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
+		                                <?php
+		                                 endwhile; 
+					    wp_reset_postdata(); ?>
+
+						<?php endif; // End have_posts() check. 
+	                                ?>
+								</div>      
+								<div class="grouped-buttons">
+									<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+								</div> 
+							</div>
+						</div>
+					</div>
+					<?php 
 					endwhile; 
 					wp_reset_postdata(); ?>
 						<?php else : ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 						<?php endif; // End have_posts() check. ?>
-
-						<?php /* Display navigation to next/previous pages when applicable */ ?>
-						<?php
-						if ( function_exists( 'foundationpress_pagination' ) ) :
-							foundationpress_pagination();
-						elseif ( is_paged() ) :
-							?>
-							<nav id="post-nav">
-								<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-								<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-							</nav>
-						<?php endif; ?>
-					</div>
-
 				</div>
-			
-			<?php get_sidebar(); ?>
-
-
-		</div>
+               
+		</main>
 	</div>
+</div>
+
 
 	<?php get_footer();

@@ -5,6 +5,7 @@ body{
 %border{
     border-radius: 10px 10px 10px 10px;
 }
+//// remove header buttons & make it transperent
 .home{
     header{
         &.site-header{
@@ -17,17 +18,21 @@ body{
         }
     }
 }
-.projects-template-default{
+// .projects-template-default,.products-template-default{
+//     header{
+//         .top-bar-right{
+//             .button{
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+.projects-template-default,.page-template-about-us{
     header{
-        &.site-header{
+         &.site-header{
             background-color: transparent;
             position: absolute;
             width: 100vw;
-        }
-        .top-bar-right{
-            .button{
-                display: none;
-            }
         }
     }
 }
@@ -36,21 +41,6 @@ body{
     @media(max-width: 64em){
         padding-right: 0px;
     }
-}
-.page-name{
-    width: 180px;
-    height: 50px;
-    margin-right: -35px;
-    margin-top: 5px;
-    color: black;
-    background-color: #808080b3;
-    font-family: "DINCondensed-Bold";
-    font-size: 18px;
-    text-transform: capitalize;
-    z-index: 3000;
-    padding-top: 12px;
-    border-radius: 30px;
-    text-align: center;
 }
 
 .title-bar {
@@ -893,7 +883,6 @@ button{
     height: auto;
     position: relative;
     padding-top: 320px;
-    // padding-bottom: 300px;
     display: flex;
     .box{
         padding: 60px;
@@ -904,8 +893,8 @@ button{
         &__title1{
             color:$title-color;
             font-family: $main-font;
-            line-height: 0.8;
-            padding-top: 30px;
+            line-height: 1.5;
+            padding-top: 25px;
         }
         &__title2{
             color:$title-color;
@@ -919,10 +908,6 @@ button{
             font-family: $main-font;
             text-align: justify;
         }
-        .button{
-            font-size: 16.5px;
-        }
-
     }
     .mobile{
         position: relative;
@@ -932,9 +917,15 @@ button{
         .video-R{
             transform: translateX(-100px);
             z-index:1;
+            position: relative;
+            left: 290px;
             @media (max-width: 64em){
                 opacity: 1 !important;
-                transform: translateX(-30px);
+                transform: translateX(-100px);
+            }
+            @media (max-width: 40em){
+                 transform: translateX(-200px);
+                 // left: 80px;
             }
         }
         .video-L{
@@ -984,7 +975,7 @@ button{
         .v-circle{
             height: 100px;
             width: 100px;
-            top: 82%;
+            top: 77%;
             left: -10px;
             z-index: -1;
             background-color:$orange-color;
@@ -1027,7 +1018,7 @@ button{
         .v-lcircle{
             height: 300px;
             width: 300px;
-            top: -18%;
+            top: -10%;
             left: 73%;
             border: 5px solid #000;
             position: absolute;
@@ -1054,30 +1045,62 @@ button{
             position: relative;
             display: block;
             z-index: 2;
+            width: 100%;
+            @media (max-width: 64em){
+                height: 500px;
+            }
+            @media (max-width: 40em){
+                height: 255px;
+            }
             @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                  margin-right: -20px;
              }
+             @media (width: 320px){
+                height: 225px;
+             }
+        }
+        .video-container{
+            position: absolute;
+            height: 80%;
+            width: 40%;
+            right: 125px;
+            z-index: 10;
+            @media (max-width: 64em){
+                right: -100%;
+                width: 100%;
+                bottom: 130px;
+            }
+            @media (max-width: 40em){
+                bottom: 60px;
+            }
         }
         .mobile-video{
-            position: absolute;
-            top: 9.5%;
-            left: 44%;
-            bottom: 0;
-            right: 0;
-            z-index: 2;
-            height: 79%;
-            width: 40%;
+            position: absolute;   
+            height: 90%;
+            width: 90%;
+            top: 15px;
+            left: 15px;
             @media(width: 1024px){
                 width: 89% !important;
                 left: 100% !important;
             }
             @media(max-width: 64em){
-               width: 90%;
-               left: 104%;
+                width: 95%;
+                left: 4px;
+                height: 415px;
+                top: 50px;
             }
              @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                 width: 41%;
                 left: 46%;
+             }
+             @media (max-width: 40em){
+                height: 200px;
+                top: 25px;
+             }
+             @media (width: 320px){
+                height: 200px;
+                top: 10px;
              }
         }
     }
@@ -1165,7 +1188,7 @@ button{
         a{
             display: flex;
             justify-content: space-around;
-            font-size: 18px;
+            font-size: 13.3px;
         }
         &__img{
             border: 5px solid #3bbaee;
@@ -1412,6 +1435,12 @@ button{
             }
         }
         &-content{
+            .slick-track{
+                height: 955px;
+                @media(max-width: 40em){
+                    height: 715px;
+                }
+            }
             .project-images {
                  @media (width: 1024px){
                     transform:scale(1.1) translateX(80px) !important;
@@ -1454,10 +1483,16 @@ button{
                     padding-top: 100px;
                     text-align: center;
                     border:2px solid;
+                    @media (max-width: 64em){
+                        margin-left: 105px;
+                    }
+                    @media (max-width: 40em){
+                        margin-left: 0;
+                    }
                    &__title{
                         color:$title-color;
                         font-family: $title-font;
-                        line-height: 0.95;
+                        line-height: 0.85;
                         font-size: 75px;
                         text-transform: uppercase;
                          span{
@@ -1608,7 +1643,7 @@ button{
                  &__title{
                     color:$title-color;
                     font-family: $title-font;
-                    line-height: 0.95;
+                    line-height: 0.85;
                     font-size: 80px;
                     text-transform: uppercase;
                      span{
@@ -1755,7 +1790,7 @@ button{
     }
 
 .img3 {
-        top :240px;
+        top :210px;
         .fun10 {
             top: 90px;
             left: 60px;

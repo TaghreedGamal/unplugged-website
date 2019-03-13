@@ -10,10 +10,6 @@
 
     ?>
     <!doctype html>
-  <!--    <html class="ie6">
-<html class="ie7">
-<html class="ie8">
-<html class="ie9"> -->
     <html class="no-js" <?php language_attributes(); ?> >
 
     <head>
@@ -41,8 +37,7 @@
         <div class="contactCards-sectionTwo">
            <h5>Contact</h5>
            <p>info<span>@</span>unpluggedweb.com <br />
-               (+2) 12254575 <br />
-               (+2) 01273239777<br />
+               (+2) 01273238777<br />
            </p>
        </div>
        <div class="contactCards-sectionThree">
@@ -53,10 +48,10 @@
        <div class="contactCards-sectionFour">
         <h5>Follow Us</h5>
         <div class="ficons">
-           <div class="icon-circle"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
-           <div class="icon-circle"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
-           <div class="icon-circle"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
-           <div class="icon-circle"><a href="#"><i class="fa fa-behance"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
+           <div class="icon-circle button cont"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
+           <div class="icon-circle button cont"><a href="#"><i class="fa fa-behance"></i></a></div>
        </div>
 </div>
 </div>
@@ -71,8 +66,8 @@
            <div class="small-12 cell">
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
-                <a class="button cont" href="https://unpluggedweb.com/careers/">Job Seeker </a>
-                <button  next-click class="button cont">Service Seeker</button>
+                <button  next-click class="button cont">Partner with us</button>
+                <a class="button cont" href="https://unpluggedweb.com/careers/">Join us</a>
             </div>
             </div>
         </div>
@@ -81,10 +76,10 @@
 
 <div class="step" style="display:none;" id="demo2" >
     <button close1-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+     <!-- <h3>Provide your contact information</h3> -->
     <div class="conform">
        <div class="grid-x">
            <div class="small-12 cell">
-              <h3>Provide your contact information</h3>
               <?php echo do_shortcode('[gravityform id="7" title ="false" ajax="true"]');?>
             </div>
         </div>
@@ -101,9 +96,11 @@
    </div>
 </div>
 <!-- full menu -->
+<a class="menu-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+  <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt=Unplugged Logo"></a>
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
-        <button close-menu class="close close-responsive"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+        <button close-menu class="close close-responsive">&times</button>
         <div class="img-content">
            <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">
             <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-about">
@@ -118,7 +115,7 @@
 </div>
 <div class="full-menu__item">
   <div class="img-content">
-   <a href="<?php echo esc_url( home_url( '/portfolio' ) ); ?>">
+   <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-portfolio">
     <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_port-min.png" alt="menu-portfolio">
     <div class="text-content">
@@ -141,13 +138,13 @@
 </div>
 </div>
 <div class="full-menu__item">
-    <button close-menu class="close close-desktop"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
+    <button close-menu class="close close-desktop">&times</button>
     <div class="img-content">
        <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog-min.png" alt="menu-blog">
         <div class="text-content">
-            <p>Blog</p>
+            <p>Reflections</p>
             <img class="mline"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
         </div>
        </a>
@@ -161,7 +158,7 @@
  <div class="top-bar-left">
     <div class="site-desktop-title top-bar-title">
        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
+        <img class="home-logo logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
     </div>
      <!-- <button close-project class="close" >X</button> -->
 </div>
@@ -169,14 +166,20 @@
 <div class="top-bar-right">
 
     <button data-click  class="button">Contact us</button>
-    <div class="page-name"><?php wp_title(''); ?>
 
-        <!-- <?php $thisP = get_queried_object();
-        if (!$thisP->label == ''){
-           echo $thisP->label;
-        }
-        else{
-        $pagename= basename(get_permalink()); echo $pagename;} ?> -->
+    <div class="page-name">
+    
+    <?php 
+      $parent = get_post_type( $post->ID );
+      if($parent == 'page'){
+        echo basename(get_permalink());
+      }
+      else {
+        echo $parent;
+      }
+      
+    ?>
+
    </div>
     <button menu-click  class="menu-button">
         <span></span>

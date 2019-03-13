@@ -169,6 +169,7 @@
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
         <?php endif; // End have_posts() check. ?>
+
         <?php
         // var_dump($query);
         // wp_reset_postdata();
@@ -189,5 +190,6 @@
   				</nav>
   			<?php endif; ?>
         </div>
+
 
   </div>

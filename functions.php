@@ -128,8 +128,8 @@ function create_taxonomies() {
 
 
 
-//Products
 
+//Products
 add_action( 'init', 'create_post_type_products' );
 function create_post_type_products() {
    register_post_type( 'products',
@@ -150,6 +150,7 @@ function create_post_type_products() {
                'custom-fields'
            ),
        )
+
 
    );
 }
@@ -283,13 +284,17 @@ register_taxonomy( 'blog_departments', array( 'blogs' ), $args );
   function template_chooser($template)
 {
   global $wp_query;
-  $post_type = get_query_var('blogs');
-  if( $wp_query->is_search && $post_type == 'blogs' )
+  // $post_type = get_query_var('blogs');
+  // // $proj_type = get_query_var('projects');
+  if($wp_query->is_search && $post_type == 'projects'){
+     return locate_template('archive-projects.php');
+  }
+  else if( $wp_query->is_search && $post_type == 'blogs' )
   {
     return locate_template('archive-blogs.php');  //  redirect to archive-search.php
   }
   else{
-    $post_type = get_query_var('products');
+    // $post_type = get_query_var('products');
     if($wp_query->is_search && $post_type == 'products')
     {
       return locate_template('archive-products.php');
@@ -307,8 +312,6 @@ function query_business_challenges( $query ) {
         } // end if
     }
     add_action( 'pre_get_posts', 'query_business_challenges', 1 );
-
-
 
     wp_localize_script( 'twentyfifteen-script', 'ajax_posts', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -347,4 +350,68 @@ function query_business_challenges( $query ) {
 
 add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
+
+
+ //// projects load more button
+add_action('wp_ajax_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+add_action('wp_ajax_nopriv_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+function load_posts_by_ajax_callback() {
+    check_ajax_referer('load_more_posts', 'security');
+    $paged = $_POST['page'];
+    $args = array(
+        'post_type' => 'projects',
+        'post_status' => 'publish',
+        'posts_per_page' => '5',
+        'paged' => $paged,
+    );
+    $my_posts = new WP_Query( $args );
+    if ( $my_posts->have_posts() ) :
+        ?>
+        <?php while ( $my_posts->have_posts() ) : $my_posts->the_post() ?>
+            <div class="project-section__post">
+                <div class="project-section__post__box box">
+                  <div class="project-section__post__box__image">
+                    <?php if( get_field('project-img') ): ?>
+                      <img src="<?php the_field('project-img'); ?>" />
+                    <?php endif; ?>
+                  </div>
+                  <div class="project-section__post__box__content">
+                    <h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
+                    <div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
+                    <div class="small-icon" id="post-icon">
+                      <?php
+                        if( have_rows('services-icons') ):
+                            while ( have_rows('services-icons') ) : the_row();
+                                ?> <img src="<?php the_sub_field('services-icons-img')?>">
+                        <?php
+                            endwhile;
+                        else :
+                        endif;
+                      ?>
+                    </div>      
+                    <div class="grouped-buttons">
+                      <a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
+                    </div> 
+                          <?php
+      if ( function_exists( 'foundationpress_pagination' ) ) :
+        foundationpress_pagination();
+      elseif ( is_paged() ) :
+      ?>
+        <nav id="post-nav">
+          <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+          <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+        </nav>
+      <?php endif; ?>
+      <div class="loadmoreHidden"><?php echo get_next_posts_link( $max_pages ); ?> </div>
+
+                  </div>
+                </div>
+              </div>
+        <?php endwhile ?>
+        <?php
+    endif;
+    wp_die();
+
+}
+
 ?>

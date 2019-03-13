@@ -11,6 +11,7 @@
     z-index: 6000;
     @media (max-width: 40em){
       flex-flow:column;
+      overflow-y:hidden;
     }
   }
   &__item {
@@ -137,7 +138,8 @@
 .full-menu{
       &__item{
         .close {
-          top: 4%;
+              top: 7%;
+              font-size: 45px;
            &-responsive{
              display: none;
              @media (max-width: 40em){
@@ -154,7 +156,10 @@
             top: 5%;
            }
            @media (max-width: 40em){
-            top:13%;
+            top:10%;
+           }
+           @media (width: 5%){
+            top: 5%;
            }
         }
       }

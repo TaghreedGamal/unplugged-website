@@ -72,7 +72,7 @@ typewriters_animation.from('.small-typewriter', 2, {y:200, opacity:0},1)
                       .from('.orange-line-1', 1, {x:100, opacity:0},3)
                       .from('.orange-line-2', 1, {x:100, opacity:0},3)
 
-
+typewriters_animation.play();
 //slider
 var slides_animation = new TimelineMax();
 slides_animation.from('.featured-articles-slider .zigzag-line-1', 0.5, {y:50, opacity:0},1)
