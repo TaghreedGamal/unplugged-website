@@ -221,3 +221,12 @@ function load_posts(){
     });
 
 });
+
+if($('.single-blogs-page-container .blog-controls').children().length==1)
+{
+  if($('.single-blogs-page-container .blog-controls').children()[0].className == 'previous-post')
+  {
+    // console.log("yes");
+    $('.single-blogs-page-container .blog-controls').children()[0].style.display = "flex";
+  }
+}

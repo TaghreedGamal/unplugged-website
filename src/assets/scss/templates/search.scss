@@ -127,42 +127,44 @@ body.search{
             position: relative;
             left: -2em;
             & .wp-post-image{
-              height: 33em;
+              height: auto;
               width: 100%;
+              bottom: -11em;
+              position: relative;
             }
 
             z-index: 4;
 
             & .line-image{
               position: absolute;
-              left: -0.5em;
-              top: 1.5em;
+              left: 0.5em;
+              top: 12.5em;
               z-index: 3;
-              height: 24em;
-              transform: rotate(-5.5deg);
+              height: 11em;
+              transform: rotate(-11.5deg);
             }
             & .circles-image{
               position: absolute;
               right: -0.5em;
-              top: -2em;
+              top: 6em;
               z-index: -1;
             }
             & .orange-circle-image{
               position: absolute;
-              bottom: 2em;
+              bottom: 0em;
               left: 2em;
               z-index: -1;
 
             }
             & .zigzag-image{
               position: absolute;
-              bottom: 4em;
+              bottom: 2em;
               right: 6em;
               z-index: -1;
             }
             & .zigzag-image-2{
               position: absolute;
-              bottom: 2.5em;
+              bottom: 0.5em;
               right: 6.5em;
               z-index: 5;
             }
@@ -278,79 +280,171 @@ body.search{
       }
      }
     }
-    & .products-filters{
-      &  .products-whole-section  {
-          overflow-x: hidden;
-        &  .product-section{
-          & .product-info.box{
-            padding: 3em 2em;
-            left: -1em;
-            & .box__title{
-              font-size: 3rem;
-            }
-          }
-            & .product-section__post__image{
-              & .product_image{
-              & .wp-post-image{
-                height: 22em;
-                width: 100%;
-              }
-              & .line-image{
-                left: -1em;
-                top: 2em;
-                height: 19em;
-              }
-              & .circles-image{
-                right: -3em;
-                top: -3em;
-              }
-              & .zigzag-image{
-                bottom: 4em;
-                right: -3em;
-              }
-              & .zigzag-image-2{
-                bottom: 2.5em;
-                right: -1.6em;
-              }
-            }
-            }
 
-          &  .product-info-desktop.box{
-              left: -4em;
-              & .box__title{
-                font-size: 3rem;
-              }
-            }
-            & .product-section__post__image
-            {
-            & .product_image_desktop{
-                & .wp-post-image{
-                  height: 22em;
-                }
-                & .line-image{
-                  left: -0.5em;
-                  top: 1.5em;
-                  z-index: 3;
-                  height: 16em;
-                }
-                & .circles-image{
-                  width: 80%;
-                  right: -2.5em;
-                  top: -3em;
-                }
-                & .zigzag-image{
-                  bottom: 3em;
-                  right: 1em;
-                }
-                & .zigzag-image-2{
-                  bottom: 2em;
-                  right: 2.5em;
-                }
-              }
-            }
-          }
-        }
-    }
+
+    & .products-filters{
+ & .products-whole-section{
+ &  .product-section  {
+   & .product-section__post__image{
+   & .product_image{
+     left: 0;
+     & .wp-post-image{
+       width: 100%;
+       // height: 22em;
+       // height: 23em;
+       height: -webkit-fill-available;
+     }
+     & .line-image{
+       left: -1.5em;
+       height: -webkit-fill-available;
+     }
+     & .zigzag-image{
+       right: -3em;
+     }
+     & .zigzag-image-2{
+       right: -1.6em;
+     }
+
+   }
+ }
+ &  .product-info.box{
+   left: -1em;
+   padding: 2em;
+     & .box__title{
+           font-size: 4rem;
+         }
+         & .view-details-button{
+           font-size: 15px;
+           width: 170px;
+         }
+
+       }
+       & .product-section__post__image{
+         & .product-info-desktop{
+           padding: 2em;
+           left: -1.3em;
+             & .box__title {
+
+                 font-size: 4rem;
+
+             }
+             & .view-details-button{
+               width: 170px;
+               font-size: 15px;
+             }
+         }
+         & .product_image_desktop{
+           bottom: 4em;
+           top: unset;
+           left: 0;
+           & .wp-post-image{
+             // height: 26em;
+             height: 14em;
+             // bottom: unset;
+           }
+           & .zigzag-image{
+             right: 2em;
+             bottom: -4em;
+           }
+           & .circles-image{
+             width: 55%;
+             top:9em;
+           }
+           & .zigzag-image-2{
+             right: 2.5em;
+             bottom: -5.5em;
+           }
+           & .orange-circle-image{
+             bottom: -5em;
+           }
+           & .line-image{
+             height: 11em;
+             top:12em;
+             left: 0;
+             transform: rotate(-7.5deg);
+           }
+         }
+     }
+     }
+   }
+ }
+
+
+    // & .products-filters{
+    //   &  .products-whole-section  {
+    //       overflow-x: hidden;
+    //     &  .product-section{
+    //       & .product-info.box{
+    //         padding: 3em 2em;
+    //         left: -1em;
+    //         & .box__title{
+    //           font-size: 4rem;
+    //         }
+    //       }
+    //         & .product-section__post__image{
+    //           & .product_image{
+    //             left: 0;
+    //           & .wp-post-image{
+    //             // height: 22em;
+    //             height: -webkit-fill-available;
+    //             width: 100%;
+    //           }
+    //           & .line-image{
+    //             left: -1em;
+    //             top: 2em;
+    //             height: 19em;
+    //           }
+    //           & .circles-image{
+    //             right: -3em;
+    //             top: -3em;
+    //           }
+    //           & .zigzag-image{
+    //             bottom: 4em;
+    //             right: -3em;
+    //           }
+    //           & .zigzag-image-2{
+    //             bottom: 2.5em;
+    //             right: -1.6em;
+    //           }
+    //         }
+    //         }
+    //
+    //       &  .product-info-desktop.box{
+    //           left: -4em;
+    //           & .box__title{
+    //             font-size: 4rem;
+    //           }
+    //         }
+    //         & .product-section__post__image
+    //         {
+    //         & .product_image_desktop{
+    //             & .wp-post-image{
+    //               height: 22em;
+    //             }
+    //             & .line-image{
+    //               left: -0.5em;
+    //               top: 1.5em;
+    //               z-index: 3;
+    //               height: 16em;
+    //             }
+    //             & .circles-image{
+    //               width: 80%;
+    //               right: -2.5em;
+    //               top: -3em;
+    //             }
+    //             & .zigzag-image{
+    //               bottom: 3em;
+    //               right: 1em;
+    //             }
+    //             & .zigzag-image-2{
+    //               bottom: 2em;
+    //               right: 2.5em;
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    // }
   }
 }
 //medium screens
@@ -373,17 +467,19 @@ body.search{
           overflow-x: hidden;
         &  .product-section{
           & .product-info.box{
-            padding: 3em 2em;
+            padding: 2em 2em;
             left: -1em;
             & .box__title{
-              font-size: 3.5rem;
+              font-size: 4rem;
             }
           }
             & .product-section__post__image{
               & .product_image{
+                left: 1em;
+                bottom: 1em;
               & .wp-post-image{
-                height: 25em;
-                width: 100%;
+                height: -webkit-fill-available;
+                width: 90%;
               }
               & .line-image{
                 left: -1em;
@@ -391,8 +487,9 @@ body.search{
                 height: 19em;
               }
               & .circles-image{
-                right: -3em;
+                right: 0em;
                 top: -3em;
+                width: 50%;
               }
               & .zigzag-image{
                 bottom: 4em;
@@ -410,32 +507,38 @@ body.search{
               padding: 2em 2em;
               top: 1em;
               & .box__title{
-                font-size: 3.5rem;
+                font-size: 4rem;
               }
             }
             & .product-section__post__image
             {
             & .product_image_desktop{
+              bottom: -10em;
                 & .wp-post-image{
-                  height: 25em;
+                  height: auto;
+                  bottom: unset;
                 }
                 & .line-image{
-                  left: -0.5em;
-                  top: 1.5em;
+                  left: 0em;
+                  top: 0.5em;
+                  transform: rotate(-11.5deg);
                   z-index: 3;
-                  height: 16em;
+                  height: 8em;
                 }
                 & .circles-image{
-                  width: 80%;
-                  right: -2.5em;
+                  width: 60%;
+                  right: -0.5em;
                   top: -3em;
                 }
                 & .zigzag-image{
-                  bottom: 3em;
+                  bottom: 9em;
                   right: 1em;
                 }
+                & .orange-circle-image{
+                  bottom: 8em;
+                }
                 & .zigzag-image-2{
-                  bottom: 2em;
+                  bottom: 10em;
                   right: 2.5em;
                 }
               }
@@ -502,6 +605,7 @@ body.search{
            & .main-content {
              padding: 2em;
           & .products-filters{
+
             padding: 0;
             & .main-content__filter-section{
               & .filter-menu{
@@ -541,9 +645,14 @@ body.search{
            }
            & .zigzag-image{
              right: -3em;
+             bottom: -2em;
            }
            & .zigzag-image-2{
              right: -1.6em;
+             bottom: -1em;
+           }
+           & .orange-circle{
+             bottom: -4em;
            }
            & .circles-image{
              width: 80%;
@@ -555,7 +664,7 @@ body.search{
          left: -1em;
          padding: 2em;
            & .box__title{
-                 font-size: 2.5rem;
+                 font-size: 3.5rem;
                }
                & .view-details-button{
                  font-size: 15px;
@@ -569,7 +678,7 @@ body.search{
                  left: -1.3em;
                    & .box__title {
 
-                       font-size: 2.5rem;
+                       font-size: 3.5rem;
 
                    }
                    & .view-details-button{
@@ -578,26 +687,27 @@ body.search{
                    }
                }
                & .product_image_desktop{
-                 bottom: -6em;
+                 // bottom: -6em;
                  left: 0;
                  top: unset;
                  & .wp-post-image{
                    height: 10em;
+                   // bottom: unset;
                  }
                  & .circles-image{
                    width: 80%;
-                   top: -3em;
+                   top: 5em;
                  }
                  & .zigzag-image{
                    right: 0em;
-                   bottom: 9em;
+                   bottom: -2em;
                  }
                  & .zigzag-image-2{
                    right: 1.5em;
-                   bottom: 8.5em;
+                   bottom: -1em;
                  }
                  & .orange-circle-image{
-                   bottom: 8em;
+                   bottom: -2em;
                  }
                  & .line-image{
                    height: 8em;
@@ -984,10 +1094,12 @@ body.search{
                   bottom: -5em;
                   & .wp-post-image{
                     height: 10em;
+                    bottom: unset;
                   }
                   & .line-image{
                     width: 6.5%;
                     top: -8em;
+                    top: -1em;
                     left: -0.2em;
                     transform: rotate(-6.5deg);
                   }
@@ -1372,10 +1484,13 @@ body.search{
                       top: unset;
                       & .wp-post-image{
                         height: 11em;
+                        bottom: unset;
+
                       }
                       & .line-image{
                         width: 7%;
                         top: -7em;
+                        top: -1em;
                         left: -0.2em;
                         transform: rotate(-5.5deg);
                       }
@@ -1471,10 +1586,13 @@ body.search{
                     top: unset;
                     & .wp-post-image{
                       height: 12em;
+                      bottom: unset;
+
                     }
                     & .line-image{
                       width: 5%;
                       top: -7em;
+                      top:-1em;
                       left: 0em;
                       transform: rotate(-7.5deg);
                     }
@@ -1565,10 +1683,13 @@ body.search{
                     top: unset;
                     & .wp-post-image{
                       height: 12em;
+                      bottom: unset;
+
                     }
                     & .line-image{
                       width: 5%;
                       top: -7em;
+                      top:-1em;
                       left: 0em;
                       transform: rotate(-7.5deg);
                     }
@@ -1689,10 +1810,12 @@ body.search{
                       & .wp-post-image{
                         height: 65%;
                         width: 100%;
+                        bottom: unset;
+
                       }
                       & .line-image{
                         width: 5.5%;
-                        top: -5.5em;
+                        top: 0.5em;
                         left: 0em;
                         transform: rotate(-8.5deg);
                       }
@@ -1807,10 +1930,13 @@ body.search{
                         & .wp-post-image{
                           height: 65%;
                           width: 100%;
+                          bottom: unset;
+
                         }
                         & .line-image{
                           width: 4.5%;
-                          top: -3.5em;
+                          top: 0.5em;
+                          height: 15em;
                         }
                         & .orange-circle-image{
                           bottom: 8em;
