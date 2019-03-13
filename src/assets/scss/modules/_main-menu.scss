@@ -11,6 +11,7 @@
     z-index: 6000;
     @media (max-width: 40em){
       flex-flow:column;
+      overflow-y:hidden;
     }
   }
   &__item {

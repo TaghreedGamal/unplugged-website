@@ -17,6 +17,8 @@
     }
     @media (max-width: 40em){
         right: 10px;
+        top: 0;
+        transform:scale(0.6);
     }
     }
 }
@@ -95,6 +97,10 @@
         top: 2%;  
         left: 33%;
         font-size: 1.9375rem;
+        @media (max-width: 40em){
+            font-size: 20px;
+            left: 33px;
+        }
     }
     .gform_body{
         width: 80% !important;
