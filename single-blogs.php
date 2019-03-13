@@ -35,9 +35,9 @@ get_header(); ?>
 							<h1 class="blog-post-title"><?php the_title(); ?></h1>
 							<div class="blog-post-info">
 								<div class="author-details">
-									Written By: <br> <span><?php the_field('author') ?>
+									Written By: <div><?php the_field('author') ?>
 										<?php if(get_field('author_job_title')): ?>
-											- <?php the_field('author_job_title'); endif;?></span>
+											- <?php the_field('author_job_title'); endif;?></div>
 								</div>
 								<div class="share-social-media">
 									Share on:
