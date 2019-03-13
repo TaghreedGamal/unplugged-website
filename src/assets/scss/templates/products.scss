@@ -1137,6 +1137,8 @@
               & .filter-menu-mobile{
                 display: block;
                 flex: 1;
+                border-bottom: 0;
+
                 // padding: 0 1em;
                 & .accordion-outer{
                   padding: 0.7rem 0.5rem;
