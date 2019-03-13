@@ -82,7 +82,6 @@ $('[close-menu]').on('click',function(){
 })
 
 
-
 if($(".home").length != 0){
     // console.log("home");
 
@@ -483,7 +482,7 @@ $(window).scroll(function() {
     if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
         aud.play();
         var video=new TimelineMax();
-        video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
+        video.to(".video-R",0.3,{x:20,opacity:1},0.1)
         .to(".video-L",0.3,{x:30,opacity:1},0.1)
         .to(".v-line",0.3,{x:0,opacity:1})
         .to(".v-line2",0.3,{x:0,opacity:1})

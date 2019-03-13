@@ -37,8 +37,7 @@
         <div class="contactCards-sectionTwo">
            <h5>Contact</h5>
            <p>info<span>@</span>unpluggedweb.com <br />
-               (+2) 12254575 <br />
-               (+2) 01273239777<br />
+               (+2) 01273238777<br />
            </p>
        </div>
        <div class="contactCards-sectionThree">
@@ -67,8 +66,8 @@
            <div class="small-12 cell">
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
-                <a class="button cont" href="https://unpluggedweb.com/careers/">Job Seeker </a>
-                <button  next-click class="button cont">Service Seeker</button>
+                <button  next-click class="button cont">Partner with us</button>
+                <a class="button cont" href="https://unpluggedweb.com/careers/">Join us</a>
             </div>
             </div>
         </div>
@@ -145,7 +144,7 @@
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog-min.png" alt="menu-blog">
         <div class="text-content">
-            <p>Blog</p>
+            <p>Reflections</p>
             <img class="mline"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
         </div>
        </a>

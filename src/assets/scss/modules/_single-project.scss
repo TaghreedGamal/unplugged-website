@@ -110,10 +110,12 @@
    			}
    			@media (max-width: 64em){
    				bottom: 55px;
+   				right: 75px;
    			}
    			@media (max-width: 40em){
    				bottom: 0;
    			}
+
    		}
    		@media (max-width: 64em){
    			&-image{
@@ -397,6 +399,7 @@
 		.two-parts-title{
 			font-size: 98px;
 			line-height: 1;
+			width: 60%;
 			@media (max-width: 64em){
 				font-size: 85px;
 			}

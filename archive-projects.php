@@ -54,11 +54,16 @@ get_header(); ?>
 			</div>
 			<div class="main-content__project-section">
 				<div class="scroll-posts cute_scroll" >
-					<?php $args = array('post_type' => 'projects', 'posts_per_page' =>-1, 'orderby' => 'id');
-                    $loop = new WP_Query( $args );
-                     if ( $loop -> have_posts() ) : ?>
-					<?php /* Start the Loop */ 
-                    while ( $loop->have_posts() ) : $loop->the_post();  ?>
+					<?php 
+					// $args = array('post_type' => 'projects', 'posts_per_page' =>-1, 'orderby' => 'id');
+     //                $loop = new WP_Query( $args );
+     //                 if ( $loop -> have_posts() ) :
+     //                while ( $loop->have_posts() ) : $loop->the_post(); 
+                     ?>
+                    <?php /* Start the Loop */ ?>
+					<?php if ( have_posts() ) : ?>
+						<?php /* Start the Loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
 					<div class="project-section__post">
 						<div class="project-section__post__box box">
 							<div class="project-section__post__box__image">
@@ -67,7 +72,7 @@ get_header(); ?>
 								<?php endif; ?>
 							</div>
 							<div class="project-section__post__box__content">
-								<h2 class="project-section__post__box__content__title box__title"><?php echo $i; the_title();?></h2>  
+								<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
 								<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
 								<div class="small-icon" id="post-icon">
 	                                <?php
@@ -75,9 +80,10 @@ get_header(); ?>
 		                                    while ( have_rows('services-icons') ) : the_row();
 		                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
 		                                <?php
-		                                    endwhile;
-		                                else :
-		                                endif;
+		                                 endwhile; 
+					    wp_reset_postdata(); ?>
+
+						<?php endif; // End have_posts() check. 
 	                                ?>
 								</div>      
 								<div class="grouped-buttons">

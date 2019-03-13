@@ -95,6 +95,7 @@ p{
 .two-parts-title{
     font-size: 95px;
     color:$title-color;
+    text-transform: capitalize;
     @media (max-width:1024px) and (min-width:768px) {
         font-size: 65px;
     }
@@ -116,3 +117,54 @@ p{
         margin-top: 20px;
     }
 }
+
+#container {
+ margin: 0%; width: 300px; height: 150px; top: 10%; right: -95%; position: relative;
+ @media (max-width: 64em){
+    display: none;
+ }
+ @media (max-width: 40em){
+    display: block;
+    width: 180px;
+    height: 100px;
+    top: -12px;
+    right: -180px;
+    transform: scale(0.5);
+ }
+ @media (width: 320px){
+    top: -35px ;
+ }
+}
+.scrollProd{
+    top: -130px !important;
+    right: -135% !important;
+    @media (max-width: 40em){
+        transform: scale(0.6);
+        top: 160px !important;
+        right: -170px !important;
+    }
+    @media (width: 320px){
+        right: -170px !important;
+        top: 110px !important;
+    }
+}
+#scrollCircle { position: absolute; width: 100%; padding-bottom: 100%; overflow: hidden;  }
+
+#scrollCircle text { font-family: $card-FrsHeader-font; font-size: 32px; font-weight: bold; }
+
+#scrollCircle svg
+ {  position: absolute; left: 0; top: 0;    
+    width: 250px;
+    height: 200px;
+    animation: rotate 5s infinite; 
+    animation-timing-function: linear;
+    @media (width: 320px){
+        width: 190px;
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+

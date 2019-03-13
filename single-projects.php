@@ -51,14 +51,26 @@ get_header(); ?>
 					    </div>
 				    </div>
 				     <div class="grouped-buttons">
-		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a> 
-		                <a class="button scroll" >Scroll for info.  
-		                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 13 16">
-						    <path fill="#F7F7F7" fill-rule="evenodd" d="M4.401 9.012H.923c-.537 0-.684.341-.33.76l5.16 5.912a.812.812 0 0 0 1.284 0l5.17-5.912c.355-.42.206-.76-.33-.76H8.4v-1c0-3.82-3.166-7.087-6.586-7.883a5.785 5.785 0 0 0-.77-.125c-.268-.03-.327.1-.139.291a11.46 11.46 0 0 1 3.5 7.719v1l-.005-.002z"/>
-						</svg>
-						</a> 
-	               	</div>
+		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a>
+		            </div>
+	                <div id="container">
+						<div id="scrollCircle">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+							    <defs>
+							        <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+							    </defs>
+							    <circle cx="150" cy="100" r="75" fill="none"/>
+							    <g>
+							        <use xlink:href="#circlePath" fill="none"/>
+							        <text fill="#000">
+							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll </textPath>
+							        </text>
+							    </g>
+							</svg>
+						</div>
+					</div>
 				</div>
+
 				<div class="main-content__project-image">
 					<?php if( get_field('project-img') ): ?>
 						<img src="<?php the_field('project-img'); ?>" />
@@ -100,8 +112,8 @@ get_header(); ?>
 		</svg>
 	</div>
 	<div class="project__Idea-content">
-		<h1 class="two-parts-title">The Idea</h1>
-		<p class="two-parts-text">What we aimed to assess is the old website, by analysing the data we received from the client then, proposing our possible solutions to the hurdles they demonstrated through a modern, user-friendly aesthetic design.</p>
+		<h1 class="two-parts-title"><?php echo get_field('project_section-1_title') ?></h1>
+		<p class="two-parts-text"><?php echo get_field('project_section-1_text') ?></p>
 		<div> 
            	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
@@ -200,10 +212,10 @@ get_header(); ?>
 
 	</div>
 	<div class="project__Final-content">
-		<h1 class="two-parts-title">Final Result</h1>
-		<p class="two-parts-text"><?php echo get_field('project_finalresult_content') ?></p>
+		<h1 class="two-parts-title"><?php echo get_field('project_section-3_title') ?></h1>
+		<p class="two-parts-text"><?php echo get_field('project_section-3_text') ?></p>
 		<div class='grouped-buttons'> 
-			<a class="button" href="<?php echo get_field('project_finalresult_link') ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
+			<a class="button" href="<?php echo get_field('project_section-3_link') ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
         </div>
 	</div>
 </div>
@@ -212,12 +224,12 @@ get_header(); ?>
 <!-- final testimonials -->
 <div class="project__Testimonial container two-parts" id="pIdea">
 	<div class="project__Testimonial-title">
-		<h1 class="two-parts-title">Final<br> Testimonial</h1>
+		<h1 class="two-parts-title"><?php echo get_field('project_section-4_title') ?></h1>
 	</div>
 	<div class="project__Testimonial-content">
 		<i class="fa fa-quote-left"></i>
-		<p class="two-parts-text"><?php echo get_field('project-testimonial') ?></p>
-		<p class="quote-teller"><?php echo get_field('project-testimonial-teller') ?></p>
+		<p class="two-parts-text"><?php echo get_field('project_section-4_text') ?></p>
+		<p class="quote-teller"><?php echo get_field('project_section-4_teller') ?></p>
 		<i class="fa fa-quote-right" aria-hidden="true"></i>
 	</div>
 </div>

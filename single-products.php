@@ -17,16 +17,16 @@ get_header(); ?>
 					<h1 class="title"><?php echo get_the_title();?></h1>
 					<div class="data">
 					  	<div class="technology">
-					  	   <p>Technologies used:</h4>
+					  	   <p>Description :</h4>
 					  	   <p class="technology-text"><?php echo get_the_content();?></p>
 					  	</div>
 					    <div class="services">
-					    	<p>services :</p>
+					    	<p>Technologies :</p>
 				    		<div class="small-icon">
                                 <?php
-                                if( have_rows('services-icons') ):
-                                    while ( have_rows('services-icons') ) : the_row();
-                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
+                                if( have_rows('technologies-icons') ):
+                                    while ( have_rows('technologies-icons') ) : the_row();
+                                        ?> <img src="<?php the_sub_field('technology-icon')?>">
                                 <?php
                                     endwhile;
                                 else :
@@ -37,18 +37,33 @@ get_header(); ?>
 					</div>
 					 <div class="grouped-buttons">
 		                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-		                <a class="button scroll" >Scroll for info.   
- 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 13 16">
-						    	<path fill="#F7F7F7" fill-rule="evenodd" d="M4.401 9.012H.923c-.537 0-.684.341-.33.76l5.16 5.912a.812.812 0 0 0 1.284 0l5.17-5.912c.355-.42.206-.76-.33-.76H8.4v-1c0-3.82-3.166-7.087-6.586-7.883a5.785 5.785 0 0 0-.77-.125c-.268-.03-.327.1-.139.291a11.46 11.46 0 0 1 3.5 7.719v1l-.005-.002z"/>
+		                <!-- <div class="arrow bounce scroll">
+						  <a class="fa fa-arrow-down fa-2x" ></a>
+						</div> -->
+					</div>
+		          
+	               <div id="container" class="scrollProd">
+						<div id="scrollCircle">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+							    <defs>
+							        <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+							    </defs>
+							    <circle cx="150" cy="100" r="75" fill="none"/>
+							    <g>
+							        <use xlink:href="#circlePath" fill="none"/>
+							        <text fill="#000">
+							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll </textPath>
+							        </text>
+							    </g>
 							</svg>
-		                </a> 
-	               	</div>
+						</div>
+					</div>
 				</div>
 				<div class="main-content__product-image">
 				  	<?php if(get_field('is_desktop')==true) : ?>
 						<div class="desktop-img">
 							<img src="<?php the_field('product_image')?>">
-							<svg class="line-image" xmlns="http://www.w3.org/2000/svg" width="123" height="330" viewBox="0 0 123 458">
+							<svg class="line-image" xmlns="http://www.w3.org/2000/svg" width="123" height="330" viewBox="0 0 1	23 458">
 							    <path fill="#31006D" fill-rule="nonzero" d="M21.394 9.244l5.204 26.493.578 2.944-5.887 1.156-.578-2.943L15.507 10.4 4.713 12.52l-2.944.578L.613 7.211l2.944-.579 27.475-5.396 2.944-.578 1.156 5.887-2.944.578-10.794 2.12zm80.212 439.512l-5.73-29.174-.579-2.944 5.888-1.156.578 2.944 5.73 29.174 10.794-2.12 2.944-.578 1.156 5.887-2.944.579-27.475 5.396-2.944.578-1.156-5.887 2.944-.578 10.794-2.12zM26.493 66.331l-.579-2.944 5.888-1.156.578 2.944 5.782 29.437.578 2.944-5.887 1.157-.579-2.944-5.781-29.438zm11.563 58.875l-.578-2.943 5.888-1.157.578 2.944 5.782 29.438.578 2.943-5.888 1.157-.578-2.944-5.782-29.438zm11.564 58.875l-.578-2.943 5.887-1.157.579 2.944 5.782 29.438.578 2.943-5.888 1.157-.578-2.944-5.782-29.438zm11.564 58.876l-.578-2.944 5.887-1.157.578 2.944 5.782 29.438.579 2.944-5.888 1.156-.578-2.944-5.782-29.437zm11.564 58.875l-.578-2.944 5.887-1.156.578 2.943 5.782 29.438.578 2.944-5.887 1.156-.578-2.944-5.782-29.437zm11.563 58.875l-.578-2.944 5.888-1.156.578 2.943 5.782 29.438.578 2.944-5.887 1.156-.579-2.944-5.782-29.437z"/>
 							</svg>
 							<svg  class="circles-image" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 176 175">
@@ -117,7 +132,7 @@ get_header(); ?>
 		<svg class="briefSCircle" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 80 80">
 		    <circle cx="503" cy="384" r="40" fill="#31006D" fill-rule="nonzero" transform="translate(-463 -344)"/>
 		</svg>
-		<img class="briefImg" src="<?php the_field('product_brief_img'); ?>" />
+		<img class="briefImg" src="<?php echo get_field('product_section-1_img')?>" />
 		<svg class="briefZigzag1" xmlns="http://www.w3.org/2000/svg" width="140" height="41" viewBox="0 0 177 41">
 		    <path fill="#EE7719" fill-rule="evenodd" d="M175.422 32.463c-8.012-7.24-13.785-15.91-18.683-25.585-1.314-2.6-4.334-2.853-6.65-1.79-12.08 5.542-20.43 16.04-30.638 24.241-4.855-5.451-9.417-11.198-14.291-16.627C101.845 9.004 94.919-.287 89.028.42 75.713 2.015 66.012 17.368 56.584 27.764 51.136 16.394 44.158-.221 31.67.002 16.585.27 10.115 20.05 1.336 29.804c-4.246 4.713 2.613 11.784 6.873 7.051 7.223-8.02 11.577-19.434 20.142-26.104 8.424-6.558 19.818 22.671 22.778 27.754 1.7 2.924 5.255 3.083 7.633 1.009 5.077-4.428 9.41-9.804 13.986-14.754 2.29-2.478 12.167-15.03 15.677-14.428 4.72.812 11.308 11.01 14.283 14.428 4.252 4.89 8.256 10.04 12.696 14.754 1.418 1.506 4.146 2.043 5.89.782 10.258-7.414 18.426-17.76 29.246-24.233 4.824 8.757 10.564 16.725 18.009 23.451 4.684 4.233 11.586-2.792 6.873-7.051"/>
 		</svg>
@@ -126,8 +141,8 @@ get_header(); ?>
 		</svg>
 	</div>
 	<div class="Product__brief-content">
-		<h1 class="two-parts-title">Product Brief</h1>
-		<p class="two-parts-text"><?php the_field('product_brief_text'); ?></p>
+		<h1 class="two-parts-title"><?php echo get_field('product_section-1_title')?></h1>
+		<p class="two-parts-text"><?php echo get_field('product_section-1_text')?></p>
 		<div> 
            	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
@@ -137,22 +152,22 @@ get_header(); ?>
 <!-- product background -->
 <div class="Product__background container two-parts" >
 	<div class="Product__background-content">
-		<h1 class="two-parts-title">Background</h1>
+		<h1 class="two-parts-title"><?php echo get_field('product_section-2_title')?></h1>
 		<div class="Product__background-image mobile">
-			<img src="<?php echo get_field('product_background_img')['bg-img']; ?>" />
-			<span class="image-title"><?php echo get_field('product_background_img')['bg-img-title']; ?></span>
+			<img src="<?php echo get_field('product_section-2_img')['bg-img']; ?>" />
+			<span class="image-title"><?php echo get_field('product_section-2_img')['bg-img-title']; ?></span>
 		</div>
-		<p class="two-parts-text"><?php the_field('product_background_text'); ?></p>
+		<p class="two-parts-text"><?php the_field('product_section-2_text'); ?></p>
 	</div>
 	<div class="Product__background-image desktop">
-		<img src="<?php echo get_field('product_background_img')['bg-img']; ?>" />
-		<span class="image-title"><?php echo get_field('product_background_img')['bg-img-title']; ?></span>
+		<img src="<?php echo get_field('product_section-2_img')['bg-img']; ?>" />
+		<span class="image-title"><?php echo get_field('product_section-2_img')['bg-img-title']; ?></span>
 	</div>
 </div>
 
 <!-- product concept -->
 <div class="Product__concept container two-parts" >
-	<h1 class="two-parts-title mobile">Product Concept</h1>
+	<h1 class="two-parts-title mobile"><?php echo get_field('product_section-3_title')?></h1>
 	<div class="Product__concept-image">
 			<?php if(get_field('is_desktop')==true) : ?>
 					<div class="desktop-img">
@@ -180,7 +195,7 @@ get_header(); ?>
 						<svg class="conceptZigzag-image-2" xmlns="http://www.w3.org/2000/svg" width="130" height="20" viewBox="0 0 70 16">
 						    <path fill="#ff7900" fill-rule="evenodd" d="M68.418 12.316C65.293 9.57 63.042 6.28 61.131 2.61c-.512-.986-1.69-1.082-2.593-.678-4.712 2.102-7.969 6.085-11.95 9.196-1.893-2.068-3.672-4.248-5.574-6.308C39.721 3.416 37.02-.109 34.723.16c-5.193.605-8.977 6.43-12.654 10.374C19.944 6.22 17.223-.084 12.352.001 6.469.102 3.945 7.607.522 11.307c-1.657 1.789 1.018 4.471 2.68 2.676 2.817-3.043 4.515-7.373 7.855-9.904 3.286-2.488 7.73 8.601 8.884 10.53.664 1.109 2.05 1.17 2.977.382 1.98-1.68 3.67-3.72 5.455-5.597.893-.94 4.746-5.702 6.114-5.474 1.842.308 4.41 4.177 5.571 5.474 1.659 1.855 3.22 3.81 4.952 5.597.553.572 1.617.775 2.297.297 4.001-2.813 7.187-6.738 11.407-9.194 1.881 3.322 4.12 6.346 7.024 8.897 1.826 1.606 4.518-1.06 2.68-2.675"/>
 						</svg>
-						<img class="concept-img" src="<?php the_field('product_concept_img')?>">
+						<img class="concept-img" src="<?php echo get_field('product_section-3_img')?>">
 					</div>
 				<?php else :?>
 					<div class="mobile-img">
@@ -208,13 +223,13 @@ get_header(); ?>
 						<svg class="conceptZigzag-image-2" xmlns="http://www.w3.org/2000/svg" width="130" height="20" viewBox="0 0 70 16">
 						    <path fill="#ff7900" fill-rule="evenodd" d="M68.418 12.316C65.293 9.57 63.042 6.28 61.131 2.61c-.512-.986-1.69-1.082-2.593-.678-4.712 2.102-7.969 6.085-11.95 9.196-1.893-2.068-3.672-4.248-5.574-6.308C39.721 3.416 37.02-.109 34.723.16c-5.193.605-8.977 6.43-12.654 10.374C19.944 6.22 17.223-.084 12.352.001 6.469.102 3.945 7.607.522 11.307c-1.657 1.789 1.018 4.471 2.68 2.676 2.817-3.043 4.515-7.373 7.855-9.904 3.286-2.488 7.73 8.601 8.884 10.53.664 1.109 2.05 1.17 2.977.382 1.98-1.68 3.67-3.72 5.455-5.597.893-.94 4.746-5.702 6.114-5.474 1.842.308 4.41 4.177 5.571 5.474 1.659 1.855 3.22 3.81 4.952 5.597.553.572 1.617.775 2.297.297 4.001-2.813 7.187-6.738 11.407-9.194 1.881 3.322 4.12 6.346 7.024 8.897 1.826 1.606 4.518-1.06 2.68-2.675"/>
 						</svg>
-						<img class="concept-img" src="<?php the_field('product_concept_img')?>">
+						<img class="concept-img" src="<?php echo get_field('product_section-3_img')?>">
 						    </div>
 					<?php endif; ?>	
 	</div>
 	<div class="Product__concept-content">
-		<h1 class="two-parts-title desktop">Product Concept</h1>
-		<p class="two-parts-text"><?php the_field('product_concept_text'); ?></p>
+		<h1 class="two-parts-title desktop"><?php echo get_field('product_section-3_title')?></h1>
+		<p class="two-parts-text"><?php echo get_field('product_section-3_text')?></p>
 	</div>
 </div>
 
@@ -306,7 +321,7 @@ get_header(); ?>
 						<svg class="finalSCircle" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80">
 						    <circle cx="503" cy="384" r="40" fill="#31006D" fill-rule="nonzero" transform="translate(-463 -344)"/>
 						</svg>
-						<img class="final-img" src="<?php the_field('product_final_img')?>">
+						<img class="final-img" src="<?php the_field('product_section-5_img')?>">
 					</div>
 				<?php else :?>
 					<div class="mobile-img">
@@ -331,13 +346,13 @@ get_header(); ?>
 						<svg class="finalSCircle" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80">
 						    <circle cx="503" cy="384" r="40" fill="#31006D" fill-rule="nonzero" transform="translate(-463 -344)"/>
 						</svg>
-						<img class="final-img" src="<?php the_field('product_final_img')?>">
+						<img class="final-img" src="<?php the_field('product_section-5_img')?>">
 						    </div>
 					<?php endif; ?>	
 	</div>
 	<div class="Product__final-content">
-		<h1 class="two-parts-title">Final Experience</h1>
-		<p class="two-parts-text"><?php the_field('product_final_text'); ?></p>
+		<h1 class="two-parts-title"><?php the_field('product_section-5_title')?></h1>
+		<p class="two-parts-text"><?php the_field('product_section-5_text')?></p>
 		<div class="grouped-buttons">
             <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
         </div>

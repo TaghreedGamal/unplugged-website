@@ -18,15 +18,15 @@ body{
         }
     }
 }
-.projects-template-default,.products-template-default{
-    header{
-        .top-bar-right{
-            .button{
-                display: none;
-            }
-        }
-    }
-}
+// .projects-template-default,.products-template-default{
+//     header{
+//         .top-bar-right{
+//             .button{
+//                 display: none;
+//             }
+//         }
+//     }
+// }
 .projects-template-default,.page-template-about-us{
     header{
          &.site-header{
@@ -921,7 +921,11 @@ button{
             left: 290px;
             @media (max-width: 64em){
                 opacity: 1 !important;
-                transform: translateX(-30px);
+                transform: translateX(-100px);
+            }
+            @media (max-width: 40em){
+                 transform: translateX(-200px);
+                 // left: 80px;
             }
         }
         .video-L{
@@ -971,7 +975,7 @@ button{
         .v-circle{
             height: 100px;
             width: 100px;
-            top: 82%;
+            top: 77%;
             left: -10px;
             z-index: -1;
             background-color:$orange-color;
@@ -1014,7 +1018,7 @@ button{
         .v-lcircle{
             height: 300px;
             width: 300px;
-            top: -18%;
+            top: -10%;
             left: 73%;
             border: 5px solid #000;
             position: absolute;
@@ -1041,34 +1045,62 @@ button{
             position: relative;
             display: block;
             z-index: 2;
+            width: 100%;
+            @media (max-width: 64em){
+                height: 500px;
+            }
+            @media (max-width: 40em){
+                height: 255px;
+            }
             @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                  margin-right: -20px;
+             }
+             @media (width: 320px){
+                height: 225px;
              }
         }
         .video-container{
             position: absolute;
             height: 80%;
             width: 40%;
-            right: 107px;
+            right: 125px;
             z-index: 10;
+            @media (max-width: 64em){
+                right: -100%;
+                width: 100%;
+                bottom: 130px;
+            }
+            @media (max-width: 40em){
+                bottom: 60px;
+            }
         }
         .mobile-video{
-                height: 100%;
-                width: 90%;
-                top: 0;
-                left: 12px;
-                position: absolute;
+            position: absolute;   
+            height: 90%;
+            width: 90%;
+            top: 15px;
+            left: 15px;
             @media(width: 1024px){
                 width: 89% !important;
                 left: 100% !important;
             }
             @media(max-width: 64em){
-               width: 90%;
-               left: 104%;
+                width: 95%;
+                left: 4px;
+                height: 415px;
+                top: 50px;
             }
              @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                 width: 41%;
                 left: 46%;
+             }
+             @media (max-width: 40em){
+                height: 200px;
+                top: 25px;
+             }
+             @media (width: 320px){
+                height: 200px;
+                top: 10px;
              }
         }
     }
@@ -1403,6 +1435,12 @@ button{
             }
         }
         &-content{
+            .slick-track{
+                height: 955px;
+                @media(max-width: 40em){
+                    height: 715px;
+                }
+            }
             .project-images {
                  @media (width: 1024px){
                     transform:scale(1.1) translateX(80px) !important;
@@ -1445,6 +1483,12 @@ button{
                     padding-top: 100px;
                     text-align: center;
                     border:2px solid;
+                    @media (max-width: 64em){
+                        margin-left: 105px;
+                    }
+                    @media (max-width: 40em){
+                        margin-left: 0;
+                    }
                    &__title{
                         color:$title-color;
                         font-family: $title-font;

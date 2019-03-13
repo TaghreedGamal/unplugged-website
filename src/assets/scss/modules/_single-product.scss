@@ -21,6 +21,10 @@
 	margin-right: 0 !important;
 	display: block;
 	&__product{
+		  #container {
+		    top: -25%;
+		    right: -65%;
+		  }
 		padding-top: 40px !important;
 		height: 80vh;
 		display: flex;
@@ -133,11 +137,14 @@
 	    				font-size: 18px;
 					}
 				}
+				@media (max-width: 64em){
+					justify-content:initial;
+				}
 				@media (max-width: 40em){
 					position: absolute;
-					bottom: 30px;
+					bottom: 5px;
 					width: 100%;
-					right: 0;
+					right: -15px;
 					.button{
 						width: 45%;
 						font-size: 14px !important;
