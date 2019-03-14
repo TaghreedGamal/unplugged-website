@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-
+ 
 <div class="single-blogs-page-container">
 
 	<!-- <div class="main-container">

@@ -13,8 +13,8 @@
           <!-- <div> -->
              <!-- <h3>Search Blogs</h3> -->
              <form role="search" class="search-bar" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
-             <input type="text" name="s" placeholder="Search"/>
-             <input type="hidden" name="post_type" value="blogs" /> <!-- // hidden 'products' value -->
+             <input type="text" name="s" placeholder="Search">
+             <input type="hidden" name="post_type" value="blogs"> <!-- // hidden 'products' value -->
              <button class="search-button"type="submit" alt="Search" value="Search">
               <img src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/search.svg" alt="">
             </button>
@@ -22,7 +22,7 @@
           <!-- </div> -->
 
           <div class="filter-menu filter-menu-mobile">
-  					 <ul class="accordion accordion-outer" data-accordion data-allow-all-closed="true">
+  					 <ul class="accordion accordion-outer" data-accordion data-allow-all-closed="true" data-multi-expand="true">
 
   					 	<li class="accordion-item" data-accordion-item>
   					 		<a href="#" class="accordion-title">Filter By</a>

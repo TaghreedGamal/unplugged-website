@@ -424,13 +424,13 @@
         border-bottom: 1px solid #e6e6e6;
         transition: border-bottom-color 0.3s linear;
 
-        &::placeholder{
-          color: $title-color;
-          letter-spacing: 0px;
-          font-family: $din-bold;
-          font-size: 1.7rem;
-          padding: 0 0.5rem;
-        }
+        // &::placeholder{
+        //   color: $title-color;
+        //   letter-spacing: 0px;
+        //   font-family: $din-bold;
+        //   font-size: 1.7rem;
+        //   padding: 0 0.5rem;
+        // }
         &:focus{
           border-bottom-color: $title-color;
           &::placeholder{
@@ -1849,9 +1849,9 @@
     & .main-content__filter-section{
       & .search-bar{
         & input{
-          &::placeholder{
-            font-size: 0.7rem;
-          }
+          // &::placeholder{
+          //   font-size: 0.7rem;
+          // }
         }
         & .search-button{
           margin-top: -1em;
