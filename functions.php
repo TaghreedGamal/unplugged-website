@@ -80,7 +80,7 @@ function create_post_type() {
    register_post_type( 'projects',
        array(
            'labels' => array(
-               'name' => __( 'Projects' ),
+               'name' => __( 'Portfolio' ),
                'singular_name' => __( 'Projects' )
                ),
            'public' => true,

@@ -13,7 +13,7 @@ get_header(); ?>
 		<main class="main-content main-content__project">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="main-content__project-content">
-					<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"class="close-page">&times</a>
+					<!-- <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"class="close-page">&times</a> -->
 					<?php get_template_part( 'template-parts/content', '' ); ?>
 					<div class="project-data">
 				    	<div class="project-data-category">
@@ -51,6 +51,7 @@ get_header(); ?>
 					    </div>
 				    </div>
 				     <div class="grouped-buttons">
+				     	 <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="button"><i class="fa fa-long-arrow-left"></i>  Back to Projects</a>
 		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a>
 		            </div>
 	                <div id="container">
@@ -63,7 +64,7 @@ get_header(); ?>
 							    <g>
 							        <use xlink:href="#circlePath" fill="none"/>
 							        <text fill="#000">
-							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll </textPath>
+							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll scroll </textPath>
 							        </text>
 							    </g>
 							</svg>

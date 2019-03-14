@@ -137,6 +137,7 @@ $('.clients').slick({
   slidesToShow: 4,
   autoplay:true,
   focusOnSelect: true,
+  speed: 800,
   responsive: [
     {
       breakpoint: 1000,

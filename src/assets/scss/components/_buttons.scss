@@ -38,7 +38,8 @@
             width:85%;
         }
         &.Address{
-        margin-left: auto
+        margin-left: auto;
+        margin-top: 50px;
         }
         &:active,&:hover {
         box-shadow: 0 5px #cdedfa59;
@@ -123,7 +124,7 @@
         display: flex;
         width: 48%;
         font-size: 15px;
-        justify-content: space-around;
+        justify-content: space-evenly;;
         @media (max-width: 64em){
             width: 40%;
         }
@@ -135,7 +136,7 @@
             font-size: 10.8px !important
         }
         &.home-btn{
-            font-size: 13.3px;
+            font-size: 15.3px;
         }
     }
     &.cards{

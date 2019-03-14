@@ -144,7 +144,7 @@
         <img  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="menu-blog">
         <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/menu_blog-min.png" alt="menu-blog">
         <div class="text-content">
-            <p>Reflections</p>
+            <p>Journal</p>
             <img class="mline"src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mline1.png">
         </div>
        </a>
@@ -171,11 +171,19 @@
     
     <?php 
       $parent = get_post_type( $post->ID );
+      // this for main pages
       if($parent == 'page'){
-        echo basename(get_permalink());
+        $title=  basename(get_permalink()); 
+        echo $title;
       }
       else {
-        echo $parent;
+        // this for post pages
+        if ($parent == 'projects'){
+          echo 'Portfolio';
+        }
+        else {
+          echo $parent;
+        }
       }
       
     ?>
