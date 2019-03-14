@@ -92,6 +92,7 @@
             // position: fixed;
             // left: 3em;
             // top: 0;
+
             & .search-bar{
               padding: 2em 0;
               display: flex;
@@ -101,11 +102,12 @@
                 border-bottom: 1px solid #e6e6e6;
                 transition: border-bottom-color 0.3s linear;
 
-                &::-webkit-input-placeholder{
+                &::placeholder{
                   color: $title-color;
                   letter-spacing: 1px;
-                  font-family: $din-bold;
-                  font-size: 1.2rem;
+                  font-family: $title-font;
+                  font-size: 1.7rem;
+                  line-height: 1.2;
                 }
                 &:focus{
                   border-bottom-color: $title-color;
@@ -116,7 +118,7 @@
               }
               & .search-button{
                 margin-left: -2em;
-                margin-top: -1.2em;
+                margin-top: -1em;
               & img{
                   width: 60%;
                 }
@@ -134,8 +136,10 @@
             width: auto;
             & h3{
               letter-spacing: 2px;
-              font-family: $din-bold;
-              font-size: 25px;
+              padding: 0 1rem;
+              font-size: 2rem;
+              // font-family: "DINCondensed-Bold";
+              // font-size: 25px;
             }
             & .accordion-title::before{
 
@@ -147,7 +151,7 @@
               content: '\d7';
             }
             & a{
-              font-family: 'DIN-Regular';
+              // font-family: 'DIN-Regular';
               font-size: 1.7rem;
               padding: 1.25rem 0.25rem;
               color: #aaa;
@@ -1150,7 +1154,7 @@
                     border-top: none;
 
                     color: $title-color;
-                    font-family: $din-bold;
+                    font-family: 'DINCondensed-Bold';
                     font-size: 1.2rem;
                     line-height: 0.4;
                     &:focus{
