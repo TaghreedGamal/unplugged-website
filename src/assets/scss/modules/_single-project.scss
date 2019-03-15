@@ -83,7 +83,7 @@
    		.grouped-buttons{
    			position: absolute;
    			bottom: 5%;
-   			width: 100%;
+   			width: 90%;
    			.button{
    				width:225px;
    				justify-content:space-evenly;
@@ -93,7 +93,7 @@
    					font-size: 18px !important;
    				}
    				@media (max-width: 40em){
-   					width: 45%;
+   					width: 60%;
 					font-size: 14px !important;
 					svg{
 						height: 14px;
@@ -110,10 +110,10 @@
    			}
    			@media (max-width: 64em){
    				bottom: 55px;
-   				right: 75px;
    			}
    			@media (max-width: 40em){
    				bottom: 0;
+   				width: 100%;
    			}
 
    		}

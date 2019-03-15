@@ -47,7 +47,7 @@ get_header(); ?>
 					?>   
 
 					<div class="filter-icons">
-						<button list-view><i class="fa fa-th-list"></i><p>Tile View</p></button> 
+						<button list-view class="defult-view"><i class="fa fa-th-list"></i><p>Tile View</p></button> 
 						<button grid-view><i class="fa fa-th-large"></i><p>Grid View</p></button> 
 					</div>
 				</div>

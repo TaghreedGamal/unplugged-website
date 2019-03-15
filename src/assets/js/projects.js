@@ -1,3 +1,5 @@
+console.log($('.scroll-posts').height());
+
 // List View
 $('[list-view]').on('click',function(){
 	$('.filter-icons button').css( "opacity",'0.3');
@@ -15,6 +17,7 @@ $('[grid-view]').on('click',function(){
   $('.filter-icons button').css("opacity",'0.3');
   $(this).fadeTo( "slow", $(this).css("opacity",'1'));
   $('.scroll-posts').addClass('grid-view');
+  $('button.defult-view').removeClass('defult-view');
 })
 $(".scroll").click(function() {
     // $('.remain-page').removeClass('hide-remainPage');

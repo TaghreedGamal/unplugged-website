@@ -36,8 +36,9 @@ get_header(); ?>
 					    </div>
 					</div>
 					 <div class="grouped-buttons">
-		                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-		                <!-- <div class="arrow bounce scroll">
+					 	<a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="button"><i class="fa fa-long-arrow-left"></i>  Back to Products</a>
+<!-- 		                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
+ -->		                <!-- <div class="arrow bounce scroll">
 						  <a class="fa fa-arrow-down fa-2x" ></a>
 						</div> -->
 					</div>
@@ -52,7 +53,7 @@ get_header(); ?>
 							    <g>
 							        <use xlink:href="#circlePath" fill="none"/>
 							        <text fill="#000">
-							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll </textPath>
+							            <textPath xlink:href="#circlePath">scroll scroll scroll scroll scroll</textPath>
 							        </text>
 							    </g>
 							</svg>
@@ -369,7 +370,7 @@ get_header(); ?>
 			</div>
 			<div class="product__footer-content">
 			 <h1 class="two-parts-title"><?php echo esc_attr( $next_post->post_title ); ?></h1>
-			 <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" class="button">Next project<i class="fa fa-long-arrow-right"></i></a>
+			 <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" class="button">Next Product<i class="fa fa-long-arrow-right"></i></a>
 			</div>
 		</div>
 <?php endif; ?>
