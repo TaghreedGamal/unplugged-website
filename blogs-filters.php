@@ -27,7 +27,18 @@
   					 	<li class="accordion-item" data-accordion-item>
   					 		<a href="#" class="accordion-title">Filter By</a>
   							<div class="accordion-content content-outer" data-tab-content>
+
                   <ul class="accordion" data-accordion data-allow-all-closed="true">
+                    <?php
+                    global $wp;
+
+                    $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+                    // echo $current_url;
+                    if(strpos($current_url,"year-category") or strpos($current_url,"blog_departments") ):?>
+
+                    <a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+
+                  <?php endif; ?>
                     <li class="accordion-item " data-accordion-item>
                       <a class="accordion-title" href="#">Years</a>
                       <div class="accordion-content" data-tab-content>
@@ -99,6 +110,15 @@
             </div>
           </li>
         </ul>
+        <?php
+        global $wp;
+
+        $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+        // echo $current_url;
+        if(strpos($current_url,"year-category") ||strpos($current_url,"blog_departments") ):?>
+        <a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+
+      <?php endif; ?>
       </div>
         </div>
     <div class="articles-container">
