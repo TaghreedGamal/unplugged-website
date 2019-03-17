@@ -181,6 +181,9 @@
         if ($parent == 'projects'){
           echo 'Portfolio';
         }
+        else if ($parent == 'blogs'){
+          echo 'Journal';
+        }
         else {
           echo $parent;
         }

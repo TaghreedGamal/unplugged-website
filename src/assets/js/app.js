@@ -423,7 +423,7 @@ var inl = new TimelineMax();
 inl.pause();
 
 $(window).scroll(function() {
-    var inter= $(".intern");
+    var inter= $(".blog");
     var top_of_element = inter.offset().top + 200;
     var bottom_of_element = inter.offset().top + inter.outerHeight();
     var top_of_screen = $(window).scrollTop();

@@ -82,7 +82,8 @@
     position: fixed !important;
     top:10%;
     @media (max-height: 60em){
-      top: 2%;
+      top: 3%;
+      margin-left: 10px;
     }
     @media (width: 320px){
       top: 1.2%;
