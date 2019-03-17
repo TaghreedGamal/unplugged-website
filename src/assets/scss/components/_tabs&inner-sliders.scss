@@ -74,6 +74,7 @@
 				left: 45% !important;
 				@media (max-width: 40em){
 					left: 33% !important;
+					width: 50% !important;
 				}
 			}
 			.allinone_carousel.charming .bottomNavButtonOFF {
@@ -103,5 +104,20 @@
 				}
 			}
 		}
+	}
+}
+@media (max-width: 40em){
+	.about-us__tabs {
+		.tabs{
+			li{
+				a{
+					font-size: 12px !important
+				}
+				>a[aria-selected='true'] {
+					font-size: 16px !important
+				}
+			}
+		}
+
 	}
 }

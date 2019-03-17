@@ -3,6 +3,7 @@ if($(".page-template-about-us").length != 0){
 	if(window.location.hash !== ''){
 		$('a[href="'+window.location.hash+'"]').trigger('click')
 	}
+	
 var line1 = $(".bottomZigzag-1 path"),
     length1 = line1[0].getTotalLength();
 var line2 = $(".bottomZigzag-2 path"),

@@ -52,7 +52,7 @@
         a{
           color: $opaque-color;
           font-size: 18px;
-          font-family:$main-font;
+          font-family:$filter-text;
           @media (max-width: 40em){
             font-size: 14px;
           }
