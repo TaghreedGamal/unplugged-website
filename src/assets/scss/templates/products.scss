@@ -180,6 +180,7 @@
                 color: #31006d;
                 font-size: 1.2rem;
                 text-decoration: underline;
+                display: block;
               }
             }
             & .accordion-content{
@@ -1169,6 +1170,8 @@
                   // font-family: $main-font;
                   &.reset-filters{
                     font-size: 0.7rem;
+                    display: block;
+                    padding: 0;
                   }
                 }
               }
