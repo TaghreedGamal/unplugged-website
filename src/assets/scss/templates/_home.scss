@@ -1156,18 +1156,18 @@ button{
         }
     }
 }
-//-------intern----
-.intern{
+//-------blog----
+.blog{
     height: auto;
     position: relative;
     padding-top: 320px;
     display: flex;
     justify-content:space-between;
-    .intern-left,.intern-right{
+    .blog-left,.blog-right{
         width: 50%;
         display: flex;
     }
-    .intern-right{
+    .blog-right{
          transform: translateY(120px);
     }
     .box{
@@ -1372,7 +1372,7 @@ button{
         }
     }
 @media (max-width: 64em){
-    .intern-right{
+    .blog-right{
          transform: translateY(0px);
     }
 
@@ -1384,10 +1384,10 @@ button{
     flex-flow:column;
     padding-top: 200px;
     padding-bottom: 20px;
-    .intern-left,.intern-right{
+    .blog-left,.blog-right{
         width: 100%;
     }
-    .intern-left{
+    .blog-left{
         margin-bottom: 50px;
         margin-top: 50px;
     }

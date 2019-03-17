@@ -66,6 +66,10 @@
 		    	strong{
 		    		font-size: 15px;
 		    	}
+		    	&-year{
+		    		color:$opaque-color !important;
+		    		margin-top: -8px;
+		    	}
 		    	display: flex;
 		    	&-category,&-date,&-services{
 		    		width: 33.3%;

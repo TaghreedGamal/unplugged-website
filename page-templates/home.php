@@ -991,10 +991,10 @@ get_header(); ?>
         </div>
 </section>
 
-<!--intern section -->
+<!--blog section -->
 <section>
-    <div class="intern container">
-        <div class="intern-left" id="inter1">
+    <div class="blog container">
+        <div class="blog-left" id="inter1">
                 <?php $image1 = get_field('left_image'); ?>
             <div class="box__img" id="box1-img" style="background-image:url(<?php echo $image1['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="left-boximgline-1"></div>
@@ -1014,7 +1014,7 @@ get_header(); ?>
                 <a href="<?php the_field('left_link'); ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
             </div>  
         </div>
-        <div class="intern-right" id="inter2">
+        <div class="blog-right" id="inter2">
             <?php $image2 = get_field('right_image'); ?>
             <div class="box__img" id="box2-img" style="background-image:url(<?php echo $image2['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="right-boximg2line-1"></div>    

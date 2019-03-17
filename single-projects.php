@@ -32,8 +32,8 @@ get_header(); ?>
 							</p>
 				    	</div>
 				    	<div class="project-data-date"><p>Year :</p>
-					    	<?php $date = get_field('project_date');
-					    	echo $date;?>
+					    	<p class="project-data-year"><?php $date = get_field('project_date');
+					    	echo $date;?></p>
 				    	</div>
 				    	<div class="project-data-services">
 					    	<p>services :</p>

@@ -27,7 +27,10 @@ get_header(); ?>
 					$taxonomyName = "projects_categories";
 				//This gets top layer terms only.  This is done by setting parent to 0.  
 					$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) ); 
-					echo '<ul class="accordion" id="filter-menu" data-accordion data-allow-all-closed="true">';
+					echo '<ul class="accordion" id="filter-menu" data-accordion data-allow-all-closed="true">';?>
+				     <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="reset-filters responsive">Reset</a>
+
+					<?php
 					foreach ( $parent_terms as $pterm ) {
 						$link = add_query_arg('projects_categories', $pterm->slug);
 					// echo($link); don't go to link
@@ -45,7 +48,7 @@ get_header(); ?>
 					}
 					echo '</ul>';
 					?>   
-
+					<a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="reset-filters">Reset</a>
 					<div class="filter-icons">
 						<button list-view class="defult-view"><i class="fa fa-th-list"></i><p>Tile View</p></button> 
 						<button grid-view><i class="fa fa-th-large"></i><p>Grid View</p></button> 
