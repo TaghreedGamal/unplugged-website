@@ -1490,6 +1490,7 @@ body.search{
                   }
                 }
                 & .filter-menu-mobile{
+                  // padding: 1.15em 1em;
                   & .accordion-outer{
                     & .accordion-title{
                       font-size: 0.7rem;
@@ -1530,7 +1531,8 @@ body.search{
               padding: 2em 1em;
               & .main-content__filter-section{
                 & .filter-menu-mobile{
-                  padding: 0.5em 1em;
+                  // padding: 0.5em 1em;
+                    padding: 1.15em 1em;
                   & .accordion-outer{
                     & .accordion-title{
                       padding: 1rem 1rem;
