@@ -124,6 +124,10 @@
                 }
               }
             }
+            & ul#filter-ul{
+              height: unset;
+              overflow: visible;
+            }
             & .filter-menu-mobile{
               display: none;
             }
@@ -152,6 +156,8 @@
             }
             & a{
               // font-family: 'DIN-Regular';
+              font-family: $main-font;
+
               font-size: 1.7rem;
               padding: 1.25rem 0.25rem;
               color: #aaa;
@@ -854,7 +860,7 @@
       text-align: left;
       & img{
       &.empty-rocket{
-        width: 30%;
+        width: 25%;
         left: 4.3em;
         top: 1.3em;
         z-index: -1;
@@ -863,13 +869,13 @@
       &.middle-rocket{
         position: relative;
         top: 2em;
-        right: 0.6em;
-        width: 35%;
+        right: -0em;
+        width: 30%;
       }
       &.last-rocket{
-        right: 5.1em;
+        right: 4.1em;
         bottom: -0.3em;
-        width: 34%;
+        width: 30%;
       }
     }
     }
@@ -1139,6 +1145,17 @@
               & .filter-menu-desktop{
                 display: none;
               }
+              & .filter-menu{
+                & a{
+                  padding: 1rem 0.25rem;
+                  font-family: $main-font;
+
+                }
+              }
+              & ul#filter-ul{
+                height: unset;
+                overflow: visible;
+              }
               & .filter-menu-mobile{
                 display: block;
                 flex: 1;
@@ -1146,7 +1163,7 @@
 
                 // padding: 0 1em;
                 & .accordion-outer{
-                  padding: 0.7rem 0.5rem;
+                  padding: 1.2rem 0.5rem;
                   position: relative;
                   border-bottom: 1px;
                   & .accordion-title{
@@ -1157,11 +1174,16 @@
                     font-family: 'DINCondensed-Bold';
                     font-size: 1.2rem;
                     line-height: 0.4;
+                    letter-spacing: 1px;
                     &:focus{
                       background-color: transparent;
                     }
                     &:focus-within{
                       background-color: transparent;
+                    }
+                    &:before{
+                      font-size: 1.5rem;
+                      top: 52%;
                     }
 
                   }
@@ -1169,7 +1191,7 @@
                       position: absolute;
                       border-bottom: none;
                       border:none;
-                      width: 91%;
+                      width: 82%;
                       & .accordion{
                         & .accordion-title{
                           font-size: 1rem;
@@ -1184,6 +1206,7 @@
                           border-bottom: none;
                           & a{
                             padding: 1.25rem 1rem;
+                            font-family: $main-font;
                           }
                         }
                       }

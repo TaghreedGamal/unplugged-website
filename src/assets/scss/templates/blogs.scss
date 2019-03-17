@@ -446,6 +446,10 @@
         }
       }
     }
+    & ul#filter-ul{
+      height: unset;
+      overflow: visible;
+    }
     & li.accordion-item
     {
       & a{
@@ -465,9 +469,12 @@
 
         & .accordion-item{
           // font-family: 'DIN-Regular';
+          letter-spacing: 1px;
+          font-family: $title-font;
           color: #aaaa;
           & .accordion-content{
             // font-family: $main-font;
+            font-family: 'DIN-Regular';
             color: #aaaa;
           }
         }
@@ -1236,7 +1243,7 @@
         text-align: unset;
         & img{
         &.typewriter{
-          width: 100%;
+          width: 90%;
           left: 0;
           top: -5em;
           right: unset;
@@ -1244,10 +1251,10 @@
           position: absolute;
         }
         &.blue-semi-circle-2{
-          top: -10em;
-          right: 6em;
+          top: -9em;
+          right: 8em;
           z-index: 0;
-          width: 60%;
+          width: 50%;
         }
         &.dark-blue-circle{
           top: -5em;
@@ -1524,6 +1531,10 @@
           }
         }
       }
+      & ul#filter-ul{
+        height: unset;
+        overflow: visible;
+      }
       & .filter-menu-desktop{
         display: none;
 
@@ -1548,7 +1559,8 @@
             border-top: none;
 
             color: $title-color;
-            font-family: $din-bold;
+            // font-family: $din-bold;
+            font-family: $title-font;
             font-size: 1.4rem;
             line-height: 0.4;
             display: flex;
@@ -1991,7 +2003,7 @@
         // font-size: 2.5rem;
         // padding: 0;
         // margin: auto;
-        margin-top: 1em;
+        margin-top: 0em;
         flex: unset;
       }
     }
@@ -2499,6 +2511,7 @@
                 text-align: center;
                 font-family: $main-font;
                 color: $indigo;
+                padding: 0.5rem 0;
               }
             }
           // }
@@ -2624,9 +2637,21 @@
         }
       }
     }
-    .blog-scrollButton{
-      .button.scroll-top{
-        bottom: 4%;
+    & .blog-scrollButton{
+      position: absolute;
+      bottom: 1rem;
+      background: $dark-nav-color;
+      border-radius: 50%;
+      padding: 0.2em 1em;
+      right: 0;
+      & .scroll-top{
+        // bottom: 4%;
+        // position: static;
+        font-size: 2rem;
+        color: white;
+        & i{
+          vertical-align: text-top;
+        }
       }
     }
   }

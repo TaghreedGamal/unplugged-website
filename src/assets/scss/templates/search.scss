@@ -1,6 +1,16 @@
 body.search{
   & #search-results{
     display: block;
+    & .load-more{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      width: 270px;
+    }
+    & .pagination{
+      display: none;
+    }
   }
   & .latest-articles-container{
     padding: 5em;
@@ -47,15 +57,21 @@ body.search{
         }
       }
     }
+    & ul#filter-ul{
+      height: unset;
+      overflow: visible;
+    }
   & .filter-menu{
     flex:1;
     position: unset;
     width: auto;
     & h3{
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
     & a{
       // font-family: 'DIN-Regular';
+      font-family: $main-font;
+
     }
   }
 }
@@ -269,6 +285,11 @@ body.search{
 //medium screens
 @media only screen and (min-width: 1340px) and (max-width:1520px){
   body.search{
+    & #search-results{
+    & .load-more{
+      font-size: 25px;
+    }
+  }
     & .latest-articles-container{
      & .articles-container{
       & .article{
@@ -948,6 +969,15 @@ body.search{
 @media only screen and (max-width: 1024px) {
 
     body.search{
+      & #search-results{
+      & .load-more{
+        display: block;
+        margin-right: auto !important;
+        margin: auto auto;
+        font-size: 20px;
+        width: 200px;
+      }
+    }
      & .main-container
     {
       & .main-grid {
@@ -976,6 +1006,10 @@ body.search{
                 }
               }
             }
+            & ul#filter-ul{
+              height: unset;
+              overflow: visible;
+            }
             & .filter-menu-desktop{
               display: none;
             }
@@ -987,9 +1021,23 @@ body.search{
               border-bottom: none;
 
                   & .accordion-outer{
+                      position: relative;
                     & .accordion-title{
-                      padding: 1rem 1rem;
-                          font-size: 1.2rem;
+                        position: relative;
+                    padding: 1rem 1rem;
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    line-height: 0.4;
+                    padding: 1.3rem 1rem;
+                    font-size: 1.4rem;
+                    letter-spacing: 1px;
+                    &::before{
+                      top: 52%;
+                    }
+                    }
+                    & .content-outer{
+                      position: absolute;
+                      width: 90%;
                     }
                   }
               & .accordion-title{
@@ -1006,6 +1054,13 @@ body.search{
               }
               & .accordion-content{
                 padding: 0;
+                & .accordion-title{
+                  font-family: $title-font;
+                }
+                & a{
+                      padding: 1.25rem 1rem;
+                      font-family: $main-font;
+                }
               }
             }
           }
@@ -1283,6 +1338,10 @@ body.search{
                       width: 65%;
                     }
                   }
+                }
+                & ul#filter-ul{
+                  height: unset;
+                  overflow: visible;
                 }
                 & .filter-menu-desktop{
                   display: none;

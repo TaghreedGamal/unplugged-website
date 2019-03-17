@@ -194,6 +194,8 @@ function load_posts(){
             }
             else{
               $(".latest-articles-section .load-more").remove();
+              $("#search-results .load-more").remove();
+
             }
 
               $(".load-more").attr("disabled",false);

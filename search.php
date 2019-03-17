@@ -28,6 +28,7 @@ get_header(); ?>
 		<?php endif; ?> -->
 		<?php if(get_query_var('post_type')=='blogs'):?>
 		<?php include 'blogs-filters.php' ?>
+		<a class="load-more button">Load More</a>
 	<?php else: include 'products-filters.php'; ?>
 	<?php endif; ?>
 
