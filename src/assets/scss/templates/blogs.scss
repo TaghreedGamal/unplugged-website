@@ -42,7 +42,7 @@
     & .blog-post-content{
       font-family: $main-font;
       color: #4a4a4a;
-      text-align: justify;
+      // text-align: justify;
       font-size: 1.4rem;
       margin: 1em 0;
 
@@ -194,6 +194,7 @@
       flex:1;
       font-size: 7rem;
       padding: 1.5em 0;
+      line-height: 1;
     }
     & .small-typewriter-container{
       // position: relative;
@@ -280,7 +281,7 @@
     font-size: 5rem;
     font-family: $din-bold;
     padding-left: 1em;
-    padding-top: 1em;
+    padding-top: 2em;
   }
   & .main-container{
     padding: 1em 0;
@@ -425,10 +426,10 @@
 
         &::placeholder{
           color: $title-color;
-          letter-spacing: 0px;
-          font-family: $din-bold;
+          letter-spacing: 1px;
+          font-family: $title-font;
           font-size: 1.7rem;
-          padding: 0 0.5rem;
+            line-height: 1.2;
         }
         &:focus{
           border-bottom-color: $title-color;
@@ -439,17 +440,22 @@
       }
       & .search-button{
         margin-left: -2em;
-        margin-top: -1.2em;
+        margin-top: -1em;
       & img{
           width: 60%;
         }
       }
     }
+    & ul#filter-ul{
+      height: unset;
+      overflow: visible;
+    }
     & li.accordion-item
     {
       & a{
-        font-family: $main-font;
+        // font-family: $main-font;
         font-size: 1.5rem;
+        // color: #aaaa;
       }
     }
     & .filter-menu{
@@ -462,10 +468,13 @@
       & .accordion{
 
         & .accordion-item{
-          font-family: 'DIN-Regular';
+          // font-family: 'DIN-Regular';
+          letter-spacing: 1px;
+          font-family: $title-font;
           color: #aaaa;
           & .accordion-content{
-            font-family: $main-font;
+            // font-family: $main-font;
+            font-family: 'DIN-Regular';
             color: #aaaa;
           }
         }
@@ -494,6 +503,11 @@
     & .blog-post-text{
       & .blog-post-content{
         font-size: 0.5rem;
+      }
+      & .author{
+        & .author-name{
+          font-size: 1.2rem;
+        }
       }
     }
     & .blog-post-text{
@@ -662,7 +676,9 @@
           }
         }
       }
-
+      & .load-more{
+        font-size: 25px;
+      }
     }
 
   }
@@ -1227,7 +1243,7 @@
         text-align: unset;
         & img{
         &.typewriter{
-          width: 100%;
+          width: 90%;
           left: 0;
           top: -5em;
           right: unset;
@@ -1235,10 +1251,10 @@
           position: absolute;
         }
         &.blue-semi-circle-2{
-          top: -10em;
-          right: 6em;
+          top: -9em;
+          right: 8em;
           z-index: 0;
-          width: 60%;
+          width: 50%;
         }
         &.dark-blue-circle{
           top: -5em;
@@ -1515,6 +1531,10 @@
           }
         }
       }
+      & ul#filter-ul{
+        height: unset;
+        overflow: visible;
+      }
       & .filter-menu-desktop{
         display: none;
 
@@ -1524,6 +1544,7 @@
         display: block;
         display: block;
         flex: 1;
+        border-bottom: 0;
       }
       & .filter-menu{
 
@@ -1538,7 +1559,8 @@
             border-top: none;
 
             color: $title-color;
-            font-family: $din-bold;
+            // font-family: $din-bold;
+            font-family: $title-font;
             font-size: 1.4rem;
             line-height: 0.4;
             display: flex;
@@ -1840,9 +1862,9 @@
     & .main-content__filter-section{
       & .search-bar{
         & input{
-          &::placeholder{
-            font-size: 0.7rem;
-          }
+          // &::placeholder{
+          //   font-size: 0.7rem;
+          // }
         }
         & .search-button{
           margin-top: -1em;
@@ -1981,7 +2003,7 @@
         // font-size: 2.5rem;
         // padding: 0;
         // margin: auto;
-        margin-top: 2em;
+        margin-top: 0em;
         flex: unset;
       }
     }
@@ -2427,7 +2449,7 @@
         font-size: 2rem;
         width: 50%;
         font-family: $main-font;
-        & span{
+        & div{
           font-family: $medium-font;
           color: $indigo;
           font-size: 1.7rem;
@@ -2489,6 +2511,7 @@
                 text-align: center;
                 font-family: $main-font;
                 color: $indigo;
+                padding: 0.5rem 0;
               }
             }
           // }
@@ -2614,9 +2637,21 @@
         }
       }
     }
-    .blog-scrollButton{
-      .button.scroll-top{
-        bottom: 4%;
+    & .blog-scrollButton{
+      position: absolute;
+      bottom: 1rem;
+      background: $dark-nav-color;
+      border-radius: 50%;
+      padding: 0.2em 1em;
+      right: 0;
+      & .scroll-top{
+        // bottom: 4%;
+        // position: static;
+        font-size: 2rem;
+        color: white;
+        & i{
+          vertical-align: text-top;
+        }
       }
     }
   }
@@ -2809,15 +2844,15 @@
        flex-wrap: nowrap;
        & .author-details, .share-social-media{
          width: 100%;
-         font-size: 1rem;
+         font-size: 1.5rem;
          padding: 1rem 0;
        }
        & .author-details{
          text-align: center;
-         & br{
-           display: none;
-         }
-         & span{
+         // & br{
+         //   display: none;
+         // }
+         & div{
            font-size: 1rem;
          }
        }

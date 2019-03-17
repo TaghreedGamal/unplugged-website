@@ -1,6 +1,16 @@
 body.search{
   & #search-results{
     display: block;
+    & .load-more{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      width: 270px;
+    }
+    & .pagination{
+      display: none;
+    }
   }
   & .latest-articles-container{
     padding: 5em;
@@ -30,6 +40,7 @@ body.search{
           letter-spacing: 1px;
           font-family: $title-font;
           font-size: 1.7rem;
+            line-height: 1.2;
         }
         &:focus{
           border-bottom-color: $title-color;
@@ -42,19 +53,25 @@ body.search{
         margin-left: -2em;
         margin-top: -1em;
       & img{
-          width: 90%;
+          width: 60%;
         }
       }
+    }
+    & ul#filter-ul{
+      height: unset;
+      overflow: visible;
     }
   & .filter-menu{
     flex:1;
     position: unset;
     width: auto;
     & h3{
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
     & a{
-      font-family: 'DIN-Regular';
+      // font-family: 'DIN-Regular';
+      font-family: $main-font;
+
     }
   }
 }
@@ -268,6 +285,11 @@ body.search{
 //medium screens
 @media only screen and (min-width: 1340px) and (max-width:1520px){
   body.search{
+    & #search-results{
+    & .load-more{
+      font-size: 25px;
+    }
+  }
     & .latest-articles-container{
      & .articles-container{
       & .article{
@@ -947,6 +969,15 @@ body.search{
 @media only screen and (max-width: 1024px) {
 
     body.search{
+      & #search-results{
+      & .load-more{
+        display: block;
+        margin-right: auto !important;
+        margin: auto auto;
+        font-size: 20px;
+        width: 200px;
+      }
+    }
      & .main-container
     {
       & .main-grid {
@@ -965,7 +996,8 @@ body.search{
               // width: 45%;
               & input::placeholder{
                 font-size: 1.4rem;
-                font-family: $din-bold;
+                // font-family: $din-bold;
+                  font-family: 'DINCondensed-Bold';
               }
               & .search-button{
                 margin-top: -1.5em;
@@ -973,6 +1005,10 @@ body.search{
                   width: 65%;
                 }
               }
+            }
+            & ul#filter-ul{
+              height: unset;
+              overflow: visible;
             }
             & .filter-menu-desktop{
               display: none;
@@ -982,15 +1018,33 @@ body.search{
               flex: 1;
               padding: 0 1em;
               padding: 0.5em 1em;
+              border-bottom: none;
+
                   & .accordion-outer{
+                      position: relative;
                     & .accordion-title{
-                      padding: 1rem 1rem;
+                        position: relative;
+                    padding: 1rem 1rem;
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    line-height: 0.4;
+                    padding: 1.3rem 1rem;
+                    font-size: 1.4rem;
+                    letter-spacing: 1px;
+                    &::before{
+                      top: 52%;
+                    }
+                    }
+                    & .content-outer{
+                      position: absolute;
+                      width: 90%;
                     }
                   }
               & .accordion-title{
                 border-top: none;
                 color: $title-color;
-                font-family: $din-bold;
+                // font-family: $din-bold;
+                  font-family: 'DINCondensed-Bold';
                 &:focus{
                   background-color: transparent;
                 }
@@ -1000,6 +1054,13 @@ body.search{
               }
               & .accordion-content{
                 padding: 0;
+                & .accordion-title{
+                  font-family: $title-font;
+                }
+                & a{
+                      padding: 1.25rem 1rem;
+                      font-family: $main-font;
+                }
               }
             }
           }
@@ -1268,7 +1329,8 @@ body.search{
                   // width: 45%;
                   & input::placeholder{
                     font-size: 1.4rem;
-                    font-family: $din-bold;
+                    // font-family: $din-bold;
+                    font-family: 'DINCondensed-Bold';
                   }
                   & .search-button{
                     margin-top: -1.5em;
@@ -1276,6 +1338,10 @@ body.search{
                       width: 65%;
                     }
                   }
+                }
+                & ul#filter-ul{
+                  height: unset;
+                  overflow: visible;
                 }
                 & .filter-menu-desktop{
                   display: none;
@@ -1286,6 +1352,7 @@ body.search{
                   display: block;
                   display: block;
                   flex: 1;
+                  border-bottom: none;
                 }
                 & .filter-menu{
 
@@ -1299,8 +1366,9 @@ body.search{
                       border-top: none;
 
                       color: $title-color;
-                      font-family: $din-bold;
-                      font-size: 1.4rem;
+                      //font-family: $din-bold;
+                      font-family: 'DINCondensed-Bold';
+                      font-size: 1.2rem;
                       line-height: 0.4;
                       display: flex;
                       justify-content: space-between;

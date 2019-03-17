@@ -35,9 +35,9 @@ get_header(); ?>
 							<h1 class="blog-post-title"><?php the_title(); ?></h1>
 							<div class="blog-post-info">
 								<div class="author-details">
-									Written By: <br> <span><?php the_field('author') ?>
+									Written By: <div><?php the_field('author') ?>
 										<?php if(get_field('author_job_title')): ?>
-											- <?php the_field('author_job_title'); endif;?></span>
+											- <?php the_field('author_job_title'); endif;?></div>
 								</div>
 								<div class="share-social-media">
 									Share on:
@@ -71,9 +71,13 @@ get_header(); ?>
 
 										<?php if(get_sub_field('right_aligned_image')['image']): ?>
 											<div class="subtopic subtopic-with-right-aligned-image">
+												<?php if(get_sub_field('subtopic_title')): ?>
 												<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+											<?php endif; ?>
 												<div class="subtopic-content">
+													<?php if(get_sub_field('subtopic_text')): ?>
 													<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+												<?php endif; ?>
 													<div class="subtopic-image">
 														<img class="right_aligned_image"src="<?php echo get_sub_field('right_aligned_image')['image']?>" alt="">
 														<span class="image-title"><?php echo get_sub_field('right_aligned_image')['title'] ?></span>
@@ -86,10 +90,13 @@ get_header(); ?>
 									<?php else: ?>
 										<?php  if(get_sub_field('large_bottom_aligned_image')['image']): ?>
 											<div class="subtopic subtopic-with-large-bottom-aligned-image">
-										<h4 class="subtopic-title"><?php the_sub_field('subtopic_title') ?></h4>
+												<?php if(get_sub_field('subtopic_title')): ?>
+												<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+											<?php endif; ?>
 										<div class="subtopic-content">
-										<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
-											<div class="subtopic-image">
+											<?php if(get_sub_field('subtopic_text')): ?>
+											<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+										<?php endif; ?>											<div class="subtopic-image">
 											<img class="large_bottom_aligned_image" src="<?php echo get_sub_field('large_bottom_aligned_image')['image']?>" alt="">
 											<span class="image-title"><?php echo get_sub_field('large_bottom_aligned_image')['title'] ?></span>
 											</div>
@@ -100,13 +107,17 @@ get_header(); ?>
 									<?php else: ?>
 										<?php  if(get_sub_field('large_top_aligned_image')['image']): ?>
 											<div class="subtopic subtopic-with-large-top-aligned-image">
+												<?php if(get_sub_field('subtopic_title')): ?>
 												<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+											<?php endif; ?>
 												<div class="subtopic-content">
 												<div class="subtopic-image">
 												<img class="large_top_aligned_image" src="<?php echo get_sub_field('large_top_aligned_image')['image']?>" alt="" >
 												<span class="image-title"><?php echo get_sub_field('large_top_aligned_image')['title'] ?></span>
 												</div>
+												<?php if(get_sub_field('subtopic_text')): ?>
 												<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+											<?php endif; ?>
 												</div>
 											</div>
 
@@ -115,10 +126,14 @@ get_header(); ?>
 									<?php else: ?>
 										<?php if(get_sub_field('small_images')): ?>
 												<div class="subtopic subtopic-with-several-images">
-												<h4 class="subtopic-title"><?php  the_sub_field('subtopic_title') ?></h4>
+													<?php if(get_sub_field('subtopic_title')): ?>
+													<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+												<?php endif; ?>
 												<div class="subtopic-content">
-													<div class="subtopic-text"><?php  the_sub_field('subtopic_text') ?></div>
-													<div class="subtopic-images">
+													<?php if(get_sub_field('subtopic_text')): ?>
+													<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+												<?php endif; ?>
+												<div class="subtopic-images">
 												<?php while(have_rows('small_images')): the_row(); ?>
 													<div class="subtopic-image">
 													<img class="small_images small_images_aligned" alt="" src="<?php echo get_sub_field('small_image')['image'] ?>">
@@ -134,9 +149,13 @@ get_header(); ?>
 										<?php else: ?>
 											<?php if(get_sub_field('quote')['text']): ?>
 													<div class="subtopic subtopic-with-quote">
+														<?php if(get_sub_field('subtopic_title')): ?>
 														<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+													<?php endif; ?>
 														<div class="subtopic-content">
+															<?php if(get_sub_field('subtopic_text')): ?>
 															<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+														<?php endif; ?>
 															<div class="quote">
 																<img class="open-quote mark"src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/blogs/open-quotation.svg" alt="">
 																<h2 class="quote-text"><?php echo get_sub_field('quote')['text'] ?></h2>
@@ -147,8 +166,12 @@ get_header(); ?>
 											</div>
 										<?php else: ?>
 											<div class="subtopic">
-											<h4 class="subtopic-title"><?php the_sub_field('subtopic_title') ?></h4>
+												<?php if(get_sub_field('subtopic_title')): ?>
+												<h4 class="subtopic-title"> <?php the_sub_field('subtopic_title') ?></h4>
+											<?php endif; ?>
+											<?php if(get_sub_field('subtopic_text')): ?>
 											<div class="subtopic-text"><?php the_sub_field('subtopic_text') ?></div>
+										<?php endif; ?>
 											</div>
 											<?php endif; ?>
 											<!--  quote-->
@@ -182,7 +205,7 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="blog-scrollButton">
-						<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
+						<a class=" scroll-top" ><i class="fa fa-angle-up"></i></a>
 					</div>
 				</div>
 				<div class="blog-controls">
