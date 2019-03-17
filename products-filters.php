@@ -69,8 +69,7 @@
 
 										$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
 										// echo $current_url;
-										if(strpos($current_url,"products_categories")):?>
-
+										if(strpos($current_url,"products_categories")): ?>
 										<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
 
 									<?php endif; ?>

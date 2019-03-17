@@ -1078,6 +1078,12 @@ body.search{
                       padding: 1.25rem 1rem;
                       // font-family: $main-font;
                         font-family: 'Cabin-Regular';
+                        &.reset-filters{
+                          display: block;
+                          color: #31006d;
+                          font-size: 0.7rem;
+                            padding: 1rem 0;
+                        }
                 }
               }
             }
@@ -1375,6 +1381,14 @@ body.search{
                 & .filter-menu{
 
                   // padding: 0 1em;
+                  & a{
+                    &.reset-filters{
+                      display: block;
+                      color: #31006d;
+                      font-size: 0.7rem;
+                      padding: 1rem 0;
+                    }
+                  }
                   & .accordion-outer{
                     padding: 0.7rem 0.5rem;
                     position: relative;
