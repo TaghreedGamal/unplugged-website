@@ -225,12 +225,17 @@
 						font-family: $medium-font;
 						margin-bottom: 0;
 					}
+					@media (max-width: 40em){
+						opacity: 1;
+						z-index: 2;
+					}
 				}
 				@media (max-width: 60em){
 					width: 45%;
 				}
 				@media (max-width: 40em){
 					width: 100%;
+					margin-bottom: 70px;
 				}
 			}
 		}

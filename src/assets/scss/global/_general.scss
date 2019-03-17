@@ -148,6 +148,10 @@ p{
         right: -170px !important;
         top: 110px !important;
     }
+    @media (width: 414px){
+        top: 250px !important;
+        right: -240px !important;
+    }
 }
 #scrollCircle { position: absolute; width: 100%; padding-bottom: 100%; overflow: hidden;  }
 

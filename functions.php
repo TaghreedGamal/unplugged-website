@@ -414,4 +414,13 @@ function load_posts_by_ajax_callback() {
 
 }
 
+function set_posts_per_page( $query ) {
+  if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'projects' ) ) {
+    $query->set( 'posts_per_page', '-1' );
+        $query->set( 'order', 'ASC' );
+
+  }
+}
+add_action( 'pre_get_posts', 'set_posts_per_page' );
+
 ?>
