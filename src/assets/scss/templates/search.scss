@@ -70,7 +70,8 @@ body.search{
     }
     & a{
       // font-family: 'DIN-Regular';
-      font-family: $main-font;
+      // font-family: $main-font;
+        font-family: 'Cabin-Regular';
 
     }
   }
@@ -291,6 +292,14 @@ body.search{
     }
   }
     & .latest-articles-container{
+      & .main-content__filter-section{
+        width: 18%;
+        & .filter-menu{
+          & a{
+            font-size: 1.4rem;
+          }
+        }
+      }
      & .articles-container{
       & .article{
        & .featured-articles-slide{
@@ -305,6 +314,14 @@ body.search{
 
 
     & .products-filters{
+      & .main-content__filter-section{
+        width: 18%;
+        & .filter-menu{
+          & a{
+            font-size: 1.4rem;
+          }
+        }
+      }
  & .products-whole-section{
  &  .product-section  {
    & .product-section__post__image{
@@ -1059,7 +1076,8 @@ body.search{
                 }
                 & a{
                       padding: 1.25rem 1rem;
-                      font-family: $main-font;
+                      // font-family: $main-font;
+                        font-family: 'Cabin-Regular';
                 }
               }
             }

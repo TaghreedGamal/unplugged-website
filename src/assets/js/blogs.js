@@ -137,11 +137,12 @@ blog_content_animation.play();
 
 
 var blog_controls_animation = new TimelineMax();
-blog_controls_animation.from('.blog-controls .next-post .zigzag-1', 0.5,{y:50, opacity:0},1)
-                     .from('.blog-controls .next-post .zigzag-2', 0.5,{y:50, opacity:0},1)
-                     .from('.blog-controls .next-post .zigzag-3', 0.5,{y:50, opacity:0},1)
-                     .from('.blog-controls .next-post .zigzag-4', 0.5,{y:50, opacity:0},1)
+blog_controls_animation.from('.blog-controls .next-post .zigzag-1', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-2', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-3', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .next-post .zigzag-4', 0.3,{y:20, opacity:0},1)
 blog_controls_animation.pause();
+
 $(window).scroll(function() {
   var blog_controls= $(".blog-controls");
   if(blog_controls.length!=0){
@@ -151,10 +152,45 @@ $(window).scroll(function() {
   var top_of_screen = $(window).scrollTop();
   var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
   if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
-        blog_controls_animation.play();
+
+    blog_controls_animation.play();
+
       }
     }
 });
+
+// $('.blog-controls .next-post .post-image').hover( function(){
+//         blog_controls_animation.play();
+// })
+
+
+var blog_controls_prev_animation = new TimelineMax();
+blog_controls_prev_animation.from('.blog-controls .previous-post .zigzag-1', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .previous-post .zigzag-2', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .previous-post .zigzag-3', 0.3,{y:20, opacity:0},1)
+                     .from('.blog-controls .previous-post .zigzag-4', 0.3,{y:20, opacity:0},1)
+                     blog_controls_prev_animation.pause();
+
+$(window).scroll(function() {
+var blog_controls= $(".blog-controls");
+if(blog_controls.length!=0){
+  var top_of_element = blog_controls.offset().top;
+  var bottom_of_element = blog_controls.offset().top + blog_controls.outerHeight();
+  var top_of_screen = $(window).scrollTop();
+  var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+      if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+
+         blog_controls_prev_animation.play();
+
+        }
+      }
+   });
+// blog_controls_prev_animation.pause();
+// $('.blog-controls .previous-post .post-image').hover( function(){
+//         blog_controls_prev_animation.play();
+// })
+
+
 
 
 //

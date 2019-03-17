@@ -42,7 +42,15 @@
 				echo '</ul></div></li>';
 			}
 			echo '</ul>';
-			?>
+			// global $wp;
+			global $wp;
+
+			$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+			// echo $current_url;
+			if(strpos($current_url,"products_categories")):?>
+			<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+
+		<?php endif; ?>
     </div>
 				<div class="filter-menu filter-menu-mobile">
 					 <ul class="accordion accordion-outer" data-accordion data-allow-all-closed="true">
@@ -55,7 +63,18 @@
 									$taxonomyName = "products_categories";
 								//This gets top layer terms only.  This is done by setting parent to 0.
 									$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
-									echo '<ul class="accordion" data-accordion data-allow-all-closed="true">';
+									echo '<ul class="accordion" data-accordion data-allow-all-closed="true">';?>
+										<?php
+										global $wp;
+
+										$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+										// echo $current_url;
+										if(strpos($current_url,"products_categories")):?>
+
+										<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+
+									<?php endif; ?>
+										<?php
 									foreach ( $parent_terms as $pterm ) {
 										$link = add_query_arg('products_categories', $pterm->slug);
 									// echo($link); don't go to link

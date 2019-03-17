@@ -221,7 +221,23 @@ get_header(); ?>
 						<?php
 						$prevPost = get_previous_post();
 						$prevThumbnail = get_the_post_thumbnail( $prevPost->ID );
-						echo "<div class='previous-post-image post-image'>";previous_post_link( '%link', $prevThumbnail);echo "</div>";
+						echo "<div class='previous-post-image post-image'>";previous_post_link( '%link', $prevThumbnail);
+
+						// echo "<div class='next-post-image post-image'>";next_post_link( '%link', $nextThumbnail);
+						echo "<img class='zigzag zigzag-1' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-2' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-3' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+						echo "<img class='zigzag zigzag-4' src='";
+						echo get_stylesheet_directory_uri();
+						echo "/src/assets/images/blogs/fill-1.svg' alt=''>";
+
+						echo "</div>";
  						?>
 						</div>
 					<?php endif; ?>
