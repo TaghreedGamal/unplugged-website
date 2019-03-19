@@ -112,11 +112,11 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="product-section">
-					<div class="product-section__post__image">
+					<!-- <div class="product-images"> -->
 
 
             <?php if(get_field('is_desktop')==true) : ?>
-            <div class="product_image_desktop">
+            <div class="product-images-desktop">
 
 
             <?php
@@ -131,13 +131,13 @@
               </svg> -->
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
-            <div class="product-info-desktop box">
+            <div class="product-info box">
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
                     <a class="box__title"href="#"><?php the_title(); ?></a>
               <a class="view-details-button button"href="<?php the_permalink(); ?>">View details <i class="icon-right"></i> </a>
             </div>
           <?php else : ?>
-            <div class="product_image">
+            <div class="product-images">
 
 
             <?php
@@ -149,6 +149,7 @@
               <img class="zigzag-image" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
               <img class="zigzag-image-2" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/zigzag.svg" alt="">
             </div>
+											<!-- </div> -->
             <div class="product-info box">
               <!-- <?php get_template_part( 'template-parts/content', get_post_format() ); ?> -->
               <a class="box__title"href="#"><?php the_title(); ?></a>
@@ -157,9 +158,6 @@
           <?php endif; ?>
 
 
-
-
-					</div>
 
 				</div>
 
