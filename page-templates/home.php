@@ -5,7 +5,7 @@ Template Name: Home
 get_header(); ?>
 <section class="home-slider">
     <div class="home-slider__sliders">
-        <div class="home-slider__sliders__singleSlider" >   
+        <div class="home-slider__sliders__singleSlider" >
         <div class="container">
             <div class="Stitle1">
                 <h1 class="hi1">We are fun, flexible, & </h1>
@@ -13,7 +13,7 @@ get_header(); ?>
             <div class="Stitle4">
                 <h1 class="hi1"> Innovative People!</h1>
             </div>
-            <div class="img1"> 
+            <div class="img1">
                 <img class="fun1 zoom "  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner1">
                 <img class="fun2 fadeInUp"  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/fun-2-min.png" alt="banner1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="fun3"  x="0px" y="0px" width="132.333px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="home-slider__sliders__singleSlider" >   
+    <div class="home-slider__sliders__singleSlider" >
     <div class="container">
         <div class="img1">
             <img class="flex1 zoom2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/flex1.png" alt="banner2">
@@ -52,7 +52,7 @@ get_header(); ?>
             <img class="fline1 show11" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/short_line.png" alt="banner1">
             <img class="fline2 show22" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/sshort_line.png" alt="banner1">
         </div>
-        
+
         <div class="img2">
             <img class="flex4 zoom2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/flex4.png" alt="banner2">
             <img class="flex5 fadeInUp2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/flex5.png" alt="banner2">
@@ -63,7 +63,7 @@ get_header(); ?>
             <path opacity="0" fill="none" stroke="#FF7900" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289  c0.063,3.031,4.576,4.074,6.22,1.719c4.909-7.04,13.724-9.59,17.799-17.446"/>
             </svg>
         </div>
-        
+
         <div class="img3">
             <img class="flex7 zoom2" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner2">
             <img class="flex8 fadeInUp2 " src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/flex-8-min.png" alt="banner2">
@@ -72,10 +72,10 @@ get_header(); ?>
             <img class="fline2 show22" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/short_line1X.png" alt="banner1">
         </div>
     </div>
-</div>    
-        
+</div>
 
-<div class="home-slider__sliders__singleSlider" >       
+
+<div class="home-slider__sliders__singleSlider" >
     <div class="container">
         <div class="img1">
             <img class="inv1 zoom3" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/inv1.png" alt="banner3">
@@ -90,7 +90,7 @@ get_header(); ?>
             <img class="inline1 show111" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/inlong_line.png" alt="banner1">
             <img class="inv6 bouncess3" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/small_circle.png" alt="banner3">
             <img class="inline2 show222" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/sshort_line.png" alt="banner1">
-        </div>          
+        </div>
         <div class="img3">
             <img class="inv7 zoom3" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner3">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="inv9"  x="0px" y="0px" width="132.333px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
@@ -102,13 +102,13 @@ get_header(); ?>
             </svg>
         </div>
     </div>
-</div> 
-      
+</div>
+
 <div class="slider__dots">
     <div class="dot1"></div>
     <div class="dot2"></div>
     <div class="dot3"></div>
-</div> 
+</div>
 </div>
 </section>
 <section class="home-slider__responsive">
@@ -134,19 +134,19 @@ get_header(); ?>
             <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6-min.png" alt=""></div>
         </div>
       </div>
-  </div> 
+  </div>
 </section>
 
 <!--partners section -->
 <section class="partners">
     <div class="container">
         <div class="partners__logos">
-            <h3 class="section-titles">Clients that put there trust in us!</h3>    
-            <div class="clients"> 
+            <h3 class="section-titles">Clients that put there trust in us!</h3>
+            <div class="clients">
                 <?php
                 if( have_rows('slider') ):
                 while ( have_rows('slider') ) : the_row();?>
-                  <div class="clients__slide"> 
+                  <div class="clients__slide">
                     <div class="shadow">
                       <div class="logos">
                     <?php $image = get_sub_field('logos');?>
@@ -158,7 +158,7 @@ get_header(); ?>
                     endwhile;
                 else :
                 endif;
-                ?>    
+                ?>
             </div>
         </div>
     </div>
@@ -170,7 +170,7 @@ get_header(); ?>
      <div class="services-responsive container">
         <h3 class="section-titles">Our services</h3>
         <div class="services-slider">
-            <div class="services-slider-titles"> 
+            <div class="services-slider-titles">
                     <div><h3>UI / UX</h3></div>
                     <div><h3>Development</h3></div>
                     <div><h3>Mobile Apps</h3></div>
@@ -207,16 +207,16 @@ get_header(); ?>
                         </g>
                         <image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-min.png" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
                        </g>
-                        </g>  
+                        </g>
                         </svg>
                         <div class="box">
-                          <h1 class="box__title">UI / UX</h1>  
-                          <p class="box__text"><?php the_field('design_text'); ?> </p>    
+                          <h1 class="box__title">UI / UX</h1>
+                          <p class="box__text"><?php the_field('design_text'); ?> </p>
                           <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a> 
+                            <a class="button">Download Profile</a>
                           </div>
-                        </div> 
+                        </div>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="servimg different-position"  x="0px" y="0px" width="700px" height="700px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
@@ -224,11 +224,11 @@ get_header(); ?>
                     <g id="Layer_2">
                     <circle class="serv-cir" fill="#003A48" cx="327.616" cy="453.155" r="53.155"/>
                     <path class="serv-cir" id="XMLID_1_" fill="#55BBEB" d="M416.952,257.324c0.089-21.999,8.04-41.006,23.612-56.473   c0.055-0.064,0.108-0.105,0.163-0.153c0.301-0.527,0.61-1.029,0.896-1.56c0.177-0.294,0.225-0.636,0.076-0.965   c-0.312-0.684-0.624-1.374-0.972-2.067c-6.011-11.906-13.499-22.823-22.397-32.757c-8.326-9.279-17.627-17.478-27.957-24.504   c-14.744-10.034-30.735-17.292-47.996-21.754c-7.377-1.892-14.839-3.232-22.41-4.043c-3.203-0.332-6.406-0.561-9.604-0.728   c-6.927-0.374-13.86-0.134-20.768,0.451c-0.091,0.012-0.172,0.012-0.254,0.023c-3.351,0.451-6.717,0.78-10.052,1.297   c-6.682,1.065-13.264,2.537-19.746,4.472c-11.309,3.343-22.079,7.948-32.331,13.784c-15.272,8.685-28.684,19.68-40.21,32.923   c-9.373,10.786-17.113,22.637-23.156,35.583c-3.69,7.893-6.705,16.051-8.964,24.472c-1.793,6.706-3.202,13.452-4.041,20.359   c-0.084,0.636-0.144,1.284-0.222,1.934c-0.379,3.804-1.735,19.807,0.089,36.74c0.121,0.982,0.25,1.975,0.383,2.953   c0.589,4.443,1.419,8.852,2.423,13.204c2.528,10.994,6.147,21.589,10.967,31.789c6.257,13.227,14.205,25.328,23.905,36.297   c8.438,9.542,17.901,17.943,28.425,25.105c12.65,8.646,26.295,15.237,40.932,19.746c6.468,1.99,13.026,3.562,19.703,4.65   c2.501,0.405,5.002,0.822,7.529,1.069c2.607,0.249,5.2,0.636,7.809,0.755c4.819,0.231,9.624,0.461,14.449,0.231   c3.293-0.146,6.576-0.199,9.865-0.504c4.041-0.398,8.051-0.929,12.059-1.56c6.513-1.062,12.911-2.599,19.218-4.509   c10.466-3.168,20.488-7.4,30.045-12.721c11.661-6.487,22.304-14.344,31.938-23.558c2.276-2.177,4.465-4.431,6.594-6.737V257.324z"/>
-                    
+
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="3.4611" stroke-miterlimit="10" x1="229.352" y1="329.272" x2="481.594" y2="582.56"/>
-                    
+
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="3.4611" stroke-miterlimit="10" x1="198.446" y1="317.825" x2="450.688" y2="571.114"/>
-                    
+
                     <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="612" height="558" xlink:href= "<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/web-development-min.png" transform="matrix(0.8537 0 0 0.8537 128.7642 180.5005)">
                     </image>
                     <path class="serv-draw" fill="#EE771A" d="M487.744,182.762c-4.688-4.129-8.062-9.073-10.93-14.59c-0.771-1.482-2.535-1.626-3.891-1.02   c-7.066,3.159-11.951,9.146-17.924,13.824c-2.841-3.11-5.509-6.385-8.359-9.484c-1.938-2.107-5.992-7.406-9.438-7.003   c-7.789,0.91-13.464,9.666-18.979,15.593c-3.188-6.48-7.27-15.957-14.574-15.829c-8.825,0.153-12.609,11.432-17.746,16.995   c-2.483,2.688,1.527,6.721,4.021,4.021c4.227-4.575,6.771-11.082,11.783-14.884c4.928-3.742,11.592,12.926,13.324,15.824   c0.996,1.668,3.074,1.758,4.466,0.576c2.97-2.525,5.505-5.59,8.181-8.414c1.34-1.414,7.119-8.57,9.172-8.228   c2.763,0.462,6.615,6.28,8.354,8.228c2.488,2.788,4.829,5.727,7.429,8.414c0.829,0.858,2.426,1.164,3.445,0.445   c6.001-4.229,10.777-10.127,17.107-13.818c2.822,4.994,6.181,9.537,10.535,13.374C486.464,189.195,490.501,185.191,487.744,182.762   z"/>
@@ -252,11 +252,11 @@ get_header(); ?>
                         </g>
                         </svg>
                         <div class="box">
-                          <h1 class="box__title"><span>Development<span></h1>  
-                          <p class="box__text"><?php the_field('development_text'); ?> </p>    
+                          <h1 class="box__title"><span>Development<span></h1>
+                          <p class="box__text"><?php the_field('development_text'); ?> </p>
                           <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a> 
+                            <a class="button">Download Profile</a>
                           </div>
                          </div>
                     </div>
@@ -268,10 +268,10 @@ get_header(); ?>
                     <line class="serv-draw" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="129.772" y1="168.369" x2="388.992" y2="428.663"/>
                     <path class="serv-draw" fill="#31006D" d="M533.107,669.344c-3.321-2.925-5.713-6.428-7.745-10.339c-0.546-1.05-1.796-1.151-2.757-0.723  c-5.008,2.238-8.469,6.481-12.702,9.795c-2.013-2.203-3.903-4.524-5.924-6.719c-1.374-1.494-4.246-5.249-6.688-4.964  c-5.52,0.646-9.541,6.849-13.449,11.049c-2.259-4.594-5.15-11.309-10.327-11.218c-6.255,0.107-8.937,8.103-12.575,12.043  c-1.76,1.904,1.082,4.763,2.85,2.85c2.994-3.241,4.798-7.853,8.35-10.549c3.492-2.649,8.215,9.162,9.442,11.216  c0.706,1.183,2.179,1.246,3.165,0.407c2.104-1.788,3.9-3.962,5.797-5.963c0.949-1.001,5.045-6.073,6.5-5.828  c1.957,0.326,4.688,4.448,5.92,5.828c1.764,1.978,3.422,4.06,5.265,5.963c0.587,0.608,1.719,0.825,2.441,0.315  c4.253-2.995,7.638-7.177,12.124-9.792c1.999,3.539,4.379,6.76,7.465,9.477C532.2,673.905,535.061,671.065,533.107,669.344z"/>
                     <circle class="serv-line" fill="#003A47" cx="588.809" cy="539.887" r="86.592"/>
-                    
+
                     <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4500" height="4500" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mobile-applications.png" transform="matrix(0.1372 0 0 0.1372 110.1533 100.9941)">
-                    </image>    
-                
+                    </image>
+
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="497.073" y1="457.485" x2="724.746" y2="686.102"/>
                     <path class="serv-line" fill="#31006D" d="M533.107,651.898c-3.322-2.926-5.714-6.43-7.746-10.339c-0.545-1.051-1.796-1.152-2.756-0.723  c-5.008,2.239-8.47,6.482-12.702,9.797c-2.013-2.204-3.903-4.524-5.924-6.722c-1.374-1.493-4.247-5.247-6.688-4.962  c-5.52,0.645-9.541,6.85-13.449,11.05c-2.259-4.593-5.15-11.308-10.327-11.217c-6.255,0.107-8.937,8.101-12.576,12.043  c-1.76,1.904,1.083,4.763,2.851,2.85c2.994-3.243,4.798-7.854,8.35-10.548c3.492-2.651,8.215,9.16,9.441,11.214  c0.707,1.182,2.18,1.246,3.166,0.408c2.104-1.789,3.9-3.961,5.797-5.963c0.949-1.002,5.045-6.073,6.5-5.83  c1.957,0.327,4.688,4.45,5.92,5.83c1.764,1.977,3.422,4.059,5.264,5.963c0.588,0.608,1.72,0.825,2.442,0.315  c4.253-2.997,7.638-7.177,12.123-9.793c2,3.539,4.38,6.759,7.466,9.479C532.2,656.457,535.061,653.62,533.107,651.898z"/>
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85.582" y1="147.13" x2="284.23" y2="346.603"/>
@@ -291,14 +291,14 @@ get_header(); ?>
                         <path fill="#EE771A" d="M660.637,355.555c-15.48-5.055-23.964-21.759-18.91-37.235c5.053-15.477,21.758-23.956,37.239-18.9   c15.474,5.052,23.952,21.753,18.899,37.231C692.812,352.126,676.11,360.607,660.637,355.555z M676.637,306.553   c-11.548-3.77-24.008,2.554-27.777,14.097c-3.769,11.542,2.56,24.001,14.106,27.771c11.541,3.768,23.996-2.558,27.766-14.1   C694.501,322.778,688.177,310.321,676.637,306.553z"/>
                     </g>
                     </svg>
-            
+
                   <div class="box">
-                      <h1 class="box__title">Mobile <span>Applications</span></h1>  
-                      <p class="box__text"><?php the_field('app_text'); ?> </p>    
+                      <h1 class="box__title">Mobile <span>Applications</span></h1>
+                      <p class="box__text"><?php the_field('app_text'); ?> </p>
                       <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a> 
-                      </div> 
+                        <a class="button">Download Profile</a>
+                      </div>
                   </div>
                 </div>
                 <div>
@@ -321,12 +321,12 @@ get_header(); ?>
                 </svg>
                 <!--          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">-->
                     <div class="box">
-                      <h1 class="box__title">E- <span>Commerce</span></h1>  
-                      <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>    
+                      <h1 class="box__title">E- <span>Commerce</span></h1>
+                      <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>
                       <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a> 
-                      </div> 
+                        <a class="button">Download Profile</a>
+                      </div>
                     </div>
                 </div>
                 <div>
@@ -349,12 +349,12 @@ get_header(); ?>
                 </g>
                 </svg>
                     <div class="box">
-                        <h1 class="box__title">Data <span>Analytics</span></h1>  
-                        <p class="box__text"><?php the_field('analytics_text'); ?> </p>    
+                        <h1 class="box__title">Data <span>Analytics</span></h1>
+                        <p class="box__text"><?php the_field('analytics_text'); ?> </p>
                         <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a> 
-                      </div>  
+                            <a class="button">Download Profile</a>
+                      </div>
                     </div>
                 </div>
                 <div>
@@ -394,13 +394,13 @@ get_header(); ?>
                 </g>
                 </svg>
                     <div class="box">
-                        <h1 class="box__title">Hosting & <span>Maintenance</span></h1>  
-                        <p class="box__text"><?php the_field('hosting_text'); ?> </p>    
+                        <h1 class="box__title">Hosting & <span>Maintenance</span></h1>
+                        <p class="box__text"><?php the_field('hosting_text'); ?> </p>
                         <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a> 
-                      </div> 
-                </div> 
+                            <a class="button">Download Profile</a>
+                      </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -412,7 +412,7 @@ get_header(); ?>
     <div class="services-tabs container">
         <div class="services-tabs__list">
             <h3 class="section-titles">Our services</h3>
-            <ul class="vertical tabs" data-tabs id="example-tabs"> 
+            <ul class="vertical tabs" data-tabs id="example-tabs">
             <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">UI / UX</a></li>
             <li class="tabs-title"><a href="#panel2v">Development</a></li>
             <li class="tabs-title"><a href="#panel3v">Mobile Apps</a></li>
@@ -450,29 +450,29 @@ get_header(); ?>
                     </g>
                     <image xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="serv-img" overflow="visible" width="1024" height="1024" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/design-min.png" transform="matrix(0.6650 0 0 0.6899 60.2832 46.771)"></image>
                    </g>
-                    </g>  
+                    </g>
                     </svg>
                 <div class="box">
-                  <h1 class="box__title">UI / UX</h1>  
-                  <p class="box__text"><?php the_field('design_text'); ?> </p>    
+                  <h1 class="box__title">UI / UX</h1>
+                  <p class="box__text"><?php the_field('design_text'); ?> </p>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a> 
+                    <a class="button">Download Profile</a>
                   </div>
-                </div> 
+                </div>
             </div>
-              
+
             <div class="tabs-panel" data-service="develop" id="panel2v">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="servimg different-position"  x="0px" y="0px" width="700px" height="700px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
 
             <g id="Layer_2">
                 <circle class="serv-cir" fill="#003A48" cx="327.616" cy="453.155" r="53.155"/>
                 <path class="serv-cir" id="XMLID_1_" fill="#55BBEB" d="M416.952,257.324c0.089-21.999,8.04-41.006,23.612-56.473   c0.055-0.064,0.108-0.105,0.163-0.153c0.301-0.527,0.61-1.029,0.896-1.56c0.177-0.294,0.225-0.636,0.076-0.965   c-0.312-0.684-0.624-1.374-0.972-2.067c-6.011-11.906-13.499-22.823-22.397-32.757c-8.326-9.279-17.627-17.478-27.957-24.504   c-14.744-10.034-30.735-17.292-47.996-21.754c-7.377-1.892-14.839-3.232-22.41-4.043c-3.203-0.332-6.406-0.561-9.604-0.728   c-6.927-0.374-13.86-0.134-20.768,0.451c-0.091,0.012-0.172,0.012-0.254,0.023c-3.351,0.451-6.717,0.78-10.052,1.297   c-6.682,1.065-13.264,2.537-19.746,4.472c-11.309,3.343-22.079,7.948-32.331,13.784c-15.272,8.685-28.684,19.68-40.21,32.923   c-9.373,10.786-17.113,22.637-23.156,35.583c-3.69,7.893-6.705,16.051-8.964,24.472c-1.793,6.706-3.202,13.452-4.041,20.359   c-0.084,0.636-0.144,1.284-0.222,1.934c-0.379,3.804-1.735,19.807,0.089,36.74c0.121,0.982,0.25,1.975,0.383,2.953   c0.589,4.443,1.419,8.852,2.423,13.204c2.528,10.994,6.147,21.589,10.967,31.789c6.257,13.227,14.205,25.328,23.905,36.297   c8.438,9.542,17.901,17.943,28.425,25.105c12.65,8.646,26.295,15.237,40.932,19.746c6.468,1.99,13.026,3.562,19.703,4.65   c2.501,0.405,5.002,0.822,7.529,1.069c2.607,0.249,5.2,0.636,7.809,0.755c4.819,0.231,9.624,0.461,14.449,0.231   c3.293-0.146,6.576-0.199,9.865-0.504c4.041-0.398,8.051-0.929,12.059-1.56c6.513-1.062,12.911-2.599,19.218-4.509   c10.466-3.168,20.488-7.4,30.045-12.721c11.661-6.487,22.304-14.344,31.938-23.558c2.276-2.177,4.465-4.431,6.594-6.737V257.324z"/>
-                
+
                 <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="3.4611" stroke-miterlimit="10" x1="229.352" y1="329.272" x2="481.594" y2="582.56"/>
-                
+
                 <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="3.4611" stroke-miterlimit="10" x1="198.446" y1="317.825" x2="450.688" y2="571.114"/>
-                
+
                 <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="612" height="558" xlink:href= "<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/web-development-min.png" transform="matrix(0.8537 0 0 0.8537 128.7642 180.5005)">
                 </image>
                 <path class="serv-draw" fill="#EE771A" d="M487.744,182.762c-4.688-4.129-8.062-9.073-10.93-14.59c-0.771-1.482-2.535-1.626-3.891-1.02   c-7.066,3.159-11.951,9.146-17.924,13.824c-2.841-3.11-5.509-6.385-8.359-9.484c-1.938-2.107-5.992-7.406-9.438-7.003   c-7.789,0.91-13.464,9.666-18.979,15.593c-3.188-6.48-7.27-15.957-14.574-15.829c-8.825,0.153-12.609,11.432-17.746,16.995   c-2.483,2.688,1.527,6.721,4.021,4.021c4.227-4.575,6.771-11.082,11.783-14.884c4.928-3.742,11.592,12.926,13.324,15.824   c0.996,1.668,3.074,1.758,4.466,0.576c2.97-2.525,5.505-5.59,8.181-8.414c1.34-1.414,7.119-8.57,9.172-8.228   c2.763,0.462,6.615,6.28,8.354,8.228c2.488,2.788,4.829,5.727,7.429,8.414c0.829,0.858,2.426,1.164,3.445,0.445   c6.001-4.229,10.777-10.127,17.107-13.818c2.822,4.994,6.181,9.537,10.535,13.374C486.464,189.195,490.501,185.191,487.744,182.762   z"/>
@@ -495,17 +495,17 @@ get_header(); ?>
                 <path class="serv-draw" fill="#EE771A" d="M187.366,271.17c-3.26-2.87-5.607-6.308-7.602-10.147c-0.536-1.03-1.764-1.13-2.706-0.709   c-4.915,2.197-8.312,6.361-12.466,9.613c-1.976-2.162-3.831-4.44-5.814-6.594c-1.348-1.466-4.167-5.152-6.563-4.872   c-5.417,0.633-9.364,6.722-13.199,10.844c-2.218-4.509-5.056-11.098-10.136-11.01c-6.138,0.106-8.77,7.952-12.342,11.819   c-1.727,1.869,1.062,4.674,2.797,2.796c2.939-3.181,4.709-7.707,8.195-10.352c3.428-2.602,8.062,8.991,9.267,11.007   c0.693,1.16,2.138,1.223,3.106,0.399c2.065-1.755,3.828-3.888,5.689-5.852c0.932-0.982,4.952-5.96,6.379-5.72   c1.921,0.32,4.601,4.366,5.811,5.72c1.73,1.94,3.358,3.984,5.167,5.852c0.577,0.598,1.687,0.811,2.396,0.311   c4.174-2.94,7.496-7.044,11.898-9.61c1.963,3.473,4.299,6.633,7.327,9.3C186.475,275.646,189.283,272.86,187.366,271.17z"/>
                 </g>
                 </svg>
-               
+
               <div class="box">
-                  <h1 class="box__title"><span>Development<span></h1>  
-                  <p class="box__text"><?php the_field('development_text'); ?> </p>    
+                  <h1 class="box__title"><span>Development<span></h1>
+                  <p class="box__text"><?php the_field('development_text'); ?> </p>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a> 
+                    <a class="button">Download Profile</a>
                   </div>
               </div>
             </div>
-              
+
             <div class="tabs-panel" data-service="app" id="panel3v">
                 <svg class="servimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="445.032" y1="428.362" x2="688.452" y2="672.793"/>
@@ -514,10 +514,10 @@ get_header(); ?>
                     <line class="serv-draw" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="129.772" y1="168.369" x2="388.992" y2="428.663"/>
                     <path class="serv-draw" fill="#31006D" d="M533.107,669.344c-3.321-2.925-5.713-6.428-7.745-10.339c-0.546-1.05-1.796-1.151-2.757-0.723  c-5.008,2.238-8.469,6.481-12.702,9.795c-2.013-2.203-3.903-4.524-5.924-6.719c-1.374-1.494-4.246-5.249-6.688-4.964  c-5.52,0.646-9.541,6.849-13.449,11.049c-2.259-4.594-5.15-11.309-10.327-11.218c-6.255,0.107-8.937,8.103-12.575,12.043  c-1.76,1.904,1.082,4.763,2.85,2.85c2.994-3.241,4.798-7.853,8.35-10.549c3.492-2.649,8.215,9.162,9.442,11.216  c0.706,1.183,2.179,1.246,3.165,0.407c2.104-1.788,3.9-3.962,5.797-5.963c0.949-1.001,5.045-6.073,6.5-5.828  c1.957,0.326,4.688,4.448,5.92,5.828c1.764,1.978,3.422,4.06,5.265,5.963c0.587,0.608,1.719,0.825,2.441,0.315  c4.253-2.995,7.638-7.177,12.124-9.792c1.999,3.539,4.379,6.76,7.465,9.477C532.2,673.905,535.061,671.065,533.107,669.344z"/>
                     <circle class="serv-line" fill="#003A47" cx="588.809" cy="539.887" r="86.592"/>
-                    
+
                     <image class="serv-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible" width="4500" height="4500" xlink:href="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mobile-applications.png" transform="matrix(0.1372 0 0 0.1372 110.1533 100.9941)">
-                    </image>    
-                
+                    </image>
+
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="497.073" y1="457.485" x2="724.746" y2="686.102"/>
                     <path class="serv-line" fill="#31006D" d="M533.107,651.898c-3.322-2.926-5.714-6.43-7.746-10.339c-0.545-1.051-1.796-1.152-2.756-0.723  c-5.008,2.239-8.47,6.482-12.702,9.797c-2.013-2.204-3.903-4.524-5.924-6.722c-1.374-1.493-4.247-5.247-6.688-4.962  c-5.52,0.645-9.541,6.85-13.449,11.05c-2.259-4.593-5.15-11.308-10.327-11.217c-6.255,0.107-8.937,8.101-12.576,12.043  c-1.76,1.904,1.083,4.763,2.851,2.85c2.994-3.243,4.798-7.854,8.35-10.548c3.492-2.651,8.215,9.16,9.441,11.214  c0.707,1.182,2.18,1.246,3.166,0.408c2.104-1.789,3.9-3.961,5.797-5.963c0.949-1.002,5.045-6.073,6.5-5.83  c1.957,0.327,4.688,4.45,5.92,5.83c1.764,1.977,3.422,4.059,5.264,5.963c0.588,0.608,1.72,0.825,2.442,0.315  c4.253-2.997,7.638-7.177,12.123-9.793c2,3.539,4.38,6.759,7.466,9.479C532.2,656.457,535.061,653.62,533.107,651.898z"/>
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="85.582" y1="147.13" x2="284.23" y2="346.603"/>
@@ -538,15 +538,15 @@ get_header(); ?>
                     </g>
                     </svg>
               <div class="box">
-                  <h1 class="box__title">Mobile <span>Applications</span></h1>  
-                  <p class="box__text"><?php the_field('app_text'); ?> </p>    
+                  <h1 class="box__title">Mobile <span>Applications</span></h1>
+                  <p class="box__text"><?php the_field('app_text'); ?> </p>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a> 
-                  </div> 
+                    <a class="button">Download Profile</a>
+                  </div>
               </div>
             </div>
-              
+
             <div class="tabs-panel" data-service="ecom" id="panel4v">
                 <svg xmlns="http://www.w3.org/2000/svg" class="servimg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" style="top: -30px;"> <g>
                 <circle class="serv-cir" fill="none" stroke="#003A47" stroke-width="7.517" stroke-miterlimit="10" cx="209.054" cy="584.212" r="102.231"/>
@@ -567,12 +567,12 @@ get_header(); ?>
                 </svg>
                 <!--          <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/basket-ecommerce.png">-->
                 <div class="box">
-                  <h1 class="box__title">E- <span>Commerce</span></h1>  
-                  <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>    
+                  <h1 class="box__title">E- <span>Commerce</span></h1>
+                  <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a> 
-                  </div> 
+                    <a class="button">Download Profile</a>
+                  </div>
                 </div>
             </div>
             <div class="tabs-panel" id="panel5v" data-service="Analytics">
@@ -596,12 +596,12 @@ get_header(); ?>
                 </g>
                 </svg>
                 <div class="box">
-                    <h1 class="box__title">Data <span>Analytics</span></h1>  
-                    <p class="box__text"><?php the_field('analytics_text'); ?> </p>    
+                    <h1 class="box__title">Data <span>Analytics</span></h1>
+                    <p class="box__text"><?php the_field('analytics_text'); ?> </p>
                     <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a> 
-                  </div>  
+                        <a class="button">Download Profile</a>
+                  </div>
                 </div>
             </div>
             <div class="tabs-panel" data-service="host" id="panel6v">
@@ -641,13 +641,13 @@ get_header(); ?>
                 </g>
                 </svg>
                 <div class="box">
-                    <h1 class="box__title">Hosting & <span>Maintenance</span></h1>  
-                    <p class="box__text"><?php the_field('hosting_text'); ?> </p>    
+                    <h1 class="box__title">Hosting & <span>Maintenance</span></h1>
+                    <p class="box__text"><?php the_field('hosting_text'); ?> </p>
                     <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a> 
-                  </div> 
-                </div>    
+                        <a class="button">Download Profile</a>
+                  </div>
+                </div>
             </div>
         </div>
          </div>
@@ -661,7 +661,7 @@ get_header(); ?>
 
         <rect class="card" x="306.593" y="139.691" fill="#F7F7F7" width="622.278" height="730.832"/>
         <path class="card" d="M937.007,878.659h-638.55V131.556h638.55V878.659z M314.729,862.388h606.007V147.827H314.729V862.388z"/>
-        
+
         <rect class="cardl" x="93.591" y="768.354" transform="matrix(0.7071 0.7071 -0.7071 0.7071 666.3942 -55.8596)" fill="#3BBAEE" width="614.071" height="16.27"/>
         <path class="kora" fill="#31006D" d="M397.436,719.021c0,14.393-2.758,28.24-8.268,41.54c-5.506,13.3-13.352,25.039-23.528,35.216  c-10.182,10.178-21.921,18.023-35.216,23.533c-13.301,5.506-27.148,8.263-41.545,8.263c-14.396,0-28.24-2.757-41.539-8.263  c-13.301-5.51-25.039-13.355-35.221-23.533c-10.177-10.177-18.019-21.916-23.528-35.216s-8.263-27.147-8.263-41.54  c0-14.396,2.753-28.244,8.263-41.544s13.352-25.038,23.528-35.216c10.182-10.182,21.92-18.023,35.221-23.533  c13.299-5.51,27.144-8.263,41.539-8.263c14.396,0,28.244,2.753,41.545,8.263c13.295,5.51,25.034,13.352,35.216,23.533  c10.177,10.178,18.022,21.916,23.528,35.216C394.678,690.777,397.436,704.626,397.436,719.021z"/>
         <rect class="datacard" x="178.886" y="733.541" fill="#FFFFFF" width="622.274" height="172.099"/>
@@ -682,8 +682,8 @@ get_header(); ?>
         <path class="datacard" d="M596.646,854.888c0-3.472-1.085-6.376-3.302-8.311c-1.708-1.541-3.817-2.451-7.579-3.019l-4.608-0.684  c-1.883-0.286-3.535-0.969-4.561-1.883c-1.08-0.965-1.533-2.276-1.533-3.758c0-3.587,2.618-6.32,7.405-6.32  c3.416,0,6.315,0.743,8.826,3.134l3.925-3.873c-3.472-3.245-7.229-4.611-12.585-4.611c-8.429,0-13.554,4.838-13.554,11.901  c0,3.301,0.97,5.863,2.964,7.746c1.764,1.648,4.385,2.789,7.687,3.241l4.787,0.684c2.391,0.342,3.416,0.743,4.44,1.712  c1.081,0.966,1.594,2.447,1.594,4.215c0,3.929-3.075,6.205-8.37,6.205c-4.159,0-7.405-0.909-10.368-3.873l-4.1,4.044  c3.873,3.929,8.259,5.354,14.353,5.354C590.553,866.793,596.646,862.348,596.646,854.888z"/>
         <rect class="cardl" x="36.497" y="611.624" transform="matrix(0.7092 0.705 -0.705 0.7092 498.7786 30.2546)" fill="#3BBAEE" width="352.433" height="16.273"/>
         <rect class="cardl" x="514.426" y="940.972" transform="matrix(0.6957, 10, -0.7183, 0.6957, 873.149, -153.99)" fill="#3BBAEE" width="122.468" height="16.27"/>
-        </svg>   
-            <p class="card-no"><?php the_field('clients'); ?></p> 
+        </svg>
+            <p class="card-no"><?php the_field('clients'); ?></p>
         </div>
     <div class="Cards__container card2 ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  id="Layer_1" x="0px" y="0px" width="400px" height="300px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -708,7 +708,7 @@ get_header(); ?>
         <path class="obj" fill="#003A48" d="M324.546,425.966c0-2.175-1.769-3.939-3.942-3.939c-2.176,0-3.939,1.764-3.939,3.939v2.767l-70.354,107.591  h20.077c12.506,0,22.68,10.178,22.68,22.687v12.788v7.882v19.706h7.886v19.707h47.3v-19.707h7.877v-19.706v-7.882v-12.788  c0-12.509,10.182-22.687,22.691-22.687h20.073l-70.349-107.591V425.966z M320.604,520.561c4.349,0,7.886,3.536,7.886,7.882  c0,4.35-3.537,7.882-7.886,7.882c-4.346,0-7.883-3.532-7.883-7.882C312.721,524.097,316.258,520.561,320.604,520.561   M336.37,611.212h-31.531v-11.825h31.531V611.212z M344.253,591.505h-47.3v-11.824h47.3V591.505z M374.821,528.442  c-16.859,0-30.568,13.714-30.568,30.568v12.788h-47.296v-12.788c0-16.851-13.714-30.568-30.563-30.568h-5.503l55.773-85.303v70.099  c-6.782,1.76-11.825,7.882-11.825,15.204c0,8.695,7.072,15.768,15.765,15.768c8.699,0,15.767-7.072,15.767-15.768  c0-7.322-5.046-13.444-11.824-15.204v-70.099l55.777,85.303H374.821z"/>
         <rect class="card" x="342.577" y="128.843" fill="#F7F7F7" width="630.905" height="740.961"/>
         <path class="card" d="M981.729,878.052h-647.4V120.594h647.4V878.052z M350.825,861.556h614.408V137.091H350.825V861.556z"/>
-       
+
         <rect class="cardl" x="126.621" y="766.221" transform="matrix(0.7071 0.7071 -0.7071 0.7071 675.8926 -82.8151)" fill="#3BBAEE" width="622.585" height="16.495"/>
         <path class="kora" fill="#31006D" d="M434.679,716.202c0,14.596-2.795,28.632-8.377,42.115c-5.591,13.484-13.541,25.39-23.859,35.709  c-10.318,10.318-22.224,18.272-35.707,23.854c-13.484,5.586-27.521,8.382-42.117,8.382c-14.591,0-28.631-2.796-42.115-8.382  c-13.484-5.582-25.387-13.536-35.708-23.854c-10.318-10.319-18.27-22.225-23.854-35.709c-5.588-13.483-8.383-27.52-8.383-42.115  s2.795-28.632,8.383-42.116c5.585-13.484,13.536-25.386,23.854-35.708c10.321-10.319,22.224-18.27,35.708-23.855  s27.524-8.377,42.115-8.377c14.596,0,28.633,2.791,42.117,8.377c13.483,5.586,25.389,13.536,35.707,23.855  c10.318,10.322,18.269,22.224,23.859,35.708C431.884,687.57,434.679,701.606,434.679,716.202z"/>
         <rect class="datacard" x="213.1" y="730.927" fill="#FFFFFF" width="630.905" height="174.485"/>
@@ -731,8 +731,8 @@ get_header(); ?>
         <path class="datacard" d="M689.541,853.956c0-3.521-1.1-6.469-3.351-8.431c-1.731-1.559-3.866-2.484-7.677-3.06l-4.68-0.694  c-1.905-0.285-3.576-0.979-4.616-1.904c-1.1-0.982-1.562-2.312-1.562-3.81c0-3.638,2.658-6.412,7.508-6.412  c3.464,0,6.408,0.754,8.949,3.177l3.982-3.926c-3.524-3.291-7.334-4.676-12.758-4.676c-8.547,0-13.743,4.908-13.743,12.066  c0,3.35,0.979,5.948,3.001,7.854c1.793,1.675,4.445,2.831,7.797,3.291l4.85,0.692c2.424,0.346,3.463,0.749,4.503,1.731  c1.095,0.983,1.618,2.484,1.618,4.273c0,3.982-3.117,6.294-8.49,6.294c-4.212,0-7.506-0.926-10.508-3.926l-4.155,4.1  c3.926,3.983,8.373,5.426,14.552,5.426C683.362,866.022,689.541,861.52,689.541,853.956z"/>
         <rect class="cardl" x="65.051" y="615.404" transform="matrix(0.7061 0.7082 -0.7082 0.7061 516.4025 3.2154)" fill="#3BBAEE" width="378.554" height="16.495"/>
         <rect class="cardl" x="561.267" y="945.346" transform="matrix(0.6957, 10, -0.7183, 0.6957, 873.149, -153.99)" fill="#3BBAEE" width="114.128" height="16.497"/>
-        </svg>    
-          <p class="card-no"><?php the_field('projects'); ?></p> 
+        </svg>
+          <p class="card-no"><?php the_field('projects'); ?></p>
     </div>
     <div class="Cards__container card3">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  id="Layer_1" x="0px" y="0px" width="400px" height="300px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -768,7 +768,7 @@ get_header(); ?>
         <path class="obj" d="M268.455,320.535c-8.014-1.622-11.656-2.842-16.957-6.974l-1.587-9.534c-0.423-2.551-2.346-3.921-4.895-3.499  c-2.549,0.426-3.933,2.342-3.502,4.895l4.362,26.233c0.422,2.549,2.345,3.918,4.894,3.499c2.549-0.426,3.925-2.349,3.503-4.9  l-0.931-5.592c8.318,4.667,13.955,5.207,22.876,4.955l1,5.975c0.423,2.55,2.346,3.92,4.887,3.499  c2.549-0.424,3.925-2.35,3.502-4.894l-0.914-5.473c10.976-1.966,19.153-6.024,24.313-12.075c5.395-6.317,7.388-14.042,5.902-22.94  c-0.773-4.681-2.736-8.561-5.824-11.541c-0.578-0.557-1.204-1.081-1.853-1.587c-2.721-2.125-6.052-3.8-9.96-4.984  c-4.645-1.412-9.772-2.377-15.222-2.866c-3.151-0.289-5.41-0.494-6.778-0.627l-6.317-37.998c1.994,0.059,3.925,0.321,5.77,0.77  c7.506,1.708,12.321,5.141,17.935,9.587l1.47,8.856c0.423,2.55,2.346,3.922,4.902,3.499c2.549-0.426,3.925-2.346,3.494-4.898  l-4.362-26.231c-0.422-2.552-2.345-3.922-4.894-3.499c-2.549,0.424-3.925,2.348-3.503,4.896l0.931,5.59  c-1.103-0.598-0.587-1.583-2.143-2.343c-5.996-2.943-13.048-4.509-21.007-4.662l-1.008-6.073c-0.431-2.552-2.346-3.922-4.895-3.5  c-2.549,0.426-3.925,2.35-3.502,4.894l0.914,5.484c-10.859,1.994-18.614,5.854-23.055,11.481c-4.668,5.92-6.333,13.138-4.949,21.455  c0.735,4.411,2.674,8.156,5.762,11.129c2.994,2.895,6.966,5.103,11.813,6.565c4.37,1.329,10.898,2.462,19.42,3.362l1.47,8.865  l5.293,31.806C272.536,321.125,270.409,320.926,268.455,320.535 M266.493,271.156c-1.533-0.189-3.222-0.387-5.051-0.596  c-2.924-0.336-6.121-0.958-9.515-1.857c-3.182-0.836-6.035-2.316-8.475-4.396c-2.314-1.966-3.69-4.431-4.206-7.532  c-0.837-5.016,0.445-9.462,3.925-13.613c3.338-3.979,9.154-6.765,17.285-8.293l6.044,36.287H266.493z M305.521,314.042  c0.234-0.264,0.461-0.532,0.688-0.802c-0.164,0.2-0.305,0.407-0.477,0.606C305.669,313.917,305.591,313.978,305.521,314.042   M277.829,287.406l-1.009-6.047l7.005,0.75c3.104,0.332,6.277,0.915,9.437,1.714c0.234,0.059,0.477,0.109,0.711,0.172  c3.175,0.836,6.028,2.32,8.467,4.388c2.322,1.978,3.698,4.44,4.214,7.542c0.985,5.908-0.484,10.959-4.487,15.435  c-3.933,4.394-10.28,7.415-18.864,8.967L277.829,287.406z"/>
         <rect class="card" x="342.562" y="145.082" fill="#F7F7F7" width="612.327" height="719.153"/>
         <path class="card" d="M962.895,872.241H334.556V137.076h628.339V872.241z M350.567,856.23h596.315V153.087H350.567V856.23z"/>
-       
+
         <rect  class="cardl" x="132.962" y="763.699" transform="matrix(0.7071 0.7071 -0.7071 0.7071 673.1143 -81.6255)" fill="#3BBAEE" width="604.251" height="16.009"/>
         <path  class="kora" fill="#31006D" d="M431.944,715.154c0,14.163-2.713,27.789-8.131,40.877c-5.418,13.087-13.142,24.638-23.156,34.653  c-10.015,10.015-21.562,17.734-34.649,23.156c-13.087,5.418-26.714,8.131-40.88,8.131c-14.167,0-27.793-2.713-40.881-8.131  c-13.087-5.422-24.634-13.142-34.649-23.156c-10.022-10.016-17.738-21.566-23.156-34.653c-5.426-13.088-8.131-26.714-8.131-40.877  c0-14.166,2.705-27.792,8.131-40.88c5.418-13.087,13.134-24.639,23.156-34.653c10.016-10.019,21.562-17.734,34.649-23.156  c13.088-5.422,26.714-8.131,40.881-8.131c14.166,0,27.793,2.709,40.88,8.131s24.635,13.138,34.649,23.156  c10.015,10.015,17.738,21.566,23.156,34.653C429.231,687.362,431.944,700.988,431.944,715.154z"/>
         <rect class="datacard" x="216.888" y="729.442" fill="#FFFFFF" width="612.335" height="169.349"/>
@@ -789,8 +789,8 @@ get_header(); ?>
         <path class="datacard" d="M623.102,847.481c0-3.416-1.071-6.273-3.252-8.182c-1.681-1.513-3.753-2.407-7.458-2.967l-4.535-0.672  c-1.853-0.281-3.479-0.954-4.487-1.854c-1.063-0.953-1.509-2.239-1.509-3.697c0-3.53,2.58-6.22,7.286-6.22  c3.362,0,6.216,0.728,8.686,3.081l3.862-3.812c-3.416-3.193-7.114-4.538-12.384-4.538c-8.295,0-13.337,4.765-13.337,11.715  c0,3.248,0.953,5.77,2.916,7.618c1.735,1.627,4.315,2.748,7.567,3.194l4.707,0.672c2.353,0.336,3.361,0.731,4.37,1.681  c1.063,0.954,1.571,2.412,1.571,4.147c0,3.866-3.025,6.11-8.24,6.11c-4.089,0-7.286-0.899-10.202-3.812l-4.034,3.979  c3.815,3.866,8.131,5.266,14.127,5.266C617.105,859.193,623.102,854.823,623.102,847.481z"/>
         <rect class="cardl" x="41.304" y="596.833" transform="matrix(0.7071 0.7071 -0.7071 0.7071 497.0385 9.7086)" fill="#3BBAEE" width="390.992" height="16.009"/>
         <rect class="cardl" x="534.603" y="931.283" transform="matrix(0.6957, 10, -0.7183, 0.6957, 873.149, -153.99)" fill="#3BBAEE" width="133.381" height="16.011"/>
-        </svg>    
-          <p class="card-no"><?php the_field('monopoly'); ?></p>    
+        </svg>
+          <p class="card-no"><?php the_field('monopoly'); ?></p>
     </div>
     <div class="Cards__container card4">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="card4" id="Layer_1" x="0px" y="0px" width="400px" height="300px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
@@ -815,35 +815,35 @@ get_header(); ?>
         <path style="transform: translate(55px,-10px) !important;" class="datacard unique" d="M596.646,854.888c0-3.472-1.085-6.376-3.302-8.311c-1.708-1.541-3.817-2.451-7.579-3.019l-4.608-0.684  c-1.883-0.286-3.535-0.969-4.561-1.883c-1.08-0.965-1.533-2.276-1.533-3.758c0-3.587,2.618-6.32,7.405-6.32  c3.416,0,6.315,0.743,8.826,3.134l3.925-3.873c-3.472-3.245-7.229-4.611-12.585-4.611c-8.429,0-13.554,4.838-13.554,11.901  c0,3.301,0.97,5.863,2.964,7.746c1.764,1.648,4.385,2.789,7.687,3.241l4.787,0.684c2.391,0.342,3.416,0.743,4.44,1.712  c1.081,0.966,1.594,2.447,1.594,4.215c0,3.929-3.075,6.205-8.37,6.205c-4.159,0-7.405-0.909-10.368-3.873l-4.1,4.044  c3.873,3.929,8.259,5.354,14.353,5.354C590.553,866.793,596.646,862.348,596.646,854.888z" data-svg-origin="567.7140502929688 825.56298828125"></path>
         <rect class="cardl" x="28.782" y="610.249" transform="matrix(0.7116 0.7026 -0.7026 0.7116 495.6883 29.0834)" fill="#3BBAEE" width="367.273" height="16.136"/>
         <rect class="cardl" x="492.311" y="928.725" transform="matrix(0.6957, 10, -0.7183, 0.6957, 873.149, -153.99)" fill="#3BBAEE" width="134.415" height="16.136"/>
-        </svg>    
-           <p class="card-no"><?php the_field('members'); ?></p>   
-    </div>    
+        </svg>
+           <p class="card-no"><?php the_field('members'); ?></p>
+    </div>
 </section>
 
 <!-- project section responsive -->
 <section class="projects-responsive container">
-        <h1>Our Projects</h1>    
+        <h1>Our Projects</h1>
         <div class="projects-slider">
             <div class="projects-slider-logos">
                 <?php $args = array('post_type' => 'projects', 'posts_per_page' => 8, 'orderby' => 'id','order' => 'ASC');
                         $loop = new WP_Query( $args );
                         $url = 1;
                         while ( $loop->have_posts() ) : $loop->the_post();
-                            if(has_post_thumbnail( $post->ID )) { 
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                            if(has_post_thumbnail( $post->ID )) {
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                             }
                             $title=get_the_title();?>
-                                <div class="project-logo"><img src="<?php the_field('project-logo'); ?>"></div> 
-                            <?php 
+                                <div class="project-logo"><img src="<?php the_field('project-logo'); ?>"></div>
+                            <?php
                         endwhile; wp_reset_query(); ?>
-            </div> 
+            </div>
             <div class="projects-slider-content">
              <?php $args = array('post_type' => 'projects', 'posts_per_page' =>8, 'orderby' => 'id','order' => 'ASC');
                         $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();  ?>
-                    <?php 
-                        if(has_post_thumbnail( $post->ID )) { 
-                        $image2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                    <?php
+                        if(has_post_thumbnail( $post->ID )) {
+                        $image2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         }?>
                     <div>
                         <div class="project-images" >
@@ -852,7 +852,7 @@ get_header(); ?>
                         </div>
                         <div class="contain-box">
                             <div class="box">
-                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
+                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>
                                 <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
                                  </br>
                                 <div class="small-icon">
@@ -867,30 +867,30 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a> 
-                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>  
+                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
+                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
-                            </div> 
+                            </div>
                            </div>
-                        </div>  <?php 
+                        </div>  <?php
                 endwhile; wp_reset_query(); ?>
         </div>
 </section>
 <!--projects section -->
 <section class="projects-section container">
-        <h1>Our Projects</h1>    
+        <h1>Our Projects</h1>
         <div class="project-section">
             <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
                 <?php $args = array('post_type' => 'projects', 'posts_per_page' => 8, 'orderby' => 'id','order' => 'ASC');
                         $loop = new WP_Query( $args );
                         $url = 1;
                         while ( $loop->have_posts() ) : $loop->the_post();
-                            if(has_post_thumbnail( $post->ID )) { 
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                            if(has_post_thumbnail( $post->ID )) {
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                                 //$logo = wp_get_attachment_image(get_field('project-logo'));
                             }
                             ?>
-                          
+
                             <?php
                             $title=get_the_title();
                         if($url==1){ ?>
@@ -901,10 +901,10 @@ get_header(); ?>
                                 <svg xmlns="http://www.w3.org/2000/svg" id="decl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
                                 <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
                                 </svg>
-                                <img src="<?php the_field('project-logo'); ?>"></a> 
+                                <img src="<?php the_field('project-logo'); ?>"></a>
                              </li>
                          <?php }
-                        else { ?>        
+                        else { ?>
                             <li class="tabs-title"><a href="#panel<?php echo $url;?>c" aria-selected="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" id="decl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="60px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
                                 <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
@@ -916,17 +916,17 @@ get_header(); ?>
                             </li>
                             <?php }
                             $url++;
-                              
+
                         endwhile; wp_reset_query(); ?>
-            </ul> 
+            </ul>
             <div class="tabs-content projtabs" data-tabs-content="collapsing-tabs">
              <?php $args = array('post_type' => 'projects', 'posts_per_page' =>8, 'orderby' => 'id','order' => 'ASC');
                         $loop = new WP_Query( $args );
                 $tabNo=1;
                 while ( $loop->have_posts() ) : $loop->the_post();  ?>
-                    <?php 
-                        if(has_post_thumbnail( $post->ID )) { 
-                        $image2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                    <?php
+                        if(has_post_thumbnail( $post->ID )) {
+                        $image2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         }
                     if($tabNo==1){ ?>
                         <div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c"  data-accordion-item>
@@ -936,7 +936,7 @@ get_header(); ?>
                         </div>
                           <div class="contain-box">
                             <div class="box">
-                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
+                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>
                                 <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
                                  </br>
                                 <div class="small-icon">
@@ -951,10 +951,10 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                    <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a> 
-                                    <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a> 
+                                    <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
+                                    <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
-                            </div> 
+                            </div>
                            </div>
                         </div> <?php }
                     else {    ?>
@@ -965,7 +965,7 @@ get_header(); ?>
                         </div>
                           <div class="contain-box">
                             <div class="box">
-                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>  
+                                <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>
                                <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
                             </br>
                                 <div class="small-icon">
@@ -978,12 +978,12 @@ get_header(); ?>
                                     else :
                                     endif;
                                     ?>
-                                </div>       
+                                </div>
                                <div class="grouped-buttons">
-                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a> 
-                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a> 
+                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
+                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
-                            </div> 
+                            </div>
                            </div>
                         </div> <?php }
                  $tabNo++;
@@ -994,46 +994,93 @@ get_header(); ?>
 <!--blog section -->
 <section>
     <div class="blog container">
-        <div class="blog-left" id="inter1">
-                <?php $image1 = get_field('left_image'); ?>
-            <div class="box__img" id="box1-img" style="background-image:url(<?php echo $image1['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
-                <div class="left-boximgline-1"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                </svg>
-                <div class="left-boximgline-2"></div>
-            </div> 
-            <div class="left-boxline"></div>      
-            <div class="box" id="box1"> 
-                <div class="circle"></div>
-                <h2 class="box__title"><?php the_field('left_title'); ?></h2>  
-                <p class="box__text"><?php the_field('left_text'); ?> </p>  
-                <a href="<?php the_field('left_link'); ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
-            </div>  
-        </div>
-        <div class="blog-right" id="inter2">
-            <?php $image2 = get_field('right_image'); ?>
-            <div class="box__img" id="box2-img" style="background-image:url(<?php echo $image2['url']; ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
-                <div class="right-boximg2line-1"></div>    
-                <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
-                <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
-                </svg>
-                <div class="right-boximg2line-2"></div>    
-            </div>
-            <div class="right-boxline2"></div> 
-             <div class="box" id="box2"> 
-                <div class="circle2"></div>
-                <h2 class="box__title"><?php the_field('right_title'); ?></h2>  
-                <p class="box__text"><?php the_field('right_text'); ?>  </p>  
-                <a href="<?php the_field('right_link'); ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a> 
-            </div> 
-        </div>   
+
+      <?php
+      $args = array(
+              'post_type' => 'blogs',
+              'post_status' => 'publish',
+              'posts_per_page'=>2,
+              'order'=>'DESC',
+              'orderby'=>'ID',
+              );
+
+                $the_blogs = new WP_Query( $args );
+                if($the_blogs->have_posts()):
+                  $count = 0;
+                  while($the_blogs->have_posts()): $the_blogs->the_post();
+                  if($count==0):?>
+                  <div class="blog-left" id="inter1">
+                          <?php
+                          // $image1 = get_field('left_image');
+                            // $image1 = get_the_post_thumbnail_url(get_the_ID(),'full');
+                            // echo $image1;
+                          ?>
+                      <div class="box__img" id="box1-img" style=" background-image: url(<?php echo the_post_thumbnail_url('full'); ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                          <div class="left-boximgline-1"></div>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                          <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                          <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                          </svg>
+                          <div class="left-boximgline-2"></div>
+                      </div>
+                      <div class="left-boxline"></div>
+                      <div class="box" id="box1">
+                          <div class="circle"></div>
+                          <h2 class="box__title">
+                            <?php //the_field('left_title');
+                            the_title();
+                            ?>
+                          </h2>
+                          <p class="box__text">
+                          <?php //the_field('left_text');
+                           echo substr(strip_tags(get_field('introduction')), 0, 400)," ...";
+                             ?>
+                           </p>
+                          <a href="<?php //the_field('left_link');
+                          the_permalink(); 
+                           ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <?php endif;
+                  if($count==1):?>
+                  <div class="blog-right" id="inter2">
+                      <?php
+                      // $image2 = get_field('right_image');
+                       ?>
+                      <div class="box__img" id="box2-img" style="background-image:url(<?php echo the_post_thumbnail_url('full'); ?>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                          <div class="right-boximg2line-1"></div>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="imgl1" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                          <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" id="imgl2" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" width="80px" height="49.917px" viewBox="0 0 132.333 49.917" enable-background="new 0 0 132.333 49.917" xml:space="preserve">
+                          <path opacity="1" fill="none" stroke="#FF7900"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.5,28.257c1.546-4.939,4.89-9.221,10.539-8.812c5.301,0.383,8.156,5.381,8.115,10.268c-0.029,3.428,3.722,5.415,6.213,2.656  c2.359-2.612,4.477-5.397,6.6-8.203c1.377-1.819,3.363-5.188,5.741-5.813c3.917-1.031,8.311,9.685,10.81,12.157  c3.173,3.137,9.031,1.197,12.118-0.889c3.239-2.185,5.581-5.397,8.196-8.295c1.246,3.692,3.012,7.096,6.285,9.621  c1.589,1.225,3.625,0.847,4.917-0.578c3.649-4.025,8.392-7.982,13.78-9.34c6.861-1.728,7.891,4.91,8,10.289"/>
+                          </svg>
+                          <div class="right-boximg2line-2"></div>
+                      </div>
+                      <div class="right-boxline2"></div>
+                       <div class="box" id="box2">
+                          <div class="circle2"></div>
+                          <h2 class="box__title"><?php //the_field('right_title');
+                          the_title();
+                          ?></h2>
+                          <p class="box__text"><?php //the_field('right_text');
+                          echo substr(strip_tags(get_field('introduction')), 0, 400)," ...";
+                           ?>  </p>
+                          <a href="<?php //the_field('right_link');
+                          the_permalink();
+
+                           ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <?php endif;
+                  $count = $count + 1;
+                endwhile;
+                endif;
+        ?>
+
+
     </div>
 </section>
 
@@ -1041,32 +1088,32 @@ get_header(); ?>
 <section >
     <div class="products container">
         <div class="mobile">
-            <div class="v-line" style="opacity:0"></div>    
-            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-left.png"> 
-            <div class="v-line2" style="opacity:0"></div>    
-            <div class="v-circle" style="opacity:0"></div>        
-            
+            <div class="v-line" style="opacity:0"></div>
+            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-left.png">
+            <div class="v-line2" style="opacity:0"></div>
+            <div class="v-circle" style="opacity:0"></div>
+
             <div class="video-container">
                 <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
               <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
                 <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
               </video>
             </div>
-            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-right.png">  
+            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-right.png">
             <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
-        </div>  
+        </div>
          <div class="box">
-            <h3 class="box__title1">OUR PRODUCTS</h3>  
-            <h1 class="box__title2"><?php the_field('product_title'); ?></h1>  
-            <p class="box__text"><?php the_field('product_text'); ?> </p>   
+            <h3 class="box__title1">OUR PRODUCTS</h3>
+            <h1 class="box__title2"><?php the_field('product_title'); ?></h1>
+            <p class="box__text"><?php the_field('product_text'); ?> </p>
             <div class="grouped-buttons">
-                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a> 
+                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
                 <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
             </div>
-        </div>   
+        </div>
     </div>
-</section>   
-        
+</section>
+
 
 
 <?php get_footer();

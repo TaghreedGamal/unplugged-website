@@ -30,7 +30,7 @@ Connect, & Inspire.</h1>
 
 </div>
   <div class="header-images">
-		<img class="typewriter" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/typewriter.png" alt="">
+		<img class="typewriter" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/Vintage-Typewriter-resized.png" alt="">
     <img class="blue-semi-circle-2" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/semi-circle-full.svg" alt="">
     <img class="dark-blue-circle" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/oval-blue.svg" alt="">
     <img class="orange-line-1" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/blogs/line-orange.svg" alt="">

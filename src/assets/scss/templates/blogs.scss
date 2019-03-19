@@ -2483,8 +2483,10 @@
         font-size: 2rem;
         width: 50%;
         font-family: $main-font;
+        font-family: 'Cabin-Regular';
         & div{
           font-family: $medium-font;
+          font-family: 'Cabin-Medium';
           color: $indigo;
           font-size: 1.7rem;
         }
@@ -2501,10 +2503,13 @@
         font-size: 1.5rem;
         color: black;
         font-family: $medium-font;
+        font-family: 'Cabin-Medium';
+
       }
       & p{
         color: #4a4a4a;
-        font-family: $main-font;
+        // font-family: $main-font;
+        font-family: 'Cabin-Regular';
         font-size: 1.4rem;
       }
     }
@@ -2527,11 +2532,15 @@
           }
           // & .subtopic-content{
             & .subtopic-text{
-              font-family: $main-font;
+              // font-family: $main-font;
+              font-family: 'Cabin-Regular';
               color: #4a4a4a;
               letter-spacing: 0.8px;
               text-align: justify;
               font-size: 1.4rem;
+              & p{
+                font-family: 'Cabin-Regular';
+              }
             }
             & .subtopic-image{
                 padding: 3em 0;
@@ -2545,7 +2554,8 @@
               & .image-title{
                 display: block;
                 text-align: center;
-                font-family: $main-font;
+                // font-family: $main-font;
+                font-family: 'Cabin-Regular';
                 color: $indigo;
                 padding: 0.5rem 0;
               }
@@ -2558,6 +2568,7 @@
            & .subtopic-text{
              width: 55%;
              & p{
+               font-family: 'Cabin-Regular';
                line-height: 1.8;
              }
            }
@@ -2631,12 +2642,16 @@
                 }
                 & .quote-text{
                   font-family: $medium-font;
+                  font-family: 'Cabin-Medium';
+
                   color: #4a4a4a;
                   letter-spacing: 1px;
                   font-size: 3rem;
                 }
                 & .quote-author{
                   font-family: $medium-font;
+                  font-family: 'Cabin-Medium';
+
                   color: $indigo;
                   letter-spacing: 1px;
                 }
@@ -2675,7 +2690,7 @@
     }
     & .blog-scrollButton{
       position: absolute;
-      bottom: 2.5rem;
+      bottom: 1.5rem;
       background: $dark-nav-color;
       border-radius: 50%;
       padding: 0.2em 1em;
