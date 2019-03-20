@@ -17,26 +17,27 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', '' ); ?>
 					<div class="project-data">
 				    	<div class="project-data-category">
-				    		<p>
-					    		<?php $id= get_the_ID();
-									$categories = get_the_terms( $post->ID, 'projects_categories' );
-									$num=0;
-									foreach( $categories as $category ) {
-										if($num == 0){
-									    	echo  $category->name . ' :</br>';
-									    	$num=$num+1;
-										}
-									}
+				    		<p> Client <br>
+					    		<?php
+									// $id= get_the_ID();
+									// $categories = get_the_terms( $post->ID, 'projects_categories' );
+									// $num=0;
+									// foreach( $categories as $category ) {
+									// 	if($num == 0){
+									//     	echo  $category->name . ' :</br>';
+									//     	$num=$num+1;
+									// 	}
+									// }
 								?>
 								<img src="<?php the_field('project-logo'); ?>">
 							</p>
 				    	</div>
-				    	<div class="project-data-date"><p>Year :</p>
+				    	<div class="project-data-date"><p>Year</p>
 					    	<p class="project-data-year"><?php $date = get_field('project_date');
 					    	echo $date;?></p>
 				    	</div>
 				    	<div class="project-data-services">
-					    	<p>services :</p>
+					    	<p>Services </p>
 					    	<div class="small-icon">
                                 <?php
 	                                if( have_rows('services-icons') ):
@@ -52,7 +53,7 @@ get_header(); ?>
 				    </div>
 				     <div class="grouped-buttons">
 				     	 <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="button"><i class="fa fa-long-arrow-left"></i>  Back to Projects</a>
-		                <a class="button"><i class="fa fa-desktop">  </i>  Visit Site</a>
+		                <a class="button" href="<?php echo get_field("site_link"); ?>"><i class="fa fa-desktop">  </i>  Visit Site</a>
 		            </div>
 	                <div id="container">
 						<div id="scrollCircle">
@@ -115,7 +116,7 @@ get_header(); ?>
 	<div class="project__Idea-content">
 		<h1 class="two-parts-title"><?php echo get_field('project_section-1_title') ?></h1>
 		<p class="two-parts-text"><?php echo get_field('project_section-1_text') ?></p>
-		<div> 
+		<div>
            	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
 	</div>
@@ -124,11 +125,11 @@ get_header(); ?>
 
 <div class="project__tabs">
 	<div class="tabs-content projtabs" data-tabs-content="slide-tabs">
-        <?php 
+        <?php
 	        $tabNo=1;
-	        if( have_rows('project-steps-title') ): 
-                while( have_rows('project-steps-title') ): the_row(); 
-            		if($tabNo==1){ 
+	        if( have_rows('project-steps-title') ):
+                while( have_rows('project-steps-title') ): the_row();
+            		if($tabNo==1){
             			?>
                 	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
 	                	<?php the_sub_field('proj-step-slider'); ?>
@@ -138,7 +139,7 @@ get_header(); ?>
 		     			?>
 		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
 		                	<?php the_sub_field('proj-step-slider'); ?>
-		            	</div> 
+		            	</div>
 	            <?php 	}
 	         	$tabNo++;
 	         	endwhile;
@@ -163,7 +164,7 @@ get_header(); ?>
 	            </a>
             </li>
          <?php }
-        else { ?>        
+        else { ?>
             <li class="tabs-title">
                 <a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
@@ -180,7 +181,7 @@ get_header(); ?>
             $stepNo++;
             endwhile;
 		endif;?>
-    </ul> 
+    </ul>
 </div>
 
 <!-- final results -->
@@ -215,14 +216,15 @@ get_header(); ?>
 	<div class="project__Final-content">
 		<h1 class="two-parts-title"><?php echo get_field('project_section-3_title') ?></h1>
 		<p class="two-parts-text"><?php echo get_field('project_section-3_text') ?></p>
-		<div class='grouped-buttons'> 
-			<a class="button" href="<?php echo get_field('project_section-3_link') ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
+		<div class='grouped-buttons'>
+			<a class="button" href="<?php echo get_field("site_link"); ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
         </div>
 	</div>
 </div>
 
 
 <!-- final testimonials -->
+<?php if(get_field('project_section-4_title')): ?>
 <div class="project__Testimonial container two-parts" id="pIdea">
 	<div class="project__Testimonial-title">
 		<h1 class="two-parts-title"><?php echo get_field('project_section-4_title') ?></h1>
@@ -234,6 +236,7 @@ get_header(); ?>
 		<i class="fa fa-quote-right" aria-hidden="true"></i>
 	</div>
 </div>
+<?php endif; ?>
 
 <!-- footer -->
 <?php

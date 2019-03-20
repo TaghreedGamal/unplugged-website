@@ -825,7 +825,7 @@ get_header(); ?>
         <h1>Our Projects</h1>
         <div class="projects-slider">
             <div class="projects-slider-logos">
-                <?php $args = array('post_type' => 'projects', 'posts_per_page' => 8, 'orderby' => 'id','order' => 'ASC');
+                <?php $args = array('post_type' => 'projects', 'posts_per_page' => 6, 'orderby' => 'date','order' => 'DESC');
                         $loop = new WP_Query( $args );
                         $url = 1;
                         while ( $loop->have_posts() ) : $loop->the_post();
@@ -838,7 +838,7 @@ get_header(); ?>
                         endwhile; wp_reset_query(); ?>
             </div>
             <div class="projects-slider-content">
-             <?php $args = array('post_type' => 'projects', 'posts_per_page' =>8, 'orderby' => 'id','order' => 'ASC');
+             <?php $args = array('post_type' => 'projects', 'posts_per_page' =>6, 'orderby' => 'date','order' => 'DESC');
                         $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();  ?>
                     <?php
@@ -867,8 +867,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
-                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
+                                <a class="button home-btn" href="<?php echo home_url( '/projects/' ) ?>"><i class="fa fa-th-large"></i>View All </a>
+                                <a class="button home-btn" href="<?php the_permalink(); ?>">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
                             </div>
                            </div>
@@ -881,7 +881,7 @@ get_header(); ?>
         <h1>Our Projects</h1>
         <div class="project-section">
             <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-                <?php $args = array('post_type' => 'projects', 'posts_per_page' => 8, 'orderby' => 'id','order' => 'ASC');
+                <?php $args = array('post_type' => 'projects', 'posts_per_page' => 6, 'orderby' => 'date','order' => 'DESC');
                         $loop = new WP_Query( $args );
                         $url = 1;
                         while ( $loop->have_posts() ) : $loop->the_post();
@@ -920,7 +920,7 @@ get_header(); ?>
                         endwhile; wp_reset_query(); ?>
             </ul>
             <div class="tabs-content projtabs" data-tabs-content="collapsing-tabs">
-             <?php $args = array('post_type' => 'projects', 'posts_per_page' =>8, 'orderby' => 'id','order' => 'ASC');
+             <?php $args = array('post_type' => 'projects', 'posts_per_page' =>6, 'orderby' => 'date','order' => 'DESC');
                         $loop = new WP_Query( $args );
                 $tabNo=1;
                 while ( $loop->have_posts() ) : $loop->the_post();  ?>
@@ -951,8 +951,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                    <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
-                                    <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
+                                    <a class="button home-btn" href="<?php echo home_url( '/projects/' ) ?>"><i class="fa fa-th-large"></i>View All </a>
+                                    <a class="button home-btn" href="<?php the_permalink(); ?>">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
                             </div>
                            </div>
@@ -980,8 +980,8 @@ get_header(); ?>
                                     ?>
                                 </div>
                                <div class="grouped-buttons">
-                                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
-                                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
+                                <a class="button home-btn" href="<?php echo home_url( '/projects/' ) ?>"><i class="fa fa-th-large"></i>View All </a>
+                                <a class="button home-btn" href="<?php the_permalink(); ?>">View Details <i class="fa fa-long-arrow-right"></i> </a>
                               </div>
                             </div>
                            </div>
@@ -1035,11 +1035,11 @@ get_header(); ?>
                           </h2>
                           <p class="box__text">
                           <?php //the_field('left_text');
-                           echo substr(strip_tags(get_field('introduction')), 0, 400)," ...";
+                           echo substr(strip_tags(get_field('introduction')), 0, 300)," ...";
                              ?>
                            </p>
                           <a href="<?php //the_field('left_link');
-                          the_permalink(); 
+                          the_permalink();
                            ?>" class="button">Read More   <i class="fa fa-long-arrow-right"></i></a>
                       </div>
                   </div>
@@ -1066,7 +1066,7 @@ get_header(); ?>
                           the_title();
                           ?></h2>
                           <p class="box__text"><?php //the_field('right_text');
-                          echo substr(strip_tags(get_field('introduction')), 0, 400)," ...";
+                          echo substr(strip_tags(get_field('introduction')), 0, 300)," ...";
                            ?>  </p>
                           <a href="<?php //the_field('right_link');
                           the_permalink();
@@ -1085,7 +1085,22 @@ get_header(); ?>
 </section>
 
 <!--products section -->
-<section >
+<?php $args = array(
+        'post_type' => 'products',
+        'post_status' => 'publish',
+        'posts_per_page'=>1,
+        'order'=>'DESC',
+        'orderby'=>'date',
+        'show-posts'=>-1
+        // 'name' => 'community-app'
+        );
+
+          $the_product = new WP_Query( $args );
+          if($the_product->have_posts()):
+              while($the_product->have_posts()): $the_product->the_post();
+              // echo the_title();
+             ?>
+<section>
     <div class="products container">
         <div class="mobile">
             <div class="v-line" style="opacity:0"></div>
@@ -1104,15 +1119,25 @@ get_header(); ?>
         </div>
          <div class="box">
             <h3 class="box__title1">OUR PRODUCTS</h3>
-            <h1 class="box__title2"><?php the_field('product_title'); ?></h1>
-            <p class="box__text"><?php the_field('product_text'); ?> </p>
+
+
+            <h1 class="box__title2">
+              <?php the_title(); ?>
+              <?php //the_field('product_title',44); ?>
+            </h1>
+            <p class="box__text">
+              <?php the_excerpt(); ?>
+              <?php //the_field('product_text',44); ?>
+             </p>
             <div class="grouped-buttons">
-                <a class="button home-btn"><i class="fa fa-th-large"></i>View All </a>
-                <a class="button home-btn">View Details <i class="fa fa-long-arrow-right"></i> </a>
+                <a class="button home-btn" href="<?php echo home_url( '/products/' ) ?>"><i class="fa fa-th-large"></i>View All </a>
+                <a class="button home-btn" href="<?php the_permalink(); ?>">View Details <i class="fa fa-long-arrow-right"></i> </a>
             </div>
         </div>
     </div>
 </section>
+<?php endwhile; ?>
+  <?php endif; ?>
 
 
 

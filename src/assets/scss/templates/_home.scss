@@ -1076,7 +1076,7 @@ button{
             }
         }
         .mobile-video{
-            position: absolute;   
+            position: absolute;
             height: 90%;
             width: 90%;
             top: 15px;
@@ -1538,7 +1538,8 @@ button{
 }
 //----- Projects---------
 .projects-section{
-    height: 940px;
+    // height: 940px;
+    height: auto;
     position: relative;
     padding-top: 180px;
     h1{
@@ -1641,7 +1642,9 @@ button{
             .box{
                 padding: 60px;
                 right: 0;
-                width: 500px;
+                // width: 500px;
+                width: auto;
+                max-width: unset;
                  &__title{
                     color:$title-color;
                     font-family: $title-font;
