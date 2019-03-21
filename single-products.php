@@ -16,11 +16,11 @@ get_header(); ?>
 					<h1 class="title"><?php echo get_the_title();?></h1>
 					<div class="data">
 					  	<div class="technology">
-					  	   <p>Description :</h4>
+					  	   <p>Description </h4>
 					  	   <p class="technology-text"><?php echo get_the_content();?></p>
 					  	</div>
 					    <div class="services">
-					    	<p>Technologies :</p>
+					    	<p>Available On </p>
 				    		<div class="small-icon">
                                 <?php
                                 if( have_rows('technologies-icons') ):
@@ -36,12 +36,12 @@ get_header(); ?>
 					</div>
 					 <div class="grouped-buttons">
 					 	<a href="<?php echo esc_url( home_url( '/products' ) ); ?>" class="button"><i class="fa fa-long-arrow-left"></i>  Back to Products</a>
-<!-- 		                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
+<!-- 		                <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>
  -->		                <!-- <div class="arrow bounce scroll">
 						  <a class="fa fa-arrow-down fa-2x" ></a>
 						</div> -->
 					</div>
-		          
+
 	               <div id="container" class="scrollProd">
 						<div id="scrollCircle">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
@@ -104,7 +104,7 @@ get_header(); ?>
 								    <path fill="#003A47" fill-rule="evenodd" d="M68.418 12.316C65.293 9.57 63.042 6.28 61.131 2.61c-.512-.986-1.69-1.082-2.593-.678-4.712 2.102-7.969 6.085-11.95 9.196-1.893-2.068-3.672-4.248-5.574-6.308C39.721 3.416 37.02-.109 34.723.16c-5.193.605-8.977 6.43-12.654 10.374C19.944 6.22 17.223-.084 12.352.001 6.469.102 3.945 7.607.522 11.307c-1.657 1.789 1.018 4.471 2.68 2.676 2.817-3.043 4.515-7.373 7.855-9.904 3.286-2.488 7.73 8.601 8.884 10.53.664 1.109 2.05 1.17 2.977.382 1.98-1.68 3.67-3.72 5.455-5.597.893-.94 4.746-5.702 6.114-5.474 1.842.308 4.41 4.177 5.571 5.474 1.659 1.855 3.22 3.81 4.952 5.597.553.572 1.617.775 2.297.297 4.001-2.813 7.187-6.738 11.407-9.194 1.881 3.322 4.12 6.346 7.024 8.897 1.826 1.606 4.518-1.06 2.68-2.675"/>
 								</svg>
 						    </div>
-					<?php endif; ?>	
+					<?php endif; ?>
 				</div>
 			<?php endwhile; ?>
 		</main>
@@ -143,7 +143,7 @@ get_header(); ?>
 	<div class="Product__brief-content">
 		<h1 class="two-parts-title"><?php echo get_field('product_section-1_title')?></h1>
 		<p class="two-parts-text"><?php echo get_field('product_section-1_text')?></p>
-		<div> 
+		<div>
            	<a class="button scroll-top" ><i class="fa fa-angle-up"></i></a>
         </div>
 	</div>
@@ -225,7 +225,7 @@ get_header(); ?>
 						</svg>
 						<img class="concept-img" src="<?php echo get_field('product_section-3_img')?>">
 						    </div>
-					<?php endif; ?>	
+					<?php endif; ?>
 	</div>
 	<div class="Product__concept-content">
 		<h1 class="two-parts-title desktop"><?php echo get_field('product_section-3_title')?></h1>
@@ -236,11 +236,11 @@ get_header(); ?>
 <!-- product steps -->
 <div class="product__tabs">
 	<div class="tabs-content prodtabs" data-tabs-content="slide-tabs">
-        <?php 
+        <?php
 	        $tabNo=1;
-	        if( have_rows('product_tabs') ): 
-                while( have_rows('product_tabs') ): the_row(); 
-            		if($tabNo==1){ 
+	        if( have_rows('product_tabs') ):
+                while( have_rows('product_tabs') ): the_row();
+            		if($tabNo==1){
             			?>
                 	<div class="tabs-panel is-active" id="panel<?php echo $tabNo; ?>c">
 	                	<?php the_sub_field('product_tabs_slider'); ?>
@@ -250,7 +250,7 @@ get_header(); ?>
 		     			?>
 		     			<div class="tabs-panel" id="panel<?php echo $tabNo; ?>c">
 		                	<?php the_sub_field('product_tabs_slider'); ?>
-		            	</div> 
+		            	</div>
 	            <?php 	}
 	         	$tabNo++;
 	         	endwhile;
@@ -275,7 +275,7 @@ get_header(); ?>
 	            </a>
             </li>
          <?php }
-        else { ?>        
+        else { ?>
             <li class="tabs-title">
                 <a href="#panel<?php echo $url;?>c" aria-selected="true">
 	            	<?php echo("0".$stepNo.".");?>
@@ -292,7 +292,7 @@ get_header(); ?>
             $stepNo++;
             endwhile;
 		endif;?>
-    </ul> 
+    </ul>
 </div>
 
 <!-- product final -->
@@ -348,14 +348,14 @@ get_header(); ?>
 						</svg>
 						<img class="final-img" src="<?php the_field('product_section-5_img')?>">
 						    </div>
-					<?php endif; ?>	
+					<?php endif; ?>
 	</div>
 	<div class="Product__final-content">
 		<h1 class="two-parts-title"><?php the_field('product_section-5_title')?></h1>
 		<p class="two-parts-text"><?php the_field('product_section-5_text')?></p>
-		<div class="grouped-buttons">
-            <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a> 
-        </div>
+		<!-- <div class="grouped-buttons">
+            <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>
+        </div> -->
 	</div>
 </div>
 

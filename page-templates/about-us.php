@@ -51,7 +51,7 @@ get_header(); ?>
 <div class="about-us__tabs container">
 	<ul class="tabs" data-tabs id="pages-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
 	  <li class="tabs-title is-active"><a href="#our-team" aria-selected="true">Our Team</a></li>
-	  <li class="tabs-title"><a data-tabs-target="our-process" href="#our-process">Our Process</a></li>
+	  <li class="tabs-title process-tab"><a data-tabs-target="our-process" href="#our-process">Our Process</a></li>
 	</ul>
 	<div class="tabs-content" data-tabs-content="pages-tabs" data-tabs-content="deeplinked-tabs">
 		<div class="tabs-panel is-active" id="our-team">
@@ -84,7 +84,7 @@ get_header(); ?>
 				?>
 			</div>
 		</div>
-		<div class="tabs-panel" id="our-process">
+		<div class="tabs-panel process-tab" id="our-process">
 			<p>process</p>
 		</div>
 	</div>

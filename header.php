@@ -67,7 +67,7 @@
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
                 <button  next-click class="button cont">Partner with us</button>
-                <a class="button cont" href="https://unpluggedweb.com/careers/">Join us</a>
+                <a class="button cont" href="https://wuzzuf.net/jobs/careers/Unplugged-Egypt-4091">Join us</a>
             </div>
             </div>
         </div>
@@ -168,12 +168,12 @@
     <button data-click  class="button">Contact us</button>
 
     <div class="page-name">
-    
-    <?php 
+
+    <?php
       $parent = get_post_type( $post->ID );
       // this for main pages
       if($parent == 'page'){
-        $title=  basename(get_permalink()); 
+        $title=  basename(get_permalink());
         echo $title;
       }
       else {
@@ -188,7 +188,7 @@
           echo $parent;
         }
       }
-      
+
     ?>
 
    </div>

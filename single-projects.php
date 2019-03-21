@@ -53,7 +53,9 @@ get_header(); ?>
 				    </div>
 				     <div class="grouped-buttons">
 				     	 <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="button"><i class="fa fa-long-arrow-left"></i>  Back to Projects</a>
+							 <?php if(get_field("site_link")): ?>
 		                <a class="button" href="<?php echo get_field("site_link"); ?>"><i class="fa fa-desktop">  </i>  Visit Site</a>
+									<?php endif; ?>
 		            </div>
 	                <div id="container">
 						<div id="scrollCircle">
@@ -217,7 +219,9 @@ get_header(); ?>
 		<h1 class="two-parts-title"><?php echo get_field('project_section-3_title') ?></h1>
 		<p class="two-parts-text"><?php echo get_field('project_section-3_text') ?></p>
 		<div class='grouped-buttons'>
+			 <?php if(get_field("site_link")): ?>
 			<a class="button" href="<?php echo get_field("site_link"); ?>"  target="_blank"><i class="fa fa-desktop">  </i>Visit Site</a>
+		<?php endif; ?>
         </div>
 	</div>
 </div>

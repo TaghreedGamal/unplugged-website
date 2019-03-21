@@ -8,10 +8,10 @@ get_header(); ?>
         <div class="home-slider__sliders__singleSlider" >
         <div class="container">
             <div class="Stitle1">
-                <h1 class="hi1">We are fun, flexible, & </h1>
+                <h1 class="hi1">Digitally transforming</h1>
             </div>
             <div class="Stitle4">
-                <h1 class="hi1"> Innovative People!</h1>
+                <h1 class="hi1"> how we live, work and play!</h1>
             </div>
             <div class="img1">
                 <img class="fun1 zoom "  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/invo7.png" alt="banner1">
@@ -212,10 +212,12 @@ get_header(); ?>
                         <div class="box">
                           <h1 class="box__title">UI / UX</h1>
                           <p class="box__text"><?php the_field('design_text'); ?> </p>
+                          <?php if(get_field('company_profile_link')): ?>
                           <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a>
+                            <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                           </div>
+                        <?php endif; ?>
                         </div>
                 </div>
                 <div>
@@ -254,10 +256,12 @@ get_header(); ?>
                         <div class="box">
                           <h1 class="box__title"><span>Development<span></h1>
                           <p class="box__text"><?php the_field('development_text'); ?> </p>
+                          <?php if(get_field('company_profile_link')): ?>
                           <div class="grouped-buttons">
                             <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a>
+                            <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                           </div>
+                        <?php endif; ?>
                          </div>
                     </div>
                 <div>
@@ -295,10 +299,12 @@ get_header(); ?>
                   <div class="box">
                       <h1 class="box__title">Mobile <span>Applications</span></h1>
                       <p class="box__text"><?php the_field('app_text'); ?> </p>
+                      <?php if(get_field('company_profile_link')): ?>
                       <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a>
+                        <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                       </div>
+                    <?php endif; ?>
                   </div>
                 </div>
                 <div>
@@ -323,10 +329,12 @@ get_header(); ?>
                     <div class="box">
                       <h1 class="box__title">E- <span>Commerce</span></h1>
                       <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>
+                      <?php if(get_field('company_profile_link')): ?>
                       <div class="grouped-buttons">
                         <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a>
+                        <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                       </div>
+                    <?php endif; ?>
                     </div>
                 </div>
                 <div>
@@ -351,10 +359,12 @@ get_header(); ?>
                     <div class="box">
                         <h1 class="box__title">Data <span>Analytics</span></h1>
                         <p class="box__text"><?php the_field('analytics_text'); ?> </p>
+                        <?php if(get_field('company_profile_link')): ?>
                         <div class="grouped-buttons">
-                            <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a>
-                      </div>
+                          <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
+                          <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
+                        </div>
+                      <?php endif; ?>
                     </div>
                 </div>
                 <div>
@@ -396,10 +406,12 @@ get_header(); ?>
                     <div class="box">
                         <h1 class="box__title">Hosting & <span>Maintenance</span></h1>
                         <p class="box__text"><?php the_field('hosting_text'); ?> </p>
+                        <?php if(get_field('company_profile_link')): ?>
                         <div class="grouped-buttons">
-                            <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                            <a class="button">Download Profile</a>
-                      </div>
+                          <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
+                          <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
+                        </div>
+                      <?php endif; ?>
                 </div>
                 </div>
             </div>
@@ -455,10 +467,12 @@ get_header(); ?>
                 <div class="box">
                   <h1 class="box__title">UI / UX</h1>
                   <p class="box__text"><?php the_field('design_text'); ?> </p>
+                  <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a>
+                    <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                   </div>
+                <?php endif; ?>
                 </div>
             </div>
 
@@ -499,10 +513,12 @@ get_header(); ?>
               <div class="box">
                   <h1 class="box__title"><span>Development<span></h1>
                   <p class="box__text"><?php the_field('development_text'); ?> </p>
+                  <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a>
+                    <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                   </div>
+                <?php endif; ?>
               </div>
             </div>
 
@@ -540,10 +556,12 @@ get_header(); ?>
               <div class="box">
                   <h1 class="box__title">Mobile <span>Applications</span></h1>
                   <p class="box__text"><?php the_field('app_text'); ?> </p>
+                  <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a>
+                    <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                   </div>
+                <?php endif; ?>
               </div>
             </div>
 
@@ -569,10 +587,12 @@ get_header(); ?>
                 <div class="box">
                   <h1 class="box__title">E- <span>Commerce</span></h1>
                   <p class="box__text"><?php the_field('ecommerce_text'); ?> </p>
+                  <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">
                     <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                    <a class="button">Download Profile</a>
+                    <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
                   </div>
+                <?php endif; ?>
                 </div>
             </div>
             <div class="tabs-panel" id="panel5v" data-service="Analytics">
@@ -598,10 +618,12 @@ get_header(); ?>
                 <div class="box">
                     <h1 class="box__title">Data <span>Analytics</span></h1>
                     <p class="box__text"><?php the_field('analytics_text'); ?> </p>
+                    <?php if(get_field('company_profile_link')): ?>
                     <div class="grouped-buttons">
-                        <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a>
-                  </div>
+                      <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
+                      <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
+                    </div>
+                  <?php endif; ?>
                 </div>
             </div>
             <div class="tabs-panel" data-service="host" id="panel6v">
@@ -643,10 +665,12 @@ get_header(); ?>
                 <div class="box">
                     <h1 class="box__title">Hosting & <span>Maintenance</span></h1>
                     <p class="box__text"><?php the_field('hosting_text'); ?> </p>
+                    <?php if(get_field('company_profile_link')): ?>
                     <div class="grouped-buttons">
-                        <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
-                        <a class="button">Download Profile</a>
-                  </div>
+                      <!-- <a class="button">Get a Quote <i class="fa fa-long-arrow-right"></i> </a>  -->
+                      <a class="button" href="<?php echo get_field('company_profile_link'); ?>">Download Profile</a>
+                    </div>
+                  <?php endif; ?>
                 </div>
             </div>
         </div>
