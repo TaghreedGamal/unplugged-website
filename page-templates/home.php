@@ -116,21 +116,21 @@ get_header(); ?>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-2-min.png" alt=""></div>
-            <h1>We are fun, flexible, & innovative People!</h1>
+            <h1>Digitally transforming how we live, work and play!</h1>
             <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-1-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image slide-2"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-3-min.png" alt=""></div>
-            <h1>We are fun, flexible, & innovative People!</h1>
+            <h1>Digitally transforming how we live, work and play!</h1>
             <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-4-min.png" alt=""></div>
         </div>
       </div>
       <div>
         <div class="home-slider__responsive__slides__slide-content container">
             <div class="home-slider__responsive__slides__slide-content__top-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-5-min.png" alt=""></div>
-            <h1>We are fun, flexible, & innovative People!</h1>
+            <h1>Digitally transforming how we live, work and play!</h1>
             <div class="home-slider__responsive__slides__slide-content__bottom-image"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/comp-6-min.png" alt=""></div>
         </div>
       </div>
@@ -171,8 +171,8 @@ get_header(); ?>
         <h3 class="section-titles">Our services</h3>
         <div class="services-slider">
             <div class="services-slider-titles">
-                    <div><h3>UI / UX</h3></div>
-                    <div><h3>Development</h3></div>
+                    <div><h3>UI / UX Design</h3></div>
+                    <div><h3>Web Development</h3></div>
                     <div><h3>Mobile Apps</h3></div>
                     <div><h3>E-Commerce</h3></div>
                     <div><h3>Data Analytics</h3></div>
@@ -210,7 +210,7 @@ get_header(); ?>
                         </g>
                         </svg>
                         <div class="box">
-                          <h1 class="box__title">UI / UX</h1>
+                          <h1 class="box__title">UI / UX Design</h1>
                           <p class="box__text"><?php the_field('design_text'); ?> </p>
                           <?php if(get_field('company_profile_link')): ?>
                           <div class="grouped-buttons">
@@ -254,7 +254,7 @@ get_header(); ?>
                         </g>
                         </svg>
                         <div class="box">
-                          <h1 class="box__title"><span>Development<span></h1>
+                          <h1 class="box__title"><span>Web Development<span></h1>
                           <p class="box__text"><?php the_field('development_text'); ?> </p>
                           <?php if(get_field('company_profile_link')): ?>
                           <div class="grouped-buttons">
@@ -425,8 +425,8 @@ get_header(); ?>
         <div class="services-tabs__list">
             <h3 class="section-titles">Our services</h3>
             <ul class="vertical tabs" data-tabs id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">UI / UX</a></li>
-            <li class="tabs-title"><a href="#panel2v">Development</a></li>
+            <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">UI / UX Design</a></li>
+            <li class="tabs-title"><a href="#panel2v">Web Development</a></li>
             <li class="tabs-title"><a href="#panel3v">Mobile Apps</a></li>
             <li class="tabs-title"><a href="#panel4v">E-Commerce</a></li>
             <li class="tabs-title"><a href="#panel5v">Data Analytics </a></li>
@@ -465,7 +465,7 @@ get_header(); ?>
                     </g>
                     </svg>
                 <div class="box">
-                  <h1 class="box__title">UI / UX</h1>
+                  <h1 class="box__title">UI / UX Design</h1>
                   <p class="box__text"><?php the_field('design_text'); ?> </p>
                   <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">
@@ -511,7 +511,7 @@ get_header(); ?>
                 </svg>
 
               <div class="box">
-                  <h1 class="box__title"><span>Development<span></h1>
+                  <h1 class="box__title"><span>Web Development<span></h1>
                   <p class="box__text"><?php the_field('development_text'); ?> </p>
                   <?php if(get_field('company_profile_link')): ?>
                   <div class="grouped-buttons">

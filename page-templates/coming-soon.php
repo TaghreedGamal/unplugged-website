@@ -10,8 +10,8 @@ get_header(); ?>
 			<h1 class="coming-soon__content__title">WE ARE IN MAKEOVER!</h1>
 			<div class="grouped-buttons">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="button">Back to homepage</a>
-				<a href="<?php echo esc_url( home_url( '/wp-content/uploads/2018/12/Unplugged-Company-profile-2018.pdf' ) ); ?>" class="button button-download">Download Profile</a>
-			</div>	
+				<a href="https://drive.google.com/file/d/0Bwj0tY9MLsd6UUNTeDV2MnladW1xeFl2YkRhTWpEZVEtc01n/view?usp=sharing" class="button button-download">Download Profile</a>
+			</div>
 		</div>
 		<div class="coming-soon__image">
 			<svg xmlns="http://www.w3.org/2000/svg" class="big-circle" width="565" height="645" viewBox="0 0 565 645">
@@ -29,7 +29,7 @@ get_header(); ?>
 			<svg xmlns="http://www.w3.org/2000/svg" class="top-drawLine2" width="122" height="24" viewBox="0 0 122 24">
 			    <path opacity="0" fill="#EE7719" fill-rule="evenodd" d="M120.912 19.003c-5.522-4.239-9.501-9.313-12.877-14.977-.906-1.521-2.987-1.67-4.584-1.047-8.326 3.243-14.082 9.388-21.118 14.19-3.346-3.192-6.49-6.555-9.85-9.734-2.285-2.164-7.059-7.603-11.12-7.19-9.177.934-15.863 9.921-22.361 16.007C35.246 9.597 30.437-.13 21.829.002 11.432.157 6.972 11.736.92 17.445c-2.927 2.76 1.801 6.898 4.737 4.128 4.98-4.695 7.98-11.376 13.883-15.28 5.807-3.84 13.66 13.27 15.7 16.245 1.173 1.712 3.623 1.805 5.262.591 3.499-2.592 6.486-5.739 9.64-8.637 1.578-1.45 8.386-8.797 10.805-8.445 3.254.475 7.795 6.445 9.845 8.445 2.93 2.863 5.69 5.878 8.751 8.637.977.882 2.857 1.196 4.06.458 7.07-4.34 12.7-10.396 20.158-14.185 3.325 5.125 7.281 9.79 12.413 13.727 3.228 2.478 7.986-1.634 4.737-4.127"/>
 			</svg>
-			<img class="coming-soon__image__mainImage" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/coming-soon/balloon.png" style="z-index:5"> 
+			<img class="coming-soon__image__mainImage" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/coming-soon/balloon.png" style="z-index:5">
 			<svg xmlns="http://www.w3.org/2000/svg"  class="botton-drawLine1" width="80" height="16" viewBox="0 0 80 16">
 			    <path opacity="0" fill="#EE7719" fill-rule="evenodd" d="M79.287 12.668c-3.622-2.825-6.23-6.208-8.445-9.984-.594-1.014-1.958-1.113-3.005-.698-5.46 2.162-9.234 6.259-13.848 9.46-2.194-2.128-4.256-4.37-6.46-6.49-1.498-1.442-4.628-5.068-7.29-4.792-6.019.622-10.403 6.614-14.664 10.67C23.112 6.399 19.958-.085 14.314.002 7.496.105 4.572 7.825.604 11.63c-1.92 1.84 1.181 4.599 3.106 2.752 3.265-3.13 5.233-7.584 9.104-10.187 3.808-2.56 8.957 8.847 10.295 10.83.769 1.141 2.375 1.204 3.45.394 2.295-1.728 4.253-3.826 6.321-5.758 1.035-.966 5.5-5.865 7.086-5.63 2.134.317 5.111 4.297 6.456 5.63 1.922 1.909 3.731 3.919 5.738 5.758.64.588 1.874.797 2.662.305 4.637-2.893 8.328-6.93 13.219-9.456 2.18 3.417 4.774 6.526 8.14 9.151 2.116 1.652 5.236-1.09 3.106-2.752"/>
 			</svg>
@@ -47,7 +47,7 @@ get_header(); ?>
 			</svg>
 		</div>
 		<div class="coming-soon__image__responsiveImage">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/coming-soon/comp@2x.png" style="z-index:5"> 
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/coming-soon/comp@2x.png" style="z-index:5">
 		</div>
 	</div>
 </section>
