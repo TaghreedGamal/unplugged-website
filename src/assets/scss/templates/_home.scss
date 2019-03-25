@@ -886,15 +886,19 @@ button{
     position: relative;
     margin-top: 320px;
     display: flex;
+    // justify-content: space-between;
+    justify-content: center;
     /////for nowww///
-    display: none;
+    // display: none;
     //////////////
     .box{
         padding: 60px;
-        padding-left: 160px;
+        // padding-left: 160px;
+        padding-left: 100px;
         padding-top: 8%;
         right: 0;
         max-width: 560px;
+        height: fit-content;
         &__title1{
             color:$title-color;
             font-family: $main-font;
@@ -913,6 +917,73 @@ button{
             font-family: $main-font;
             // text-align: justify;
         }
+    }
+
+
+    .product-media{
+      display: flex;
+      position: relative;
+      left: 18rem;
+      left: 0rem;
+      top: 3rem;
+      & .blue-line-1{
+        position: absolute;
+        left: -5rem;
+        height: 45rem;
+        top: -8rem;
+        width: -webkit-fill-available;
+      }
+      & .blue-line-2{
+        position: absolute;
+        left: -6rem;
+        height: 40rem;
+        top: -5rem;
+        width: -webkit-fill-available;
+      }
+      & .circles{
+        position: absolute;
+        right: -2rem;
+        top: -6rem;
+      }
+      & .line{
+        height: 35rem;
+        position: absolute;
+        top: 0rem;
+        left: -2rem;
+      }
+      & .orange-circle{
+        position: absolute;
+        left: 0rem;
+        bottom: 9rem;
+      }
+      & .product-left-image, .product-right-image{
+        height: fit-content;
+        position: relative;
+      }
+      & .product-left-image{
+        left: 2rem;
+      }
+      & .product-right-image{
+        right: 2rem;
+      }
+      & .product-video-container{
+        position: relative;
+        height: -webkit-fill-available;
+        z-index: 3;
+        & .product-video{
+          left: 1rem;
+          position: relative;
+          top: -33.7rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 30rem;
+          }
+          // & .responsive-embed{
+          //   padding-bottom: 182%;
+          // }
+        }
+      }
     }
     .mobile{
         position: relative;
@@ -1491,6 +1562,7 @@ button{
                     border:2px solid;
                     @media (max-width: 64em){
                         margin-left: 105px;
+                        margin: 0 auto;
                     }
                     @media (max-width: 40em){
                         margin-left: 0;
@@ -1889,12 +1961,19 @@ button{
     .services-tabs{
     &__list {
     & .tabs-title a{
-      font-size: 2rem;
+      // font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
     & .tabs-content{
       & .tabs-panel .servimg{
-        transform: translate(200px);
+        transform: translate(230px);
+        &.mobile-apps-img{
+          transform: translate(160px, -40px);
+        }
+        &.different-position{
+          transform: scale(1.2) translateX(170px);
+        }
       }
     & .box__text{
       font-size: 1.5rem;
@@ -1946,11 +2025,11 @@ button{
     }
     & .left-boximgline-1{
       bottom: 493px;
-      left: 320px;
+      left: 280px;
     }
     & .left-boximgline-2{
       top: 465px;
-      left: 750px;
+      left: 735px;
     }
     & .right-boxline2{
       top: -50px;
@@ -1960,38 +2039,767 @@ button{
     }
     & .right-boximg2line-1{
       bottom: 492px;
-      right: 100px;
+      right: 125px;
     }
     & .right-boximg2line-2{
       top: 460px;
       right: -330px;
     }
   }
-  .products .mobile
+  .products
   {
-    & .video-container{
-      position: absolute;
-      height: 63%;
-      width: 24%;
-      right: 125px;
+    .product-media{
+      display: flex;
+      position: relative;
+      left: 18rem;
+      left: 4rem;
+      top: 3rem;
+      & .blue-line-1{
+        position: absolute;
+        left: -5rem;
+        height: 45rem;
+        top: -8rem;
+        width: -webkit-fill-available;
+      }
+      & .blue-line-2{
+        position: absolute;
+        left: -6rem;
+        height: 40rem;
+        top: -5rem;
+        width: -webkit-fill-available;
+      }
+      & .circles{
+        position: absolute;
+        right: -2rem;
+        top: -6rem;
+      }
+      & .line{
+        height: 35rem;
+        position: absolute;
+        top: 0rem;
+        left: -2rem;
+      }
+      & .orange-circle{
+        position: absolute;
+        left: 0rem;
+        bottom: 9rem;
+      }
+      & .product-left-image, .product-right-image{
+        height: fit-content;
+        position: relative;
+      }
+      & .product-left-image{
+        left: 2rem;
+      }
+      & .product-right-image{
+        right: 2rem;
+      }
+      & .product-video-container{
+        position: relative;
+        height: -webkit-fill-available;
+        z-index: 3;
+        & .product-video{
+          left: 1rem;
+          position: relative;
+          top: -33.7rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 30rem;
+          }
+          // & .responsive-embed{
+          //   padding-bottom: 182%;
+          // }
+        }
+      }
     }
-    & .mobile-video{
-      position: absolute;
-    height: 90%;
-    width: 90%;
-    top: 60px;
-    left: 4px
-    }
-    & .video-R{
-    left: 730px;
-    }
-    & .video-L{
-      transform: translateX(445px);
-    }
-    .mobile-img{
-     width: auto;
-   }
+   //  & .video-container{
+   //    position: absolute;
+   //    height: 63%;
+   //    width: 24%;
+   //    right: 125px;
+   //  }
+   //  & .mobile-video{
+   //    position: absolute;
+   //  height: 90%;
+   //  width: 90%;
+   //  top: 60px;
+   //  left: 4px
+   //  }
+   //  & .video-R{
+   //  left: 730px;
+   //  }
+   //  & .video-L{
+   //    transform: translateX(445px);
+   //  }
+   //  .mobile-img{
+   //   width: auto;
+   // }
   }
 
 }
 /////end of large screens/////
+
+///products section mobile////
+@media only screen and (max-width:1024px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 3rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 0.5rem;
+    height: 20rem;
+    top: -8rem;
+    width: -webkit-fill-available;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 0rem;
+      height: 17rem;
+      top: -6rem;
+      width: -webkit-fill-available;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -5rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 2.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      height: -webkit-fill-available;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+
+// iphone 5
+@media only screen and (width:320px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 6rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 1.5rem;
+    height: 20rem;
+    top: -8rem;
+    // width: -webkit-fill-available;
+    width: auto;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 1rem;
+      height: 17rem;
+      top: -6rem;
+      // width: -webkit-fill-available;
+      width: auto;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -5rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 2.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      // height: -webkit-fill-available;
+      height: 17rem;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+
+// galaxy s5
+@media only screen and (width:360px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 3rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 1.5rem;
+    height: 20rem;
+    top: -8rem;
+    // width: -webkit-fill-available;
+    width: auto;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 1rem;
+      height: 17rem;
+      top: -6rem;
+      // width: -webkit-fill-available;
+      width: auto;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -5rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 2.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      // height: -webkit-fill-available;
+      height: 17rem;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+// iphone 6/7/8
+@media only screen and (width:375px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 3rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 1.5rem;
+    height: 20rem;
+    top: -8rem;
+    // width: -webkit-fill-available;
+    width: auto;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 1rem;
+      height: 17rem;
+      top: -6rem;
+      // width: -webkit-fill-available;
+      width: auto;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -1rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 7.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      // height: -webkit-fill-available;
+      height: 17rem;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+
+// pixel 2xl
+@media only screen and (width:411px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 6rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 1.5rem;
+    height: 20rem;
+    top: -8rem;
+    // width: -webkit-fill-available;
+    width: auto;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 1rem;
+      height: 17rem;
+      top: -6rem;
+      // width: -webkit-fill-available;
+      width: auto;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -1rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 7.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      // height: -webkit-fill-available;
+      height: 17rem;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+
+
+// iphone 6/7/8 plus
+@media only screen and (width:414px) {
+  .products{
+  & .product-media{
+    left: 0rem;
+    top: 2rem;
+    & .blue-line-1{
+      position: absolute;
+    left: 1.5rem;
+    height: 20rem;
+    top: -8rem;
+    // width: -webkit-fill-available;
+    width: auto;
+    }
+    & .blue-line-2{
+      position: absolute;
+      left: 1rem;
+      height: 17rem;
+      top: -6rem;
+      // width: -webkit-fill-available;
+      width: auto;
+    }
+    & .circles{
+      position: absolute;
+      right: 0rem;
+      top: -6rem;
+      width: 25%;
+    }
+    & .line{
+      height: 12rem;
+      position: absolute;
+      top: -1rem;
+      left: 0rem;
+    }
+    & .orange-circle{
+      position: absolute;
+      left: 0.5rem;
+      bottom: 7.5rem;
+      width: 10%;
+    }
+    & .product-left-image{
+      position: absolute;
+      top: -3rem;
+      left: 1rem;
+      // height: -webkit-fill-available;
+      height: 12rem;
+    }
+    & .product-right-image{
+      position: absolute;
+    top: -3rem;
+    right: 1rem;
+    height: 12rem;
+    // height: -webkit-fill-available;
+    }
+    & .product-video-container{
+      position: relative;
+      // height: -webkit-fill-available;
+      height: 17rem;
+      z-index: 3;
+      width: 40%;
+      top: -6rem;
+      left: 30%;
+      right: 30%;
+      & .product-mobile-mockup{
+        height: 17rem;
+        width: -webkit-fill-available;
+      }
+        & .product-video{
+          left: 0.5rem;
+          position: relative;
+          top: -15.4rem;
+          width: 89%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 13.3rem;
+          }
+        }
+
+    }
+  }
+}
+
+}
+
+
+//ipad and ipad pro
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .products{
+    & .product-media{
+      left: 0rem;
+      top: 26rem;
+      & .product-left-image{
+        position: absolute;
+        top: -3rem;
+        left: 7rem;
+        height: 17rem;
+      }
+      & .product-right-image{
+        position: absolute;
+        top: -3rem;
+        right: 7rem;
+        height: 17rem;
+      }
+      & .product-video-container{
+        position: relative;
+        height: unset;
+        z-index: 3;
+        width: 40%;
+        top: -6rem;
+        left: 37%;
+        right: 37%;
+        & .product-mobile-mockup{
+          height: 22rem;
+          width: auto;
+        }
+        & .product-video{
+          left: 0.6rem;
+          position: relative;
+          top: -20rem;
+          width: 54%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 17.3rem;
+          }
+        }
+      }
+
+      & .blue-line-1{
+        position: absolute;
+        left: 0.5rem;
+        height: 20rem;
+        top: -8rem;
+        width: -webkit-fill-available;
+      }
+      & .blue-line-2{
+        position: absolute;
+        left: 0rem;
+        height: 17rem;
+        top: -6rem;
+        width: -webkit-fill-available;
+      }
+      & .line{
+            height: 15rem;
+            position: absolute;
+            top: -2rem;
+            left: 5rem;
+      }
+      & .circles{
+            position: absolute;
+            right: 5rem;
+            top: -5rem;
+            width: 20%
+      }
+      & .orange-circle{
+
+            position: absolute;
+            left: 5.5rem;
+            bottom: 24.5rem;
+            width: 10%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (width:1024px) {
+  .products{
+    & .product-media{
+      left: 0rem;
+      top: 26rem;
+      & .product-left-image{
+        position: absolute;
+        top: -3rem;
+        left: 15rem;
+        height: 19rem;
+      }
+      & .product-right-image{
+        position: absolute;
+        top: -3rem;
+        right: 15rem;
+        height: 19rem;
+      }
+      & .product-video-container{
+        position: relative;
+        height: unset;
+        z-index: 3;
+        width: 40%;
+        top: -6rem;
+        left: 41%;
+        right: 41%;
+        & .product-mobile-mockup{
+          height: 22rem;
+          width: auto;
+        }
+        & .product-video{
+          left: 0.6rem;
+          position: relative;
+          top: -20rem;
+          width: 40%;
+          & iframe{
+            width: -webkit-fill-available;
+            height: 17.3rem;
+          }
+        }
+      }
+
+      & .blue-line-1{
+        position: absolute;
+        left: 0.5rem;
+        height: 20rem;
+        top: -8rem;
+        width: -webkit-fill-available;
+      }
+      & .blue-line-2{
+        position: absolute;
+        left: 0rem;
+        height: 17rem;
+        top: -6rem;
+        width: -webkit-fill-available;
+      }
+      & .line{
+        height: 15rem;
+        position: absolute;
+        top: -2rem;
+        left: 13rem
+      }
+      & .circles{
+        position: absolute;
+      right: 12rem;
+      top: -5rem;
+      width: 15%;
+      }
+      & .orange-circle{
+        position: absolute;
+            left: 13.5rem;
+            bottom: 22.5rem;
+            width: 10%;
+      }
+    }
+  }
+}

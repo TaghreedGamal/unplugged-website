@@ -265,7 +265,7 @@ get_header(); ?>
                          </div>
                     </div>
                 <div>
-                       <svg class="servimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+                       <svg class=" mobile-apps-img servimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="445.032" y1="428.362" x2="688.452" y2="672.793"/>
                     <path class="serv-cir" id="XMLID_1_" fill="#55BBEB" d="M407.462,269.119c0.31-27.439,10.399-51.077,29.962-70.229c0.069-0.081,0.137-0.13,0.207-0.19  c0.379-0.654,0.771-1.278,1.131-1.937c0.223-0.366,0.285-0.79,0.104-1.203c-0.384-0.855-0.768-1.719-1.193-2.587  c-7.392-14.905-16.633-28.589-27.642-41.062c-10.302-11.649-21.83-21.96-34.651-30.818c-18.3-12.647-38.182-21.845-59.673-27.568  c-9.184-2.425-18.48-4.166-27.916-5.246c-3.99-0.442-7.983-0.757-11.972-0.993c-8.637-0.529-17.288-0.293-25.91,0.374  c-0.111,0.013-0.213,0.013-0.315,0.027c-4.184,0.53-8.386,0.913-12.551,1.528c-8.344,1.267-16.566,3.044-24.67,5.399  c-14.137,4.068-27.612,9.714-40.453,16.9c-19.128,10.696-35.957,24.291-50.454,40.704c-11.788,13.371-21.548,28.081-29.204,44.175  c-4.674,9.812-8.508,19.961-11.403,30.444c-2.298,8.348-4.114,16.751-5.224,25.358c-0.111,0.793-0.191,1.601-0.292,2.41  c-0.508,4.742-2.348,24.69-0.221,45.83c0.141,1.226,0.292,2.466,0.449,3.688c0.695,5.545,1.69,11.053,2.903,16.491  c3.054,13.735,7.472,26.985,13.393,39.75c7.688,16.554,17.49,31.724,29.492,45.491c10.439,11.98,22.167,22.544,35.229,31.574  c15.701,10.895,32.662,19.24,50.877,24.997c8.052,2.545,16.216,4.562,24.535,5.98c3.116,0.527,6.233,1.071,9.381,1.404  c3.25,0.33,6.48,0.838,9.734,1.008c6.008,0.331,12,0.663,18.021,0.418c4.108-0.15,8.205-0.187,12.31-0.536  c5.044-0.462,10.051-1.088,15.055-1.838c8.132-1.266,16.128-3.124,24.013-5.45c13.082-3.858,25.624-9.045,37.592-15.596  c14.602-7.986,27.948-17.69,40.048-29.097c2.86-2.692,5.609-5.487,8.285-8.345L407.462,269.119z"/>
                     <path class="serv-draw" fill="#EE771A" d="M293.096,472.705c-5.324-4.688-9.157-10.304-12.415-16.572c-0.875-1.683-2.879-1.846-4.419-1.158  c-8.027,3.587-13.575,10.389-20.36,15.7c-3.227-3.531-6.257-7.252-9.496-10.77c-2.203-2.395-6.806-8.414-10.721-7.957  c-8.847,1.035-15.293,10.978-21.558,17.71c-3.621-7.362-8.256-18.126-16.554-17.98c-10.026,0.172-14.325,12.988-20.157,19.304  c-2.821,3.053,1.734,7.635,4.567,4.568c4.8-5.195,7.691-12.587,13.384-16.909c5.598-4.247,13.168,14.686,15.136,17.979  c1.132,1.896,3.492,1.997,5.074,0.652c3.372-2.866,6.252-6.351,9.292-9.558c1.521-1.604,8.087-9.735,10.419-9.343  c3.137,0.523,7.514,7.13,9.489,9.343c2.827,3.169,5.485,6.506,8.438,9.558c0.941,0.975,2.755,1.323,3.914,0.506  c6.817-4.802,12.243-11.504,19.434-15.696c3.204,5.673,7.019,10.836,11.965,15.19C291.642,480.017,296.227,475.465,293.096,472.705z  "/>
@@ -523,7 +523,7 @@ get_header(); ?>
             </div>
 
             <div class="tabs-panel" data-service="app" id="panel3v">
-                <svg class="servimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+                <svg class=" mobile-apps-img servimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
                     <line class="serv-line" fill="none" stroke="#EE7719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="445.032" y1="428.362" x2="688.452" y2="672.793"/>
                     <path class="serv-cir" id="XMLID_1_" fill="#55BBEB" d="M407.462,269.119c0.31-27.439,10.399-51.077,29.962-70.229c0.069-0.081,0.137-0.13,0.207-0.19  c0.379-0.654,0.771-1.278,1.131-1.937c0.223-0.366,0.285-0.79,0.104-1.203c-0.384-0.855-0.768-1.719-1.193-2.587  c-7.392-14.905-16.633-28.589-27.642-41.062c-10.302-11.649-21.83-21.96-34.651-30.818c-18.3-12.647-38.182-21.845-59.673-27.568  c-9.184-2.425-18.48-4.166-27.916-5.246c-3.99-0.442-7.983-0.757-11.972-0.993c-8.637-0.529-17.288-0.293-25.91,0.374  c-0.111,0.013-0.213,0.013-0.315,0.027c-4.184,0.53-8.386,0.913-12.551,1.528c-8.344,1.267-16.566,3.044-24.67,5.399  c-14.137,4.068-27.612,9.714-40.453,16.9c-19.128,10.696-35.957,24.291-50.454,40.704c-11.788,13.371-21.548,28.081-29.204,44.175  c-4.674,9.812-8.508,19.961-11.403,30.444c-2.298,8.348-4.114,16.751-5.224,25.358c-0.111,0.793-0.191,1.601-0.292,2.41  c-0.508,4.742-2.348,24.69-0.221,45.83c0.141,1.226,0.292,2.466,0.449,3.688c0.695,5.545,1.69,11.053,2.903,16.491  c3.054,13.735,7.472,26.985,13.393,39.75c7.688,16.554,17.49,31.724,29.492,45.491c10.439,11.98,22.167,22.544,35.229,31.574  c15.701,10.895,32.662,19.24,50.877,24.997c8.052,2.545,16.216,4.562,24.535,5.98c3.116,0.527,6.233,1.071,9.381,1.404  c3.25,0.33,6.48,0.838,9.734,1.008c6.008,0.331,12,0.663,18.021,0.418c4.108-0.15,8.205-0.187,12.31-0.536  c5.044-0.462,10.051-1.088,15.055-1.838c8.132-1.266,16.128-3.124,24.013-5.45c13.082-3.858,25.624-9.045,37.592-15.596  c14.602-7.986,27.948-17.69,40.048-29.097c2.86-2.692,5.609-5.487,8.285-8.345L407.462,269.119z"/>
                     <path class="serv-draw" fill="#EE771A" d="M293.096,472.705c-5.324-4.688-9.157-10.304-12.415-16.572c-0.875-1.683-2.879-1.846-4.419-1.158  c-8.027,3.587-13.575,10.389-20.36,15.7c-3.227-3.531-6.257-7.252-9.496-10.77c-2.203-2.395-6.806-8.414-10.721-7.957  c-8.847,1.035-15.293,10.978-21.558,17.71c-3.621-7.362-8.256-18.126-16.554-17.98c-10.026,0.172-14.325,12.988-20.157,19.304  c-2.821,3.053,1.734,7.635,4.567,4.568c4.8-5.195,7.691-12.587,13.384-16.909c5.598-4.247,13.168,14.686,15.136,17.979  c1.132,1.896,3.492,1.997,5.074,0.652c3.372-2.866,6.252-6.351,9.292-9.558c1.521-1.604,8.087-9.735,10.419-9.343  c3.137,0.523,7.514,7.13,9.489,9.343c2.827,3.169,5.485,6.506,8.438,9.558c0.941,0.975,2.755,1.323,3.914,0.506  c6.817-4.802,12.243-11.504,19.434-15.696c3.204,5.673,7.019,10.836,11.965,15.19C291.642,480.017,296.227,475.465,293.096,472.705z  "/>
@@ -1126,21 +1126,43 @@ get_header(); ?>
              ?>
 <section>
     <div class="products container">
-        <div class="mobile">
-            <div class="v-line" style="opacity:0"></div>
+      <!-- <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/blogs/line-2.svg" alt=""> -->
+
+      <div class="product-media">
+        <svg  class="blue-line-1"xmlns="http://www.w3.org/2000/svg" width="218" height="248" viewBox="0 0 218 248">
+            <path fill="none" fill-rule="nonzero" stroke="#55BBEB" stroke-linecap="round" stroke-width="2" d="M4.084 4.174l209.52 240.109"/>
+        </svg>
+        <svg  class="blue-line-2"xmlns="http://www.w3.org/2000/svg" width="218" height="248" viewBox="0 0 218 248">
+            <path fill="none" fill-rule="nonzero" stroke="#55BBEB" stroke-linecap="round" stroke-width="2" d="M4.084 4.174l209.52 240.109"/>
+        </svg>
+        <img class="circles" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/products/circles.svg" alt="">
+        <img class="line" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/line.svg" alt="">
+        <img class="orange-circle" src="<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/oval.svg" alt="">
+          <img class="product-left-image" alt=""src="<?php the_field('product_home_page_left_image')?>">
+          <div class="product-video-container">
+            <img class="product-mobile-mockup" alt=""  src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
+            <div class="product-video">
+              <?php the_field('product_home_page_video_link'); ?>
+            </div>
+          </div>
+          <img class="product-right-image" style="" src="<?php the_field('product_home_page_right_image')?>">
+      </div>
+        <!-- <div class="mobile"> -->
+            <!-- <div class="v-line" style="opacity:0"></div>
             <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-left.png">
             <div class="v-line2" style="opacity:0"></div>
-            <div class="v-circle" style="opacity:0"></div>
+            <div class="v-circle" style="opacity:0"></div> -->
 
-            <div class="video-container">
-                <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png">
-              <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
+            <!-- <div class="video-container"> -->
+                <!-- <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png"> -->
+              <!-- <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
                 <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
-              </video>
-            </div>
-            <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-right.png">
-            <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div>
-        </div>
+              </video> -->
+
+            <!-- </div> -->
+            <!-- <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-right.png">
+            <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div> -->
+        <!-- </div> -->
          <div class="box">
             <h3 class="box__title1">OUR PRODUCTS</h3>
 

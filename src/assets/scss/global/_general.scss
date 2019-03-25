@@ -1,13 +1,17 @@
 h1{
-	color:$title-color; 
-    font-family: $title-font; 
+	color:$title-color;
+    font-family: $title-font;
 }
 p{
-	font-family: $main-font; 
+	font-family: $main-font;
 }
 .container{
 	padding-left: 60px;
 	padding-right: 60px;
+	@media(min-width: 1600px) and (max-width: 2000px) {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
     @media (max-width: 64em){
         padding-left: 35px !important;
         padding-right: 35px !important;
@@ -157,10 +161,10 @@ p{
 #scrollCircle text { font-family: $main-font; font-size: 25px; }
 
 #scrollCircle svg
- {  position: absolute; left: 0; top: 0;    
+ {  position: absolute; left: 0; top: 0;
     width: 170px;
     height: 200px;
-    animation: rotate 5s infinite; 
+    animation: rotate 5s infinite;
     animation-timing-function: linear;
     @media (width: 320px){
         width: 190px;
@@ -171,4 +175,3 @@ p{
     from { transform: rotate(360deg); }
     to { transform: rotate(0); }
 }
-

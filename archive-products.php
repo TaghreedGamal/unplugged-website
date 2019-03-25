@@ -20,9 +20,8 @@ get_header(); ?>
 <div class="products-page-container container" >
   <div class="products-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
 
-    <h1 class="products-header">We Devise and <br>
-  Launch Digital
-  Products</h1>
+    <h1 class="products-header">We Build and <br> Launch Digital Products
+  </h1>
   <div class="header-images">
     <img class="empty-rocket" src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/rocket-wireframe.png" alt="">
     <img class="middle-rocket"src="<?php echo get_stylesheet_directory_uri()?>/src/assets/images/products/middle-rocket-2.png" alt="">

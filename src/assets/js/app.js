@@ -471,41 +471,41 @@ $(window).scroll(function() {
 
 /////// video
 
-var screenSize=$(window).width();
-if (screenSize > '1024'){
- var aud = document.getElementById("myvideo");
-$(window).scroll(function() {
-    var v= $(".products");
-    var top_of_element = v.offset().top;
-    var bottom_of_element = v.offset().top + v.outerHeight();
-    var top_of_screen = $(window).scrollTop();
-    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
-    if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
-        aud.play();
-        var video=new TimelineMax();
-        video.to(".video-R",0.3,{x:20,opacity:1},0.1)
-        .to(".video-L",0.3,{x:30,opacity:1},0.1)
-        .to(".v-line",0.3,{x:0,opacity:1})
-        .to(".v-line2",0.3,{x:0,opacity:1})
-        .to(".v-circle",0.6,{scale:1,opacity:1})
-        .to(".v-scircle",0.3,{scale:1,opacity:1})
-        .to(".v-lcircle",0.3,{scale:1,opacity:1});
-    }
-    else{
-        aud.pause();
-    }
-    // aud.onended = function() {
-    //     var video=new TimelineMax();
-    //     video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
-    //     .to(".video-L",0.3,{x:30,opacity:1},0.1)
-    //     .to(".v-line",0.3,{x:0,opacity:1})
-    //     .to(".v-line2",0.3,{x:0,opacity:1})
-    //     .to(".v-circle",0.6,{scale:1,opacity:1})
-    //     .to(".v-scircle",0.3,{scale:1,opacity:1})
-    //     .to(".v-lcircle",0.3,{scale:1,opacity:1});
-    // };
- });
-}
+// var screenSize=$(window).width();
+// if (screenSize > '1024'){
+//  var aud = document.getElementById("myvideo");
+// $(window).scroll(function() {
+//     var v= $(".products");
+//     var top_of_element = v.offset().top;
+//     var bottom_of_element = v.offset().top + v.outerHeight();
+//     var top_of_screen = $(window).scrollTop();
+//     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+//     if((top_of_element < top_of_screen) && (top_of_screen < bottom_of_element)){
+//         aud.play();
+//         var video=new TimelineMax();
+//         video.to(".video-R",0.3,{x:20,opacity:1},0.1)
+//         .to(".video-L",0.3,{x:30,opacity:1},0.1)
+//         .to(".v-line",0.3,{x:0,opacity:1})
+//         .to(".v-line2",0.3,{x:0,opacity:1})
+//         .to(".v-circle",0.6,{scale:1,opacity:1})
+//         .to(".v-scircle",0.3,{scale:1,opacity:1})
+//         .to(".v-lcircle",0.3,{scale:1,opacity:1});
+//     }
+//     else{
+//         aud.pause();
+//     }
+//     // aud.onended = function() {
+//     //     var video=new TimelineMax();
+//     //     video.to(".video-R",0.3,{x:-30,opacity:1},0.1)
+//     //     .to(".video-L",0.3,{x:30,opacity:1},0.1)
+//     //     .to(".v-line",0.3,{x:0,opacity:1})
+//     //     .to(".v-line2",0.3,{x:0,opacity:1})
+//     //     .to(".v-circle",0.6,{scale:1,opacity:1})
+//     //     .to(".v-scircle",0.3,{scale:1,opacity:1})
+//     //     .to(".v-lcircle",0.3,{scale:1,opacity:1});
+//     // };
+//  });
+// }
 
 }
 ////////// footer
@@ -546,4 +546,32 @@ $(window).scroll(function() {
          f.play();
         }
 
+ });
+
+
+
+ var home_page_products_animation = new TimelineMax();
+ home_page_products_animation.from(".products.container .product-media .product-left-image ", 1, {x:350, opacity: 0},1)
+                             .from(".products.container .product-media .product-right-image ", 1, {x:-350, opacity: 0},1)
+                             .from(".products.container .product-media .line ", 0.5, {x:-200, opacity: 0},3)
+                             .from(".products.container .product-media .blue-line-1 ", 1, {y:300, opacity: 0},1)
+                             .from(".products.container .product-media .blue-line-2 ", 0.5, {y:300, opacity:0},2)
+                             .from(".products.container .product-media .circles ", 0.5, {scale:0, opacity:0},3)
+                             .from(".products.container .product-media .orange-circle ", 0.5, {scale:0, opacity:0},3)
+
+
+
+ home_page_products_animation.pause();
+
+ $(window).scroll(function() {
+   var products_container= $(".products.container");
+   if(products_container.length!=0){
+   var top_of_element = products_container.offset().top;
+   var bottom_of_element = products_container.offset().top + products_container.outerHeight();
+   var top_of_screen = $(window).scrollTop();
+   var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+   if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+         home_page_products_animation.play();
+       }
+     }
  });
