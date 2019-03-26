@@ -2390,6 +2390,16 @@
       }
       &.link{
         background-color: #cdcdcd;
+        // top: 8px;
+        top: 10px;
+        left: -2px;
+        position: relative;
+        padding: auto;
+        padding: 0.5rem;
+        cursor: pointer;
+        & i{
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -2967,12 +2977,30 @@
                & li{
                  padding-left: 0px;
                  margin: 0.25rem 5px;
+                 & a{
+                   &:before{
+                     font-size: 1.7rem;
+                   }
+                 }
+                 &.share-link{
+                   & .icon-container{
+                     top: 8px;
+                     left: 0px;
+                     & i{
+                       font-size: 1rem;
+                     }
+                   }
+                 }
+                 &.share-end{
+                   display: none;
+                 }
                }
              }
             & .share-custom-quora{
              a{
                // top: 0 !important;
-               padding: 0.9em !important;
+               padding: 0.8em !important;
+               top:14px;
              }
            }
           }
@@ -3066,6 +3094,7 @@
         font-size: 2.5rem;
         text-align: center;
       }
+
       & .share-social-media{
         width: 100%;
         padding: 0;
@@ -3080,12 +3109,30 @@
               & li{
                 padding-left: 0px;
                 margin: 0.25rem 5px;
+                & a{
+                  &:before{
+                    font-size: 1.7rem;
+                  }
+                }
+                &.share-link{
+                  & .icon-container{
+                    top: 8px;
+                    left: 0px;
+                    & i{
+                      font-size: 1rem;
+                    }
+                  }
+                }
+                &.share-end{
+                  display: none;
+                }
               }
             }
            & .share-custom-quora{
             a{
               // top: 0 !important;
-              padding: 0.9em !important;
+              padding: 0.8em !important;
+              top:14px;
             }
           }
          }
@@ -3204,6 +3251,14 @@
                 font-size: 1.5rem;
               }
             }
+            & ul li{
+              &.share-link{
+                & .icon-container{
+                padding: 0.3rem;
+                top: 3px;
+              }
+              }
+            }
            & .share-custom-quora{
             a{
               top: 10px !important;
@@ -3224,6 +3279,14 @@
               padding: 0.3em;
               &:before{
                 font-size: 1.5rem;
+              }
+            }
+            & ul li{
+              &.share-link{
+                & .icon-container{
+                padding: 0.3rem;
+                top: 5px;
+              }
               }
             }
            & .share-custom-quora{

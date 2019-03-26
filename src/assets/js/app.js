@@ -553,11 +553,11 @@ $(window).scroll(function() {
  var home_page_products_animation = new TimelineMax();
  home_page_products_animation.from(".products.container .product-media .product-left-image ", 1, {x:350, opacity: 0},1)
                              .from(".products.container .product-media .product-right-image ", 1, {x:-350, opacity: 0},1)
-                             .from(".products.container .product-media .line ", 0.5, {x:-200, opacity: 0},3)
-                             .from(".products.container .product-media .blue-line-1 ", 1, {y:300, opacity: 0},1)
-                             .from(".products.container .product-media .blue-line-2 ", 0.5, {y:300, opacity:0},2)
-                             .from(".products.container .product-media .circles ", 0.5, {scale:0, opacity:0},3)
-                             .from(".products.container .product-media .orange-circle ", 0.5, {scale:0, opacity:0},3)
+                             .from(".products.container .product-media .line ", 0.5, {x:-200, opacity: 0},4)
+                             .from(".products.container .product-media .blue-line-1 ", 0.5, {y:300, opacity: 0},2)
+                             .from(".products.container .product-media .blue-line-2 ", 0.5, {y:300, opacity:0},3)
+                             .from(".products.container .product-media .circles ", 0.5, {scale:0, opacity:0},4)
+                             .from(".products.container .product-media .orange-circle ", 0.5, {scale:0, opacity:0},4)
 
 
 
