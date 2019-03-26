@@ -1,3 +1,22 @@
+body:after{
+  content: "beta";
+  position: fixed;
+  width: 80px;
+  height: 25px;
+  background: #FF7900;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
 body{
     overflow-x: hidden;
     // max-width: 1400px;
@@ -1938,7 +1957,8 @@ button{
         }
 }
     h1 {
-        font-size: 100px;
+        // font-size: 100px;
+        font-size: 72px;
         line-height: 1.2;
     }
         .hi1{
@@ -2155,7 +2175,7 @@ button{
     }
     & .blue-line-2{
       position: absolute;
-      left: 0rem;
+      left: 2.5rem;
       height: 17rem;
       top: -6rem;
       width: -webkit-fill-available;
@@ -2225,9 +2245,10 @@ button{
 // iphone 5
 @media only screen and (width:320px) {
   .products{
+    margin-top: 0;
   & .product-media{
     left: 0rem;
-    top: 6rem;
+    top: 8rem;
     & .blue-line-1{
       position: absolute;
     left: 1.5rem;
@@ -2238,9 +2259,9 @@ button{
     }
     & .blue-line-2{
       position: absolute;
-      left: 1rem;
-      height: 17rem;
-      top: -6rem;
+      // left: 1rem;
+      // height: 17rem;
+      // top: -6rem;
       // width: -webkit-fill-available;
       width: auto;
     }
@@ -2253,13 +2274,13 @@ button{
     & .line{
       height: 12rem;
       position: absolute;
-      top: -5rem;
+      top: -1rem;
       left: 0rem;
     }
     & .orange-circle{
       position: absolute;
       left: 0.5rem;
-      bottom: 2.5rem;
+      bottom: 7.5rem;
       width: 10%;
     }
     & .product-left-image{
@@ -2310,9 +2331,10 @@ button{
 // galaxy s5
 @media only screen and (width:360px) {
   .products{
+    margin-top: 0;
   & .product-media{
     left: 0rem;
-    top: 3rem;
+    top: 8rem;
     & .blue-line-1{
       position: absolute;
     left: 1.5rem;
@@ -2323,9 +2345,9 @@ button{
     }
     & .blue-line-2{
       position: absolute;
-      left: 1rem;
-      height: 17rem;
-      top: -6rem;
+      // left: 1rem;
+      // height: 17rem;
+      // top: -6rem;
       // width: -webkit-fill-available;
       width: auto;
     }
@@ -2338,13 +2360,13 @@ button{
     & .line{
       height: 12rem;
       position: absolute;
-      top: -5rem;
+      top: -1rem;
       left: 0rem;
     }
     & .orange-circle{
       position: absolute;
       left: 0.5rem;
-      bottom: 2.5rem;
+      bottom: 7.5rem;
       width: 10%;
     }
     & .product-left-image{
@@ -2394,9 +2416,10 @@ button{
 // iphone 6/7/8
 @media only screen and (width:375px) {
   .products{
+    margin-top: 0;
   & .product-media{
     left: 0rem;
-    top: 3rem;
+    top: 8rem;
     & .blue-line-1{
       position: absolute;
     left: 1.5rem;
@@ -2407,9 +2430,9 @@ button{
     }
     & .blue-line-2{
       position: absolute;
-      left: 1rem;
-      height: 17rem;
-      top: -6rem;
+      // left: 1rem;
+      // height: 17rem;
+      // top: -6rem;
       // width: -webkit-fill-available;
       width: auto;
     }
@@ -2479,9 +2502,10 @@ button{
 // pixel 2xl
 @media only screen and (width:411px) {
   .products{
+    margin-top: 0;
   & .product-media{
     left: 0rem;
-    top: 6rem;
+    top: 8rem;
     & .blue-line-1{
       position: absolute;
     left: 1.5rem;
@@ -2492,9 +2516,9 @@ button{
     }
     & .blue-line-2{
       position: absolute;
-      left: 1rem;
-      height: 17rem;
-      top: -6rem;
+      // left: 1rem;
+      // height: 17rem;
+      // top: -6rem;
       // width: -webkit-fill-available;
       width: auto;
     }
@@ -2565,9 +2589,10 @@ button{
 // iphone 6/7/8 plus
 @media only screen and (width:414px) {
   .products{
+    margin-top: 0px;
   & .product-media{
     left: 0rem;
-    top: 2rem;
+    top: 8rem;
     & .blue-line-1{
       position: absolute;
     left: 1.5rem;
@@ -2577,10 +2602,10 @@ button{
     width: auto;
     }
     & .blue-line-2{
-      position: absolute;
-      left: 1rem;
-      height: 17rem;
-      top: -6rem;
+      // position: absolute;
+      // left: 1rem;
+      // height: 17rem;
+      // top: -6rem;
       // width: -webkit-fill-available;
       width: auto;
     }
