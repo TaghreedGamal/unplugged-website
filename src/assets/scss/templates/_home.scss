@@ -1718,6 +1718,8 @@ button{
             // transform: translateY(100px);
             &__device-laptop{
                 transform: translateY(100px);
+                transform: translateX(-20px);
+
             }
             &__device-mobile{
                 transform: translateY(-200px);

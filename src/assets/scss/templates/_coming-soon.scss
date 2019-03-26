@@ -1,6 +1,6 @@
 .page-template-coming-soon{
 	// height: 100vh;
-	// overflow-y: hidden; 
+	// overflow-y: hidden;
 	.top-bar-right{
 		display: none;
 	}
@@ -23,7 +23,8 @@
 }
 .coming-soon__background{
 	background-color:$background-color;
-	height: 85vh;
+	// height: 85vh;
+	height: 90vh;
     position: absolute;
     width: 100%;
     @media (max-width: 64em){
@@ -69,15 +70,18 @@
 			@media (max-width: 40em){
 				flex-flow:column;
 				align-items:flex-end;
-				top: -10px;
+				margin: 1rem 0.5rem;
+				// top: -10px;
 			    .button{
-			    	width: 140px;
+			    	// width: 140px;
+						width: 160px;
 			    	font-size: 11px;
+						margin-top: 0;
 			    	&-download{
-						top: 45px;
-					    right: 2px;
-					    position: absolute;
-					}	
+						// top: 45px;
+					  //   right: 2px;
+					  //   position: absolute;
+					}
 			    }
 			}
 		}
@@ -149,7 +153,7 @@
     			width: 50%;
 			}
 		}
-	}	
+	}
 }
 @media (max-width: 64em){
 	.coming-soon{
@@ -157,7 +161,7 @@
 		flex-flow:column;
 		width: 100%;
 		align-items:flex-start;
-		
+
 		&__image{
 			display: none;
 			&__responsiveImage{
@@ -167,7 +171,7 @@
     			right: 0;
 			}
 		}
-	}	
+	}
 }
 @media (max-width: 40em){
 	.coming-soon{
@@ -177,7 +181,7 @@
 				top:28%;
 			}
 		}
-	}	
+	}
 }
 @media (width: 320px){
 	.coming-soon{
@@ -185,6 +189,6 @@
 			&__responsiveImage{
 				top:32%;
 			}
-		}	
+		}
 	}
 }
