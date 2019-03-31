@@ -141,7 +141,7 @@ get_header(); ?>
 <section class="partners">
     <div class="container">
         <div class="partners__logos">
-            <h3 class="section-titles">Clients that put there trust in us!</h3>
+            <h3 class="section-titles">Clients that put their trust in us!</h3>
             <div class="clients">
                 <?php
                 if( have_rows('slider') ):
