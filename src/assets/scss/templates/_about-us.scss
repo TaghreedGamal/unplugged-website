@@ -228,7 +228,8 @@
 					}
 					&__position{
 						font-size: 16px;
-						font-family: $medium-font;
+						// font-family: $medium-font;
+						font-family: 'Cabin-Medium';
 						margin-bottom: 0;
 					}
 					@media (max-width: 40em){
@@ -262,4 +263,17 @@
 }
 .hidden{
 	z-index: 0 !important;
+}
+
+
+@media only screen and (max-width:1024px) {
+	.about-us__tabs{
+		& .team-info__perMember{
+		 & .perMember__img{
+			 	& .f-img,.t-img,.b-img,.r-img,.l-img,.tr-img,.tl-img,.br-img,.bl-img{
+					display: none;
+			 }
+		 }
+	 }
+	}
 }
