@@ -248,9 +248,10 @@
             @media (max-width: 60em){
               display: block !important;
               .button{
-                width: 54%;
-                left: 40%;
-                margin-left: 0;
+                // width: 54%;
+                width: 60%;
+                left: 30%;
+                margin-left: -20px;
                 z-index: 1;
               }
             }
@@ -274,7 +275,7 @@
             justify-content: space-around;
             width: 50%;
             padding-top: 0;
-            margin-top: 0;
+            // margin-top: 0;
             margin-left: 32%;
             @media (max-width: 60em){
               width: 60%;

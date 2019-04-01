@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
   }
- 
+
 }
 
    .copy-right{
@@ -48,7 +48,7 @@ footer{
             margin:auto;
             color: #003a48;
             margin-top: 10px;
-            
+
             ul{
                 width: fit-content;
                 a{
@@ -92,7 +92,7 @@ footer{
         }
         #searchsubmit{
             border-radius: 0 20px 20px 0;
-        } 
+        }
     }
       #input_6_1{
          border-radius: 20px ;
@@ -116,9 +116,12 @@ footer{
           width: 125px;
           height: 40px;
           font-size: 14px;
+          padding: 2px !important;
         }
         @media (max-width: 40em){
           right: 19px;
+          padding: 2px !important;
+
         }
         @media (width: 320px){
           right: 15px;
@@ -133,12 +136,12 @@ footer{
             p {
               color: #afabab;
               padding-top: 20px;
-              font-size: 18px; 
+              font-size: 18px;
               margin-bottom: -20px;
               @media (max-width: 64em){
                 font-size: 11px;
               }
-           } 
+           }
         }
         .gf_simple_horizontal_wrapper {
          max-width: 50%;
@@ -181,7 +184,7 @@ footer{
                 margin-right: 0px;
                 li:last-child{
                   font-size: 20px;
-                } 
+                }
               }
             }
           }
@@ -199,9 +202,9 @@ footer{
     position: absolute;
 //    top: 25%;
     left: 3%;
-    width: 130px;    
+    width: 130px;
     &::before{
-    content: "";    
+    content: "";
     position: absolute;
     top: -100px;
     left: 100px;
@@ -327,7 +330,7 @@ footer{
 
 @media (max-width:1400px){
     .footer{
-        .right{ 
+        .right{
             .righti {
                 width: 165px;
             }
@@ -339,4 +342,12 @@ footer{
   img.image.wp-image-67.attachment-full.size-full{
     width: 158px;
   }
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width:2000px) {
+footer #gform_submit_button_6{
+            width: 15rem;
+  }
+
 }

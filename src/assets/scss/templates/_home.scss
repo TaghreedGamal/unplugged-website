@@ -558,7 +558,7 @@ button{
                 justify-content: center;
             }
             .slick-list.draggable {
-                padding-bottom: 50px;
+                // padding-bottom: 50px;
             }
             .slick-slide{
                 width: fit-content !important;
@@ -612,7 +612,9 @@ button{
             .box{
                  @media (max-width: 64em){
                     width: 80%;
-                    transform: translate(15%,-105px);
+                    // transform: translate(15%,-105px);
+                    transform: translateY(-105px);
+                    margin: 0 auto;
                     text-align: center;
                     padding: 30px;
                     &__title{
@@ -1210,7 +1212,7 @@ button{
     @media (max-width: 64em){
         flex-flow:column;
         width: 100%;
-        padding-top: 300px;
+        // padding-top: 300px;
         .box{
             padding-left: 0;
             padding:25px;
