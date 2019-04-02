@@ -183,10 +183,12 @@
 		.team-info{
 			display: flex;
 			flex-wrap:wrap;
-			justify-content: space-between;
+			// justify-content: space-between;
 			margin-top: 70px;
 			&__perMember{
-				width: 22.3%;
+				// width: 22.3%;
+				// width: 25%;
+				width: 33%;
 				display: flex;
 				position: relative;
 			    justify-content: center;
@@ -266,9 +268,26 @@
 }
 
 
+@media only screen and (min-width: 1700px) {
+	.about-us__tabs{
+		& .team-info__perMember{
+			width: 25%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1250px) {
+	.about-us__tabs{
+		& .team-info__perMember{
+			width: 50%;
+		}
+	}
+}
+
 @media only screen and (max-width:1024px) {
 	.about-us__tabs{
 		& .team-info__perMember{
+			width: 100%;
 		 & .perMember__img{
 			 	& .f-img,.t-img,.b-img,.r-img,.l-img,.tr-img,.tl-img,.br-img,.bl-img{
 					display: none;

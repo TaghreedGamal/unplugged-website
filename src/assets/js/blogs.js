@@ -197,6 +197,8 @@ if(blog_controls.length!=0){
 jQuery(document).ready( function($) {
     if($('.loadmorehidden').children()[0]==undefined){
         $(".latest-articles-section .load-more").remove();
+        $("#search-results .load-more").remove();
+
     }
   var ppp = 3; // Post per page
   var pageNumber = 1;
