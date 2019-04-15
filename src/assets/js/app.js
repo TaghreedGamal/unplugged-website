@@ -7,6 +7,7 @@ import products from "./products";
 import blogs from "./blogs";
 import comindSoon from "./comingSoon";
 import about from "./about";
+import careers from "./careers";
 import team from "./team";
 
 
