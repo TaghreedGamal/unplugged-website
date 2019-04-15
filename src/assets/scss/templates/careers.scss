@@ -1,0 +1,752 @@
+.careers-page-container{
+  margin-top: -7rem;
+  & .join-team-button{
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 12px 70px !important;
+  }
+  &-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em;
+    padding-right: 0.5em;
+    padding-top: 10em;
+    height: 93vh;
+    position: relative;
+    & .careers-header-title{
+      flex:2;
+      align-self: center;
+      & h1{
+        font-family:$title-font;
+        font-size: 14rem;
+        padding: 0.5em 0;
+        padding-bottom: 0;
+        line-height: 0.8;
+      }
+    }
+    & .small-paper-clip-images{
+      // position: absolute;
+
+      & img{
+        position: absolute;
+        // top: 5%;
+        // left: 40%;
+      }
+      & .small-paper-clip{
+        width: 4%;
+        z-index: 3;
+        left: 45%;
+        top: 10%;
+      }
+      & .blue-circle{
+          width: 10%;
+          top: 14%;
+          left: 42%;
+      }
+      & .dark-circle{
+        z-index: 4;
+        left: 44.5%;
+        width: 2.5%;
+        top: 16%;
+      }
+      & .line-1{
+        top: 13%;
+        left: 43%;
+        z-index: 4;
+      }
+      & .line-2{
+        top: 10%;
+        left: 40%;
+        z-index: 3;
+      }
+    }
+    & .large-paper-clip-images{
+      flex:1;
+      position: relative;
+      & img{
+        position: absolute;
+      }
+      & .large-paper-clip{
+        bottom: -25%;
+        z-index: 5;
+      }
+      & .dark-circle{
+        right: 30%;
+        bottom: 15%;
+        width: 15%;
+        z-index: 3;
+      }
+      & .blue-circle{
+        width: 80%;
+        bottom: -5%;
+        left: -10%;
+        z-index: 1;
+      }
+      & .zigzag-1{
+        bottom: 18%;
+        right: 22%;
+        z-index: 6;
+      }
+      & .zigzag-2{
+        bottom: 23%;
+        z-index: 2;
+        right: 35%;
+      }
+
+    }
+
+  }
+  & .team-section{
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 5rem;
+    padding: 5rem 0;
+    & .team-image{
+      float: right;
+      & img{
+        width: -webkit-fill-available;
+      }
+    }
+    & .team-text{
+      padding: 0rem 3.5rem;
+      display: flex;
+      flex-direction: row-reverse;
+      height: min-content;
+      & p{
+        font-family: $main-font;
+        font-size: 1.5rem;
+        height: min-content;
+        line-height: 45px;
+        & strong{
+        color: $indigo;
+        }
+      }
+      & img{
+        height: min-content;
+        padding-right: 2rem;
+        height: 170px;
+      }
+    }
+  }
+  & .who-we-hire-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 12rem;
+    padding-bottom: 0;
+    & .who-we-hire-image{
+      flex:1;
+      position: relative;
+      & img:not(:first-of-type){
+        position: absolute;
+      }
+      & .bike-image{
+        z-index: 4;
+        position: relative;
+      }
+      & .blue-circle{
+        left: -7%;
+        bottom: 16%;
+        z-index: 1;
+        width: 54%;
+      }
+      & .curve-orange{
+        z-index: 5;
+        bottom: 13%;
+        left: 6%;
+      }
+      & .curve-blue{
+        bottom: 5%;
+        left: 4%;
+        z-index: 2;
+      }
+      & .line{
+        left: 18%;
+        top: -5%;
+      }
+      & .zigzag-1{
+        bottom: 55%;
+        left: 26%;
+        z-index: 5;
+      }
+      & .zigzag-2{
+        bottom: 58%;
+        left: 26%;
+        z-index: 3;
+      }
+    }
+    & .who-we-hire-content{
+      flex: 1;
+      margin-left: -10rem;
+      & h1{
+        font-family: $din-bold;
+        font-size: 7rem;
+      }
+      & .who-we-hire-text{
+        & p{
+          height: min-content;
+          color: #4a4a4a;
+          font-family: 'Cabin-Regular';
+          font-size: 1.5rem;
+          line-height: 45px;
+        }
+      }
+    }
+  }
+}
+
+//medium screens
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+.careers-page-container{
+  &-header{
+    & .careers-header-title{
+      & h1{
+        font-size: 7rem;
+      }
+    }
+    & .small-paper-clip-images{
+      & .small-paper-clip{
+        width: 5%;
+        z-index: 3;
+        left: 45%;
+        top: 10%;
+      }
+      & .blue-circle{
+        width: 13%;
+        top: 14%;
+        left: 41%;
+      }
+      & .dark-circle{
+        z-index: 4;
+        left: 44.5%;
+        width: 3.5%;
+        top: 16%;
+      }
+      & .line-1{
+        top: 13%;
+        left: 43%;
+        z-index: 4;
+        width: 6%;
+      }
+      & .line-2{
+        top: 10%;
+        left: 40%;
+        z-index: 3;
+        width: 6%;
+      }
+    }
+    & .large-paper-clip-images{
+      & .large-paper-clip{
+        bottom: -39%;
+        z-index: 5;
+        width: 75%;
+      }
+      & .dark-circle{
+        right: 25%;
+        bottom: 8%;
+        width: 18%;
+        z-index: 3;
+      }
+      & .blue-circle{
+        width: 85%;
+        bottom: -17%;
+        left: -10%;
+        z-index: 1;
+      }
+      & .zigzag-1{
+        bottom: 10%;
+        right: 17%;
+        z-index: 6;
+        width: 40%;
+      }
+      & .zigzag-2{
+        bottom: 20%;
+        z-index: 2;
+        right: 35%;
+        width: 40%;
+      }
+    }
+  }
+  & .team-section{
+    margin-left: 5rem;
+    & .team-text{
+      padding: 0 1.5rem;
+      & p{
+        line-height: 30px;
+      }
+      & img{
+        height: auto;
+      }
+    }
+  }
+  & .who-we-hire-section{
+    padding: 5rem;
+    & .who-we-hire-image{
+      & .bike-image{
+        width: 70%;
+      }
+      & .blue-circle{
+        left: -10%;
+        bottom: 17%;
+        z-index: 1;
+        width: 70%;
+      }
+      & .curve-orange{
+        z-index: 5;
+        bottom: 12%;
+        left: 7%;
+        width: 35%;
+      }
+      & .curve-blue{
+        bottom: 2%;
+        left: 4%;
+        z-index: 2;
+        width: 45%;
+      }
+      & .line{
+        left: 22%;
+        top: -3%;
+        width: 26%;
+        z-index: 2;
+      }
+      & .zigzag-1{
+        left: 31%;
+        bottom: 62%;
+      }
+      & .zigzag-2{
+        left: 31%;
+        bottom: 65%;
+      }
+    }
+    & .who-we-hire-content{
+      & h1{
+        font-size: 4rem;
+      }
+      & .who-we-hire-text{
+        & p{
+          font-size: 1.2rem;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1339px) {
+  .careers-page-container{
+    &-header{
+      & .careers-header-title{
+        & h1{
+          font-size: 7rem;
+        }
+      }
+      & .small-paper-clip-images{
+        & .small-paper-clip{
+          width: 5%;
+          z-index: 3;
+          left: 45%;
+          top: 10%;
+        }
+        & .blue-circle{
+          width: 13%;
+          top: 14%;
+          left: 41%;
+        }
+        & .dark-circle{
+          z-index: 4;
+          left: 44.5%;
+          width: 3.5%;
+          top: 16%;
+        }
+        & .line-1{
+          top: 13%;
+          left: 43%;
+          z-index: 4;
+          width: 6%;
+        }
+        & .line-2{
+          top: 10%;
+          left: 40%;
+          z-index: 3;
+          width: 6%;
+        }
+      }
+      & .large-paper-clip-images{
+        & .large-paper-clip{
+          bottom: -39%;
+          z-index: 5;
+          width: 75%;
+        }
+        & .dark-circle{
+          right: 25%;
+          bottom: 8%;
+          width: 18%;
+          z-index: 3;
+        }
+        & .blue-circle{
+          width: 85%;
+          bottom: -17%;
+          left: -10%;
+          z-index: 1;
+        }
+        & .zigzag-1{
+          bottom: 10%;
+          right: 17%;
+          z-index: 6;
+          width: 40%;
+        }
+        & .zigzag-2{
+          bottom: 20%;
+          z-index: 2;
+          right: 35%;
+          width: 40%;
+        }
+      }
+    }
+    & .team-section{
+      margin-left: 5rem;
+      & .team-text{
+        padding: 0 1.5rem;
+        & p{
+          line-height: 30px;
+        }
+        & img{
+          height: fit-content;
+        }
+      }
+    }
+    & .who-we-hire-section{
+      padding: 5rem;
+      & .who-we-hire-image{
+        top: -4rem;
+        & .bike-image{
+          width: 70%;
+        }
+        & .blue-circle{
+          left: -10%;
+          bottom: 17%;
+          z-index: 1;
+          width: 70%;
+        }
+        & .curve-orange{
+          z-index: 5;
+          bottom: 12%;
+          left: 7%;
+          width: 35%;
+        }
+        & .curve-blue{
+          bottom: 2%;
+          left: 4%;
+          z-index: 2;
+          width: 45%;
+        }
+        & .line{
+          left: 22%;
+          top: -3%;
+          width: 26%;
+          z-index: 2;
+        }
+        & .zigzag-1{
+          left: 31%;
+          bottom: 62%;
+        }
+        & .zigzag-2{
+          left: 31%;
+          bottom: 65%;
+        }
+      }
+      & .who-we-hire-content{
+        & h1{
+          font-size: 4rem;
+        }
+        & .who-we-hire-text{
+          & p{
+            font-size: 1.2rem;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1340px) and (max-width: 1549px) {
+  .careers-page-container{
+    &-header{
+      & .careers-header-title{
+        & h1{
+          font-size: 8rem;
+        }
+      }
+      & .small-paper-clip-images{
+        & .small-paper-clip{
+          width: 5%;
+          z-index: 3;
+          left: 45%;
+          top: 10%;
+        }
+        & .blue-circle{
+          width: 13%;
+          top: 14%;
+          left: 41%;
+        }
+        & .dark-circle{
+          z-index: 4;
+          left: 44.5%;
+          width: 3.5%;
+          top: 16%;
+        }
+        & .line-1{
+          top: 13%;
+          left: 43%;
+          z-index: 4;
+          width: 6%;
+        }
+        & .line-2{
+          top: 10%;
+          left: 40%;
+          z-index: 3;
+          width: 6%;
+        }
+      }
+      & .large-paper-clip-images{
+        & .large-paper-clip{
+          bottom: -43%;
+          z-index: 5;
+          width: 75%;
+        }
+        & .dark-circle{
+          right: 25%;
+          bottom: 12%;
+          width: 18%;
+          z-index: 3;
+        }
+        & .blue-circle{
+          width: 85%;
+          bottom: -21%;
+          left: -14%;
+          z-index: 1;
+        }
+        & .zigzag-1{
+          bottom: 16%;
+          right: 17%;
+          z-index: 6;
+          width: 40%;
+        }
+        & .zigzag-2{
+          bottom: 25%;
+          z-index: 2;
+          right: 27%;
+          width: 40%;
+        }
+      }
+    }
+    & .team-section{
+      margin-left: 5rem;
+      & .team-text{
+        padding: 0 1.5rem;
+        & p{
+          line-height: 30px;
+        }
+        & img{
+          height: fit-content;
+        }
+      }
+    }
+    & .who-we-hire-section{
+      padding: 5rem;
+      & .who-we-hire-image{
+        top: -4rem;
+        & .bike-image{
+          width: 55%;
+        }
+        & .blue-circle{
+          left: -3%;
+          bottom: 17%;
+          z-index: 1;
+          width: 56%;
+        }
+        & .curve-orange{
+          z-index: 5;
+          bottom: 12%;
+          left: 9%;
+          width: 27%;
+        }
+        & .curve-blue{
+          bottom: 2%;
+          left: 4%;
+          z-index: 2;
+          width: 35%;
+        }
+        & .line{
+          left: 17%;
+          top: -4%;
+          width: 21%;
+          z-index: 2;
+        }
+        & .zigzag-1{
+          left: 25%;
+          bottom: 62%;
+        }
+        & .zigzag-2{
+          left: 25%;
+          bottom: 65%;
+        }
+      }
+      & .who-we-hire-content{
+        & h1{
+          font-size: 4rem;
+        }
+        & .who-we-hire-text{
+          & p{
+            font-size: 1.2rem;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 1700px) {
+  .careers-page-container{
+    &-header{
+      & .careers-header-title{
+        & h1{
+          font-size: 8.5rem;
+        }
+      }
+      & .small-paper-clip-images{
+        & .small-paper-clip{
+          width: 5%;
+          z-index: 3;
+          left: 45%;
+          top: 10%;
+        }
+        & .blue-circle{
+          width: 13%;
+          top: 14%;
+          left: 41%;
+        }
+        & .dark-circle{
+          z-index: 4;
+          left: 44.5%;
+          width: 3.5%;
+          top: 16%;
+        }
+        & .line-1{
+          top: 13%;
+          left: 43%;
+          z-index: 4;
+          width: 6%;
+        }
+        & .line-2{
+          top: 10%;
+          left: 40%;
+          z-index: 3;
+          width: 6%;
+        }
+      }
+      & .large-paper-clip-images{
+        & .large-paper-clip{
+          bottom: -43%;
+          z-index: 5;
+          width: 65%;
+        }
+        & .dark-circle{
+          right: 32%;
+          bottom: 12%;
+          width: 18%;
+          z-index: 3;
+        }
+        & .blue-circle{
+          width: 75%;
+          bottom: -21%;
+          left: -14%;
+          z-index: 1;
+        }
+        & .zigzag-1{
+          bottom: 16%;
+          right: 23%;
+          z-index: 6;
+          width: 40%;
+        }
+        & .zigzag-2{
+          bottom: 25%;
+          z-index: 2;
+          right: 32%;
+          width: 40%;
+        }
+      }
+    }
+    & .team-section{
+      margin-left: 5rem;
+      & .team-text{
+        padding: 0 1.5rem;
+        & p{
+          line-height: 45px;
+        }
+        & img{
+          height: fit-content;
+        }
+      }
+    }
+    & .who-we-hire-section{
+      padding: 5rem;
+      & .who-we-hire-image{
+        top: -4rem;
+        & .bike-image{
+          width: 55%;
+        }
+        & .blue-circle{
+          left: -3%;
+          bottom: 17%;
+          z-index: 1;
+          width: 56%;
+        }
+        & .curve-orange{
+          z-index: 5;
+          bottom: 12%;
+          left: 9%;
+          width: 27%;
+        }
+        & .curve-blue{
+          bottom: 2%;
+          left: 4%;
+          z-index: 2;
+          width: 35%;
+        }
+        & .line{
+          left: 17%;
+          top: -4%;
+          width: 21%;
+          z-index: 2;
+        }
+        & .zigzag-1{
+          left: 25%;
+          bottom: 62%;
+        }
+        & .zigzag-2{
+          left: 25%;
+          bottom: 65%;
+        }
+      }
+      & .who-we-hire-content{
+        & h1{
+          font-size: 4rem;
+        }
+        & .who-we-hire-text{
+          & p{
+            font-size: 1.5rem;
+            line-height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 1024px) {
+
+}
