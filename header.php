@@ -67,7 +67,7 @@
             <h3>What are you looking for ? </h3>
             <div class="grouped-cards-buttons">
                 <button  next-click class="button cont">Partner with us</button>
-                <a class="button cont" href="https://wuzzuf.net/jobs/careers/Unplugged-Egypt-4091">Join us</a>
+                <a class="button cont" href="<?php echo esc_url( home_url( '/careers' ) ); ?>">Join us</a>
             </div>
             </div>
         </div>
