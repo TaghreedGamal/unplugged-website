@@ -4,6 +4,7 @@ var careers_header_animation = new TimelineMax();
 careers_header_animation.from('.small-paper-clip-images .small-paper-clip', 1, {y:50, opacity:0},1)
                 .from('.large-paper-clip-images .large-paper-clip', 1, {y:50, opacity:0},1)
                 .from('.careers-page-container-header h1', 1, {y:50, opacity:0},1)
+                .from('.careers-page-container-header .join-team-button', 1, {opacity:0},1)
                 .from('.small-paper-clip-images .blue-circle', 1, {scale:0, opacity:0},1)
                 .from('.large-paper-clip-images .blue-circle', 1, {scale:0, opacity:0},1)
                 .from('.small-paper-clip-images .dark-circle', 0.5, {scale:0, opacity:0},2)
