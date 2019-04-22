@@ -234,12 +234,17 @@
 						font-family: 'Cabin-Medium';
 						margin-bottom: 0;
 					}
-					@media (max-width: 40em){
+					@media (max-width: 64em){
 						opacity: 1;
 						z-index: 2;
 					}
+					@media (min-width: 700px) and (max-width: 1024px)
+					{
+						left: 80px;
+						bottom: 0px;
+					}
 				}
-				@media (max-width: 60em){
+				@media (max-width: 64em){
 					width: 45%;
 				}
 				@media (max-width: 40em){
