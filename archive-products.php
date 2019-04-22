@@ -18,7 +18,7 @@
 get_header(); ?>
 
 <div class="products-page-container container" >
-  <div class="products-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
+  <div class="products-page-container-header" >
 
     <h1 class="products-header">We Build and <br> Launch Digital Products
   </h1>
