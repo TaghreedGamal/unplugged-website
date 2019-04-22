@@ -61,19 +61,19 @@ get_header(); ?>
 					    while ( have_rows('member-data') ) : the_row();?>
 					    	<div class="team-info__perMember">
 								<div class="perMember__img">
-									<video class="gif-img" alt="gif" autoplay loop muted playinline>
+									<video class="gif-img" alt="" autoplay loop muted playinline>
 										<source src="<?php the_sub_field('gif-img')?>" type="video/mp4" />
 									</video>
 									<!-- <video class="gif-img" src= alt="gif-img"> -->
-									<img class="member-img f-img" src="<?php the_sub_field('front-img')?>" alt="front-img">
-									<img class="member-img t-img" src="<?php the_sub_field('top-img')?>" alt="top-img">
-									<img class="member-img b-img" src="<?php the_sub_field('bottom-img')?>" alt="bottom-img">
-									<img class="member-img r-img" src="<?php the_sub_field('right-img')?>" alt="right-img">
-									<img class="member-img l-img" src="<?php the_sub_field('left-img')?>" alt="left-img">
-									<img class="member-img tr-img" src="<?php the_sub_field('top-right-img')?>" alt="top-right-img">
-									<img class="member-img tl-img" src="<?php the_sub_field('top-left-img')?>" alt="top-left-img">
-									<img class="member-img br-img" src="<?php the_sub_field('bottom-right-img')?>" alt="bottom-right-img">
-									<img class="member-img bl-img" src="<?php the_sub_field('bottom-left-img')?>" alt="bottom-left-img">
+									<img class="member-img f-img" src="<?php the_sub_field('front-img')?>" alt="">
+									<img class="member-img t-img" src="<?php the_sub_field('top-img')?>" alt="">
+									<img class="member-img b-img" src="<?php the_sub_field('bottom-img')?>" alt="">
+									<img class="member-img r-img" src="<?php the_sub_field('right-img')?>" alt="">
+									<img class="member-img l-img" src="<?php the_sub_field('left-img')?>" alt="">
+									<img class="member-img tr-img" src="<?php the_sub_field('top-right-img')?>" alt="">
+									<img class="member-img tl-img" src="<?php the_sub_field('top-left-img')?>" alt="">
+									<img class="member-img br-img" src="<?php the_sub_field('bottom-right-img')?>" alt="">
+									<img class="member-img bl-img" src="<?php the_sub_field('bottom-left-img')?>" alt="">
 								</div>
 								<div class="perMember__description">
 									<h1 class="perMember__description__name"><?php  the_sub_field('member-name');?></h1>
