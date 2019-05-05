@@ -97,7 +97,7 @@
 </div>
 <!-- full menu -->
 <a class="menu-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-  <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt=Unplugged Logo"></a>
+  <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/logo.png" alt="Unplugged Logo"></a>
 <div class="full-menu" id="menu">
     <div class="full-menu__item">
         <button close-menu class="close close-responsive">&times</button>
