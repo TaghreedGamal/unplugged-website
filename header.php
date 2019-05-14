@@ -26,6 +26,9 @@
   <?php endif; ?>
 
   <!--    first card-->
+  <div class="website-loader">
+    <div class="loader"></div>
+  </div>
   <div class="step" style="display:none;" id="demo">
     <button close2-click class="close"><img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/close.png"></button>
     <div class="contactCards">
@@ -43,15 +46,17 @@
        <div class="contactCards-sectionThree">
            <h5>Address</h5>
            <p>3 Abd El-Aziz Selim,Ad Doqi,Giza,Egypt</p>
-           <a href="https://goo.gl/maps/Vu4WnBh9Ah52" target="_blank"><button  class="button cont Address"><i class="fa fa-map-marker"></i>  View on map</button></a>
+           <a href="https://goo.gl/maps/Vu4WnBh9Ah52" target="_blank" rel="noopener noreferrer"><button  class="button cont Address"><i class="fa fa-map-marker"></i>  View on map</button></a>
        </div>
        <div class="contactCards-sectionFour">
         <h5>Follow Us</h5>
         <div class="ficons">
-           <div class="icon-circle button cont"><a href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
-           <div class="icon-circle button cont"><a href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
-           <div class="icon-circle button cont"><a href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
-           <div class="icon-circle button cont"><a href="#"><i class="fa fa-behance"></i></a></div>
+           <div class="icon-circle button cont"><a target="_blank" rel="noopener noreferrer" href="https://eg.linkedin.com/company/unplugged-web-design"><i class="fa fa-linkedin"></i></a></div>
+           <div class="icon-circle button cont"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/unpluggedweb/"><i class="fa fa-instagram"></i></a></div>
+           <div class="icon-circle button cont"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/unpluggedweb/"><i class="fa fa-facebook-f"></i></a></div>
+           <div class="icon-circle button cont"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/unpluggedweb"> <i class="fa fa-twitter"></i> </a></div>
+           <!-- <div class="icon-circle button cont"><a href="#"> <i class="fa fa-youtube"></i> </a></div>
+           <div class="icon-circle button cont"><a href="#"><i class="fa fa-behance"></i></a></div> -->
        </div>
 </div>
 </div>

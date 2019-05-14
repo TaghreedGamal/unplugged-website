@@ -1,0 +1,43 @@
+
+@media only screen and (min-width: 1025px) {
+
+
+.reveal-overlay{
+  z-index: 999;
+  // overflow: hidden;
+
+.contact-form{
+  background-color: #f3f5f6;
+  top: 0 !important;
+  // z-index: 999;
+
+  & iframe{
+    max-width: unset !important;
+    margin: 0 auto;
+    height: -webkit-fill-available !important;
+    overflow: scroll;
+  }
+}
+}
+}
+
+
+@media only screen and (max-width:1024px) {
+
+.reveal-overlay{
+  overflow-y: scroll;
+  z-index: 999;
+  & .contact-form{
+    // z-index: 999;
+    height: fit-content;
+    overflow-y: scroll;
+    & .pipedriveWebForms{
+      overflow-y: scroll;
+      & iframe{
+        overflow-y: scroll;
+        // height: inherit !important;
+      }
+    }
+  }
+}
+}

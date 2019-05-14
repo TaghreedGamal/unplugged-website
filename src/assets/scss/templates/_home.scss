@@ -16,7 +16,7 @@ body:after{
   -ms-transform:rotate(-45deg);
   -webkit-transform:rotate(-45deg);
   transform:rotate(-45deg);
-  z-index: 100;
+  z-index: 1000;
 }
 body{
     overflow-x: hidden;
@@ -125,7 +125,8 @@ button{
                 .img1 {
                     top: -120px;
                     position: relative;
-                    z-index: 2222;
+                    // z-index: 2222;
+                    z-index: 100;
                     left: 35%;
                     .fun1,.flex1,.inv1{
                         position: absolute;

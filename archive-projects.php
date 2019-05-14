@@ -22,16 +22,16 @@ get_header(); ?>
 		<main class="main-content">
 			<div class="main-content__filter-section">
 				<div class="filter-menu">
-					<h3>Filter by<span open-filter>+</span></h3>	
+					<h3>Filter by<span open-filter>+</span></h3>
 					<?php
 					$taxonomyName = "projects_categories";
-				//This gets top layer terms only.  This is done by setting parent to 0.  
-					$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) ); 
+				//This gets top layer terms only.  This is done by setting parent to 0.
+					$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
 					echo '<ul class="accordion" id="filter-menu" data-accordion data-allow-all-closed="true">';
 					global $wp;
 
 					$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
-					
+
 					if(strpos($current_url,"projects_categories")):?>
 				     <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="reset-filters responsive">Reset Filter</a>
                   <?php endif;?>
@@ -45,33 +45,33 @@ get_header(); ?>
 						echo '<div class="accordion-content " data-tab-content><ul class="cute_scroll" id="filter-ul">';
 						foreach ( $terms as $term ) {
 							$link = add_query_arg('projects_categories', $term->slug);?>
-							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>   
-						<?php } 
-       				// echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';   
+							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+						<?php }
+       				// echo '<li><a href="' . get_term_link( $term ) . '">' . $term->name . '</a></li>';
     				// }
 						echo '</ul></div></li>';
 					}
-					echo '</ul>'; 
+					echo '</ul>';
 					global $wp;
 
 					$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
-					
+
 					if(strpos($current_url,"projects_categories")):?>
 				     <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>" class="reset-filters ">Reset Filter</a>
                   <?php endif;?>
 					<div class="filter-icons">
-						<button list-view class="defult-view"><i class="fa fa-th-list"></i><p>Tile View</p></button> 
-						<button grid-view><i class="fa fa-th-large"></i><p>Grid View</p></button> 
+						<button list-view class="defult-view"><i class="fa fa-th-list"></i><p>Tile View</p></button>
+						<button grid-view><i class="fa fa-th-large"></i><p>Grid View</p></button>
 					</div>
 				</div>
 			</div>
 			<div class="main-content__project-section">
 				<div class="scroll-posts cute_scroll" >
-					<?php 
+					<?php
 					// $args = array('post_type' => 'projects', 'posts_per_page' =>-1, 'orderby' => 'id');
      //                $loop = new WP_Query( $args );
      //                 if ( $loop -> have_posts() ) :
-     //                while ( $loop->have_posts() ) : $loop->the_post(); 
+     //                while ( $loop->have_posts() ) : $loop->the_post();
                      ?>
                     <?php /* Start the Loop */ ?>
 					<?php if ( have_posts() ) : ?>
@@ -85,7 +85,7 @@ get_header(); ?>
 								<?php endif; ?>
 							</div>
 							<div class="project-section__post__box__content">
-								<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>  
+								<h2 class="project-section__post__box__content__title box__title"><?php the_title();?></h2>
 								<div class="project-section__post__box__content__text box__text"><?php the_excerpt(); ?></div> </br>
 								<div class="small-icon" id="post-icon">
 	                                <?php
@@ -93,26 +93,26 @@ get_header(); ?>
 		                                    while ( have_rows('services-icons') ) : the_row();
 		                                        ?> <img src="<?php the_sub_field('services-icons-img')?>">
 		                                <?php
-		                                 endwhile; 
+		                                 endwhile;
 					    wp_reset_postdata(); ?>
 
-						<?php endif; // End have_posts() check. 
+						<?php endif; // End have_posts() check.
 	                                ?>
-								</div>      
+								</div>
 								<div class="grouped-buttons">
-									<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a> 
-								</div> 
+									<a href="<?php echo(get_post_permalink())?>" class="button">View Project   <i class="fa fa-long-arrow-right"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<?php 
-					endwhile; 
+					<?php
+					endwhile;
 					wp_reset_postdata(); ?>
 						<?php else : ?>
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>
 						<?php endif; // End have_posts() check. ?>
 				</div>
-               
+
 		</main>
 	</div>
 </div>

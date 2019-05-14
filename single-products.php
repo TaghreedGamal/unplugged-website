@@ -13,6 +13,8 @@ get_header(); ?>
 		<main class=" main-content__product">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="main-content__product-content">
+					<?php include 'page-templates/contact-form-pop-up.php'; ?>
+
 					<h1 class="title"><?php echo get_the_title();?></h1>
 					<div class="data">
 					  	<div class="technology">

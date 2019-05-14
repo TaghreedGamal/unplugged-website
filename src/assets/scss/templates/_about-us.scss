@@ -3,6 +3,7 @@
 	&__header{
 		background-color: $background-color;
 		height: 100vh;
+		position: relative;
 		&__title1,&__title2{
 			position: absolute;
 			top:45%;

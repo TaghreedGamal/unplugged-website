@@ -21,7 +21,7 @@ get_header(); ?>
 							<!-- <h1>jjjjjjjjj</h1> -->
 					</div>
 					<div class="single-blog">
-
+						<?php include 'page-templates/contact-form-pop-up.php'; ?>
 					<div class="single-blogs-blog-header">
 							<div class="author-avatar">
     						<img class="author-image"src=" <?php the_field('author_avatar') ?>" alt="">

@@ -16,6 +16,24 @@ window.$ = $;
 import Foundation from 'foundation-sites';
 $(document).foundation();
 
+
+
+
+///loader
+
+// $("body").css('overflow-y', "hidden");
+window.onload = function(){
+  $('.website-loader').remove();
+  $("body").css('overflow-y', "scroll");
+  setTimeout(function() {
+  $('#contact-form-modal').foundation('open');  }, 5000);
+
+
+}
+///loader
+
+
+
 let contactSteps = $(".step");
 $('[data-click]').on('click',openContact)
 function openContact() {

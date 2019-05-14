@@ -1,0 +1,34 @@
+
+body{
+  position: relative;
+  overflow-y: hidden;
+}
+.website-loader{
+  background: #808080d6;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  & .loader {
+  margin: auto;
+  border: 5px solid #808080;
+  border-radius: 50%;
+  border-top: 5px solid #55bbeb;
+  border-right: 5px solid #55bbeb;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+}
