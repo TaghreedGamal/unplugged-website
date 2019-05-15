@@ -5,7 +5,8 @@
     position: absolute;
     width: 100%;
     z-index: -5555;
-    top: 0;
+    // top: 0;
+		top: -20px;
     @media (max-width: 60em){
        height: 35vh;
     }
