@@ -25,11 +25,12 @@ $(document).foundation();
 window.onload = function(){
   $('.website-loader').remove();
   $("body").css('overflow-y', "scroll");
-  setTimeout(function() {
-  $('#contact-form-modal').foundation('open');  }, 5000);
+  // setTimeout(function() {
+  // $('#contact-form-modal').foundation('open');  }, 5000);
 
 
 }
+  $('#contact-form-modal').foundation('open');
 ///loader
 
 
