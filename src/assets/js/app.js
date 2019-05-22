@@ -27,10 +27,11 @@ window.onload = function(){
   $("body").css('overflow-y', "scroll");
   // setTimeout(function() {
   // $('#contact-form-modal').foundation('open');  }, 5000);
-
-
+  // console.log($('#contact-form-modal')[0]);
+  if($('#contact-form-modal')[0]!=undefined){
+    $('#contact-form-modal').foundation('open');
+  }
 }
-  $('#contact-form-modal').foundation('open');
 ///loader
 
 
