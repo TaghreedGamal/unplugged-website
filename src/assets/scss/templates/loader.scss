@@ -4,11 +4,12 @@ body{
   overflow-y: hidden;
 }
 .website-loader{
-  background: #808080d6;
+  // background: #808080d6;
+  background: white;
   height: 100vh;
   width: 100vw;
   position: absolute;
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   & .loader {
   margin: auto;
