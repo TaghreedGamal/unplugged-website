@@ -61,7 +61,7 @@ get_header(); ?>
 					    while ( have_rows('member-data') ) : the_row();?>
 					    	<div class="team-info__perMember">
 								<div class="perMember__img">
-									<video class="gif-img" alt="" autoplay loop muted playinline>
+									<video class="gif-img" alt="" autoplay loop muted playsinline>
 										<source src="<?php the_sub_field('gif-img')?>" type="video/mp4" />
 									</video>
 									<!-- <video class="gif-img" src= alt="gif-img"> -->
