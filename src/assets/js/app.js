@@ -23,14 +23,16 @@ $(document).foundation();
 
 // $("body").css('overflow-y', "hidden");
 window.onload = function(){
-  $('.website-loader').remove();
-  $("body").css('overflow-y', "scroll");
-  // setTimeout(function() {
-  // $('#contact-form-modal').foundation('open');  }, 5000);
-  // console.log($('#contact-form-modal')[0]);
+//   $('.website-loader').css("display","none");
+//   $("body").css('overflow-y', "scroll");
   if($('#contact-form-modal')[0]!=undefined){
-    $('#contact-form-modal').foundation('open');
+  setTimeout(function() {
+  $('#contact-form-modal').foundation('open');  }, 5000);
   }
+//   console.log($('#contact-form-modal')[0]);
+//   if($('#contact-form-modal')[0]!=undefined){
+//     $('#contact-form-modal').foundation('open');
+//   }
 }
 ///loader
 

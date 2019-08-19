@@ -1,16 +1,17 @@
 
 body{
   position: relative;
-  overflow-y: hidden;
+  // overflow-y: hidden; //pending loader
 }
 .website-loader{
+  display: none; //pending loader
   // background: #808080d6;
   background: white;
   height: 100vh;
   width: 100vw;
   position: absolute;
   z-index: 10000;
-  display: flex;
+  // display: flex;
   & .loader {
   margin: auto;
   border: 5px solid #808080;
