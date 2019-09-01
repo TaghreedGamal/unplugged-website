@@ -127,7 +127,7 @@ get_header(); ?>
 </div>
 <!-- cycles section -->
 
-<div class="project__tabs">
+<!-- <div class="project__tabs">
 	<div class="tabs-content projtabs" data-tabs-content="slide-tabs">
         <?php
 	        $tabNo=1;
@@ -186,7 +186,109 @@ get_header(); ?>
             endwhile;
 		endif;?>
     </ul>
+</div> -->
+
+
+<!-- slider -->
+
+
+<?php if(have_rows('project_slider')): ?>
+<div class="project-slider container">
+
+<div class="tabs-content" data-tabs-content="collapsing-tabs">
+
+
+<?php 
+$j = 1;
+while(have_rows('project_slider')): the_row();?>
+	<?php if ($j==1):?>
+	<div class="tabs-panel is-active" id="panel1">
+  	<!-- tab 1 -->
+	  <?php $count1 = count(get_sub_field('slider_images'));
+	 	if($count1>1): 
+	  ?>
+	  <div class="tab-slider">
+	  	<?php while(have_rows('slider_images')): the_row();?>
+		<div class="tab-slider-slide slide">
+			<img src="<?php the_sub_field('slide_image')?>" alt="">
+		</div>
+		<?php endwhile;?>
+	  </div>
+	  
+	  <?php else:?>
+
+	  <?php while(have_rows('slider_images')): the_row();?>	
+	 	 <img src="<?php the_sub_field('slide_image')?>" alt="">
+	  <?php endwhile;?>
+
+	  <?php endif;?>
+	  
+	
+  </div>
+
+	<?php else: ?>
+
+	<div class="tabs-panel" id="panel<?php echo $j?>">
+	<!-- tab <?php echo $j?> -->
+
+	<?php $count = count(get_sub_field('slider_images'));
+	 	if($count>1): 
+	  ?>
+	  <div class="tab-slider">
+	  	<?php while(have_rows('slider_images')): the_row();?>
+		<div class="tab-slider-slide slide">
+			<img src="<?php the_sub_field('slide_image')?>" alt="">
+		</div>
+		<?php endwhile;?>
+	  </div>
+	  
+	  <?php else:?>
+
+	  <?php while(have_rows('slider_images')): the_row();?>	
+	 	 <img src="<?php the_sub_field('slide_image')?>" alt="">
+	  <?php endwhile;?>
+
+	  <?php endif;?>
+
+    </div>
+
+	<?php endif;?>
+
+<?php
+$j++;
+ endwhile;?>
+
 </div>
+
+<ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+<?php 
+$i = 1;
+while(have_rows('project_slider')): the_row();?>
+	<?php if ($i==1):?>
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">
+	  <span>
+	  <?php if($i<10) echo "0"; echo $i.".";?>
+	  </span>
+	  <?php the_sub_field('tab_name')?></a></li>
+	<?php else: ?>
+	<li class="tabs-title"><a href="#panel<?php echo $i?>">
+	<span>
+	  <?php if($i<10) echo "0"; echo $i.".";?>
+	  </span>
+	<?php the_sub_field('tab_name')?></a></li>
+	<?php endif;?>
+
+<?php
+$i++;
+ endwhile;?>
+</ul>
+</div>
+<?php endif; ?>
+
+
+
+
+<!-- slider -->
 
 <!-- final results -->
 <div class="project__Final container two-parts">

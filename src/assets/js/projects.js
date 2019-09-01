@@ -111,3 +111,98 @@ $('[open-filter]').on('click',function(){
    var h=$('.filter-menu').height();
    $('.scroll-posts ').css('margin-top',h);
  });
+
+
+
+
+//  $('.project-slider .tab-slider').slick({
+
+  
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 3
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 1
+//         }
+//       }
+//     ]
+  
+//  })
+ $('#collapsing-tabs').on('change.zf.tabs', function(e) {
+
+  if($('.tabs-panel.is-active').children().hasClass('tab-slider')){
+    $(' .tab-slider').slick({
+
+  
+      // centerMode: true,
+      // centerPadding: '60px',
+      // slidesToShow: 3,
+      // responsive: [
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 3
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 480,
+      //     settings: {
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 1
+      //     }
+      //   }
+      // ]
+
+      centerMode: true,
+      centerPadding: '340px',
+      slidesToShow: 1,
+      draggable: true,
+      infinite: true,
+      dots:false,
+      arrows: false,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1340,
+          settings: {
+            centerPadding:'200px'
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: 'unslick',
+          // {
+          //   //centerMode:false,
+          //   infinite: false,
+          //   centerPadding: '0px',
+          // }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    
+   })
+  }
+
+});
