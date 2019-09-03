@@ -143,10 +143,64 @@ $('[open-filter]').on('click',function(){
 //     ]
   
 //  })
+
+$(document).ready(function(){
+
+  let tab_title  = $('.tabs .tabs-title.is-active')[0].innerText;
+  $('.tab-title-mobile')[0].innerText = tab_title;
+  if($('.tabs-panel.is-active').children().hasClass('tab-slider')){
+    let index =  $('.tabs-panel.is-active').attr('tab-index');
+
+    $('.tab-slider#slider'+index).slick({
+      centerMode: true,
+      centerPadding: '300px',
+      slidesToShow: 1,
+      draggable: true,
+      infinite: true,
+      dots:false,
+      arrows: false,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1500,
+          settings: {
+            centerPadding:'200px'
+          }
+        },
+
+        {
+          breakpoint: 1100,
+          settings:
+          {
+            centerPadding: '100px',
+          }
+        },
+        {
+          breakpoint: 600,
+          settings:
+          {
+            centerPadding: '20px',
+          }
+        }
+      ]
+    
+   })
+  }
+  
+})
+
+
+
  $('#collapsing-tabs').on('change.zf.tabs', function(e) {
 
+  let tab_title  = $('.tabs .tabs-title.is-active')[0].innerText;
+  $('.tab-title-mobile')[0].innerText = tab_title;
+  
   if($('.tabs-panel.is-active').children().hasClass('tab-slider')){
-    $(' .tab-slider').slick({
+    let index =  $('.tabs-panel.is-active').attr('tab-index');
+
+    // $('.tabs-panel:not(.is-active) .tab-slider').unslick({});
+    $('.tab-slider#slider'+index).slick({
 
   
       // centerMode: true,
@@ -174,7 +228,7 @@ $('[open-filter]').on('click',function(){
       // ]
 
       centerMode: true,
-      centerPadding: '340px',
+      centerPadding: '300px',
       slidesToShow: 1,
       draggable: true,
       infinite: true,
@@ -183,20 +237,27 @@ $('[open-filter]').on('click',function(){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1340,
+          breakpoint: 1500,
           settings: {
             centerPadding:'200px'
           }
         },
+
         {
-          breakpoint: 450,
-          settings: 'unslick',
-          // {
-          //   //centerMode:false,
-          //   infinite: false,
-          //   centerPadding: '0px',
-          // }
+          breakpoint: 1100,
+          settings:
+          {
+            centerPadding: '100px',
+          }
+        },
+        {
+          breakpoint: 600,
+          settings:
+          {
+            centerPadding: '20px',
+          }
         }
+
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object

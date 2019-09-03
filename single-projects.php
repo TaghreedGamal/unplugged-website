@@ -195,6 +195,30 @@ get_header(); ?>
 <?php if(have_rows('project_slider')): ?>
 <div class="project-slider container">
 
+<h1 class="tab-title-mobile"></h1>
+<!-- <ul class="tabs tabs-mobile" data-active-collapse="true" data-tabs id="collapsing-tabs">
+<?php 
+$i = 1;
+while(have_rows('project_slider')): the_row();?>
+	<?php if ($i==1):?>
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">
+	  <span>
+	  <?php if($i<10) echo "0"; echo $i.".";?>
+	  </span>
+	  <?php the_sub_field('tab_name')?></a></li>
+	<?php else: ?>
+	<li class="tabs-title"><a href="#panel<?php echo $i?>">
+	<span>
+	  <?php if($i<10) echo "0"; echo $i.".";?>
+	  </span>
+	<?php the_sub_field('tab_name')?></a></li>
+	<?php endif;?>
+
+<?php
+$i++;
+ endwhile;?>
+</ul> -->
+
 <div class="tabs-content" data-tabs-content="collapsing-tabs">
 
 
@@ -202,15 +226,23 @@ get_header(); ?>
 $j = 1;
 while(have_rows('project_slider')): the_row();?>
 	<?php if ($j==1):?>
-	<div class="tabs-panel is-active" id="panel1">
+	<div class="tabs-panel is-active" id="panel1" tab-index="1">
   	<!-- tab 1 -->
 	  <?php $count1 = count(get_sub_field('slider_images'));
 	 	if($count1>1): 
 	  ?>
-	  <div class="tab-slider">
+	  <div class="tab-slider" id="slider1">
 	  	<?php while(have_rows('slider_images')): the_row();?>
 		<div class="tab-slider-slide slide">
-			<img src="<?php the_sub_field('slide_image')?>" alt="">
+
+		<?php if(get_sub_field('image_or_video')=="image"): ?>
+		  <img src="<?php the_sub_field('slide_image')?>" alt="">
+		 <?php else:?>
+		  <div class="video">
+			  <?php the_sub_field('slide_video'); ?>
+		  </div>
+		 <?php endif;?>
+
 		</div>
 		<?php endwhile;?>
 	  </div>
@@ -218,7 +250,15 @@ while(have_rows('project_slider')): the_row();?>
 	  <?php else:?>
 
 	  <?php while(have_rows('slider_images')): the_row();?>	
-	 	 <img src="<?php the_sub_field('slide_image')?>" alt="">
+
+	  	<?php if(get_sub_field('image_or_video')=="image"): ?>
+		  <img src="<?php the_sub_field('slide_image')?>" alt="">
+		 <?php else:?>
+		  <div class="video">
+			  <?php the_sub_field('slide_video'); ?>
+		  </div>
+		 <?php endif;?>
+
 	  <?php endwhile;?>
 
 	  <?php endif;?>
@@ -228,16 +268,26 @@ while(have_rows('project_slider')): the_row();?>
 
 	<?php else: ?>
 
-	<div class="tabs-panel" id="panel<?php echo $j?>">
+	<div class="tabs-panel" id="panel<?php echo $j?>" tab-index="<?php echo $j?>">
 	<!-- tab <?php echo $j?> -->
 
 	<?php $count = count(get_sub_field('slider_images'));
 	 	if($count>1): 
 	  ?>
-	  <div class="tab-slider">
+	  <div class="tab-slider" id="slider<?php echo $j?>">
 	  	<?php while(have_rows('slider_images')): the_row();?>
 		<div class="tab-slider-slide slide">
-			<img src="<?php the_sub_field('slide_image')?>" alt="">
+
+		<?php if(get_sub_field('image_or_video')=="image"): ?>
+		  <img src="<?php the_sub_field('slide_image')?>" alt="">
+		 <?php else:?>
+		  <div class="video">
+			  <?php the_sub_field('slide_video'); ?>
+		  </div>
+		 <?php endif;?>
+
+			<div class="grey-overlay">
+			</div>
 		</div>
 		<?php endwhile;?>
 	  </div>
@@ -245,7 +295,15 @@ while(have_rows('project_slider')): the_row();?>
 	  <?php else:?>
 
 	  <?php while(have_rows('slider_images')): the_row();?>	
-	 	 <img src="<?php the_sub_field('slide_image')?>" alt="">
+	  
+	  <?php if(get_sub_field('image_or_video')=="image"): ?>
+		  <img src="<?php the_sub_field('slide_image')?>" alt="">
+		 <?php else:?>
+		  <div class="video">
+			  <?php the_sub_field('slide_video'); ?>
+		  </div>
+		 <?php endif;?>
+
 	  <?php endwhile;?>
 
 	  <?php endif;?>
