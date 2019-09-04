@@ -242,7 +242,8 @@ while(have_rows('project_slider')): the_row();?>
 			  <?php the_sub_field('slide_video'); ?>
 		  </div>
 		 <?php endif;?>
-
+		 <div class="grey-overlay">
+			</div>
 		</div>
 		<?php endwhile;?>
 	  </div>
@@ -251,6 +252,7 @@ while(have_rows('project_slider')): the_row();?>
 
 	  <?php while(have_rows('slider_images')): the_row();?>	
 
+	  <div class="image-or-video-container">
 	  	<?php if(get_sub_field('image_or_video')=="image"): ?>
 		  <img src="<?php the_sub_field('slide_image')?>" alt="">
 		 <?php else:?>
@@ -258,6 +260,8 @@ while(have_rows('project_slider')): the_row();?>
 			  <?php the_sub_field('slide_video'); ?>
 		  </div>
 		 <?php endif;?>
+
+		 </div>
 
 	  <?php endwhile;?>
 
@@ -296,6 +300,7 @@ while(have_rows('project_slider')): the_row();?>
 
 	  <?php while(have_rows('slider_images')): the_row();?>	
 	  
+	  <div class="image-or-video-container">
 	  <?php if(get_sub_field('image_or_video')=="image"): ?>
 		  <img src="<?php the_sub_field('slide_image')?>" alt="">
 		 <?php else:?>
@@ -303,6 +308,7 @@ while(have_rows('project_slider')): the_row();?>
 			  <?php the_sub_field('slide_video'); ?>
 		  </div>
 		 <?php endif;?>
+		 </div>
 
 	  <?php endwhile;?>
 
