@@ -303,7 +303,7 @@
 	}
 	&__Final{
 		margin-top: 280px;
-		height: 70vh !important;
+		// height: 70vh !important;
 		margin-bottom: 50px;
 		&-image,&-content{
 	 		width: 50%;
@@ -382,11 +382,11 @@
 	 		}
 	 	}
 	 	@media (max-width: 64em){
-	 		height: 50vh !important;
+	 		// height: 50vh !important;
 	 		margin-top: 70px;
 	 	}
 	 	@media (max-width: 40em){
-	 		height: 80vh !important;
+	 		// height: 80vh !important;
 	 		margin-top: 45px;
 	 	}
 	}
@@ -580,12 +580,12 @@
 			& .image-or-video-container
 			// & img
 			{
-				width: 65%;
+				width: 60%;
 				// margin: 2rem 0;
 				display: block;
 				margin: 0 auto;
 				margin-bottom: 4rem;
-				margin-top: 0rem;
+				margin-top: 2rem;
 				// box-shadow: 1px 1px 10px 1px #00000057;
 				box-shadow: 0 21px 50px 0 rgba(0, 0, 0, 0.35);
 				transition: box-shadow 300ms linear;
@@ -614,7 +614,7 @@
 		justify-content: center;
 		// margin-top: 1rem;
 		& .slick-list{
-			// padding-top: 50px !important;
+			padding-top: 50px !important;
 			padding-bottom: 80px !important;
 
 		}
@@ -947,7 +947,8 @@
 		& .tab-slider{
 
 			& .slick-list{
-				padding-bottom: 20px !important;
+				padding-bottom: 10px !important;
+				padding-top: 10px !important;
 
 				& .slick-slide:not(.slick-current){
 					& .tab-slider-slide {
