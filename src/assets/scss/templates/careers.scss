@@ -18,7 +18,8 @@
       align-self: center;
       & h1{
         font-family:$title-font;
-        font-size: 14rem;
+        // font-size: 14rem;
+        font-size: 12rem;
         padding: 0.5em 0;
         padding-bottom: 0;
         line-height: 0.8;
@@ -105,7 +106,7 @@
     & .team-image{
       float: right;
       & img{
-        width: -webkit-fill-available;
+        // width: -webkit-fill-available;
       }
     }
     & .team-text{
@@ -113,6 +114,8 @@
       display: flex;
       flex-direction: row-reverse;
       height: min-content;
+      margin-top: 3rem;
+
       & p{
         font-family: $main-font;
         font-size: 1.5rem;
