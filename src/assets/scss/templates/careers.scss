@@ -183,7 +183,8 @@
       flex: 1;
       margin-left: -10rem;
       & h1{
-        font-family: $din-bold;
+        // font-family: $din-bold;
+        font-family: "Din-Bold";
         font-size: 7rem;
       }
       & .who-we-hire-text{
@@ -801,7 +802,7 @@
         & .large-paper-clip{
           bottom: -25%;
           z-index: 5;
-          width: 60%;
+          width: 50%;
           right: 10%;
         }
         & .dark-circle{
@@ -811,7 +812,7 @@
           z-index: 3;
         }
         & .blue-circle{
-          width: 70%;
+          width: 60%;
           bottom: -5%;
           left: 11%;
           z-index: 1;
