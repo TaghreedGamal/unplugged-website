@@ -31,8 +31,11 @@
    .copy-right{
        text-align: center;
        padding-top: 10px;
-       color: #afabab;
+      //  color: #afabab;
+      color: #9b9b9b;
+      letter-spacing: 0.6px;
        font-size: 18px;
+       font-family: $main-font;
        @media (max-width: 64em){
           font-size: 12px;
        }
@@ -54,6 +57,7 @@ footer{
                 a{
                   color: $dark-nav-color;
                   font-size: 18px;
+                  font-family: $footer-menu;
                    @media (max-width: 64em){
                       font-size: 14px;
                     }
@@ -151,17 +155,17 @@ footer{
     }
     .newsletter{
       .medium{
-        width: 30% !important;
-        left: 30%;
-        top: 46%;
-        position: absolute;
-        @media (max-width: 64em){
-          width: 80% !important;
-          left: 10%;
-          top: 37%;
-          font-size: 12px !important;
-          padding-left: 20px !important;
-        }
+        // width: 30% !important;
+        // left: 30%;
+        // top: 46%;
+        // position: absolute;
+        // @media (max-width: 64em){
+        //   width: 80% !important;
+        //   left: 10%;
+        //   top: 37%;
+        //   font-size: 12px !important;
+        //   padding-left: 20px !important;
+        // }
       }
     }
 }
@@ -350,4 +354,60 @@ footer #gform_submit_button_6{
             width: 15rem;
   }
 
+}
+
+
+
+
+
+/////fixing footer///////
+
+footer{
+  & form#gform_6{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    & .gform_body{
+      width: 20%;
+      & .gfield_label{
+        display: none;
+      }
+      &  .top_label input.medium {
+        width: 120%;
+        position: static !important;
+        border-radius: 2rem;
+        // padding: 1.5rem 1rem;
+        padding: 1.8rem 1.5rem;
+        background: rgba(170, 170, 170, 0.25);
+        border-color: transparent;
+        box-shadow: none;
+        &::placeholder{
+          color: #4a4a4a;
+          font-size: 10px;
+          font-family: $main-font;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+    & .gform_footer{
+         /* padding: 1em 0 1em; */
+         padding: 0;
+        margin: 0;
+        position: relative;
+        top: 8px;
+      & .gform_button{
+        
+        position: static !important;
+        // padding: 1rem 0.5rem !important;
+        padding: 1.2rem 1.5rem !important;
+        font-size: 1.2rem;
+        height: auto;
+        margin: 0;
+        border-radius: 2rem;
+        letter-spacing: 0.67px;
+        
+      }
+    }
+  }
 }
