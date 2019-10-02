@@ -274,7 +274,11 @@ button{
                 .img3 {
                     top: 300px;
                     position: relative;
-                    left: 50%;
+                    // left: 50%;
+                    left: 54%;
+                    @media only screen and(min-width:1300px) and (max-width:1500px){
+                      left: 60%;
+                    }
                     .fun8,.inv7{
                     top: 180px;
                     position: absolute;
@@ -285,6 +289,11 @@ button{
                     top: 150px;
                     position: absolute;
                     z-index: 3;
+                    @media only screen and(min-width:1300px) and (max-width:1500px){
+                      top: 180px;
+                      left: 35px;
+                      width: 35%;
+                    }
                     }
                     .fun10{
                     top: 50px;
@@ -984,7 +993,8 @@ button{
         position: absolute;
         left: 0rem;
         // bottom: 9rem;
-        bottom: 12rem;
+        // bottom: 12rem;
+        bottom: 50%;
       }
       & .product-left-image, .product-right-image{
         height: fit-content;
@@ -2117,7 +2127,8 @@ button{
       & .orange-circle{
         position: absolute;
         left: 0rem;
-        bottom: 9rem;
+        // bottom: 9rem;
+        bottom: 50%;
       }
       & .product-left-image, .product-right-image{
         height: fit-content;
