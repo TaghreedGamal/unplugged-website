@@ -44,7 +44,11 @@
 
 footer{
     position: relative;
-    margin-top: 250px;
+    // margin-top: 250px;
+    margin-top: -10rem;
+    @media (max-width:1024px){
+      margin-top: 5rem;
+    }
     #nav_menu-2{
         .menu-main-container{
             width: fit-content;
@@ -80,6 +84,8 @@ footer{
               }
               @media (max-width: 64em){
                 text-align: center;
+                display: flex;
+                justify-content: center;
               }
             }
             @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -403,10 +409,14 @@ footer{
         background: transparent;
         border: none;
         font-size: 1rem;
+        margin-top: -0.25em;
       }
 
       & .gform_body{
       width: 20%;
+      @media (max-width:1024px) {
+        width: 60%;
+      }
       & .gfield_label{
         display: none;
       }
@@ -419,6 +429,9 @@ footer{
         background: rgba(170, 170, 170, 0.25);
         border-color: transparent;
         box-shadow: none;
+        @media (max-width:1024px) {
+          padding: 1.8rem 1rem;
+        }
         &::placeholder{
           color: #4a4a4a;
           font-size: 10px;
@@ -433,6 +446,9 @@ footer{
         margin: 0;
         position: relative;
         top: 8px;
+        @media (max-width:1024px) {
+          width: 40%;
+        }
       & .gform_button{
         
         position: static !important;
@@ -443,11 +459,17 @@ footer{
         margin: 0;
         border-radius: 2rem;
         letter-spacing: 0.67px;
+        @media (max-width:1024px){
+          font-size: 1rem;
+        }
         
       }
     }
   }
   & .gform_widget{
     margin: 5rem 0;
+    @media (max-width:1024px) {
+      margin: 3rem 0;
+    }
   }
 }

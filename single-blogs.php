@@ -15,7 +15,10 @@ get_header(); ?>
 			<main class="main-content"> -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<!-- <?php get_template_part( 'template-parts/content', '' ); ?> -->
-					<div class="single-blogs-page-header" style="background-image:url('<?php the_post_thumbnail_url('full') ?>');">
+					<div class="single-blogs-page-header" style="background-image:url('<?php 
+					// the_post_thumbnail_url('full')
+					the_field('background_image');
+					 ?>');">
 						<!-- <?php get_template_part( 'template-parts/featured-image' ); ?> -->
 							<!-- <?php   the_post_thumbnail('full'); ?> -->
 							<!-- <h1>jjjjjjjjj</h1> -->

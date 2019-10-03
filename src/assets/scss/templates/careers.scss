@@ -103,6 +103,7 @@
     flex-direction: column;
     margin-left: 5rem;
     padding: 5rem 0;
+    padding-top: 10rem;
     & .team-image{
       float: right;
       & img{
@@ -552,9 +553,11 @@
         padding: 0 1.5rem;
         & p{
           line-height: 30px;
+          font-size: 1.2rem;
         }
         & img{
           // height: fit-content;
+          height: 140px;
         }
       }
     }

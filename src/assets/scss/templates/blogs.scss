@@ -2414,7 +2414,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: top;
+    // background-position-y: top;
+    background-position-y: center;
     // transform: scale(0.8);
   }
   & .single-blog{

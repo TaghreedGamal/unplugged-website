@@ -4,6 +4,7 @@ Template Name: Home
 */
 get_header(); ?>
 <section class="home-slider">
+<?php include 'contact-form-pop-up.php'; ?>
     <div class="home-slider__sliders">
         <div class="home-slider__sliders__singleSlider" >
         <div class="container">

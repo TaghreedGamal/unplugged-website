@@ -37,10 +37,15 @@
         display: none;
     }
     .gfield_description.validation_message {
-        display: none;
+        // display: none;
+        display: block;
+        color: white;
+    }
+    & .gform_confirmation_message{
+        font-family: 'Cabin-Medium';
     }
     .gform_wrapper.gf_browser_chrome .gfield_error input {
-        background-color:rgba(237, 193, 192, 0.81);
+        // background-color:rgba(237, 193, 192, 0.81);
         padding-left: 10px;
         color: #b80c09;
         font-weight: bold;
@@ -97,6 +102,9 @@
         top: 2%;  
         left: 33%;
         font-size: 1.9375rem;
+        @media (min-width: 1700px){
+            left: 37%;
+        }
         @media (max-width: 40em){
             font-size: 20px;
             left: 33px;
@@ -151,6 +159,21 @@
             @media (max-width: 40em){
                 width: 100% !important;
             }
+         }
+         & .top_label{
+            & li.gfield.gfield_error{
+                margin: 0.75em 0;
+            }
+            & li.gfield.gfield_error{
+                border: none;
+            }
+            
+         } 
+         & select{
+             padding-right: 2.5rem;
+         }
+         & textarea{
+            padding: 0.5rem 1rem;
          }
     }
    
