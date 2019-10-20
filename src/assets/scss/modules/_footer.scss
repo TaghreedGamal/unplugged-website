@@ -47,7 +47,7 @@ footer{
     // margin-top: 250px;
     margin-top: -10rem;
     @media (max-width:1024px){
-      margin-top: 5rem;
+      margin-top: 10rem;
     }
     #nav_menu-2{
         .menu-main-container{
@@ -218,13 +218,16 @@ footer{
     content: "";
     position: absolute;
     // top: -100px;
-    top: -130px;
+    // top: -130px;
     // left: 100px;
     width: 5px;
     // height: 400px;
-    left: 110px;
+    // left: 110px;
     height: 430px;
     z-index: -1;
+    top: -105px;
+    left: 135px;
+
 
     background-color: #ff7900;
     transform: skew(40deg) translateX(0);
@@ -430,11 +433,12 @@ footer{
         border-color: transparent;
         box-shadow: none;
         @media (max-width:1024px) {
-          padding: 1.8rem 1rem;
+          padding: 0.8rem 1rem;
+          height: auto;
         }
         &::placeholder{
           color: #4a4a4a;
-          font-size: 10px;
+          font-size: 16px;
           font-family: $main-font;
           letter-spacing: 0.5px;
         }
@@ -447,7 +451,7 @@ footer{
         position: relative;
         top: 8px;
         @media (max-width:1024px) {
-          width: 40%;
+          // width: 40%;
         }
       & .gform_button{
         
@@ -461,6 +465,8 @@ footer{
         letter-spacing: 0.67px;
         @media (max-width:1024px){
           font-size: 1rem;
+          padding: 1.3rem 1.5rem !important;
+
         }
         
       }
