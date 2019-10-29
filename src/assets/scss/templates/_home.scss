@@ -920,6 +920,10 @@ button{
     display: flex;
     // justify-content: space-between;
     justify-content: center;
+    margin-bottom: -10rem;
+    @media(max-width:1024px){
+      margin-bottom: -5rem;
+    }
     /////for nowww///
     // display: none;
     //////////////

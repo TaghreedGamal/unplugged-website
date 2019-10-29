@@ -45,7 +45,7 @@
 footer{
     position: relative;
     // margin-top: 250px;
-    margin-top: -10rem;
+    margin-top: -2rem;
     @media (max-width:1024px){
       margin-top: 10rem;
     }
@@ -62,6 +62,9 @@ footer{
                   color: $dark-nav-color;
                   font-size: 18px;
                   font-family: $footer-menu;
+                  @media (max-width:1024px) {
+                    padding: 0.7rem 0.5rem;
+                  }
                    @media (max-width: 64em){
                       font-size: 14px;
                     }
@@ -441,6 +444,9 @@ footer{
           font-size: 16px;
           font-family: $main-font;
           letter-spacing: 0.5px;
+          @media (max-width:1024px) {
+           font-size: 10px;
+          }
         }
       }
     }
@@ -451,7 +457,7 @@ footer{
         position: relative;
         top: 8px;
         @media (max-width:1024px) {
-          // width: 40%;
+          width: 40%;
         }
       & .gform_button{
         
@@ -466,7 +472,7 @@ footer{
         @media (max-width:1024px){
           font-size: 1rem;
           padding: 1.3rem 1.5rem !important;
-
+          width:100%;
         }
         
       }
