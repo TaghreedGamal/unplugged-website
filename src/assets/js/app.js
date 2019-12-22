@@ -334,17 +334,17 @@ tl1.to('.dot1', 0.5, {backgroundColor:"#003a47",width:60})
 
 
 //project section
-
-var Bottomslider=$(".project-section").offset().top;
-$(window).scroll(function() {
-     if($(window).scrollTop()*8 > Bottomslider )
-        {
-          tl1.pause();
-        }
-    else{
-        tl1.play();
-    }
- });
+////homepage edits
+// var Bottomslider=$(".project-section").offset().top;
+// $(window).scroll(function() {
+//      if($(window).scrollTop()*8 > Bottomslider )
+//         {
+//           tl1.pause();
+//         }
+//     else{
+//         tl1.play();
+//     }
+//  });
 
 // services animation
 var servicesTimelines ={};
@@ -413,49 +413,49 @@ if (screenSize > '480'){
 }
 
 //// intern animation
+///home page edits
+// var path01 = $("#imgl1 path"),
+//     length01 = path01[0].getTotalLength();
+// var path02 = $("#imgl2 path"),
+//     length02 = path02[0].getTotalLength();
 
-var path01 = $("#imgl1 path"),
-    length01 = path01[0].getTotalLength();
-var path02 = $("#imgl2 path"),
-    length02 = path02[0].getTotalLength();
 
+// var tl = new TimelineMax();
+// tl.set(path01, {attr:{"stroke-dasharray": length01, "stroke-dashoffset": length01}})
+// .set(path02, {attr:{"stroke-dasharray": length02, "stroke-dashoffset": length02}});
 
-var tl = new TimelineMax();
-tl.set(path01, {attr:{"stroke-dasharray": length01, "stroke-dashoffset": length01}})
-.set(path02, {attr:{"stroke-dasharray": length02, "stroke-dashoffset": length02}});
+// var inl = new TimelineMax();
+//             inl.from("#box1",0.5, {y:-150,opacity:0},1)
+//             .from("#box2",0.5, {y:-150,opacity:0},1)
+//             .from("#box1-img",0.6, {y:300,opacity:0},1)
+//             .from("#box2-img",0.6, {y:300,opacity:0},1)
+//             .addLabel("cir")
+//             .from(".circle", 1, {scale:0.2,opacity:0},"cir")
+//             .from(".circle2", 1, {scale:0.2,opacity:0},"cir")
+//             .addLabel("line")
+//             .from(".left-boxline",0.5,{y:200,opacity:0},"line")
+//             .from(".right-boxline2",0.5,{y:200,opacity:0},"line")
+//             .addLabel("sline")
+//             .from(".left-boximgline-1",0.5,{y:200,opacity:0},"sline")
+//             .from(".right-boximg2line-1",0.5,{y:200,opacity:0},"sline")
+//             .from(".left-boximgline-2",0.5,{y:200,opacity:0},"sline")
+//             .from(".right-boximg2line-2",0.5,{y:200,opacity:0},"sline")
+//             .addLabel("draw")
+//             .to(path01, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
+//             .to(path02, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4");
+// inl.pause();
 
-var inl = new TimelineMax();
-            inl.from("#box1",0.5, {y:-150,opacity:0},1)
-            .from("#box2",0.5, {y:-150,opacity:0},1)
-            .from("#box1-img",0.6, {y:300,opacity:0},1)
-            .from("#box2-img",0.6, {y:300,opacity:0},1)
-            .addLabel("cir")
-            .from(".circle", 1, {scale:0.2,opacity:0},"cir")
-            .from(".circle2", 1, {scale:0.2,opacity:0},"cir")
-            .addLabel("line")
-            .from(".left-boxline",0.5,{y:200,opacity:0},"line")
-            .from(".right-boxline2",0.5,{y:200,opacity:0},"line")
-            .addLabel("sline")
-            .from(".left-boximgline-1",0.5,{y:200,opacity:0},"sline")
-            .from(".right-boximg2line-1",0.5,{y:200,opacity:0},"sline")
-            .from(".left-boximgline-2",0.5,{y:200,opacity:0},"sline")
-            .from(".right-boximg2line-2",0.5,{y:200,opacity:0},"sline")
-            .addLabel("draw")
-            .to(path01, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw")
-            .to(path02, 0.6, {attr:{"stroke-dashoffset": 0},opacity:1},"draw+=0.4");
-inl.pause();
+// $(window).scroll(function() {
+//     var inter= $(".blog");
+//     var top_of_element = inter.offset().top + 200;
+//     var bottom_of_element = inter.offset().top + inter.outerHeight();
+//     var top_of_screen = $(window).scrollTop();
+//     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+//     if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
+//           inl.play();
+//         }
 
-$(window).scroll(function() {
-    var inter= $(".blog");
-    var top_of_element = inter.offset().top + 200;
-    var bottom_of_element = inter.offset().top + inter.outerHeight();
-    var top_of_screen = $(window).scrollTop();
-    var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
-    if((bottom_of_screen > top_of_element) && (top_of_screen < top_of_element)){
-          inl.play();
-        }
-
- });
+//  });
 
 
 ////////// cards animation

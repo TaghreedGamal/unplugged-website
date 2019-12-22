@@ -846,7 +846,7 @@ get_header(); ?>
 </section>
 
 <!-- project section responsive -->
-<section class="projects-responsive container">
+<!-- <section class="projects-responsive container" style="display: none !important;">
         <h1>Our Projects</h1>
         <div class="projects-slider">
             <div class="projects-slider-logos">
@@ -900,9 +900,9 @@ get_header(); ?>
                         </div>  <?php
                 endwhile; wp_reset_query(); ?>
         </div>
-</section>
+</section> -->
 <!--projects section -->
-<section class="projects-section container">
+<!-- <section class="projects-section container" style="display: none !important;">
         <h1>Our Projects</h1>
         <div class="project-section">
             <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -963,7 +963,7 @@ get_header(); ?>
                             <div class="box">
                                 <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>
                                 <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
-                                 </br>
+                                 <br>
                                 <div class="small-icon">
                                     <?php
                                     if( have_rows('services-icons') ):
@@ -992,7 +992,7 @@ get_header(); ?>
                             <div class="box">
                                 <h2 class="box__title"><?php the_title();?><span><?php the_field('project_subtitle');?></span></h2>
                                <p class="box__text"><?php $text=get_the_content(); echo strlen($text) > 50 ? substr($text,0,150)."..." : $text;?></p>
-                            </br>
+                            <br>
                                 <div class="small-icon">
                                     <?php
                                     if( have_rows('services-icons') ):
@@ -1014,10 +1014,10 @@ get_header(); ?>
                  $tabNo++;
                 endwhile; wp_reset_query(); ?>
         </div>
-</section>
+</section> -->
 
 <!--blog section -->
-<section>
+<!-- <section style="display: none !important;">
     <div class="blog container">
 
       <?php
@@ -1107,10 +1107,10 @@ get_header(); ?>
 
 
     </div>
-</section>
+</section> -->
 
 <!--products section -->
-<?php $args = array(
+<!-- <?php $args = array(
         'post_type' => 'products',
         'post_status' => 'publish',
         'posts_per_page'=>1,
@@ -1124,10 +1124,9 @@ get_header(); ?>
           if($the_product->have_posts()):
               while($the_product->have_posts()): $the_product->the_post();
               // echo the_title();
-             ?>
-<section>
+             ?> -->
+<!-- <section style="display: none !important;">
     <div class="products container">
-      <!-- <img src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/blogs/line-2.svg" alt=""> -->
 
       <div class="product-media">
         <svg  class="blue-line-1"xmlns="http://www.w3.org/2000/svg" width="218" height="248" viewBox="0 0 218 248">
@@ -1148,22 +1147,7 @@ get_header(); ?>
           </div>
           <img class="product-right-image" style="" src="<?php the_field('product_home_page_right_image')?>">
       </div>
-        <!-- <div class="mobile"> -->
-            <!-- <div class="v-line" style="opacity:0"></div>
-            <img class="video-L" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-left.png">
-            <div class="v-line2" style="opacity:0"></div>
-            <div class="v-circle" style="opacity:0"></div> -->
-
-            <!-- <div class="video-container"> -->
-                <!-- <img class="mobile-img" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/product-mobile-device-min.png"> -->
-              <!-- <video class="mobile-video" id="myvideo" width="320" height="240" controls muted >
-                <source src="https://unpluggedwebdesign.com/unpluggedweb/wp-content/uploads/2018/12/Image-from-iOS.mp4" type="video/mp4">
-              </video> -->
-
-            <!-- </div> -->
-            <!-- <img class="video-R" style="opacity:0" src="<?php echo get_stylesheet_directory_uri() ?>/src/assets/images/home/mv-right.png">
-            <div class="v-lcircle" style="opacity:0"><div class="v-scircle" style="opacity:0"></div></div> -->
-        <!-- </div> -->
+       
          <div class="box">
             <h3 class="box__title1">OUR PRODUCTS</h3>
 
@@ -1182,9 +1166,9 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</section>
-<?php endwhile; ?>
-  <?php endif; ?>
+</section> -->
+<!-- <?php endwhile; ?>
+  <?php endif; ?> -->
 
 
 
