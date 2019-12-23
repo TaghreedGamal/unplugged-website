@@ -17,6 +17,7 @@ body:after{
   -webkit-transform:rotate(-45deg);
   transform:rotate(-45deg);
   z-index: 1000;
+  display: none;
 }
 body{
     overflow-x: hidden;

@@ -25,10 +25,10 @@ $(document).foundation();
 window.onload = function(){
 //   $('.website-loader').css("display","none");
 //   $("body").css('overflow-y', "scroll");
-  if($('#contact-form-modal')[0]!=undefined){
-  setTimeout(function() {
-  $('#contact-form-modal').foundation('open');  }, 5000);
-  }
+//   if($('#contact-form-modal')[0]!=undefined){
+//   setTimeout(function() {
+//   $('#contact-form-modal').foundation('open');  }, 5000); /////form
+//   }
 //   console.log($('#contact-form-modal')[0]);
 //   if($('#contact-form-modal')[0]!=undefined){
 //     $('#contact-form-modal').foundation('open');
