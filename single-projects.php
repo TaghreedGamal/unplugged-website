@@ -15,7 +15,7 @@ get_header(); ?>
 				<div class="main-content__project-content">
 					<!-- <a href="<?php echo esc_url( home_url( '/projects' ) ); ?>"class="close-page">&times</a> -->
 					<?php get_template_part( 'template-parts/content', '' ); ?>
-					<?php include 'page-templates/contact-form-pop-up.php'; ?>
+					<?php //include 'page-templates/contact-form-pop-up.php'; ?>
 
 					<div class="project-data">
 				    	<div class="project-data-category">
