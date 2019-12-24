@@ -3,6 +3,7 @@
   src: url('../fonts/din-bold.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $din-bold:'Din-Bold';
 
@@ -11,6 +12,7 @@ $din-bold:'Din-Bold';
   src: url('../fonts/DINCondensed-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINCondensed-Bold.woff') format('woff'), url('../fonts/DINCondensed-Bold.ttf')  format('truetype'), url('../fonts/DINCondensed-Bold.svg#DINCondensed-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $bold-font:'DINCondensed-Bold';
 $title-font:'DINCondensed-Bold';
@@ -20,6 +22,7 @@ $title-font:'DINCondensed-Bold';
   src: url('../fonts/BwQuintaPro-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/BwQuintaPro-Black.woff') format('woff'), url('../fonts/BwQuintaPro-Black.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $card-FrsHeader-font:'BwQuintaPro-Black';
 
@@ -28,6 +31,7 @@ $card-FrsHeader-font:'BwQuintaPro-Black';
   src: url('../fonts/BwQuintaPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/BwQuintaPro-Bold.woff') format('woff'), url('../fonts/BwQuintaPro-Bold.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $card-SecHeader-font:'BwQuintaPro-Bold';
 
@@ -36,6 +40,7 @@ $card-SecHeader-font:'BwQuintaPro-Bold';
   src: url('../fonts/DIN-Regular.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 // $main-font:'DIN-Regular';
 $main-font: 'Cabin-Regular';
@@ -45,6 +50,7 @@ $main-font: 'Cabin-Regular';
   src: url('../fonts/DIN-Medium.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $medium-font:'DIN-Medium';
 
@@ -53,6 +59,7 @@ $medium-font:'DIN-Medium';
   src: url('../fonts/Cabin-Medium.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $button-font:'Cabin-Medium';
 $footer-menu:'Cabin-Medium';
@@ -62,6 +69,7 @@ $footer-menu:'Cabin-Medium';
   src: url('../fonts/Cabin-Regular.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 $footer-text:'Cabin-Regular';
 $filter-text:'Cabin-Regular';
