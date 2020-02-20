@@ -23,8 +23,8 @@ $(document).foundation();
 
 // $("body").css('overflow-y', "hidden");
 window.onload = function(){
-//   $('.website-loader').css("display","none");
-//   $("body").css('overflow-y', "scroll");
+//   $('.website-loader').css("display","none");  //pending loader
+//   $("body").css('overflow-y', "scroll");   //pending loader
 //   if($('#contact-form-modal')[0]!=undefined){
 //   setTimeout(function() {
 //   $('#contact-form-modal').foundation('open');  }, 5000); /////form
