@@ -3,11 +3,18 @@
 Template Name: Apply Now
 */
 get_header(); ?>
+<?php 
+       $job =  $_GET['job'];
+       $job_type = $_GET['job_type'];
+       ?>
 
 <div class="careers-page-container  apply-page-container">
   <div class="careers-page-container-header" style="background-image: url(<?php echo get_stylesheet_directory_uri();?>/src/assets/images/products/background.png);" >
       <div class="careers-header-title">
-        <h1>Coffee is <br> our bestfriend</h1>
+        <!-- <h1>Coffee is <br> our bestfriend</h1> -->
+        <h1><?php 
+        $job_name = ucwords(str_replace('_', ' ',strtolower($job)));
+        echo $job_name?></h1>
         <!-- <a class="button join-team-button" href="<?php the_field('careers_link');?>">Join the Team</a> -->
       </div>
       <div class="small-paper-clip-images">

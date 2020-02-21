@@ -1,4 +1,9 @@
 .apply-page-container{
+    & .careers-header-title{
+        & h1{
+            width: 70%;
+        }
+    }
     & .apply-form-container{
         max-width: none;
         border: 6px solid black;
