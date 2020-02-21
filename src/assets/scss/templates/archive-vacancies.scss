@@ -1,0 +1,247 @@
+.vacancies-page-container{
+    & .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5rem;
+        margin-top: 5rem;
+        @media (max-width: 1024px) {
+            padding: 2rem;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+           
+        & .filter-menu-desktop{
+            display: block;
+            @media (max-width: 1024px) {
+                        display: none;
+             }
+            }
+            & .filter-menu{
+                width: 20%;
+                @media (max-width: 1024px) {
+                       // padding: 0 1em;
+                       margin-bottom: 3rem;
+                    & .reset-filters{
+                        font-size: 0.7rem;
+                        display: block;
+                        padding: 0;
+                    }
+                    & .accordion-outer{
+                        padding: 0.7rem 0.5rem;
+                        // position: relative;
+                        // border-bottom: 1px solid;
+                        & .accordion-item{
+                        & .accordion-title{
+                        position: relative;
+                        border-top: none;
+                        border-top: 0 !important;
+                        border-bottom: 1px solid #aaaaaa !important;
+                        color: $title-color;
+                        // font-family: $din-bold;
+                        font-family: $title-font;
+                        font-size: 1.4rem;
+                        line-height: 0.4;
+                        display: flex;
+                        justify-content: space-between;
+                        &::before{
+                            // content: '';
+                            right: 5% !important;
+                        }
+                        &::after{
+                            // content:'+';
+                            // font-size: initial;
+                        }
+            
+                        &:focus{
+                            background-color: transparent;
+                        }
+                        &:focus-within{
+                            background-color: transparent;
+                        }
+                         }
+                        }
+                        & li.is-active{
+                        & >.accordion-title::after{
+                            // &#x2A2F;
+                            // content: '\2A2F';
+                            // font-size: initial;
+                        }
+                        }
+                        & .accordion-item{
+                            position: relative;
+                        }
+                        & .content-outer{
+                            position: absolute;
+                            border-bottom: none;
+                            border:none;
+                            width: 100%;
+                            z-index: 1;
+                            background: white;
+                            & .accordion{
+            
+                            & .accordion-title{
+                                font-size: 1rem;
+                                padding: 1.25rem 1rem;
+                                border-bottom: 0 !important;
+                                &:before{
+                                    right: 5%;
+                                }
+                            }
+                            & .accordion-content{
+                                border-bottom: none;
+                                border:none;
+                               
+                                & a{
+                                padding: 1.25rem 0.5rem;
+                                font-size: 1rem;
+                                }
+                            }
+                            }
+                        }
+                    }
+            
+            
+                    & .accordion-content{
+                        padding: 0;
+            
+                        & #filter-ul{
+                        & a{
+                            font-size: 1rem;
+                        }
+                        }
+                    }
+                }
+                & h3{
+                    font-family: DINCondensed-Bold;
+                    letter-spacing: 2px;
+                    font-size: 3rem;
+                    color: #003a47;
+                }
+                & .accordion{
+                    // border: none;
+                    & .accordion-item{
+                        &.is-active > .accordion-title::before{
+                            content: '\d7';
+                            color: #003a47;
+                        }
+                        &.is-active > .accordion-title{
+                            color: #003a47;
+                            font-weight: 700;
+                        }
+                        & .accordion-title{
+                            border: none;
+                            border-top: 1px solid #aaaaaa;
+                            font-family: Cabin-Regular;
+                            letter-spacing: 1.5px;
+                            color: #aaaaaa;
+                            font-size: 1.5rem;
+                        }
+                        & .accordion-content{
+                            font-size: 1.2rem;
+                            border: none;
+                            border-top: 1px solid #aaaaaa;
+                            font-family: Cabin-Regular;
+                            letter-spacing: 1.5px;
+                            color: #aaaaaa;
+                            & .filter-items{
+                                list-style: none;
+                                & a{
+                                    color: #aaaaaa;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .reset-filters{
+                    padding: 0 1rem;
+                    font-family: 'Cabin-Regular';
+                    color: #31006d;
+                    font-size: 1.2rem;
+                    text-decoration: underline;
+                }
+            }
+         
+         & .filter-menu-mobile{
+             display: none;
+             @media (max-width: 1024px) {
+                 display: block;
+                 width: 100%;
+             }
+         }
+        & .vacancies{
+            width: 70%;
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: 1024px) {
+                width: 100%;
+                padding: 0;
+            }
+            & .vacancies-hidden{
+                display: none;
+            }
+            & .vacancy{
+                border: 6px solid;
+                padding: 2rem 3rem;
+                margin-bottom: 5rem;
+                position: relative;
+                @media (max-width: 1024px) {
+                    // width: 100%;
+                    padding: 2rem 1rem;
+                }
+                & .vacancy-type{
+                    position: absolute;
+                    padding: 2rem;
+                    font-family: Cabin-Medium;
+                    font-weight: 700;
+                    background-color: #55bbeb ;
+                    top: 0;
+                    right: 0;
+                    border: 6px solid;
+                    border-right: 0;
+                    border-top: 0;
+                    letter-spacing: 1px;
+                    font-size: 1.2rem;
+                    @media (max-width: 1024px) {
+                       padding: 1rem;
+                       font-size: 1rem;
+                    }
+                }
+                & .experience{
+                    font-family: Cabin-Medium;
+                    color: #55bbeb ;
+                    letter-spacing: 1px;
+                }
+                & .vacancy-content{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    @media (max-width: 1024px) {
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                    }
+                    & p{
+                        margin-right: 20px;
+                        width: 70%;
+                        @media (max-width: 1024px) {
+                            margin-right: 0;
+                        }
+                    }
+                    & .button{
+                        margin-left: 20px;
+                        @media (max-width: 1024px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            & .load-more-button{
+                align-self: center;
+            }
+        }
+    }
+}

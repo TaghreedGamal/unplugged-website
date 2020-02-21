@@ -423,4 +423,109 @@ function set_posts_per_page( $query ) {
 }
 add_action( 'pre_get_posts', 'set_posts_per_page' );
 
+
+
+
+
+
+
+
+
+////vacancies
+
+
+
+//blog
+add_action( 'init', 'create_post_type_vacancies' );
+function create_post_type_vacancies() {
+   register_post_type( 'vacancies',
+       array(
+           'labels' => array(
+               'name' => __( 'Vacancies' ),
+               'singular_name' => __( 'Vacancy' )
+               ),
+           'public' => true,
+           'has_archive' => true,
+           'rewrite' => array('slug' => 'vacancies'),
+           'supports' => array(
+               'title',
+               'editor',
+               'revision',
+               'excerpt',
+               'thumbnail',
+               'custom-fields'
+           ),
+       )
+
+   );
+}
+
+//vacancy department
+add_action( 'init', 'create_vacancies_department_taxonomies' );
+function create_vacancies_department_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Vacancies Departments', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Vacancy Department', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Vacancies Departments', 'textdomain' ),
+  'all_items'         => __( 'All Vacancies Departments', 'textdomain' ),
+  'parent_item'       => __( 'Parent Vacancy Department', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Vacancy Department:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Vacancy Department', 'textdomain' ),
+  'update_item'       => __( 'Update Vacancy Department', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Vacancy Department', 'textdomain' ),
+  'new_item_name'     => __( 'New Blogs Vacancy Department', 'textdomain' ),
+  'menu_name'         => __( 'Vacancies Departments', 'textdomain' ),
+);
+
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'vacancy_departments' ),
+);
+
+register_taxonomy( 'vacancy_departments', array( 'vacancies' ), $args );
+}
+
+
+////
+//vacancy job type
+add_action( 'init', 'create_vacancies_types_taxonomies' );
+function create_vacancies_types_taxonomies() {
+// Add new taxonomy, make it hierarchical (like categories)
+$labels = array(
+  'name'              => _x( 'Vacancies Types', 'taxonomy general name', 'textdomain' ),
+  'singular_name'     => _x( 'Vacancy Type', 'taxonomy singular name', 'textdomain' ),
+  'search_items'      => __( 'Search Vacancies Types', 'textdomain' ),
+  'all_items'         => __( 'All Vacancies Types', 'textdomain' ),
+  'parent_item'       => __( 'Parent Vacancy Type', 'textdomain' ),
+  'parent_item_colon' => __( 'Parent Vacancy Type:', 'textdomain' ),
+  'edit_item'         => __( 'Edit Vacancy Type', 'textdomain' ),
+  'update_item'       => __( 'Update Vacancy Type', 'textdomain' ),
+  'add_new_item'      => __( 'Add New Vacancy Type', 'textdomain' ),
+  'new_item_name'     => __( 'New Blogs Vacancy Type', 'textdomain' ),
+  'menu_name'         => __( 'Vacancies Types', 'textdomain' ),
+);
+
+$args = array(
+  'hierarchical'      => true,
+  'labels'            => $labels,
+  'show_ui'           => true,
+  'show_admin_column' => true,
+  'query_var'         => true,
+  'rewrite'           => array( 'slug' => 'vacancy_types' ),
+);
+
+register_taxonomy( 'vacancy_types', array( 'vacancies' ), $args );
+}
 ?>
+
+
+
+
+
+
+

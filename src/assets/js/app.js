@@ -9,6 +9,7 @@ import comindSoon from "./comingSoon";
 import about from "./about";
 import careers from "./careers";
 import team from "./team";
+import vacancies from "./vacancies";
 
 
 window.$ = $;
