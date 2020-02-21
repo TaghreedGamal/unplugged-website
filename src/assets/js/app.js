@@ -10,6 +10,8 @@ import about from "./about";
 import careers from "./careers";
 import team from "./team";
 import vacancies from "./vacancies";
+import apply from "./apply";
+
 
 
 window.$ = $;

@@ -44,7 +44,7 @@ get_header(); ?>
 	<div class="main-container">
 		<div class="main-grid">
 			<main class="main-content">
-			<?php if ( have_posts() ) : ?>
+			
 
 
 
@@ -150,7 +150,7 @@ get_header(); ?>
              </ul>
 			</div>
 			
-
+			<?php if ( have_posts() ) : ?>
 				<!--vacancies  -->
 
 				
@@ -177,14 +177,16 @@ get_header(); ?>
 
 						<div class="vacancy-content">
 							<?php the_excerpt();?>
-							<a class="button" href="<?php the_permalink();?>">Know More</a>
+							<a class="button" href="<?php the_permalink();?>">Know More <i class="icon-right"></i></a>
 						</div>
 					</div>
 				<?php endwhile; ?>
 				</div>
 
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php else : ?> 
+				<!-- no jobs found -->
+					<?php //get_template_part( 'template-parts/content', 'none' ); ?>
+					<h1 class="no-vacancies">Sorry, there are no positions available at this time.</h1>
 
 				<?php endif; // End have_posts() check. ?>
 

@@ -186,8 +186,10 @@
           <?php endwhile; ?>
 
         <?php else : ?>
-          <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+          <?php //get_template_part( 'template-parts/content', 'none' ); ?>
+          <h1>
+			Sorry, there are no blogs available at this time.
+			</h1>
         <?php endif; // End have_posts() check. ?>
 
         <?php

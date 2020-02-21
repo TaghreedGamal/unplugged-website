@@ -145,6 +145,7 @@ footer{
         justify-content: center;
         font-family: $footer-text !important;
         font-size: 22px;
+        display: block;
         .textwidget {
             p {
               color: #afabab;
@@ -209,7 +210,8 @@ footer{
             font-size: 18px;
   }
 #media_image-2{
-    max-width: 230px
+    max-width: 230px;
+    margin: 0 auto;
 }
 .left{
     position: absolute;

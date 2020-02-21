@@ -1,0 +1,240 @@
+.apply-page-container{
+    & .apply-form-container{
+        max-width: none;
+        border: 6px solid black;
+        padding: 3rem 5rem;
+        width: 75%;
+        margin: 10rem auto;
+        background-color: #f7f7f7;
+        @media (max-width: 1024px) {
+            padding: 2rem;
+            width: 90%;
+            margin: 5rem auto;
+        }
+        & .gform_confirmation_message{
+            font-family: DINCondensed-Bold;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        & .gform_wrapper{
+            // max-width: none;
+            // border: 6px solid black;
+            // padding: 3rem 5rem;
+            // width: 75%;
+            // margin: 10rem auto;
+            // background-color: #f7f7f7;
+            & form{
+                & .validation_error{
+                    display: none;
+                }
+                & .gform_body{
+                    & ul.gform_fields{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        & .gfield{
+                            margin: 1.5rem 0;
+                            @media (max-width: 1024px){
+                                margin: 0.5rem 0;
+                            }
+                            &.half-width{
+                                width: 45%;
+                                @media (max-width: 1024px){
+                                   width: 100%;
+                                }
+                            }
+                            &.full-width{
+                                width: 100%;
+                            }
+                            &.nolabel{
+                                & .gfield_label{
+                                    display: none;
+                                }
+                            }
+                            & .form-title{
+                                font-size: 4rem;
+                                margin-bottom: 2rem;
+                            }
+                            & label{
+                                font-family: Cabin-Regular;
+                                letter-spacing: 1px;
+                            }
+                            
+                            & input{
+                                border-radius: 3rem;
+                                padding: 3rem;
+                                background-color: #e4e4e4;
+                                box-shadow: none;
+                                border: none;
+                                
+                                &::placeholder{
+                                color: #4a4a4a;
+                                }
+                                @media (max-width: 1024px) {
+                                    width: 100%;
+                                    padding: 2rem;
+                                }
+                            }
+                            & select{
+                                @media (max-width: 1024px) {
+                                    border-radius: 3rem;
+                                    padding: 0rem 2rem;
+                                    height: 4rem;
+                                    background-color: #e4e4e4;
+                                    box-shadow: none;
+                                    border: none;
+                                    width: 100%;
+                                    &::placeholder{
+                                    color: #4a4a4a;
+                                    }
+                                }
+                            }
+                            & .ginput_container_select{
+                                & .chosen-with-drop{
+                                    & .chosen-single{
+                                        transition: padding 0.3s;
+                                        padding-top: 0;
+                                        & div{
+                                            top: 25%;
+                                        }
+                                    }
+                                }
+                                & .chosen-single{
+                                    height: 5.5rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    border-radius: 3rem;
+                                    padding: 1rem;
+                                    text-indent: 2rem;
+                                    background: #e4e4e4;
+                                    border: none;
+                                    box-shadow: none;
+                                    & span{
+                                        font-size: 1rem;
+                                    }
+                                    & div{
+                                        right: 5%;
+                                        top: 40%;
+                                    }
+                                }
+                                & .chosen-drop{
+                                    top: 56%;
+                                    border-bottom-left-radius: 3rem;
+                                    border-bottom-right-radius: 3rem;
+                                    padding: 1rem 2rem;
+                                    background-color: #e4e4e4;
+                                    border: none;
+                                    box-shadow: none;
+                                    & .chosen-search{
+                                        border-top: 1px solid #aaaaaa;
+                                        padding-top: 1rem;
+                                        & input{
+                                            display: none !important;
+                                        }
+                                    }
+                                    & .chosen-results{
+                                        & li{
+                                            font-family: Cabin-Medium;
+                                            color: #4a4a4a;
+                                            &.highlighted{
+                                                background-color: #55bbeb;
+                                                background-image: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // & .gfield_radio{
+                            //    display: flex;
+                            //    justify-content: flex-start;
+                            //     & li{
+                            //      margin: 0 20px;
+                            //      display: flex;
+                            //      align-items: center;
+                            //      & input{
+                            //          margin: 0;
+                            //      }
+                            //      & label{
+                            //          font-size: 1.2rem;
+                            //      }
+                            //     }
+                            // }
+                            
+                            
+                        }
+                        & #field_10_7, & #field_9_7{
+                            cursor: pointer;
+                            & .gfield_label{
+                                display: none;
+                                & .gfield_required{
+                                    display: none;
+                                }
+                            }
+                            
+                            & .ginput_container_fileupload{
+                                position: relative;
+                                cursor: pointer;
+                                & input{
+                                    position: absolute;
+                                    opacity: 0;
+                                    top: 0;
+                                    // display: none;
+                                    border: none !important;
+                                    cursor: pointer;
+                                    // padding: 0;
+                                    z-index: 1;
+                                }
+                                & .instructions{
+                                    display: flex;
+                                    align-items: center;
+                                    @media (max-width: 1024px) {
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                    & .add{
+                                        width: 3rem;
+                                        height: 3rem;
+                                        background: $baby-blue-color;
+                                        border-radius: 50%;
+                                        margin: 0;
+                                        margin-right: 20px;
+                                        text-align: center;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        @media (max-width: 1024px) {
+                                             margin: 0;
+                                        }
+                                        & span{
+                                            font-size: 4rem;
+                                            color: white;
+                                            position: relative;
+                                            top: -8%;
+                                            z-index: 0;
+                                        }
+
+                                    }
+                                    & p{
+                                        margin: 0;
+                                        @media (max-width: 1024px) {
+                                            text-align: center;
+                                            margin: 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .gfield_error{
+                            background-color: transparent;
+                            border: none;
+                        }
+                    }
+                }
+                & .gform_footer{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

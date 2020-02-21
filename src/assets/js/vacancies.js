@@ -83,7 +83,10 @@ $(document).ready(function() {
       $('.vacancies').append("<div class='two-events-grouped group"+i+"'>"+event1.outerHTML+"</div>")
     }
     $('.vacancies .two-events-grouped:not(:first)').css('display','none')
+
+    if($('.vacancies .two-events-grouped').length > 1){
     $('.vacancies').append("<a class='load-more-button button' href='#'>Load More</a>")
+    }
   
   function updategroups()
   {
