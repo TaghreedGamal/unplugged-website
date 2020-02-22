@@ -57,17 +57,18 @@ get_header(); ?>
     }
     // echo $valid_type;
 
+        if($job == "" || $job_type == "" || $valid_type=='false'){
+          echo "<div class='error'><h1>Sorry, an error occured!</h1> <a class='back-button button' href=''><i class='icon-left'></i>Back to vacancies</a></div>";
+        }else{
 
         if($job_type == "internship"){
           echo do_shortcode('[gravityform id="9" title ="false" ajax="true"]');
         }else{
           if($job_type != "internship" && $job_type != ""){
             echo do_shortcode('[gravityform id="10" title ="false" ajax="true"]');
-          }else{?>
-              <div class='error'><h1>Sorry, an error occured</h1> <a class='back-button button' href=''><i class='icon-left'></i>Back to vacancies</a></div>;
-            
-          <?php }
+          }
         }
+      }
 
       ?>
       <div class="job" style="display:none;"><?php echo $job?></div>

@@ -16,6 +16,13 @@
             width: 90%;
             margin: 5rem auto;
         }
+        & .error{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
         & .gform_confirmation_message{
             font-family: DINCondensed-Bold;
             font-size: 2rem;
