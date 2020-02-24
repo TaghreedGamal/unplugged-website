@@ -71,7 +71,7 @@ get_header(); ?>
       }
 
       ?>
-      <div class="job" style="display:none;"><?php echo $job?></div>
+      <div class="job" style="display:none;"><?php echo $job_name;?></div>
     </div>
 
   </div>
