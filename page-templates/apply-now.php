@@ -35,7 +35,7 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class="apply-form-container">
+    <div class="apply-form-container" id="apply">
       <?php
        $job =  $_GET['job'];
        $job_type = $_GET['job_type'];
@@ -58,7 +58,7 @@ get_header(); ?>
     // echo $valid_type;
 
         if($job == "" || $job_type == "" || $valid_type=='false'){
-          echo "<div class='error'><h1>Sorry, an error occured!</h1> <a class='back-button button' href=''><i class='icon-left'></i>Back to vacancies</a></div>";
+          echo "<div class='error'><h1>Sorry, an error occured!</h1> <a class='back-button button' href='" .  esc_url( home_url( '/vacancies/#vacancies' ) ) ."'><i class='icon-left'></i>Back to vacancies</a></div>";
         }else{
 
         if($job_type == "internship"){

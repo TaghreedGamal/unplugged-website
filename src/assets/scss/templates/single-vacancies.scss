@@ -68,6 +68,26 @@
         & .company{
             padding: 2rem 0;
             border-bottom: 2px solid #aaaaaa;
+
+            & .job-description{
+                padding-bottom: 2rem;
+                & h2{
+                    font-family: Cabin-Medium;
+                    color: black;
+                    letter-spacing: 1px;
+                }
+                & p{
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                    color: #4b4b4b;
+                    font-family: Cabin-Regular;
+                    margin: 2rem 0;
+                    @media (max-width: 1024px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
             & .about-the-company{
                 padding-bottom: 2rem;
                 & h2{
