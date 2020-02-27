@@ -212,6 +212,7 @@ html{
                 @media (max-width: 1024px) {
                     // width: 100%;
                     padding: 2rem 1rem;
+                    border-width: 3px;
                 }
 
                 & h1{
@@ -236,6 +237,7 @@ html{
                     @media (max-width: 1024px) {
                        padding: 1rem;
                        font-size: 1rem;
+                       border-width: 3px;
                     }
                 }
                 & .experience{
@@ -263,12 +265,18 @@ html{
                         margin-left: 20px;
                         @media (max-width: 1024px) {
                             margin-left: 0;
+                            font-size: 16px;
+                            width: 160px;
                         }
                     }
                 }
             }
             & .load-more-button{
                 align-self: center;
+                @media (max-width: 1024px) {
+                    font-size: 16px;
+                    width: 160px;
+                }
             }
         }
     }
