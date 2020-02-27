@@ -62,7 +62,7 @@ get_header(); ?>
 
 							foreach ( $terms as $term ) {
 								$link = add_query_arg('vacancy_types', $term->slug);?>
-								<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+								<li><a href="<?php echo $link; ?>/#vacancies"><?php echo $term->name; ?></a></li>
 							<?php  }?>
 							</ul>
 							</div>
@@ -76,7 +76,7 @@ get_header(); ?>
 								$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
 								foreach ( $parent_terms as $pterm ) {
 								$link = add_query_arg('vacancy_departments', $pterm->slug);
-								echo '<li><a href='. $link .' class="">' . $pterm ->name . '</a></li>';
+								echo '<li><a href='. $link .'/#vacancies class="">' . $pterm ->name . '</a></li>';
 
 								}
 								?>
@@ -90,7 +90,7 @@ get_header(); ?>
 					$current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
 					// echo $current_url;
 					if(strpos($current_url,"vacancy_types") ||strpos($current_url,"vacancy_departments") ):?>
-					<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+					<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>/#vacancies'>Reset Filters</a>
 					<?php endif; ?>
 					</div>
 
@@ -112,7 +112,7 @@ get_header(); ?>
 						// echo $current_url;
 						if(strpos($current_url,"vacancy_types") || strpos($current_url,"vacancy_departments") ):?>
 
-						<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>'>Reset Filters</a>
+						<a class='reset-filters' href='<?php echo home_url( $wp->request ); ?>/#vacancies'>Reset Filters</a>
 
 					<?php endif; ?>
 						<li class="accordion-item " data-accordion-item>
@@ -124,7 +124,7 @@ get_header(); ?>
 						$terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
 							foreach ( $terms as $term ) {
 							$link = add_query_arg('vacancy_types', $term->slug);?>
-							<li><a href="<?php echo $link; ?>"><?php echo $term->name; ?></a></li>
+							<li><a href="<?php echo $link; ?>/#vacancies"><?php echo $term->name; ?></a></li>
 							<?php  }?>
 						</ul>
 						</div>
@@ -138,7 +138,7 @@ get_header(); ?>
 							$parent_terms = get_terms( $taxonomyName, array( 'parent' => 0, 'orderby' => 'slug', 'hide_empty' => false ) );
 							foreach ( $parent_terms as $pterm ) {
 								$link = add_query_arg('vacancy_departments', $pterm->slug);
-								echo '<li><a href='. $link .' class="">' . $pterm ->name . '</a></li>';
+								echo '<li><a href='. $link .'/#vacancies class="">' . $pterm ->name . '</a></li>';
 
 							}
 							?>

@@ -76,7 +76,7 @@
                     color: black;
                     letter-spacing: 1px;
                 }
-                & p{
+                & p, li{
                     font-size: 1.2rem;
                     letter-spacing: 1px;
                     color: #4b4b4b;
@@ -84,6 +84,16 @@
                     margin: 2rem 0;
                     @media (max-width: 1024px) {
                         font-size: 1rem;
+                    }
+                }
+                & li{
+                    list-style: inside;
+                    list-style-type: square;
+                    letter-spacing: 1px;
+                    margin: 1.5rem 10px;
+                    @media (max-width: 1024px) {
+                        font-size: 1rem;
+                        margin: 0.5rem 10px;
                     }
                 }
             }
