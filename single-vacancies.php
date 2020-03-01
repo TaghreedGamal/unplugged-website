@@ -77,6 +77,7 @@ $job_type = str_replace(' ', '_',strtolower($type_name));
                 </div>
               </div>
 
+              <?php if(get_the_content()):?>
               <div class="company">
                 <div class="job-description">
                       <h2>Job Description</h2>
@@ -93,6 +94,8 @@ $job_type = str_replace(' ', '_',strtolower($type_name));
 
                 </div> -->
               </div>
+              <?php endif;?>
+
 
               <?php if(have_rows('job_requirements') || have_rows('good_to_have')):?>
                 <div class="vacancy-details">

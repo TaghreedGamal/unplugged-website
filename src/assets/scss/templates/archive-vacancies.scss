@@ -82,6 +82,7 @@ html{
                         }
                         & .accordion-item{
                             position: relative;
+                            z-index: 1000;
                         }
                         & .content-outer{
                             position: absolute;
